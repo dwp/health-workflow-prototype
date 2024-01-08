@@ -1,0 +1,92 @@
+{% extends "layout-extended.html" %}
+
+{% block pageTitle %}
+Claimant residential address - Health Assessment Service
+{% endblock %}
+
+{% block beforeContent %}
+
+<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      
+
+  
+
+      <div class="govuk-width-container">
+        <p>5 addresses found for <b>XX11 1XX</b> and <b>1</b>. <a href="personal-find-address">Search again</a></p>
+        <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading">
+                    Select an address
+                </h1>
+            </legend>
+            <div class="govuk-radios" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="select-an-address" name="select-an-address" type="radio" value="1 Washington Street, Worcester, WR1 1NL">
+                    <label class="govuk-label govuk-radios__label" for="select-an-address">
+                        1 Test Street, Test City, WR1 1NL
+                    </label>
+                </div>
+
+                <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="select-an-address-2" name="select-an-address" type="radio" value="10 Washington Street, Worcester, WR1 1NL">
+                    <label class="govuk-label govuk-radios__label" for="select-an-address-2">
+                        10 Test Street, Test City, WR1 1NL
+                    </label>
+                </div>
+
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="select-an-address" name="select-an-address" type="radio" value="1 Washington Street, Worcester, WR1 1NL">
+                  <label class="govuk-label govuk-radios__label" for="select-an-address">
+                      11 Test Street, Test City, WR1 1NL
+                  </label>
+              </div>
+
+                <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="select-an-address-3" name="select-an-address" type="radio" value="11 Washington Street, Worcester, WR1 1NL">
+                    <label class="govuk-label govuk-radios__label" for="select-an-address-3">
+                        101 Test Street, Test City, WR1 1NL
+                    </label>
+                </div>
+                <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="select-an-address-4" name="select-an-address" type="radio" value="101 Washington Street, Worcester, WR1 1NL">
+                    <label class="govuk-label govuk-radios__label" for="select-an-address-4">
+                        110 Test Street, Test City, WR1 1NL
+                    </label>
+                </div>
+              
+              
+            </div>
+        </fieldset>
+        </div>
+
+
+       
+
+    
+
+      <a href="personal-find-address-confirm" aria-describedby="search-referral">
+        <button class="govuk-button" data-module="govuk-button">
+        Use this address
+        </button>
+      </a>
+
+    <p> <a href="personal-change-address" aria-describedby="search-referral">
+       
+         Enter address manually
+        
+      </a></p>
+
+    </div>
+  </div>
+
+{% endblock %}
