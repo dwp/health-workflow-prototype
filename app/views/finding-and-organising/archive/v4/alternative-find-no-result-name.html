@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Referral list
+{% endblock %}
+
+{% block beforeContent %}
+<a href="alternative-find" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <span class="govuk-caption-l govuk-!-margin-bottom-2">Find a claimant</span>
+      <h1 class="govuk-heading-l">
+      'Jane Doe' not found
+      </h1>
+
+      <!-- <table class="govuk-table">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Claimant name</th>
+            <th scope="col" class="govuk-table__header">NINO</th>
+            <th scope="col" class="govuk-table__header">Benefit</th>
+            <th scope="col" class="govuk-table__header">Referral date</th>
+            <th scope="col" class="govuk-table__header">SRTI</th>
+            <th scope="col" class="govuk-table__header">Status</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+
+        </tbody>
+      </table> -->
+      <p> There are no claimants with this National Insurance number that have an existing referral. </p>
+
+      <p> Check it is correct and try again.</p>
+
+
+    </div>
+  </div>
+
+{% endblock %}

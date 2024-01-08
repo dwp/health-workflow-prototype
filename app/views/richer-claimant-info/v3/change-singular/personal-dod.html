@@ -1,0 +1,79 @@
+{% extends "layout-extended.html" %}
+
+{% block pageTitle %}
+  Referral list
+{% endblock %}
+
+{% block beforeContent %}
+
+<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+    
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" role="group" aria-describedby="claimant-names">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h2 class="govuk-fieldset__heading">
+       Date of death
+            </h2>
+          </legend>
+       
+
+          
+
+          <div id="dob-hint" class="govuk-hint">
+            For example, 27 3 2007
+          </div>
+          <div class="govuk-date-input" id="dob">
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="dod-day">
+                  Day
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dod-day" name="dob-day" type="text" inputmode="numeric" value="22">
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="dod-month">
+                  Month
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dod-month" name="dob-month" type="text" inputmode="numeric" value="2">
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="dod-year">
+                  Year
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="dod-year" name="dod-year" type="text" inputmode="numeric" value="2022">
+              </div>
+            </div>
+          </div>
+
+        </fieldset>
+      </div>
+
+
+
+
+     
+
+
+      <a href="../claimant-detail-assigned2-updated" aria-describedby="search-referral">   <button class="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
+      </a>
+
+    </div>
+  </div>
+
+{% endblock %}

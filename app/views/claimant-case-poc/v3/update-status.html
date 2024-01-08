@@ -1,0 +1,122 @@
+{% extends "layout-key-details-assessment.html" %}
+
+{% block pageTitle %}
+  Update status
+{% endblock %}
+
+
+{% block beforeContent %}
+<a href="claimant-detail" class="govuk-back-link">Back</a>
+{% endblock %}
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <form class="form" action="confirmation" method="post">
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="sign-in-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              Which status do you want to move the referral to?
+            </h1>
+          </legend>
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="sign-in-2" name="sign-in" type="radio" value="govuk-verify" aria-describedby="sign-in-2-item-hint">
+              <label class="govuk-label govuk-radios__label" for="sign-in-2">
+                <strong>Unassigned</strong>
+              </label>
+              <div id="sign-in-2-item-hint" class="govuk-hint govuk-radios__hint">
+                Referral needs a case manager assigned before it can be progressed.
+              </div>
+            </div>
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="sign-in-2" name="sign-in" type="radio" value="govuk-verify" aria-describedby="sign-in-2-item-hint">
+              <label class="govuk-label govuk-radios__label" for="sign-in-2">
+                <strong>Gathering information</strong>
+              </label>
+              <div id="sign-in-2-item-hint" class="govuk-hint govuk-radios__hint">
+                Referral needs supporting information from the claimant.
+              </div>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="sign-in-2" name="sign-in" type="radio" value="govuk-verify" aria-describedby="sign-in-2-item-hint">
+              <label class="govuk-label govuk-radios__label" for="sign-in-2">
+                <strong>In review</strong>
+              </label>
+              <div id="sign-in-2-item-hint" class="govuk-hint govuk-radios__hint">
+                Referral is being reviewed by a case manager.
+              </div>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="sign-in-2" name="sign-in" type="radio" value="govuk-verify" aria-describedby="sign-in-2-item-hint">
+              <label class="govuk-label govuk-radios__label" for="sign-in-2">
+                <strong>Awaiting evidence</strong>
+              </label>
+              <div id="sign-in-2-item-hint" class="govuk-hint govuk-radios__hint">
+                Further information is needed from a professional who knows about the claimant's condition.
+              </div>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="sign-in-2" name="sign-in" type="radio" value="govuk-verify" aria-describedby="sign-in-2-item-hint">
+              <label class="govuk-label govuk-radios__label" for="sign-in-2">
+                <strong>Paper based review</strong>
+              </label>
+              <div id="sign-in-2-item-hint" class="govuk-hint govuk-radios__hint">
+                A paper based review is needed before a decision can be made.
+              </div>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="sign-in-2" name="sign-in" type="radio" value="govuk-verify" aria-describedby="sign-in-2-item-hint">
+              <label class="govuk-label govuk-radios__label" for="sign-in-2">
+                <strong>Assessment booked</strong>
+              </label>
+              <div id="sign-in-2-item-hint" class="govuk-hint govuk-radios__hint">
+                An assessment with the claimant has been booked.
+              </div>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="sign-in-2" name="sign-in" type="radio" value="govuk-verify" aria-describedby="sign-in-2-item-hint">
+              <label class="govuk-label govuk-radios__label" for="sign-in-2">
+                <strong>Awaiting decision</strong>
+              </label>
+              <div id="sign-in-2-item-hint" class="govuk-hint govuk-radios__hint">
+                Enough evidence is available for a decision to be made.
+              </div>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="sign-in-2" name="sign-in" type="radio" value="govuk-verify" aria-describedby="sign-in-2-item-hint">
+              <label class="govuk-label govuk-radios__label" for="sign-in-2">
+                <strong>Done</strong>
+              </label>
+              <div id="sign-in-2-item-hint" class="govuk-hint govuk-radios__hint">
+                A decision has been made and communicated to the claimant.
+              </div>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="sign-in-2" name="sign-in" type="radio" value="govuk-verify" aria-describedby="sign-in-2-item-hint">
+              <label class="govuk-label govuk-radios__label" for="sign-in-2">
+                <strong>Withdrawn</strong>
+              </label>
+              <div id="sign-in-2-item-hint" class="govuk-hint govuk-radios__hint">
+                Claimant has requested that the referral be withdrawn.
+              </div>
+            </div>
+          </div>
+
+        </fieldset>
+      </div>
+
+      <button class="govuk-button" data-module="govuk-button">Save and continue</button>
+
+    </form>
+
+  </div>
+</div>
+
+{% endblock %}

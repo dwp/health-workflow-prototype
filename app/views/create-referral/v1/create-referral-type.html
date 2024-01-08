@@ -1,0 +1,95 @@
+{% extends "layout-extended.html" %}
+
+{% block pageTitle %}
+  Referral list
+{% endblock %}
+
+{% block beforeContent %}
+<a href="create-referral-address" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <span class="govuk-caption-l govuk-!-margin-bottom-2">Build a case question 1 of X</span>
+      <h1 class="govuk-heading-l">
+        Case details
+      </h1>
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading">
+              What type of case is this?
+            </h2>
+          </legend>
+          <div class="govuk-radios" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="new-referral" name="new-referral" type="radio" value="new">
+              <label class="govuk-label govuk-radios__label" for="new-referral">
+                New
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="re-referral" name="re-referral" type="radio" value="re-referral">
+              <label class="govuk-label govuk-radios__label" for="re-referral">
+                Re-referral
+              </label>
+            </div>
+          </div>
+      
+        </fieldset>
+      </div>
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" role="group" aria-describedby="referral-date-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading">
+              What was the referral date?
+            </h2>
+          </legend>
+          <div id="referral-date-hint" class="govuk-hint">
+            For example, 20 11 2022
+          </div>
+          <div class="govuk-date-input" id="referral-date">
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="referral-date-day">
+                  Day
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="referral-date-day" name="referral-date-day" type="text" inputmode="numeric">
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="referral-date-month">
+                  Month
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="referral-date-month" name="referral-date-month" type="text" inputmode="numeric">
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="referral-date-year">
+                  Year
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="referral-date-year" name="referral-date-year" type="text" inputmode="numeric">
+              </div>
+            </div>
+          </div>
+      
+        </fieldset>
+      </div>
+
+
+      <a href="create-referral-important-information" aria-describedby="search-referral">
+        <button class="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
+      </a>
+
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,115 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Referral list
+{% endblock %}
+
+{% block beforeContent %}
+<a href="start" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <h1 class="govuk-heading-l">
+        Report ready referrals
+      </h1>
+
+      <table class="govuk-table">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Claimant name</th>
+            <th scope="col" class="govuk-table__header">NINO</th>
+            <th scope="col" class="govuk-table__header">Benefit</th>
+            <th scope="col" class="govuk-table__header">Referral date</th>
+            <th scope="col" class="govuk-table__header">SRTI</th>
+            <th scope="col" class="govuk-table__header">Assessment centre</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-report" aria-describedby="claimant-detail-report">John Doe</a></td>
+            <td class="govuk-table__cell">RN 00 01 23 A</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">1 Feb 2021</td>
+            <td class="govuk-table__cell">Yes</td>
+            <td class="govuk-table__cell">Tresco House</td>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-report" aria-describedby="claimant-detail-report">Janette Rafe</a></td>
+            <td class="govuk-table__cell">RN 00 11 23 A</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">16 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Tresco House</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-report" aria-describedby="claimant-detail">Noelle Carmel</a></td>
+            <td class="govuk-table__cell">RN 00 04 26 D</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Tresco House</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-report" aria-describedby="claimant-detail-report">Sylevette Colwyn</a></td>
+            <td class="govuk-table__cell">RN 00 01 11 N</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Tresco House</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-report" aria-describedby="claimant-detail-report">Ethan Thornton</td>
+            <td class="govuk-table__cell">RN 00 01 61 D</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Tresco House</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-report" aria-describedby="claimant-detail-report">Paige Gael</a></td>
+            <td class="govuk-table__cell">RN 00 07 71 T</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Tresco House</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-report" aria-describedby="claimant-detail-report">Susanna Shaye</a></td>
+            <td class="govuk-table__cell">RN 00 11 23 B</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">16 Feb 2021</td>
+            <td class="govuk-table__cell">Yes</td>
+            <td class="govuk-table__cell">Handsworth</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-report" aria-describedby="claimant-detail-report">Heather Sand</a></td>
+            <td class="govuk-table__cell">RN 00 01 11 A</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">16 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Handsworth</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-report" aria-describedby="claimant-detail-report">Heather Sand</a></td>
+            <td class="govuk-table__cell">RN 00 11 22 C</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Handsworth</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-report" aria-describedby="claimant-detail-report">Fran Simone</a></td>
+            <td class="govuk-table__cell">RN 00 10 00 E</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Handsworth</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+{% endblock %}

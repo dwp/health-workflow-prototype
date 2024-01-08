@@ -1,0 +1,226 @@
+{% extends "layout-extended.html" %}
+
+{% block pageTitle %}
+  Referral list
+{% endblock %}
+
+{% block beforeContent %}
+
+<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">
+        Contact preferences
+      </h1>
+
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading">
+              Reasonable adjustments
+            </h2>
+          </legend>
+          <div id="adjustment-hint" class="govuk-hint">
+            Select all that apply.
+          </div>
+          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="adjustment" name="adjustment" type="checkbox" value="bsl" >
+              <label class="govuk-label govuk-checkboxes__label" for="adjustment">
+                British Sign Language interpreter
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="adjustment" name="adjustment" type="checkbox" value="car" >
+              <label class="govuk-label govuk-checkboxes__label" for="adjustment">
+                Car parking facilities
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="adjustment" name="adjustment" type="checkbox" value="location">
+              <label class="govuk-label govuk-checkboxes__label" for="adjustment">
+                Changing location of interview
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="adjustment" name="adjustment" type="checkbox" value="home" >
+              <label class="govuk-label govuk-checkboxes__label" for="adjustment">
+                Home visits (in exceptional circumstances)
+              </label>
+            </div>
+         
+
+            
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="adjustment-2" name="adjustment" type="checkbox" value="hearing loop" checked>
+              <label class="govuk-label govuk-checkboxes__label" for="adjustment-2">
+                Hearing or Induction loop systems
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="adjustment-3" name="adjustment" type="checkbox" value="private">
+              <label class="govuk-label govuk-checkboxes__label" for="adjustment-3">
+                Private interview rooms, a quiet space or changing the time and date of meetings and interviews 
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="adjustment-3" name="adjustment" type="checkbox" value="represent">
+              <label class="govuk-label govuk-checkboxes__label" for="adjustment-3">
+                Representatives and intermediaries </label>
+            </div>
+
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="adjustment-3" name="adjustment" type="checkbox" value="textphone" checked>
+              <label class="govuk-label govuk-checkboxes__label" for="adjustment-3">
+                Textphone and Texbox</label>
+            </div>
+
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="adjustment-3" name="adjustment" type="checkbox" value="toilet">
+              <label class="govuk-label govuk-checkboxes__label" for="adjustment-3">
+                Toilet access for claimants </label>
+            </div>
+
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="adjustment-3" name="adjustment" type="checkbox" value="transport">
+              <label class="govuk-label govuk-checkboxes__label" for="adjustment-3">
+                Transport – Public and private </label>
+            </div>
+
+          </div>
+      
+        </fieldset>
+      </div>
+
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading">
+             Alternative formats
+            </h2>
+          </legend>
+          <div id="format-hint" class="govuk-hint">
+            Select all that apply.
+          </div>
+          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="format" name="format" type="checkbox" value="braille">
+              <label class="govuk-label govuk-checkboxes__label" for="format">
+               Braille
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="format-2" name="format" type="checkbox" value="large print">
+              <label class="govuk-label govuk-checkboxes__label" for="format-2">
+               Large print
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="format-3" name="format" type="checkbox" value="audio">
+              <label class="govuk-label govuk-checkboxes__label" for="format-3">
+                Audio CD, DVD or MP3
+              </label>
+            </div>
+
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="format-3" name="format" type="checkbox" value="audio2">
+              <label class="govuk-label govuk-checkboxes__label" for="format-3">
+                Audio recording of interview
+              </label>
+            </div>
+
+            
+          </div>
+      
+        </fieldset>
+      </div>
+
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading">
+             HCP preference?
+            </h2>
+          </legend>
+          <div class="govuk-radios" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="male" name="hcp-preference" type="radio" value="male">
+              <label class="govuk-label govuk-radios__label" for="male">
+                Male
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="female" name="hcp-preference" type="radio" value="female">
+              <label class="govuk-label govuk-radios__label" for="female">
+               Female
+              </label>
+            </div>
+
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="other" name="hcp-preference" type="radio" value="other">
+              <label class="govuk-label govuk-radios__label" for="other">
+               No preference
+              </label>
+            </div>
+          </div>
+      
+        </fieldset>
+      </div>
+
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading">
+              Preferred contact method
+            </h2>
+          </legend>
+          <div id="format-hint" class="govuk-hint">
+            Select all that apply.
+          </div>
+          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="format" name="format" type="checkbox" value="textphone" checked>
+              <label class="govuk-label govuk-checkboxes__label" for="format">
+              Email
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="format-2" name="format" type="checkbox" value="hearing loop">
+              <label class="govuk-label govuk-checkboxes__label" for="format-2">
+               Telephone
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="format-3" name="format" type="checkbox" value="other">
+              <label class="govuk-label govuk-checkboxes__label" for="format-3">
+               Letters
+              </label>
+            </div>
+          </div>
+      
+        </fieldset>
+      </div>
+
+      
+
+
+      <a href="../claimant-detail-srti-updated" aria-describedby="search-referral">
+        <button class="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
+      </a>
+
+    </div>
+  </div>
+
+{% endblock %}

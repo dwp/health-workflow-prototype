@@ -1,0 +1,151 @@
+{% extends "layout-extended.html" %}
+
+{% block pageTitle %}
+  Referral list
+{% endblock %}
+
+{% block beforeContent %}
+
+<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      
+     <h1 class="govuk-heading-l">
+      Enter the residential address
+      </h1>
+
+  
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="address-line-1">
+        Address line 1
+      </label>
+      <input class="govuk-input" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line1" value="1 Test Street">
+    </div>
+  
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="address-line-2">
+        Address line 2 (optional)
+      </label>
+      <input class="govuk-input" id="address-line-2" name="address-line-2" type="text" autocomplete="address-line2" >
+    </div>
+  
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="address-town">
+        Town or city
+      </label>
+      <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text" autocomplete="address-level2" value="Test city">
+    </div>
+  
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="address-county">
+        County (optional)
+      </label>
+      <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text">
+    </div>
+  
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="address-postcode">
+        Postcode
+      </label>
+      <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text" autocomplete="postal-code" value="XX11 1XX">
+    </div>
+
+
+
+
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" >
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+          <h1 class="govuk-fieldset__heading">
+            Is the correspondence address the same as the residential address?
+          </h1>
+        </legend>
+      
+        <div class="govuk-radios" data-module="govuk-radios">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="corres-address" name="corres-address" type="radio" value="yes" data-aria-controls="conditional-corres-address" checked>
+            <label class="govuk-label govuk-radios__label" for="corres-address">
+           Yes
+            </label>
+          </div>
+          <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact">
+            
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="corres-address2" name="corres-address" type="radio" value="no" data-aria-controls="conditional-contact-2">
+            <label class="govuk-label govuk-radios__label" for="corres-address2">
+              No
+            </label>
+          </div>
+          <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-2">
+            <div class="govuk-form-group">
+             
+            
+            
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="address-line-1">
+        Address line 1
+      </label>
+      <input class="govuk-input" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line1" value="">
+    </div>
+  
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="address-line-2">
+        Address line 2 (optional)
+      </label>
+      <input class="govuk-input" id="address-line-2" name="address-line-2" type="text" autocomplete="address-line2" >
+    </div>
+  
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="address-town">
+        Town or city
+      </label>
+      <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text" autocomplete="address-level2" value="">
+    </div>
+  
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="address-county">
+        County (optional)
+      </label>
+      <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text">
+    </div>
+  
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="address-postcode">
+        Postcode
+      </label>
+      <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text" autocomplete="postal-code" value="">
+    </div>
+  
+  </div>
+    
+          </div>
+         
+    
+          </div>
+       
+    
+      </fieldset>
+    </div> 
+    
+
+
+    
+
+      <a href="../claimant-detail-assigned2-updated" aria-describedby="search-referral">
+        <button class="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
+      </a>
+
+    </div>
+  </div>
+
+{% endblock %}

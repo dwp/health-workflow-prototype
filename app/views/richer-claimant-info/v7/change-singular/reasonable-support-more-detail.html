@@ -1,0 +1,371 @@
+{% extends "layout-extended.html" %}
+
+{% block pageTitle %}
+Contact preferences - Health Assesssment Service
+{% endblock %}
+
+{% block beforeContent %}
+
+<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">
+        Provide more detail for alternative formats
+
+      </h1>
+
+
+      {% if  data['format'].includes('braille')  %} 
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading">
+              Select the type of braille requested by the claimant
+            </h2>
+          </legend>
+          <div class="govuk-radios" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="braille1" name="braille" type="radio" value="type1">
+              <label class="govuk-label govuk-radios__label" for="braille1">
+                Grade 1 Braille (uncontracted)
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="braille2" name="braille" type="radio" value="type2">
+              <label class="govuk-label govuk-radios__label" for="braille2">
+                Grade 2 Braille (contracted)
+              </label>
+            </div>
+
+
+          </div>
+
+        </fieldset>
+      </div>
+      {% endif %}  
+
+
+      {% if  data['format'].includes('sign')  %} 
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading">
+              Select an option to support sign language with the claimant
+            </h2>
+          </legend>
+          <div class="govuk-radios" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="signlang-dvd1" name="signlang" type="radio" value="1">
+              <label class="govuk-label govuk-radios__label" for="signlang-dvd1">
+                British sign language DVD
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="signlang-dvd2" name="signlang" type="radio" value="2">
+              <label class="govuk-label govuk-radios__label" for="signlang-dvd2">
+                British sign language MPEG
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="signlang-dvd3" name="signlang" type="radio" value="3">
+              <label class="govuk-label govuk-radios__label" for="signlang-dvd3">
+                Irish sign language DVD
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="signlang-dvd4" name="signlang" type="radio" value="4">
+              <label class="govuk-label govuk-radios__label" for="signlang-dvd4">
+                Irish sign language MPEG
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+      {% endif %}  
+
+      {% if  data['format'].includes('audio')  %} 
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading">
+              Select a format for audio support
+            </h2>
+          </legend>
+          <div class="govuk-radios" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="audio1" name="audio" type="radio" value="1">
+              <label class="govuk-label govuk-radios__label" for="audio1">
+                 Cassette
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="audio2" name="audio" type="radio" value="2">
+              <label class="govuk-label govuk-radios__label" for="audio2">
+                CD
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="audio3" name="audio" type="radio" value="3">
+              <label class="govuk-label govuk-radios__label" for="audio3">
+              DVD
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="audio4" name="audio" type="radio" value="4">
+              <label class="govuk-label govuk-radios__label" for="audio4">
+                MP3
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+      {% endif %}  
+
+      {% if  data['format'].includes('coloured-paper')  %} 
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading">
+              Enter the paper colour requested by the claimant
+            </h2>
+          </legend>
+
+
+                <!-- <label class="govuk-label" for="contact-by-text">
+                Specify colour paper
+                </label> -->
+
+                <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
+
+            </div>
+
+        </fieldset>
+        {% endif %}  
+
+
+       
+
+          {% if  data['format'].includes('large-print')  %} 
+  <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading">
+              Select a font size for large print
+            </h2>
+          </legend>
+          <div class="govuk-radios" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="print1" name="print" type="radio" value="1">
+              <label class="govuk-label govuk-radios__label" for="print1">
+                Large print - 16 point font
+              </label>
+            </div>
+
+
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="print2" name="print" type="radio" value="text" data-aria-controls="conditional-print2">
+              <label class="govuk-label govuk-radios__label" for="print2">
+                Large print with custom font
+              </label>
+            </div>
+            <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-print2">
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="contact-by-text">
+                Specify which font
+                </label>
+
+                <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
+             </div>
+            </div>
+
+          </div>
+        </fieldset>
+      </div>
+      {% endif %}  
+
+
+      {% if  data['format'].includes('textphone')  %} 
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading">
+              Enter the claimant's textphone number
+            </h2>
+          </legend>
+
+          <div id="phone-hint" class="govuk-hint">
+            For example, ‘07799997799’.
+          </div>
+
+                <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
+
+            </div>
+
+        </fieldset>
+
+        {% endif %}  
+
+
+
+<!--
+  <div class="govuk-form-group">
+    <fieldset class="govuk-fieldset">
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+        <h2 class="govuk-fieldset__heading">
+      Use the same email address from personal details?  Email
+        </h2>
+      </legend> -->
+
+    <!--   <div class="govuk-inset-text">
+       Personal details email adddress: <br> test.email@example.com  </div> -->
+
+
+    <!--   <div class="govuk-radios" data-module="govuk-radios">
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="email1" name="email" type="radio" value="1">
+          <label class="govuk-label govuk-radios__label" for="email1">
+          Use test.email@example.com
+          </label>
+        </div>
+
+
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="email2" name="email" type="radio" value="text" data-aria-controls="conditional-email2">
+          <label class="govuk-label govuk-radios__label" for="email2">
+           Enter a different email address to use for alternative formats
+          </label>
+        </div>
+        <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-email2">
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="contact-by-text">
+           Enter email address
+            </label>
+
+            <input class="govuk-input" id="width-20" name="width-20" type="text">
+         </div>
+        </div>
+
+      </div>
+    </fieldset>
+  </div>
+
+
+
+
+  <div class="govuk-form-group">
+    <fieldset class="govuk-fieldset">
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+        <h2 class="govuk-fieldset__heading"> -->
+        <!--   Use the same mobile phone number from personal details for SMS text?  SMS text
+        </h2>
+      </legend>
+
+  <div class="govuk-inset-text">
+       Personal details mobile phone number: <br> test.email@example.com  </div>
+
+
+      <div class="govuk-radios" data-module="govuk-radios">
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="sms1" name="sms" type="radio" value="1">
+          <label class="govuk-label govuk-radios__label" for="sms1">
+          Use 07000 000000
+          </label>
+        </div>
+
+
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="sms2" name="sms" type="radio" value="text" data-aria-controls="conditional-sms2">
+          <label class="govuk-label govuk-radios__label" for="sms2">
+            Enter a different number to use for alternative formats
+          </label>
+        </div>
+        <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-sms2">
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="contact-by-text">
+           Enter mobile number
+            </label>
+
+            <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
+         </div>
+        </div></div></fieldset></div>
+
+
+
+
+
+  <div class="govuk-form-group">
+    <fieldset class="govuk-fieldset">
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+        <h2 class="govuk-fieldset__heading">
+     Use the same mobile phone number from personal details for SMS text?  Telephone
+        </h2>
+      </legend>
+
+     <div class="govuk-inset-text">
+       Personal details mobile phone number: <br> test.email@example.com  </div>
+
+
+
+
+      <div class="govuk-radios" data-module="govuk-radios">
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="tele" name="tele" type="radio" value="t">
+          <label class="govuk-label govuk-radios__label" for="tele">
+          Use  0121 423478
+          </label>
+        </div>
+
+
+      <div class="govuk-radios" data-module="govuk-radios">
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="tele1" name="tele" type="radio" value="1">
+          <label class="govuk-label govuk-radios__label" for="tele1">
+          Use 07000 000000
+          </label>
+        </div>
+
+
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="tele2" name="tele" type="radio" value="text" data-aria-controls="conditional-tele2">
+          <label class="govuk-label govuk-radios__label" for="tele2">
+            Enter a different number to use for alternative formats
+          </label>
+        </div>
+        <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-tele2">
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="contact-by-text">
+           Enter phone number
+            </label>
+
+            <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
+         </div>
+        </div>
+
+      </div>
+    </fieldset>
+  </div> -->
+
+
+
+
+
+
+      <a href="../pip-claimant-detail-updated" aria-describedby="search-referral">
+        <button class="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
+      </a>
+
+    </div>
+  </div>
+
+
+
+
+{% endblock %}

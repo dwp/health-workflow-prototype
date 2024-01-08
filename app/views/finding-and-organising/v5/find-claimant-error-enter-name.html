@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Referral list
+{% endblock %}
+
+{% block beforeContent %}
+<a href="index" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+
+    <div class="govuk-form-group govuk-form-group--error">
+      <label class="govuk-label govuk-label--m" for="search-name">
+        <span class="govuk-caption-l govuk-!-margin-bottom-2">Find a claimant</span>
+        <h1 class="govuk-heading-l">
+          Enter the claimant's name or National Insurance number
+        </h1>
+        <div id="email-hint" class="govuk-hint">
+          For example, 'Jane Doe' or ‘QQ 12 34 56 C’
+        </div>
+
+    <span id="event-name-error" class="govuk-error-message">
+   <span class="govuk-visually-hidden">Error:</span> Enter a claimant's name or National Insurance number
+ </span>
+  <input class="govuk-input govuk-input--error" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint event-name-error">
+</div>
+    <a href="claimant-detail" aria-describedby="search-referral">
+      <button class="govuk-button" data-module="govuk-button">
+        Search
+      </button>
+    </a>
+
+    <p>
+      <a href="alternative-find-name" aria-describedby="search-referral">
+        Alternative result name
+      </a>
+    </p>
+    <!-- <p>
+      <a href="alternative-find" aria-describedby="search-referral">
+        Alternative result NINO
+      </a>
+    </p>
+    <p>
+      <a href="find-claimant-validation" aria-describedby="search-referral">
+        Validation error for search
+      </a>
+    </p> -->
+
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,140 @@
+{% extends "layout-extended.html" %}
+
+{% block pageTitle %}
+  Referral list
+{% endblock %}
+
+{% block beforeContent %}
+
+<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      
+     <h1 class="govuk-heading-l">
+      Other specialist or medical contacts
+      </h1>
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" role="group" aria-describedby="claimant-names">
+        
+    
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="preferred-name">
+              Name
+            </label>
+            <input class="govuk-input" id="preferred-name" name="preferred-name" type="text" spellcheck="false" autocomplete="preferred-name" value="Mr B Test">
+          </div>
+
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="preferred-name">
+           Profession
+            </label>
+            <input class="govuk-input" id="preferred-name" name="preferred-name" type="text" spellcheck="false" autocomplete="preferred-name" value="Consultant Rheumatologist">
+          </div>
+
+         
+          </fieldset>
+       
+        </div>
+
+
+        <fieldset class="govuk-fieldset" role="group" aria-describedby="dob-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading">
+              Address
+            </h2>
+          </legend>
+      </legend>
+    
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="address-line-1">
+          Address line 1
+        </label>
+        <input class="govuk-input" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line1" value="1 Test Hospital">
+      </div>
+    
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="address-line-2">
+          Address line 2 (optional)
+        </label>
+        <input class="govuk-input" id="address-line-2" name="address-line-2" type="text" autocomplete="address-line2">
+      </div>
+    
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="address-town">
+          Town or city
+        </label>
+        <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text" autocomplete="address-level2" value="Test City">
+      </div>
+    
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="address-county">
+          County (optional)
+        </label>
+        <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text">
+      </div>
+    
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="address-postcode">
+          Postcode
+        </label>
+        <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text" autocomplete="postal-code" value="XX11 1XX">
+      </div>
+
+      
+
+    
+
+
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" role="group" aria-describedby="contact-details">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading">
+              Contact details
+            </h2>
+          </legend>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="home-number">
+              Phone number
+            </label>
+            <input class="govuk-input govuk-input--width-20" id="home-number" name="home-number" type="text" spellcheck="false" autocomplete="home-number"  value="09000 000000">
+          </div>
+
+        </fieldset>
+      </div>
+
+
+      <div class="govuk-form-group">
+      
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="home-number">
+              Email address
+            </label>
+            <input class="govuk-input" id="home-number" name="home-number" type="text" spellcheck="false" autocomplete="home-number" value="test.surgery@example.com">
+          </div>
+
+        </fieldset>
+     
+
+
+
+        <a href="../claimant-detail-srti-updated" aria-describedby="search-referral">   <button class="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
+      </a>
+
+    </div>
+  </div>
+
+{% endblock %}

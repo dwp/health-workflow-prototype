@@ -1,0 +1,67 @@
+{% extends "layout-extended.html" %}
+
+{% block pageTitle %}
+  Health Assessment Service
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h1 class="govuk-heading-l">
+      Main menu
+    </h1>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <div class="dwp-card dwp-card--clickable">
+        <div class="dwp-card__content">
+          <h2 class="dwp-card__heading dwp-heading-m">
+            <a class="dwp-card__link" href="start">View health referrals by status</a>
+          </h2>
+          <p class="dwp-card__description">View the progress of referrals by status</p>
+        </div>
+      </div>
+      <div class="dwp-card dwp-card--clickable">
+        <div class="dwp-card__content">
+          <h2 class="dwp-card__heading dwp-heading-m">
+            <a class="dwp-card__link" href="find-claimant">Find a claimant</a>
+          </h2>
+          <p class="dwp-card__description">Search for a claimant to view their referral</p>
+        </div>
+      </div>
+      <div class="dwp-card dwp-card--clickable">
+        <div class="dwp-card__content">
+          <h2 class="dwp-card__heading dwp-heading-m">
+            <a class="dwp-card__link" href="#">Create a referral</a>
+          </h2>
+          <p class="dwp-card__description">Add a paper referral to the active referrals list</p>
+        </div>
+      </div>
+      <div class="dwp-card dwp-card--clickable">
+        <div class="dwp-card__content">
+          <h2 class="dwp-card__heading dwp-heading-m">
+            <a class="dwp-card__link" href="https://hummingbird-appointment-proto.herokuapp.com/2_location">Manage assessment bookings</a>
+          </h2>
+          <p class="dwp-card__description">View all booked assessments</p>
+        </div>
+      </div>
+      <div class="dwp-card dwp-card--clickable">
+        <div class="dwp-card__content">
+          <h2 class="dwp-card__heading dwp-heading-m">
+            <a class="dwp-card__link" href="#">View incomplete referrals</a>
+          </h2>
+          <p class="dwp-card__description">View a list of incomplete referrals</p>
+        </div>
+      </div>
+      <div class="dwp-card dwp-card--clickable">
+        <div class="dwp-card__content">
+          <h2 class="dwp-card__heading dwp-heading-m">
+            <a class="dwp-card__link" href="#">Changes to PIP referrals</a>
+          </h2>
+          <p class="dwp-card__description">Confirm new referrals and view alerts for supporting evidence, documents and changes of circumstances added to existing referrals</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+{% endblock %}

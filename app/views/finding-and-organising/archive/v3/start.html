@@ -1,0 +1,142 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Referral list
+{% endblock %}
+
+{% block beforeContent %}
+<a href="index" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <form action="/finding-and-organising/archive/v3/status-filter2" method="post" class="form">
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="referral-progress">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <span class="govuk-caption-l govuk-!-margin-bottom-2">Referrals in progress</span>
+            <h1 class="govuk-fieldset__heading">
+              Filter referrals
+            </h1>
+          </legend>
+          <h2 class="govuk-heading-m">
+            grouped by a list
+          </h2>
+          <div class="govuk-radios--small">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="status" name="status2" type="radio" value="list-1">
+              <label class="govuk-label govuk-radios__label" for="status">
+                list 1 (9)
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="status-2" name="status2" type="radio" value="list-2">
+              <label class="govuk-label govuk-radios__label" for="status-2">
+                list 2 (11)
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="status-3" name="status2" type="radio" value="list-3">
+              <label class="govuk-label govuk-radios__label" for="status-3">
+                list 3 (8)
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="status-4" name="status2" type="radio" value="list-4">
+              <label class="govuk-label govuk-radios__label" for="status-4">
+                list 4 (15)
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="status-5" name="status2" type="radio" value="list-5">
+              <label class="govuk-label govuk-radios__label" for="status-5">
+                list 5 (6)
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="status-6" name="status2" type="radio" value="list-6">
+              <label class="govuk-label govuk-radios__label" for="status-6">
+                list 6 (11)
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="status-hint">
+          <div id="hint" class="govuk-hint">
+            or
+          </div>
+          <h2 class="govuk-heading-m">grouped by a particular status</h2>
+          <div class="govuk-radios--small">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="status-7" name="status2" type="radio" value="unassigned">
+              <label class="govuk-label govuk-radios__label" for="status-7">
+                Unassigned (12)
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="status-8" name="status2" type="radio" value="in-review">
+              <label class="govuk-label govuk-radios__label" for="status-8">
+                In review (32)
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="status-9" name="status2" type="radio" value="gathering-information">
+              <label class="govuk-label govuk-radios__label" for="status-9">
+                Gathering information (8)
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="status-10" name="status2" type="radio" value="awaiting-evidence">
+              <label class="govuk-label govuk-radios__label" for="status-10">
+                Awaiting evidence (15)
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="status-11" name="status2" type="radio" value="paper-based-review">
+              <label class="govuk-label govuk-radios__label" for="status-11">
+                Paper based review (6)
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="status-12" name="status2" type="radio" value="assessment-booked">
+              <label class="govuk-label govuk-radios__label" for="status-12">
+                Assessment booked (11)
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="status-13" name="status2" type="radio" value="awaiting-decision">
+              <label class="govuk-label govuk-radios__label" for="status-13">
+                Awaiting decision (3)
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="status-14" name="status2" type="radio" value="done">
+              <label class="govuk-label govuk-radios__label" for="status-14">
+                Done (76)
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="status-15" name="status2" type="radio" value="withdrawn">
+              <label class="govuk-label govuk-radios__label" for="status-15">
+                Withdrawn (13)
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <button class="govuk-button" data-module="govuk-button">Filter</button>
+    </form>
+
+    </div>
+  </div>
+
+
+{% endblock %}

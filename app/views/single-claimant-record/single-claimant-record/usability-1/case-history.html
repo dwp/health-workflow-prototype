@@ -1,0 +1,90 @@
+{% extends "single-claimant-record/layout-key-details-single-claimant-record.html" %}
+
+{% block pageTitle %}
+  Claimant details
+{% endblock %}
+
+
+{% block beforeContent %}
+<a href="index" class="govuk-back-link">Back</a>
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="app-pane__body">
+
+<div class="app-pane__subnav">
+  <nav class="app-subnav" aria-labelledby="app-subnav-heading">
+    <h2 class="govuk-visually-hidden" id="app-subnav-heading">Pages in this section</h2>
+    <ul class="app-subnav__section">
+      <li class="app-subnav__section-item">
+        <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="claimant-overview">Overview</a>
+      </li>
+      <li class="app-subnav__section-item">
+        <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="claimant-details">Claimant details</a>
+      </li>
+      <li class="app-subnav__section-item">
+        <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="claimant-timeline">Timeline</a>
+      </li>
+      <li class="app-subnav__section-item">
+        <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#">Appointments</a>
+      </li>
+      <li class="app-subnav__section-item">
+        <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#">Evidence</a>
+      </li>
+      <li class="app-subnav__section-item app-subnav__section-item--current">
+        <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#">Case history</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<div class="govuk-grid-row overview">
+    <div class="govuk-grid-column-full">
+
+      <!-- <div class="govuk-grid-column-two-thirds"> -->
+
+        <h1 class="govuk-heading-l">Case history</h1>
+
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Benefit</th>
+              <th scope="col" class="govuk-table__header">Date referred</th>
+              <th scope="col" class="govuk-table__header">SRTI</th>
+              <th scope="col" class="govuk-table__header">Status</th>
+              <th scope="col" class="govuk-table__header">Date completed</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="esa-claim-detail" aria-describedby="claim-detail">Employment Support Allowance</a></td>
+              <td class="govuk-table__cell">10 December 2021</td>
+              <td class="govuk-table__cell">No</td>
+              <td class="govuk-table__cell"><strong class="govuk-tag" id="Status 4">Assessment Booked</strong></td>
+              <td class="govuk-table__cell">-</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="uc-claim-detail" aria-describedby="claimant-detail">Universal Credit</a></td>
+              <td class="govuk-table__cell">19 November 2021</td>
+              <td class="govuk-table__cell">No</td>
+              <td class="govuk-table__cell"><strong class="govuk-tag" id="Status 6">Awaiting Questionnaire</strong></td>
+              <td class="govuk-table__cell">-</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail">Universal Credit</a></td>
+              <td class="govuk-table__cell">10 April 2021</td>
+              <td class="govuk-table__cell">No</td>
+              <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" id="Status 6">Archived</strong></td>
+              <td class="govuk-table__cell">19 September 2021</td>
+            </tr>
+          </tbody>
+        </table>
+      <!-- </div> -->
+
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,678 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Referral list
+{% endblock %}
+
+{% block beforeContent %}
+<a href="start" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <h1 class="govuk-heading-l">
+        Akhtar Ahmed's caseload
+      </h1>
+
+      <table class="govuk-table">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Claimant name</th>
+            <th scope="col" class="govuk-table__header">NI number</th>
+            <th scope="col" class="govuk-table__header">Benefit</th>
+            <th scope="col" class="govuk-table__header">SRTI</th>
+            <th scope="col" class="govuk-table__header">Status</th>
+            <th scope="col" class="govuk-table__header">Next action due in</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-report" aria-describedby="claimant-detail-report">Lynsey Hulme</a></td>
+            <td class="govuk-table__cell">RN 00 44 98 F</td>
+            <td class="govuk-table__cell">WCA</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">BAU decision needed</td>
+            <td class="govuk-table__cell">
+              <strong class="govuk-tag govuk-tag--red" id="overdue">15 days overdue</strong>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-report" aria-describedby="claimant-detail-report">Luci Donovan</a></td>
+            <td class="govuk-table__cell">RN 00 07 55 K</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Health practitioner audit</td>
+            <td class="govuk-table__cell">
+              <strong class="govuk-tag govuk-tag--red" id="overdue">12 days overdue</strong>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-report" aria-describedby="claimant-detail-report">Santino Dyer</a></td>
+            <td class="govuk-table__cell">RN 00 51 46 D</td>
+            <td class="govuk-table__cell">WCA</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">BAU decision needed</td>
+            <td class="govuk-table__cell">
+              <strong class="govuk-tag govuk-tag--red" id="overdue">7 days overdue</strong>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-report" aria-describedby="claimant-detail-report">Pablo Holden</a></td>
+            <td class="govuk-table__cell">RN 00 09 96 U</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Failed to attend</td>
+            <td class="govuk-table__cell">
+              <strong class="govuk-tag govuk-tag--red" id="overdue">6 days overdue</strong>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-review">Janet Worthington</a></td>
+            <td class="govuk-table__cell">RN 00 21 56 C</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Evidence not received</td>
+            <td class="govuk-table__cell">
+              <strong class="govuk-tag govuk-tag--red" id="overdue">5 days overdue</strong>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-report" aria-describedby="claimant-detail-report">Mylo Kavanagh</a></td>
+            <td class="govuk-table__cell">RN 00 03 56 B</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Report ready</td>
+            <td class="govuk-table__cell">
+              <strong class="govuk-tag govuk-tag--red" id="overdue">3 days overdue</strong>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-start-assessment">Yara Roberts</a></td>
+            <td class="govuk-table__cell">RN 00 08 86 B</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Medical evidence not received</td>
+            <td class="govuk-table__cell">
+              <strong class="govuk-tag govuk-tag--red" id="overdue">3 days overdue</strong>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail">Jan Iles</a></td>
+            <td class="govuk-table__cell">RN 03 67 46 G</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Questionnaire reminder issued</td>
+            <td class="govuk-table__cell">
+              <strong class="govuk-tag govuk-tag--red" id="overdue">3 days overdue</strong>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-srti" aria-describedby="claimant-detail-srti">Kaiser Nicholson</a></td>
+            <td class="govuk-table__cell">RN 22 10 34 F</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">Yes</td>
+            <td class="govuk-table__cell">Assigned</td>
+            <td class="govuk-table__cell">
+              <strong class="govuk-tag govuk-tag--red" id="overdue">2 days overdue</strong>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail">Jaidan Forster</a></td>
+            <td class="govuk-table__cell">RN 00 02 66 E</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Awaiting questionnaire</td>
+            <td class="govuk-table__cell">
+              <strong class="govuk-tag govuk-tag--red" id="overdue">2 days overdue</strong>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail">Jane Doe</a></td>
+            <td class="govuk-table__cell">RN 03 44 26 C</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Questionnaire not received</td>
+            <td class="govuk-table__cell">
+              <strong class="govuk-tag govuk-tag--red" id="overdue">2 days overdue</strong>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-review">Selena Sykes</a></td>
+            <td class="govuk-table__cell">RN 00 01 73 B</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Evidence received</td>
+            <td class="govuk-table__cell">
+              <strong class="govuk-tag govuk-tag--red" id="overdue">2 days overdue</strong>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail">Kajal Boone</a></td>
+            <td class="govuk-table__cell">RN 00 09 26 L</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Request medical evidence</td>
+            <td class="govuk-table__cell">
+              <strong class="govuk-tag govuk-tag--red" id="overdue">2 days overdue</strong>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-report" aria-describedby="claimant-detail-report">Lilly-Mae Merritt</a></td>
+            <td class="govuk-table__cell">RN 00 02 22 W</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Failed to attend</td>
+            <td class="govuk-table__cell">
+              <strong class="govuk-tag govuk-tag--red" id="overdue">2 days overdue</strong>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail">Marlene Gunn</a></td>
+            <td class="govuk-table__cell">RN 00 03 33 J</td>
+            <td class="govuk-table__cell">ESA</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Questionnaire reminder issued</td>
+            <td class="govuk-table__cell">
+              <strong class="govuk-tag govuk-tag--red" id="overdue">1 day overdue</strong>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail">Fran Simone</a></td>
+            <td class="govuk-table__cell">RN 00 10 00 E</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Questionnaire not received (MH)</td>
+            <td class="govuk-table__cell">
+              <strong class="govuk-tag govuk-tag--red" id="overdue">1 day overdue</strong>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail">Danya Cecylia</a></td>
+            <td class="govuk-table__cell">RN 00 01 33 A</td>
+            <td class="govuk-table__cell">ESA</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Questionnaire not received</td>
+            <td class="govuk-table__cell">
+              <strong class="govuk-tag govuk-tag--red" id="overdue">1 day overdue</strong>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail">Gabriel Barker</a></td>
+            <td class="govuk-table__cell">RN 00 22 73 B</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Evidence not received</td>
+            <td class="govuk-table__cell">
+              <strong class="govuk-tag govuk-tag--red" id="overdue">1 day overdue</strong>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail">Una Pierce</a></td>
+            <td class="govuk-table__cell">RN 00 34 73 D</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">File work</td>
+            <td class="govuk-table__cell">
+              <strong class="govuk-tag govuk-tag--red" id="overdue">1 day overdue</strong>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail">Zayn James</a></td>
+            <td class="govuk-table__cell">RN 00 09 43 D</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Request medical evidence</td>
+            <td class="govuk-table__cell">
+              <strong class="govuk-tag govuk-tag--red" id="overdue">1 day overdue</strong>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-start-assessment">Saffa Good</a></td>
+            <td class="govuk-table__cell">RN 00 11 26 N</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Book assessment</td>
+            <td class="govuk-table__cell">
+              <strong class="govuk-tag govuk-tag--red" id="overdue">1 day overdue</strong>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-report" aria-describedby="claimant-detail-report">Bethan Mccray</a></td>
+            <td class="govuk-table__cell">RN 00 03 23 U</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Failed to attend</td>
+            <td class="govuk-table__cell">
+              <strong class="govuk-tag govuk-tag--red" id="overdue">1 day overdue</strong>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-report" aria-describedby="claimant-detail-report">Krishan Gillespie</a></td>
+            <td class="govuk-table__cell">RN 00 21 94 L</td>
+            <td class="govuk-table__cell">WCA</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">BAU decision needed</td>
+            <td class="govuk-table__cell">
+              <strong class="govuk-tag govuk-tag--red" id="overdue">1 day overdue</strong>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-report">Merryn Hyde</a></td>
+            <td class="govuk-table__cell">RN 00 01 26 J</td>
+            <td class="govuk-table__cell">WCA</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Asessment completed</td>
+            <td class="govuk-table__cell">
+              <strong class="govuk-tag govuk-tag--red" id="overdue">1 day overdue</strong>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-report">Ronny Denton</a></td>
+            <td class="govuk-table__cell">RN 48 01 16 B</td>
+            <td class="govuk-table__cell">WCA</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Asessment completed</td>
+            <td class="govuk-table__cell">
+              <strong class="govuk-tag govuk-tag--red" id="overdue">1 day overdue</strong>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-srti" aria-describedby="claimant-detail-srti">Gilbert Mills</a></td>
+            <td class="govuk-table__cell">RN 00 02 22 K</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">Yes</td>
+            <td class="govuk-table__cell">Assigned</td>
+            <td class="govuk-table__cell">2 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-assigned" aria-describedby="claimant-detail-assigned">Fran Cliffe</a></td>
+            <td class="govuk-table__cell">RN 22 10 00 E</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Assigned</td>
+            <td class="govuk-table__cell">2 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-assigned" aria-describedby="claimant-detail-assigned">Xia Jeana</a></td>
+            <td class="govuk-table__cell">RN 00 02 99 F</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Assigned</td>
+            <td class="govuk-table__cell">2 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail">Cherise Kaufman</a></td>
+            <td class="govuk-table__cell">RN 00 10 10 R</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Awaiting questionnaire</td>
+            <td class="govuk-table__cell">21 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-review">Rory Whelan</a></td>
+            <td class="govuk-table__cell">RN 00 23 95 H</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Questionnaire reminder issued</td>
+            <td class="govuk-table__cell">5 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-review">Stephan Miles</a></td>
+            <td class="govuk-table__cell">RN 00 06 13 B</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Questionnaire reminder issued</td>
+            <td class="govuk-table__cell">5 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-assigned">Adrienne Young</a></td>
+            <td class="govuk-table__cell">RN 00 02 55 H</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Questionnaire received</td>
+            <td class="govuk-table__cell">3 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail">Noelle Carmel</a></td>
+            <td class="govuk-table__cell">RN 00 04 26 D</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Questionnaire received</td>
+            <td class="govuk-table__cell">3 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail">Katrina Wolfe</a></td>
+            <td class="govuk-table__cell">RN 00 03 33 T</td>
+            <td class="govuk-table__cell">ESA</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Did not return questionnaire</td>
+            <td class="govuk-table__cell">3 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-review">Harry Neville</a></td>
+            <td class="govuk-table__cell">RN 00 22 22 H</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Awaiting evidence</td>
+            <td class="govuk-table__cell">6 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-review">Elizabeth Almond</a></td>
+            <td class="govuk-table__cell">RN 00 01 96 Z</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Awaiting evidence</td>
+            <td class="govuk-table__cell">8 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-review">Sam Smart</a></td>
+            <td class="govuk-table__cell">RN 00 09 83 A</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Awaiting evidence</td>
+            <td class="govuk-table__cell">9 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-review">Luce Deryn</a></td>
+            <td class="govuk-table__cell">RN 00 01 46 A</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Awaiting evidence</td>
+            <td class="govuk-table__cell">10 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail">Delia Durham</a></td>
+            <td class="govuk-table__cell">RN 00 01 73 B</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Awaiting evidence</td>
+            <td class="govuk-table__cell">10 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-review">Roberta Tomlinson</a></td>
+            <td class="govuk-table__cell">RN 00 01 26 F</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Awaiting evidence</td>
+            <td class="govuk-table__cell">10 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-review">Esther Rayner</a></td>
+            <td class="govuk-table__cell">RN 00 01 26 F</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Evidence received</td>
+            <td class="govuk-table__cell">3 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail">Maha Hansen</a></td>
+            <td class="govuk-table__cell">RN 00 08 24 J</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Evidence not received</td>
+            <td class="govuk-table__cell">3 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail">John-Paul Green</a></td>
+            <td class="govuk-table__cell">RN 00 09 29 C</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Filework</td>
+            <td class="govuk-table__cell">1 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail">Connah Nava</a></td>
+            <td class="govuk-table__cell">RN 00 31 29 B</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Request medical evidence</td>
+            <td class="govuk-table__cell">1 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail">Seb Heath</a></td>
+            <td class="govuk-table__cell">RN 00 41 73 D</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Request medical evidence</td>
+            <td class="govuk-table__cell">1 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail">Mildred Mccallum</a></td>
+            <td class="govuk-table__cell">RN 00 78 46 G</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Request medical evidence</td>
+            <td class="govuk-table__cell">1 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail">Dennis Briggs</a></td>
+            <td class="govuk-table__cell">RN 00 09 72 D</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Awaiting medical evidence</td>
+            <td class="govuk-table__cell">7 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail">Griff Reese</a></td>
+            <td class="govuk-table__cell">RN 00 09 11 F</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Awaiting medical evidence</td>
+            <td class="govuk-table__cell">7 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail">Ida Bates</a></td>
+            <td class="govuk-table__cell">RN 00 11 12 B</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Awaiting medical evidence</td>
+            <td class="govuk-table__cell">10 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-start-assessment">Regina Crawford</a></td>
+            <td class="govuk-table__cell">RN 00 08 88 K</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Awaiting medical evidence</td>
+            <td class="govuk-table__cell">10 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail">Eden Hickman</a></td>
+            <td class="govuk-table__cell">RN 00 06 66 L</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Awaiting medical evidence</td>
+            <td class="govuk-table__cell">10 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-start-assessment">Chelsy Glover</a></td>
+            <td class="govuk-table__cell">RN 00 03 33 D</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Awaiting medical evidence</td>
+            <td class="govuk-table__cell">10 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-start-assessment">Nicole Sharp</a></td>
+            <td class="govuk-table__cell">RN 00 05 56 H</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Awaiting medical evidence</td>
+            <td class="govuk-table__cell">10 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail">Kingsley Jenkins</a></td>
+            <td class="govuk-table__cell">RN 00 07 47 L</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Medical evidence received</td>
+            <td class="govuk-table__cell">3 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-start-assessment">James Rush</a></td>
+            <td class="govuk-table__cell">RN 00 02 22 D</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Medical evidence not received</td>
+            <td class="govuk-table__cell">3 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-start-assessment">Zidane May</a></td>
+            <td class="govuk-table__cell">RN 00 01 45 K</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Medical evidence not received</td>
+            <td class="govuk-table__cell">3 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-start-assessment">Lorna Markham</a></td>
+            <td class="govuk-table__cell">RN 00 01 21 K</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Medical evidence not received</td>
+            <td class="govuk-table__cell">3 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-start-assessment">Aled Edwards</a></td>
+            <td class="govuk-table__cell">RN 00 01 29 L</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Case conference</td>
+            <td class="govuk-table__cell">1 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-report">cody Battle</a></td>
+            <td class="govuk-table__cell">RN 00 03 34 M</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Book assessment</td>
+            <td class="govuk-table__cell">2 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-report">Melvin Dalby</a></td>
+            <td class="govuk-table__cell">RN 00 08 41 Z</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Book assessment</td>
+            <td class="govuk-table__cell">2 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-report">Blossom Delacruz</a></td>
+            <td class="govuk-table__cell">RN 00 02 25 P</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Book paper based review</td>
+            <td class="govuk-table__cell">2 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-report">Nadia Pitt</a></td>
+            <td class="govuk-table__cell">RN 00 00 01 A</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Assessment booked</td>
+            <td class="govuk-table__cell">8 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail">Alya Branch</a></td>
+            <td class="govuk-table__cell">RN 00 03 78 R</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Assessment booked</td>
+            <td class="govuk-table__cell">20 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-report">Olaf Le</a></td>
+            <td class="govuk-table__cell">RN 00 01 31 H</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Assessment booked</td>
+            <td class="govuk-table__cell">26 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-report">Garfield Galvan</a></td>
+            <td class="govuk-table__cell">RN 00 01 21 J</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Assessment booked</td>
+            <td class="govuk-table__cell">26 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-report" aria-describedby="claimant-detail-report">Susie Werner</a></td>
+            <td class="govuk-table__cell">RN 00 22 27 J</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Paper based review booked</td>
+            <td class="govuk-table__cell">28 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-report" aria-describedby="claimant-detail-report">Krystal Black</a></td>
+            <td class="govuk-table__cell">RN 00 01 25 G</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Paper based review booked</td>
+            <td class="govuk-table__cell">31 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-report" aria-describedby="claimant-detail-report">Aleisha Hamilton</a></td>
+            <td class="govuk-table__cell">RN 00 04 46 G</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Health practitioner audit</td>
+            <td class="govuk-table__cell">1 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-report" aria-describedby="claimant-detail-report">Mathew Gibbs</a></td>
+            <td class="govuk-table__cell">RN 00 34 92 C</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Report ready</td>
+            <td class="govuk-table__cell">1 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-report" aria-describedby="claimant-detail-report">Ali Povey</a></td>
+            <td class="govuk-table__cell">RN 00 07 76 S</td>
+            <td class="govuk-table__cell">WCA</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">BAU decision needed</td>
+            <td class="govuk-table__cell">21 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-report">Gabriela Leal</a></td>
+            <td class="govuk-table__cell">RN 12 01 26 G</td>
+            <td class="govuk-table__cell">WCA</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Asessment completed</td>
+            <td class="govuk-table__cell">1 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-report">Darsh Melton</a></td>
+            <td class="govuk-table__cell">RN 52 11 16 C</td>
+            <td class="govuk-table__cell">WCA</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Asessment completed</td>
+            <td class="govuk-table__cell">1 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-report">Diana Brown</a></td>
+            <td class="govuk-table__cell">RN 34 11 04 B</td>
+            <td class="govuk-table__cell">WCA</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Asessment completed</td>
+            <td class="govuk-table__cell">1 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-report">Kye Mcnally</a></td>
+            <td class="govuk-table__cell">RN 24 22 20 H</td>
+            <td class="govuk-table__cell">WCA</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Asessment completed</td>
+            <td class="govuk-table__cell">1 days</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+{% endblock %}

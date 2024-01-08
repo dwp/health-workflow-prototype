@@ -1,0 +1,387 @@
+{% extends "richer-claimant-info/v4/nav/layout-view-work.html" %}
+
+{% block pageTitle %}
+  Referral list
+{% endblock %}
+
+{% block beforeContent %}
+
+<a href="../index" class="govuk-back-link">Back</a>
+
+
+{% endblock %}
+
+{% block content %}
+
+<div class="app-pane__body">
+
+  
+
+  <div class="app-pane__subnav-create" >
+
+    <div class="govuk-grid-column-one-fifth" style="position: sticky; top:0;">
+      <nav class="moj-side-navigation" aria-label="Side navigation">
+    
+        <input type="hidden" name="previousDocument" id="previousDocument" value="">
+
+      <!--   <ul class="moj-side-navigation__list">
+      
+          <li class="moj-side-navigation__item">
+      
+              <a href="assessment-type" aria-current="location">&lt; Back to Assessment type</a>
+      
+          </li>
+           
+          </ul> -->
+
+
+        
+  
+
+       
+  
+        <h4 class="moj-side-navigation__title">Case details</h4>
+        <ul class="moj-side-navigation__list">
+        
+          
+          <li class="moj-side-navigation__item moj-side-navigation__item--active">
+    
+            <a href="">Referral details</a>
+    
+        </li>
+
+        <li class="moj-side-navigation__item ">
+  
+          <a href="important-info">Important information</a>
+
+      </li>
+
+      <li class="moj-side-navigation__item ">
+     
+        <a href=" " aria-current="location"> GP details</a>
+
+    </li>
+    
+      <li class="moj-side-navigation__item ">
+  
+        <a href="specialist-medical">Other specialist or medical contacts</a>
+
+    </li>
+  
+       
+           
+         
+         </ul>
+  
+
+         <h4 class="moj-side-navigation__title">Claimant details</h4>
+         <ul class="moj-side-navigation__list">
+        
+           <li class="moj-side-navigation__item">
+     
+             <a href="personal-details">Personal details</a>
+     
+         </li>
+     
+         <li class="moj-side-navigation__item ">
+     
+             <a href=" " aria-current="location"> Adjustments</a>
+     
+         </li>
+
+
+         <li class="moj-side-navigation__item ">
+     
+          <a href=" " aria-current="location"> Preferences</a>
+  
+      </li>
+ 
+         <li class="moj-side-navigation__item ">
+     
+           <a href=" " aria-current="location"> Representation and support</a>
+   
+       </li>
+ 
+       
+          
+         </ul>
+   
+   
+  
+  
+
+         <a href="confirmation-page"> 
+          <button class="govuk-button" data-module="govuk-button">
+            Create referral
+          </button>
+        </a>
+       
+      </nav>
+      </div>
+
+  
+  </div>
+
+  <div class="govuk-grid-row create-view">
+    <div class="govuk-grid-column-two-thirds">
+
+
+     <h1 class="govuk-heading-l">
+      Enter referral details 
+      </h1>
+
+      <p>This information is mandatory and cannot be changed later.</p>
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" role="group" aria-describedby="claimant-names">
+        
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="first-name">
+              First names
+            </label>
+            <input class="govuk-input" id="first-name" name="first-name" type="text" spellcheck="false">
+          </div>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="last-name">
+              Last names
+            </label>
+            <input class="govuk-input" id="last-name" name="last-name" type="text" spellcheck="false">
+          </div>
+
+        <!--  <div class="govuk-form-group">
+            <label class="govuk-label" for="preferred-name">
+              Preferred name
+            </label>
+            <input class="govuk-input" id="preferred-name" name="preferred-name" type="text" spellcheck="false" >
+          </div> -->
+          </fieldset>
+        </div>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="address-postcode">
+            Postcode
+          </label>
+          <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text" autocomplete="postal-code" >
+        </div>
+
+
+
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" role="group" aria-describedby="dob-hint">
+          
+            <p>
+              Date of birth
+            </p>
+          </legend>
+          <div id="dob-hint" class="govuk-hint">
+            For example, 27 3 2007
+          </div>
+          <div class="govuk-date-input" id="dob">
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="dod-day">
+                  Day
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dod-day" name="dob-day" type="text" inputmode="numeric">
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="dod-month">
+                  Month
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dod-month" name="dob-month" type="text" inputmode="numeric" >
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="dod-year">
+                  Year
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="dod-year" name="dod-year" type="text" inputmode="numeric" >
+              </div>
+            </div>
+          </div>
+
+        </fieldset>
+      </div>
+
+
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="nino">
+          National insurance number
+        </label>
+        <input class="govuk-input govuk-input--width-10" id="nino" name="nino" type="text" autocomplete="postal-code" >
+      </div>
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" role="group" aria-describedby="claimant-names">
+        
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="cust-ref">
+              Customer reference number
+            </label>
+            <input class="govuk-input" id="cust-ref" name="cust-ref" type="text" spellcheck="false">
+          </div>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="system-id">
+              Referring system referring id
+            </label>
+            <input class="govuk-input" id="system-id" name="system-id" type="text" spellcheck="false">
+          </div>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="claim-no">
+              Claim reference number
+            </label>
+            <input class="govuk-input" id="claim-no" name="claim-no" type="text" spellcheck="false" >
+          </div>
+          </fieldset>
+        </div>
+
+
+      <div class="govuk-form-group">
+       
+            <p> 
+              Benefit type
+            </p>
+     
+
+          <div class="govuk-radios" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="benefit-type-esa" name="benefit-type" type="radio" value="esa">
+              <label class="govuk-label govuk-radios__label" for="benefit-type-esa" >
+              ESA
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="benefit-type-pip" name="benefit-type" type="radio" value="pip">
+              <label class="govuk-label govuk-radios__label" for="benefit-type-pip" >
+             PIP
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="benefit-type-uc" name="benefit-type" type="radio" value="uc">
+              <label class="govuk-label govuk-radios__label" for="benefit-type-uc" >
+               UC
+              </label>
+            </div>
+
+      </div>
+</div>
+
+          
+     
+      <div class="govuk-form-group">
+        <p> 
+          Referral type
+        </p>
+    <div class="govuk-radios" data-module="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="referral-new" name="referral" type="radio" value="new">
+        <label class="govuk-label govuk-radios__label" for="referral-new" >
+      New referral
+        </label>
+      </div>
+
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="referral-re" name="referral" type="radio" value="re">
+        <label class="govuk-label govuk-radios__label" for="referral-re" >
+      Re-referral
+        </label>
+      </div>
+     
+</div>
+</div>
+
+<div class="govuk-form-group">
+  <p> 
+    Does the claimant give consent to contact their GP?
+  </p>
+<div class="govuk-radios" data-module="govuk-radios">
+<div class="govuk-radios__item">
+  <input class="govuk-radios__input" id="consent-yes" name="consent" type="radio" value="yes">
+  <label class="govuk-label govuk-radios__label" for="consent-yes" >
+Yes
+  </label>
+</div>
+
+<div class="govuk-radios__item">
+  <input class="govuk-radios__input" id="consent-no" name="consent" type="radio" value="no">
+  <label class="govuk-label govuk-radios__label" for="consent-no" >
+No
+  </label>
+</div>
+
+<div class="govuk-radios__item">
+  <input class="govuk-radios__input" id="consent-unknown" name="consent" type="radio" value="unknown">
+  <label class="govuk-label govuk-radios__label" for="consent-unknown" >
+No known
+  </label>
+</div>
+
+</div>
+</div>
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" role="group" aria-describedby="claimant-names">
+   
+ 
+
+    
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend">
+  Referral date</legend>
+    <div id="dob-hint" class="govuk-hint">
+      For example, 17 11 2022  </div>
+    <div class="govuk-date-input" id="dob">
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="dod-day">
+            Day
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dod-day" name="dob-day" type="text" inputmode="numeric" value="22">
+        </div>
+      </div>
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="dod-month">
+            Month
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dod-month" name="dob-month" type="text" inputmode="numeric" value="1">
+        </div>
+      </div>
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="dod-year">
+            Year
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="dod-year" name="dod-year" type="text" inputmode="numeric" value="2023">
+        </div>
+      </div>
+    </div>
+
+  </fieldset>
+</div>
+
+
+
+
+
+<!-- 
+
+      <a href="confirmation-page" aria-describedby="search-referral">
+        <button class="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
+      </a> -->
+
+    </div>
+  </div>
+
+{% endblock %}

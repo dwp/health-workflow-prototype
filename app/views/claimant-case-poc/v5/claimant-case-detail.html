@@ -1,0 +1,84 @@
+{% extends "layout-key-details-top-nav.html" %}
+
+{% block pageTitle %}
+  Claimant details
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="column-full">
+      
+    <nav class="navigation-secondary">
+      <ul>
+        <li>
+          <a href="claimant-case-detail" class="active" aria-current="section">Referrals</a>
+        </li>
+        <li>
+          <a href="claimant-detail">Claimant details</a>
+        </li>
+        <li>
+          <a href="#">Appointments</a>
+        </li>
+        <li>
+          <a href="#">Evidence</a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+</div>
+<a href="index" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-full">
+
+          <h2 class="govuk-heading-m">Referrals</h2>
+          <table class="govuk-table">
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header">Benefit</th>
+                <th scope="col" class="govuk-table__header">Referral date</th>
+                <th scope="col" class="govuk-table__header">Status</th>
+                <th scope="col" class="govuk-table__header">Last updated</th>
+                <th scope="col" class="govuk-table__header">Action</th>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">PIP</td>
+                <td class="govuk-table__cell">1 Jun 2021</td>
+                <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green" id="Status 1">In Review referral detail</strong></td>
+                <td class="govuk-table__cell">8 Jun 2021</td>
+                <td class="govuk-table__cell"><a href="referral-detail" aria-describedby="referral-detail">View referral detail</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">ESA</td>
+                <td class="govuk-table__cell">1 Feb 2021</td>
+                <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--yellow" id="Status 1">Assessment booked</strong></td>
+                <td class="govuk-table__cell">28 May 2021</td>
+                <td class="govuk-table__cell"><a href="#" aria-describedby="referral-detail">View referral detail</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">PIP</td>
+                <td class="govuk-table__cell">23 Jan 2018</td>
+                <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" id="Status 1">Archived</strong></td>
+                <td class="govuk-table__cell">8 Jun 2018</td>
+                <td class="govuk-table__cell"><a href="#" aria-describedby="referral-detail">View referral detail</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">PIP</td>
+                <td class="govuk-table__cell">1 Feb 2016</td>
+                <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" id="Status 1">Archived</strong></td>
+                <td class="govuk-table__cell">1 Aug 2016</td>
+                <td class="govuk-table__cell"><a href="#" aria-describedby="referral-detail">View referral detail</a></td>
+              </tr>
+            </tbody>
+          </table>
+      
+    </div>
+  </div>
+{% endblock %}

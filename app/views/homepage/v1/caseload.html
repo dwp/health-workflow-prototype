@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Referral list
+{% endblock %}
+
+{% block beforeContent %}
+<a href="index" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <form action="/finding-and-organising/v4/status-filter2" method="post" class="form">
+
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+              <span class="govuk-caption-l govuk-!-margin-bottom-2">View my caseload</span>
+              <h1 class="govuk-fieldset__heading">
+                Which caseload you want to view?
+              </h1>
+            </legend>
+            <div id="contact-hint" class="govuk-hint">
+              Select a caseload to view in more detail.
+            </div>
+            <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+              <div class="govuk-form-group">
+                <div class="govuk-radios">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="status" name="status2" type="radio" value="list-1">
+                    <label class="govuk-label govuk-radios__label" for="status">
+                      Jared Mosely-Redman (9)
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="status-2" name="status2" type="radio" value="list-2">
+                    <label class="govuk-label govuk-radios__label" for="status-2">
+                      Zoe Hall (8)
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="status-3" name="status2" type="radio" value="list-3">
+                    <label class="govuk-label govuk-radios__label" for="status-3">
+                      Akhtar Ahmed (15)
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+              
+          </div>
+
+          </fieldset>
+
+      <button class="govuk-button" data-module="govuk-button">View</button>
+    </form>
+
+    </div>
+  </div>
+
+
+{% endblock %}

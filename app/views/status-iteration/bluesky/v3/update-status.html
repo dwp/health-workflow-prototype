@@ -1,0 +1,95 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Referral list
+{% endblock %}
+
+{% block beforeContent %}
+<a href="index" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+              <span class="govuk-caption-l govuk-!-margin-bottom-2">Update Status</span>
+              <h1 class="govuk-fieldset__heading">
+                Which status do you want to update the referral to?
+              </h1>
+            </legend>
+
+            <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="gathering-info" name="gathering-info" type="radio" value="email" data-aria-controls="conditional-gathering-info">
+                <label class="govuk-label govuk-radios__label" for="gathering-info">
+                  Gathering information
+                </label>
+              </div>
+              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-gathering-info">
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="contact-by-email">
+                    sub-status name
+                  </label>
+                  <input class="govuk-input govuk-!-width-one-half" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false" autocomplete="email"></div>
+                </div>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="status-2" name="status" type="radio" value="reviewing-case-details">
+                <label class="govuk-label govuk-radios__label" for="status-2">
+                  Reviewing case details
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="status-3" name="status" type="radio" value="awaiing-evidence">
+                <label class="govuk-label govuk-radios__label" for="status-3">
+                  Awaiting evidence
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="status-4" name="status" type="radio" value="paper-based-review">
+                <label class="govuk-label govuk-radios__label" for="status-4">
+                  Paper based review
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="status-4" name="status" type="radio" value="assessment-booked">
+                <label class="govuk-label govuk-radios__label" for="status-4">
+                  Assessment booked
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="status-4" name="status" type="radio" value="awaiting-decision">
+                <label class="govuk-label govuk-radios__label" for="status-4">
+                  Awaiting decision
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="status-4" name="status" type="radio" value="done">
+                <label class="govuk-label govuk-radios__label" for="status-4">
+                  Done
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="status-4" name="status" type="radio" value="withdrawn">
+                <label class="govuk-label govuk-radios__label" for="status-4">
+                  Withdrawn
+                </label>
+              </div>
+
+          </fieldset>
+        </div>
+
+        <a href="confirmation" role="button" draggable="false" class="govuk-button"  data-module="govuk-button">
+          Save and continue
+        </a>
+
+    </div>
+  </div>
+
+
+{% endblock %}

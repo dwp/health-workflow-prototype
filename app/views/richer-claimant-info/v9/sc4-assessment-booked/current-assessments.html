@@ -1,0 +1,121 @@
+{% extends "layout-assessmentbooked-extended.html" %}
+
+{% block pageTitle %}
+  Claimant details
+{% endblock %}
+
+
+{% block beforeContent %}
+
+
+{% if  data['address-change4'] === 'yes' %}
+<a href="pip-claimant-detail-updated" class="govuk-back-link">Back</a>
+
+{% else %}
+
+<a href="pip-claimant-detail" class="govuk-back-link">Back</a>
+
+
+{% endif %}
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row" style="margin-top: -40px;">
+  <div class="govuk-grid-column-three-quarters">  
+    
+    <main class="govuk-main-wrapper govuk-main-wrapper--auto-spacing" id="main-content" role="main">
+     
+     
+     
+
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+
+            <h1 class="govuk-heading-l">
+              Sam Doe's appointments
+            </h1>
+
+           
+         
+
+  
+            
+            <h2 class="govuk-heading-m">
+
+              
+              Current appointments
+            </h2>
+           
+         
+          
+          
+         
+        </legend>
+        
+        
+
+          <table class="govuk-table">
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header" style="width:25%;">   Date and time</th>
+                <th scope="col" class="govuk-table__header govuk-table__header" style="width:10%;">Location</th>
+                <th scope="col" class="govuk-table__header govuk-table__header">Benefit</th>
+
+                <th scope="col" class="govuk-table__header govuk-table__header">Type</th>
+
+        
+                <th scope="col" class="govuk-table__header govuk-table__header">Status</th>
+        <th scope="col" class="govuk-table__header govuk-table__header">HCP</th>
+
+                <th scope="col" class="govuk-table__header govuk-table__header"></th>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell govuk-table__cell">Mon 18 December 2023, 11am</td>
+                  <td class="govuk-table__cell govuk-table__cell">Tresco House</td>
+                <td class="govuk-table__cell govuk-table__cell">PIP</td>
+                <td class="govuk-table__cell govuk-table__cell">Face to face</td>
+              
+              
+                <td class="govuk-table__cell govuk-table__cell"> Booked</th>
+               
+             
+             
+
+                
+
+               
+
+                <td class="govuk-table__cell govuk-table__cell" style="white-space:nowrap"> Ana Lopes</td>
+                <td class="govuk-table__cell govuk-table__cell"><a href="view-assessment"> Edit</a></td>
+              </tr>
+            
+            </tbody>
+          </table>
+
+
+         
+         
+         
+
+          <a href=" ">
+            <button class="govuk-button" data-module="govuk-button">
+             Book new appointment
+            </button>
+          </a>
+
+        
+
+<p>There are no previous appointments</p>
+
+    </div>
+  </main>
+</div>
+
+
+{% endblock %}

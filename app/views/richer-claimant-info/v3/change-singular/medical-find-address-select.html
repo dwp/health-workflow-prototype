@@ -1,0 +1,84 @@
+{% extends "layout-extended.html" %}
+
+{% block pageTitle %}
+  Referral list
+{% endblock %}
+
+{% block beforeContent %}
+
+<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      
+     <h1 class="govuk-heading-l">
+     Select address
+      </h1>
+
+  
+
+      <p>5 addresses found for <span class="govuk-body govuk-!-font-weight-bold">southland street</span> and <span class="govuk-body govuk-!-font-weight-bold">wr67tp</span>.    <a href="personal-find-address" style="padding-left: 20px;">Search again</a></p>
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          
+          <div class="govuk-radios govuk-radios--small" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="home-address1" name="home-address" type="radio" value="1 Southland Street">
+              <label class="govuk-label govuk-radios__label" for="home-address1">
+              1 Southland Street, Worcester, WR6 7TP
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="home-address2" name="home-address" type="radio" value="2 Southland Street">
+              <label class="govuk-label govuk-radios__label" for="home-address2">
+              2 Southland Street, Worcester, WR6 7TP
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="home-address3" name="home-address" type="radio" value="3 Southland Street">
+              <label class="govuk-label govuk-radios__label" for="home-address3">
+              3 Southland Street, Worcester, WR6 7TP
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="home-address4" name="home-address" type="radio" value="4 Southland Street">
+              <label class="govuk-label govuk-radios__label" for="home-address4">
+              4 Southland Street, Worcester, WR6 7TP
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="home-address5" name="home-address" type="radio" value="5 Southland Street">
+              <label class="govuk-label govuk-radios__label" for="home-address5">
+              5 Southland Street, Worcester, WR6 7TP
+              </label>
+            </div>
+          </div>
+      
+        </fieldset>
+      </div>
+
+
+    
+
+      <a href="medical-find-address-confirm" aria-describedby="search-referral">
+        <button class="govuk-button" data-module="govuk-button">
+        Use this address
+        </button>
+      </a>
+
+    <p> <a href="medical-address-manual-entry" aria-describedby="search-referral">
+       
+         Enter address manually
+        
+      </a></p>
+
+    </div>
+  </div>
+
+{% endblock %}

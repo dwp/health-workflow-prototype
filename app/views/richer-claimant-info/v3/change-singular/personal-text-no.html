@@ -1,0 +1,60 @@
+{% extends "layout-extended.html" %}
+
+{% block pageTitle %}
+  Referral list
+{% endblock %}
+
+{% block beforeContent %}
+
+<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+     
+
+
+    
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" role="group" aria-describedby="contact-details">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h2 class="govuk-fieldset__heading">
+              Enter the text phone number
+            </h2>
+          </legend>
+
+
+          <div class="govuk-form-group">
+           
+            <div id="phone-hint" class="govuk-hint">
+              For example, ‘07799997799’.
+            </div>
+            <input class="govuk-input govuk-input--width-20" id="mobile-number" name="mobile-number" type="text" spellcheck="false" autocomplete="mobile-number" value="07000 000000">
+          </div>
+
+         
+
+        </fieldset>
+      </div>
+
+
+   
+
+
+
+      <a href="../claimant-detail-assigned2-updated" aria-describedby="search-referral">   <button class="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
+      </a>
+
+    </div>
+  </div>
+
+{% endblock %}

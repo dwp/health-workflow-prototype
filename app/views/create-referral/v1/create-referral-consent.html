@@ -1,0 +1,87 @@
+{% extends "layout-extended.html" %}
+
+{% block pageTitle %}
+  Referral list
+{% endblock %}
+
+{% block beforeContent %}
+<a href="create-referral-date" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <span class="govuk-caption-l govuk-!-margin-bottom-2">Create referral question 9 of X</span>
+      <h1 class="govuk-heading-l">
+        Does the claimant consent to the following;
+      </h1>
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend">
+            Consent to contact GP?
+          </legend>
+          <div class="govuk-radios" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="GP-consent-yes" name="GP-consent-yes" type="radio" value="yes">
+              <label class="govuk-label govuk-radios__label" for="GP-consent-yes">
+                Yes
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="GP-consent-no" name="GP-consent-no" type="radio" value="no">
+              <label class="govuk-label govuk-radios__label" for="GP-consent-no">
+                No
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="GP-consent-unknown" name="GP-consent-unknown" type="radio" value="unknown">
+              <label class="govuk-label govuk-radios__label" for="GP-consent-unknown">
+                Not known
+              </label>
+            </div>
+      
+        </fieldset>
+      </div>
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend">
+            Consent to contact GP with recommendation outcome?
+          </legend>
+          <div class="govuk-radios" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="recommendation-consent-yes" name="recommendation-consent-yes" type="radio" value="yes">
+              <label class="govuk-label govuk-radios__label" for="recommendation-consent-yes">
+                Yes
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="recommendation-consent-no" name="recommendation-consent-no" type="radio" value="no">
+              <label class="govuk-label govuk-radios__label" for="recommendation-consent-no">
+                No
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="recommendation-consent-unknown" name="recommendation-consent-unknown" type="radio" value="unknown">
+              <label class="govuk-label govuk-radios__label" for="recommendation-consent-unknown">
+                Not known
+              </label>
+            </div>
+      
+        </fieldset>
+      </div>
+
+
+      <a href="create-referral-gp-details" aria-describedby="search-referral">
+        <button class="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
+      </a>
+
+    </div>
+  </div>
+
+{% endblock %}

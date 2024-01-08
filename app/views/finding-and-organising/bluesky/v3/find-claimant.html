@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Referral list
+{% endblock %}
+
+{% block beforeContent %}
+<a href="index" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">
+        Find a claimant
+      </h1>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label govuk-label--m" for="search-name">
+          <div id="email-hint" class="govuk-hint">
+    Enter the claimant's details to find their referral 
+  </div>
+        </label>
+        <input class="govuk-input" id="search-name" name="search-name" type="text">
+      </div>
+      <a href="claimant-detail" aria-describedby="search-referral">
+        <button class="govuk-button" data-module="govuk-button">
+          Search
+        </button>
+      </a>
+
+    </div>
+  </div>
+
+{% endblock %}

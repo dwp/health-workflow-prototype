@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Referral list
+{% endblock %}
+
+{% block beforeContent %}
+<a href="index" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <div class="govuk-form-group govuk-form-group--error">
+      <label class="govuk-label govuk-label--m" for="search-national-insurance-number">
+        <span class="govuk-caption-l govuk-!-margin-bottom-2">Find a claimant</span>
+        <h1 class="govuk-heading-l">
+          What is the claimant's National Insurance number?
+        </h1>
+        <div id="national-insurance-number-hint" class="govuk-hint">
+          For example, ‘QQ 12 34 56 C’.
+        </div>
+      </label>
+
+      <span id="national-insurance-number-error" class="govuk-error-message">
+        <span class="govuk-visually-hidden">Error:</span> Enter a National Insurance number in the correct format
+      </span>
+
+      <input class="govuk-input govuk-input--error" id="search-national-insurance-number" name="search-national-insurance-number" type="text">
+    </div>
+    <a href="claimant-detail" aria-describedby="search-referral">
+      <button class="govuk-button" data-module="govuk-button">
+        Search
+      </button>
+    </a>
+
+    <p>
+      <a href="find-claimant" aria-describedby="search-referral">
+        back to find a claimant no validation error
+      </a>
+    </p>
+
+
+
+  </div>
+</div>
+
+{% endblock %}

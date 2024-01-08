@@ -1,0 +1,212 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Referral list
+{% endblock %}
+
+{% block beforeContent %}
+<a href="start" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <h1 class="govuk-heading-l">
+        New referrals
+      </h1>
+      <h2 class="govuk-heading-m govuk-!-margin-bottom-1">Apply filters</h2>
+      <div id="filter-hint" class="govuk-hint govuk-!-margin-bottom-4">
+        Select one or more filters to apply to this list of referrals.
+      </div>
+
+      <div class="govuk-grid-row govuk-!-margin-top-2">
+        <div class="govuk-grid-column-one-third">
+
+          {{ govukCheckboxes({
+            idPrefix: "endOfLife",
+            name: "end of life",
+            classes: "govuk-checkboxes--small",
+            fieldset: {
+            legend: {
+            text: "End of life",
+            isPageHeading: true,
+            classes: "govuk-fieldset__legend--s "
+            }
+            },
+            items: [
+            {
+            value: "yes",
+            text: "Yes (11)",
+            checked: true if data['end of life'] and data['end of life'].includes('yes')
+            },
+            {
+            value: "no",
+            text: "No (64)"
+            }
+            ]
+            }) }}
+            </div>
+
+            <div class="govuk-grid-column-one-third">
+            {{ govukCheckboxes({
+            idPrefix: "benefitType",
+            name: "benefit type",
+            classes: "govuk-checkboxes--small",
+            fieldset: {
+            legend: {
+            text: "Benefit type",
+            isPageHeading: true,
+            classes: "govuk-fieldset__legend--s "
+            }
+            },
+            items: [
+            {
+            value: "esa",
+            text: "ESA (13)"
+            },
+            {
+            value: "pip",
+            text: "PIP (25)",
+            checked: true if data['benefit type'] and data['benefit type'].includes('pip')
+            },
+            {
+            value: "uc",
+            text: "UC (38)"
+            }
+            ]
+            }) }}
+            </div>
+
+            <div class="govuk-grid-column-one-third">
+            {{ govukCheckboxes({
+            idPrefix: "assessmentCentre",
+            name: "assessment centre",
+            classes: "govuk-checkboxes--small",
+            fieldset: {
+            legend: {
+            text: "Assessment Centre",
+            isPageHeading: true,
+            classes: "govuk-fieldset__legend--s "
+            }
+            },
+            items: [
+            {
+            value: "handsworth",
+            text: "Birmingham Handsworth (12)"
+            },
+            {
+            value: "doncaster",
+            text: "Doncaster site name (8)"
+            },
+            {
+            value: "leeds",
+            text: "Leeds site name (20)"
+            },
+            {
+            value: "tresco",
+            text: "London Tresco House (36)",
+            checked: true if data['assessment centre'] and data['assessment centre'].includes('tresco')
+            }
+            ]
+            }) }}
+
+          </div>
+          </div>
+
+
+          {{ govukButton({
+            text: "Apply",
+            classes: "govuk-button--secondary govuk-!-margin-bottom-8"
+            }) }}
+
+      <h3 class="govuk-heading-m govuk-!-padding-top-0">11 new end of life referrals in PIP at London Tresco House</h3>
+
+      <table class="govuk-table">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Claimant name</th>
+            <th scope="col" class="govuk-table__header">NINO</th>
+            <th scope="col" class="govuk-table__header">Referral date</th>
+            <th scope="col" class="govuk-table__header">Next action due in</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-assigned" aria-describedby="claimant-detail-assigned">John Doe</a></td>
+            <td class="govuk-table__cell">RN 00 01 23 A</td>
+            <td class="govuk-table__cell">1 February 2021</td>
+            <td class="govuk-table__cell">
+              <strong class="govuk-tag govuk-tag--red" id="overdue">1 day overdue</strong>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-assigned" aria-describedby="claimant-detail-assigned">Janette Rafe</a></td>
+            <td class="govuk-table__cell">RN 00 11 23 A</td>
+            <td class="govuk-table__cell">16 February 2021</td>
+            <td class="govuk-table__cell">
+              <strong class="govuk-tag govuk-tag--red" id="overdue">1 day overdue</strong>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-assigned" aria-describedby="claimant-detail">Noelle Carmel</a></td>
+            <td class="govuk-table__cell">RN 00 04 26 D</td>
+            <td class="govuk-table__cell">10 February 2021</td>
+            <td class="govuk-table__cell">
+              <strong class="govuk-tag govuk-tag--red" id="overdue">1 day overdue</strong>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-assigned" aria-describedby="claimant-detail-assigned">Sylevette Colwyn</a></td>
+            <td class="govuk-table__cell">RN 00 01 11 N</td>
+            <td class="govuk-table__cell">10 February 2021</td>
+            <td class="govuk-table__cell">1 day</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-assigned" aria-describedby="claimant-detail-assigned">Ethan Thornton</td>
+            <td class="govuk-table__cell">RN 00 01 61 D</td>
+            <td class="govuk-table__cell">10 February 2021</td>
+            <td class="govuk-table__cell">1 day</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-assigned" aria-describedby="claimant-detail-assigned">Paige Gael</a></td>
+            <td class="govuk-table__cell">RN 00 07 71 T</td>
+            <td class="govuk-table__cell">10 February 2021</td>
+            <td class="govuk-table__cell">1 day</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-assigned" aria-describedby="claimant-detail-assigned">John Doe</a></td>
+            <td class="govuk-table__cell">RN 00 01 23 A</td>
+            <td class="govuk-table__cell">1 February 2021</td>
+            <td class="govuk-table__cell">2 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-assigned" aria-describedby="claimant-detail-assigned">Janette Rafe</a></td>
+            <td class="govuk-table__cell">RN 00 11 23 A</td>
+            <td class="govuk-table__cell">16 February 2021</td>
+            <td class="govuk-table__cell">2 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-assigned" aria-describedby="claimant-detail-assigned">Sylevette Colwyn</a></td>
+            <td class="govuk-table__cell">RN 00 01 11 N</td>
+            <td class="govuk-table__cell">10 February 2021</td>
+            <td class="govuk-table__cell">1 day</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-assigned" aria-describedby="claimant-detail-assigned">Ethan Thornton</td>
+            <td class="govuk-table__cell">RN 00 01 61 D</td>
+            <td class="govuk-table__cell">10 February 2021</td>
+            <td class="govuk-table__cell">2 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-assigned" aria-describedby="claimant-detail-assigned">Paige Gael</a></td>
+            <td class="govuk-table__cell">RN 00 07 71 T</td>
+            <td class="govuk-table__cell">10 February 2021</td>
+            <td class="govuk-table__cell">2 days</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,61 @@
+{% extends "layout-extended.html" %}
+
+{% block pageTitle %}
+Confirm claimant address - Health Assessment Service
+{% endblock %}
+
+{% block beforeContent %}
+
+<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      
+     <h1 class="govuk-heading-l">
+    Confirm correspondence address
+      </h1>
+
+      <p>2 addresses found for <span class="govuk-body govuk-!-font-weight-bold"> XX22 2XX </span> and <span class="govuk-body govuk-!-font-weight-bold">23</span>. <a href="correspondence-find-address" style="padding-left: 20px;">Search again</a></p>
+      
+      <div class="govuk-inset-text">
+        23 Other Avenue
+        
+      <br>Other City <br> XX22 2XX</div>
+
+  
+  
+     
+
+
+
+    
+
+        <a href="../pip-claimant-detail-updated">  <button class="govuk-button" data-module="govuk-button">
+        
+       Continue
+        </button>
+      </a>
+
+    <p> <a href="correspondence-find-address-select" aria-describedby="search-referral">
+       
+      Use a different address
+     
+   </a> </p>
+   <p> 
+   
+   <a href="correspondence-change-address" aria-describedby="search-referral">
+       
+         Enter address manually
+        
+      </a></p>
+
+    </div>
+  </div>
+
+{% endblock %}

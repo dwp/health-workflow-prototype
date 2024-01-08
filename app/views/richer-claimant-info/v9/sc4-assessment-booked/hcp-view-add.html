@@ -1,0 +1,234 @@
+{% extends "layout-hcpreview-extended.html" %}
+
+{% block pageTitle %}
+Confirm claimant address - Health Assessment Service
+{% endblock %}
+
+{% block beforeContent %}
+
+
+<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+
+{% endblock %}
+
+{% block content %}
+
+
+  <div class="govuk-grid-row" >
+    <div class="govuk-grid-column-two-thirds">
+
+    
+
+      <h1 class="govuk-heading-l">
+        HCP review
+      </h1>
+
+    
+      <dl class="govuk-summary-list">
+    
+      
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Clinical review and justification
+          </dt>
+          <dd class="govuk-summary-list__value">
+        Content here on review outcome.  </dd>
+          
+        </div>
+      
+    
+      
+       <!-- <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Case type
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Complex neurological
+          </dd>
+          
+        </div> -->
+      
+    
+      
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Outcome
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Face to face assessment
+          </dd>
+          
+        </div>
+      
+    
+      
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Name
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Sandra Bullock
+          </dd>
+          
+        </div>
+      
+    
+      
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Date of review
+          </dt>
+          <dd class="govuk-summary-list__value">
+            10 December 2023
+          </dd>
+          
+        </div>
+      
+    
+  </dl>
+
+  <br>
+
+  <form class="form" action="hcp-view-added" method="post"> 
+  <div class="govuk-form-group">
+    <label class="govuk-label govuk-label--s" for="hcpreviewpip0">
+      Enter clinical review and justification    
+    </label>
+  
+    
+    
+    <div class="govuk-hint">
+      Include whether evidence has been reviewed, the type of FME requested, and what to do if it's not returned
+    </div>
+  
+  
+    <textarea class="govuk-textarea" id="hcp-review-text" name="hcp-review-text" rows="12" value="{{ data['hcp-review-text'] }}" ></textarea>
+  </div>
+
+  <div class="govuk-form-group">
+
+    <fieldset class="govuk-fieldset" aria-describedby="hcpreviewflagspip0-hint">
+    
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+    
+      Is the case one of the following?
+    
+    </legend>
+    
+  
+    <div id="hcpreviewflagspip0-hint" class="govuk-hint">
+      Select all that apply.
+    </div>
+  
+  
+    <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="hcpreviewflagspip0" name="hcpreviewflagspip0" type="checkbox" value="Complex neurological">
+              <label class="govuk-label govuk-checkboxes__label" for="hcpreviewflagspip0">
+                Complex neurological (WCA only)
+        </label>
+              
+            </div>
+            
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="hcpreviewflagspip0-2" name="hcpreviewflagspip0" type="checkbox" value="Mental health">
+              <label class="govuk-label govuk-checkboxes__label" for="hcpreviewflagspip0-2">
+                TACT — take additional care (PIP only)
+        </label>
+              
+            </div>
+
+
+      </div>
+    </div>
+    
+<br>
+    <div class="govuk-form-group">
+
+      <fieldset class="govuk-fieldset">
+      
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+      
+        What is the outcome of this review?
+      
+      </legend>
+      
+    
+      <div class="govuk-radios" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="hcp-outcome" name="hcp-outcome" type="radio" value="Request further medical evidence (FME)">
+              <label class="govuk-label govuk-radios__label" for="hcp-outcome">
+            Request further medical evidence (FME)
+          </label>
+              
+            </div>
+            
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="hcp-outcome-2" name="hcp-outcome" type="radio" value="Paper based review (PBR)">
+              <label class="govuk-label govuk-radios__label" for="hcp-outcome-2">
+            Paper based review (PBR)
+          </label>
+              
+            </div>
+            
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="hcp-outcome-3" name="hcp-outcome" type="radio" value="Telephone assessment">
+              <label class="govuk-label govuk-radios__label" for="hcp-outcome-3">
+            Telephone assessment
+          </label>
+              
+            </div>
+            
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="hcp-outcome-4" name="hcp-outcome" type="radio" value="Face to face assessment">
+              <label class="govuk-label govuk-radios__label" for="hcp-outcome-4">
+            Face to face assessment
+          </label>
+              
+            </div>
+            
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="hcp-outcome-5" name="hcp-outcome" type="radio" value="Special Rules End of Life (SREL)">
+              <label class="govuk-label govuk-radios__label" for="hcp-outcome-5">
+            Special Rules End of Life (SREL)
+          </label>
+              
+            </div>
+            </div>
+        
+      
+
+      <br><br>
+      
+      <div class="govuk-button-group">
+
+        <button class="govuk-button" data-module="govuk-button">
+          Save and continue
+        </button>
+        
+                        </div>
+                      </form>
+
+    
+    </fieldset>
+    
+    
+    </div>
+
+
+  
+  </fieldset>
+  
+  
+  </div>
+
+
+     
+
+    </div>
+
+   
+  </div>
+
+{% endblock %}

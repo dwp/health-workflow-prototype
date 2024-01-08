@@ -1,0 +1,407 @@
+{% extends "layout-key-details-review.html" %}
+
+{% block pageTitle %}
+  Claimant details
+{% endblock %}
+
+
+{% block beforeContent %}
+<a href="index" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <div class="govuk-tabs" data-module="govuk-tabs">
+        <h2 class="govuk-tabs__title">
+          Contents
+        </h2>
+        <ul class="govuk-tabs__list">
+          <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+            <a class="govuk-tabs__tab" href="#past-day">
+              Referrals
+            </a>
+          </li>
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#past-week">
+              Claimant Details
+            </a>
+          </li>
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#past-month">
+              Appointments
+            </a>
+          </li>
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#past-year">
+              Evidence
+            </a>
+          </li>
+        </ul>
+        <div class="govuk-tabs__panel" id="past-day">
+          <h2 class="govuk-heading-l">Referrals</h2>
+          <table class="govuk-table">
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header">Benefit</th>
+                <th scope="col" class="govuk-table__header">Referral date</th>
+                <th scope="col" class="govuk-table__header">Status</th>
+                <th scope="col" class="govuk-table__header">Last updated</th>
+                <th scope="col" class="govuk-table__header">Action</th>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">PIP</td>
+                <td class="govuk-table__cell">1 Jun 2021</td>
+                <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green" id="Status 1">In Review</strong></td>
+                <td class="govuk-table__cell">8 Jun 2021</td>
+                <td class="govuk-table__cell"><a href="#" aria-describedby="referral-detail">View referral detail</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">ESA</td>
+                <td class="govuk-table__cell">1 Feb 2021</td>
+                <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--yellow" id="Status 1">Assessment booked</strong></td>
+                <td class="govuk-table__cell">28 May 2021</td>
+                <td class="govuk-table__cell"><a href="#" aria-describedby="referral-detail">View referral detail</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">PIP</td>
+                <td class="govuk-table__cell">23 Jan 2018</td>
+                <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" id="Status 1">Archived</strong></td>
+                <td class="govuk-table__cell">8 Jun 2018</td>
+                <td class="govuk-table__cell"><a href="#" aria-describedby="referral-detail">View referral detail</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">PIP</td>
+                <td class="govuk-table__cell">1 Feb 2016</td>
+                <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" id="Status 1">Archived</strong></td>
+                <td class="govuk-table__cell">1 Aug 2016</td>
+                <td class="govuk-table__cell"><a href="#" aria-describedby="referral-detail">View referral detail</a></td>
+              </tr>
+            </tbody>
+          </table>
+      
+        </div>
+        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
+          <h2 class="govuk-heading-l">Claimant details</h2>
+
+          <h3 class="govuk-heading-m">Personal details</h3>
+          <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Name
+              </dt>
+              <dd class="govuk-summary-list__value">
+                Noelle Carmel
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  Change<span class="govuk-visually-hidden"> name</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Preferred name
+              </dt>
+              <dd class="govuk-summary-list__value">
+                None
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  Change<span class="govuk-visually-hidden"> preferred name</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Date of birth
+              </dt>
+              <dd class="govuk-summary-list__value">
+                31 December 1969
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  Change<span class="govuk-visually-hidden"> date of birth</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Address
+              </dt>
+              <dd class="govuk-summary-list__value">
+                1 Test Street<br/>Test City<br/>XX11 1XX
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  Change<span class="govuk-visually-hidden"> address</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Correspondance address
+              </dt>
+              <dd class="govuk-summary-list__value">
+                none
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  Change<span class="govuk-visually-hidden"> Correspondance address</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Contact details
+              </dt>
+              <dd class="govuk-summary-list__value">
+                07000 000000<br/>test.email@example.com
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  Change<span class="govuk-visually-hidden"> contact details</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Preferred contact method
+              </dt>
+              <dd class="govuk-summary-list__value">
+                Email
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  Change<span class="govuk-visually-hidden"> Preferred contact method</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Further medical<br/>evidence consent
+              </dt>
+              <dd class="govuk-summary-list__value">
+                Yes
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  Change<span class="govuk-visually-hidden"> Further medical evidence consent</span>
+                </a>
+              </dd>
+            </div>
+          </dl>
+
+          <h3 class="govuk-heading-m">Medical Conditions</h3>
+          <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Medical condition
+              </dt>
+              <dd class="govuk-summary-list__value">
+                Fibromyalgia
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  Change<span class="govuk-visually-hidden"> Medical condition</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Date first known
+              </dt>
+              <dd class="govuk-summary-list__value">
+                03 June 1994
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  Change<span class="govuk-visually-hidden"> Medical condition date</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Source
+              </dt>
+              <dd class="govuk-summary-list__value">
+                Claimant
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  Change<span class="govuk-visually-hidden"> source</span>
+                </a>
+              </dd>
+            </div>
+          </dl>
+
+          <h3 class="govuk-heading-m">GP details</h3>
+          <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Name
+              </dt>
+              <dd class="govuk-summary-list__value">
+                Dr T Test
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  Change<span class="govuk-visually-hidden"> GP name</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Address
+              </dt>
+              <dd class="govuk-summary-list__value">
+                1 Test Surgery<br/>Test City<br/>XX11 1XX
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  Change<span class="govuk-visually-hidden"> GP address</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Contact details
+              </dt>
+              <dd class="govuk-summary-list__value">
+                09000 000000<br/>
+                test.surgery@example.com
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  Change<span class="govuk-visually-hidden"> GP contact details</span>
+                </a>
+              </dd>
+            </div>
+          </dl>
+
+          <h3 class="govuk-heading-m">Healthcare professional details</h3>
+          <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Name
+              </dt>
+              <dd class="govuk-summary-list__value">
+                Mr B Test
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  Change<span class="govuk-visually-hidden"> HCP name</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Job title
+              </dt>
+              <dd class="govuk-summary-list__value">
+                Consultant Rheumatologist
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  Change<span class="govuk-visually-hidden"> Job title</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                GP address
+              </dt>
+              <dd class="govuk-summary-list__value">
+                1 Test Hospital<br/>Test City<br/>XX11 1XX
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  Change<span class="govuk-visually-hidden"> HCP address</span>
+                </a>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Contact details
+              </dt>
+              <dd class="govuk-summary-list__value">
+                09000 000000<br/>
+                test.hospital@example.com
+              </dd>
+              <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="#">
+                  Change<span class="govuk-visually-hidden"> contact details</span>
+                </a>
+              </dd>
+            </div>
+          </dl>
+      
+        </div>
+        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-month">
+          <h2 class="govuk-heading-l">Past month</h2>
+          <table class="govuk-table">
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header">Case manager</th>
+                <th scope="col" class="govuk-table__header">Cases opened</th>
+                <th scope="col" class="govuk-table__header">Cases closed</th>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">David Francis</td>
+                <td class="govuk-table__cell">98</td>
+                <td class="govuk-table__cell">95</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">Paul Farmer</td>
+                <td class="govuk-table__cell">122</td>
+                <td class="govuk-table__cell">131</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">Rita Patel</td>
+                <td class="govuk-table__cell">126</td>
+                <td class="govuk-table__cell">142</td>
+              </tr>
+            </tbody>
+          </table>
+      
+        </div>
+        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-year">
+          <h2 class="govuk-heading-l">Past year</h2>
+          <table class="govuk-table">
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header">Case manager</th>
+                <th scope="col" class="govuk-table__header">Cases opened</th>
+                <th scope="col" class="govuk-table__header">Cases closed</th>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">David Francis</td>
+                <td class="govuk-table__cell">1380</td>
+                <td class="govuk-table__cell">1472</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">Paul Farmer</td>
+                <td class="govuk-table__cell">1129</td>
+                <td class="govuk-table__cell">1083</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">Rita Patel</td>
+                <td class="govuk-table__cell">1539</td>
+                <td class="govuk-table__cell">1265</td>
+              </tr>
+            </tbody>
+          </table>
+      
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

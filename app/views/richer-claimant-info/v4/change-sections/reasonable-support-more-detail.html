@@ -1,0 +1,178 @@
+{% extends "layout-extended.html" %}
+
+{% block pageTitle %}
+Contact preferences - Health Assesssment Service
+{% endblock %}
+
+{% block beforeContent %}
+
+<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">
+        More detail on alternative formats
+      </h1>
+
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading">
+              Select which braille type
+            </h2>
+          </legend>
+          <div class="govuk-radios" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="male" name="hcp-preference" type="radio" value="male">
+              <label class="govuk-label govuk-radios__label" for="male">
+                Type 1 - uncontracted
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="female" name="hcp-preference" type="radio" value="female">
+              <label class="govuk-label govuk-radios__label" for="female">
+                Type 2 - contracted
+              </label>
+            </div>
+
+          
+          </div>
+      
+        </fieldset>
+      </div>
+
+
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading">
+              Select which sign language type
+            </h2>
+          </legend>
+          <div class="govuk-radios" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="male" name="hcp-preference" type="radio" value="male">
+              <label class="govuk-label govuk-radios__label" for="male">
+                British sign language DVD
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="female" name="hcp-preference" type="radio" value="female">
+              <label class="govuk-label govuk-radios__label" for="female">
+                British sign language MPEG
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="female" name="hcp-preference" type="radio" value="female">
+              <label class="govuk-label govuk-radios__label" for="female">
+                Irish sign language DVD
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="female" name="hcp-preference" type="radio" value="female">
+              <label class="govuk-label govuk-radios__label" for="female">
+                Irish sign language MPEG
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading">
+              Select which audio type
+            </h2>
+          </legend>
+          <div class="govuk-radios" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="male" name="hcp-preference" type="radio" value="male">
+              <label class="govuk-label govuk-radios__label" for="male">
+                Audio casette
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="female" name="hcp-preference" type="radio" value="female">
+              <label class="govuk-label govuk-radios__label" for="female">
+                Audio CD
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="female" name="hcp-preference" type="radio" value="female">
+              <label class="govuk-label govuk-radios__label" for="female">
+                Audio DVD
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="female" name="hcp-preference" type="radio" value="female">
+              <label class="govuk-label govuk-radios__label" for="female">
+                Audio MP3
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading">
+              Select what kind of print type
+            </h2>
+          </legend>
+          <div class="govuk-radios" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="male" name="hcp-preference" type="radio" value="male">
+              <label class="govuk-label govuk-radios__label" for="male">
+                Large print - 16 point font
+              </label>
+            </div>
+          
+
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="contact-3" name="contact" type="radio" value="text" data-aria-controls="conditional-contact-3">
+              <label class="govuk-label govuk-radios__label" for="contact-3">
+                Large print with custom font
+              </label>
+            </div>
+            <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-3">
+              <div class="govuk-form-group">
+                <label class="govuk-label" for="contact-by-text">
+                Specify which font
+                </label>
+                
+                <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
+             </div>
+            </div>
+
+          </div>
+        </fieldset>
+      </div>
+
+
+
+      
+
+
+      <a href="../uc-claimant-detail-updated" aria-describedby="search-referral">
+        <button class="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
+      </a>
+
+    </div>
+  </div>
+
+{% endblock %}

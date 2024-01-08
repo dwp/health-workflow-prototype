@@ -1,0 +1,538 @@
+{% extends "layout-extended.html" %}
+
+{% block pageTitle %}
+  Referral list
+{% endblock %}
+
+{% block beforeContent %}
+<a href="../v4/" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <h1 class="govuk-heading-l">
+        New referrals to assign  
+
+       
+      </h1>
+
+      <table class="govuk-table" data-module="moj-multi-select" data-multi-select-checkbox="#select-all">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+              <th class="govuk-table__header" scope="col" id="select-all">
+                <div class="govuk-checkboxes__item govuk-checkboxes--small moj-multi-select__checkbox">
+                 <!--  <input type="checkbox" class="govuk-checkboxes__input" id="checkboxes-all"> -->
+                <!--  <label class="govuk-label govuk-checkboxes__label moj-multi-select__toggle-label" for="checkboxes-all">
+                    <span class="govuk-visually-hidden">Select all</span>
+                  </label> -->
+                </div>
+              </th>
+              <th class="govuk-table__header" scope="col">Claimant name</th>
+              <th class="govuk-table__header" scope="col">NINO</th>
+              <th class="govuk-table__header" scope="col">Benefit</th>
+              <th class="govuk-table__header" scope="col">Referral date</th>
+              <th class="govuk-table__header" scope="col">End of life</th>
+              <th class="govuk-table__header" scope="col">Assessment centre</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+    
+
+          <tr class="govuk-table__row govuk-table__row--selected">
+            <td class="govuk-table__cell">
+              <div class="govuk-checkboxes__item govuk-checkboxes--small moj-multi-select__checkbox">
+                <input type="checkbox" class="govuk-checkboxes__input" id="row-1">
+                <label class="govuk-label govuk-checkboxes__label" for="row-1">
+                  <span class="govuk-visually-hidden">Select row 1</span>
+                </label>
+              </div>
+            </td>
+            <td class="govuk-table__cell"><a href="#">John Doe</a></td>
+            <td class="govuk-table__cell">RN 00 01 23 A</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">1 Feb 2021</td>
+            <td class="govuk-table__cell">Yes</td>
+            <td class="govuk-table__cell">Tresco House</td>
+          </tr>
+         <tr class="govuk-table__row">
+            <td class="govuk-table__cell">
+              <div class="govuk-checkboxes__item govuk-checkboxes--small moj-multi-select__checkbox">
+                <input type="checkbox" class="govuk-checkboxes__input" id="row-2">
+                <label class="govuk-label govuk-checkboxes__label" for="row-2">
+                  <span class="govuk-visually-hidden">Select row 2</span>
+                </label>
+              </div>
+            </td>
+            </td>
+            <td class="govuk-table__cell"><a href="#">Janette Rafe</a></td>
+            <td class="govuk-table__cell">RN 00 11 23 A</td>
+            <td class="govuk-table__cell">ESA</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell">Yes</td>
+            <td class="govuk-table__cell">Tresco House</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">
+              <div class="govuk-checkboxes__item govuk-checkboxes--small moj-multi-select__checkbox">
+                <input type="checkbox" class="govuk-checkboxes__input" id="row-3">
+                <label class="govuk-label govuk-checkboxes__label" for="row-3">
+                  <span class="govuk-visually-hidden">Select row 3</span>
+                </label>
+              </div>
+            </td>
+            <td class="govuk-table__cell"><a href="#" >Noelle Carmel</a></td>
+            <td class="govuk-table__cell">RN 00 04 26 D</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Tresco House</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">
+              <div class="govuk-checkboxes__item govuk-checkboxes--small moj-multi-select__checkbox">
+                <input type="checkbox" class="govuk-checkboxes__input" id="row-4">
+                <label class="govuk-label govuk-checkboxes__label" for="row-4">
+                  <span class="govuk-visually-hidden">Select row 4</span>
+                </label>
+              </div>
+            </td>
+            <td class="govuk-table__cell"><a href="#" >Sylevette Colwyn</a></td>
+            <td class="govuk-table__cell">RN 00 01 11 N</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Tresco House</td>
+          </tr>
+         <tr class="govuk-table__row">
+            <td class="govuk-table__cell">
+              <div class="govuk-checkboxes__item govuk-checkboxes--small moj-multi-select__checkbox">
+                <input type="checkbox" class="govuk-checkboxes__input" id="row-5">
+                <label class="govuk-label govuk-checkboxes__label" for="row-5">
+                  <span class="govuk-visually-hidden">Select row 5</span>
+                </label>
+              </div>
+            </td>
+            <td class="govuk-table__cell"><a href="#" >Susanna Shaye</a></td>
+            <td class="govuk-table__cell">RN 00 11 23 B</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">21 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Tresco House</td>
+          </tr>
+           <tr class="govuk-table__row">
+            <td class="govuk-table__cell">
+              <div class="govuk-checkboxes__item govuk-checkboxes--small moj-multi-select__checkbox">
+                <input type="checkbox" class="govuk-checkboxes__input" id="row-6">
+                <label class="govuk-label govuk-checkboxes__label" for="row-6">
+                  <span class="govuk-visually-hidden">Select row 6</span>
+                </label>
+              </div>
+            </td>
+            <td class="govuk-table__cell"><a href="#" >Heather Sand</a></td>
+            <td class="govuk-table__cell">RN 00 01 11 A</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">1 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Handsworth</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">
+              <div class="govuk-checkboxes__item govuk-checkboxes--small moj-multi-select__checkbox">
+                <input type="checkbox" class="govuk-checkboxes__input" id="row-7">
+                <label class="govuk-label govuk-checkboxes__label" for="row-7">
+                  <span class="govuk-visually-hidden">Select row 7</span>
+                </label>
+              </div>
+            </td>
+            <td class="govuk-table__cell"><a href="#" > Fran Simone</a></td>
+            <td class="govuk-table__cell">RN 00 10 00 E</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">6 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Handsworth</td>
+          </tr>
+     
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">
+              <div class="govuk-checkboxes__item govuk-checkboxes--small moj-multi-select__checkbox">
+                <input type="checkbox" class="govuk-checkboxes__input" id="row-8">
+                <label class="govuk-label govuk-checkboxes__label" for="row-8">
+                  <span class="govuk-visually-hidden">Select row 8</span>
+                </label>
+              </div>
+            </td>
+            <td class="govuk-table__cell"><a href="#">Danya Cecylia</a></td>
+            <td class="govuk-table__cell">RN 00 01 33 A</td>
+            <td class="govuk-table__cell">ESA</td>
+            <td class="govuk-table__cell">16 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Handsworth</td>
+          </tr>
+         <tr class="govuk-table__row">
+            <td class="govuk-table__cell">
+              <div class="govuk-checkboxes__item govuk-checkboxes--small moj-multi-select__checkbox">
+                <input type="checkbox" class="govuk-checkboxes__input" id="row-9">
+                <label class="govuk-label govuk-checkboxes__label" for="row-9">
+                  <span class="govuk-visually-hidden">Select row 9</span>
+                </label>
+              </div>
+            </td>
+            <td class="govuk-table__cell"><a href="#">Xia Jeana</a></td>
+            <td class="govuk-table__cell">RN 00 02 22 A</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">16 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Handsworth</td>
+          </tr>
+     
+
+
+          <!--Group 2-->
+
+          <tr class="govuk-table__row govuk-table__row--selected">
+            <td class="govuk-table__cell">
+              <div class="govuk-checkboxes__item govuk-checkboxes--small moj-multi-select__checkbox">
+                <input type="checkbox" class="govuk-checkboxes__input" id="row-1">
+                <label class="govuk-label govuk-checkboxes__label" for="row-1">
+                  <span class="govuk-visually-hidden">Select row 1</span>
+                </label>
+              </div>
+            </td>
+            <td class="govuk-table__cell"><a href="#">John Doe</a></td>
+            <td class="govuk-table__cell">RN 00 01 23 A</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">1 Feb 2021</td>
+            <td class="govuk-table__cell">Yes</td>
+            <td class="govuk-table__cell">Tresco House</td>
+          </tr>
+         <tr class="govuk-table__row">
+            <td class="govuk-table__cell">
+              <div class="govuk-checkboxes__item govuk-checkboxes--small moj-multi-select__checkbox">
+                <input type="checkbox" class="govuk-checkboxes__input" id="row-2">
+                <label class="govuk-label govuk-checkboxes__label" for="row-2">
+                  <span class="govuk-visually-hidden">Select row 2</span>
+                </label>
+              </div>
+            </td>
+            </td>
+            <td class="govuk-table__cell"><a href="#">Janette Rafe</a></td>
+            <td class="govuk-table__cell">RN 00 11 23 A</td>
+            <td class="govuk-table__cell">ESA</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell">Yes</td>
+            <td class="govuk-table__cell">Tresco House</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">
+              <div class="govuk-checkboxes__item govuk-checkboxes--small moj-multi-select__checkbox">
+                <input type="checkbox" class="govuk-checkboxes__input" id="row-3">
+                <label class="govuk-label govuk-checkboxes__label" for="row-3">
+                  <span class="govuk-visually-hidden">Select row 3</span>
+                </label>
+              </div>
+            </td>
+            <td class="govuk-table__cell"><a href="#" >Noelle Carmel</a></td>
+            <td class="govuk-table__cell">RN 00 04 26 D</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Tresco House</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">
+              <div class="govuk-checkboxes__item govuk-checkboxes--small moj-multi-select__checkbox">
+                <input type="checkbox" class="govuk-checkboxes__input" id="row-4">
+                <label class="govuk-label govuk-checkboxes__label" for="row-4">
+                  <span class="govuk-visually-hidden">Select row 4</span>
+                </label>
+              </div>
+            </td>
+            <td class="govuk-table__cell"><a href="#" >Sylevette Colwyn</a></td>
+            <td class="govuk-table__cell">RN 00 01 11 N</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Tresco House</td>
+          </tr>
+         <tr class="govuk-table__row">
+            <td class="govuk-table__cell">
+              <div class="govuk-checkboxes__item govuk-checkboxes--small moj-multi-select__checkbox">
+                <input type="checkbox" class="govuk-checkboxes__input" id="row-5">
+                <label class="govuk-label govuk-checkboxes__label" for="row-5">
+                  <span class="govuk-visually-hidden">Select row 5</span>
+                </label>
+              </div>
+            </td>
+            <td class="govuk-table__cell"><a href="#" >Susanna Shaye</a></td>
+            <td class="govuk-table__cell">RN 00 11 23 B</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">21 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Tresco House</td>
+          </tr>
+           <tr class="govuk-table__row">
+            <td class="govuk-table__cell">
+              <div class="govuk-checkboxes__item govuk-checkboxes--small moj-multi-select__checkbox">
+                <input type="checkbox" class="govuk-checkboxes__input" id="row-6">
+                <label class="govuk-label govuk-checkboxes__label" for="row-6">
+                  <span class="govuk-visually-hidden">Select row 6</span>
+                </label>
+              </div>
+            </td>
+            <td class="govuk-table__cell"><a href="#" >Heather Sand</a></td>
+            <td class="govuk-table__cell">RN 00 01 11 A</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">1 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Handsworth</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">
+              <div class="govuk-checkboxes__item govuk-checkboxes--small moj-multi-select__checkbox">
+                <input type="checkbox" class="govuk-checkboxes__input" id="row-7">
+                <label class="govuk-label govuk-checkboxes__label" for="row-7">
+                  <span class="govuk-visually-hidden">Select row 7</span>
+                </label>
+              </div>
+            </td>
+            <td class="govuk-table__cell"><a href="#" > Fran Simone</a></td>
+            <td class="govuk-table__cell">RN 00 10 00 E</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">6 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Handsworth</td>
+          </tr>
+     
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">
+              <div class="govuk-checkboxes__item govuk-checkboxes--small moj-multi-select__checkbox">
+                <input type="checkbox" class="govuk-checkboxes__input" id="row-8">
+                <label class="govuk-label govuk-checkboxes__label" for="row-8">
+                  <span class="govuk-visually-hidden">Select row 8</span>
+                </label>
+              </div>
+            </td>
+            <td class="govuk-table__cell"><a href="#">Danya Cecylia</a></td>
+            <td class="govuk-table__cell">RN 00 01 33 A</td>
+            <td class="govuk-table__cell">ESA</td>
+            <td class="govuk-table__cell">16 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Handsworth</td>
+          </tr>
+         <tr class="govuk-table__row">
+            <td class="govuk-table__cell">
+              <div class="govuk-checkboxes__item govuk-checkboxes--small moj-multi-select__checkbox">
+                <input type="checkbox" class="govuk-checkboxes__input" id="row-9">
+                <label class="govuk-label govuk-checkboxes__label" for="row-9">
+                  <span class="govuk-visually-hidden">Select row 9</span>
+                </label>
+              </div>
+            </td>
+            <td class="govuk-table__cell"><a href="#">Xia Jeana</a></td>
+            <td class="govuk-table__cell">RN 00 02 22 A</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">16 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Handsworth</td>
+          </tr>
+     
+
+          <tr class="govuk-table__row govuk-table__row--selected">
+            <td class="govuk-table__cell">
+              <div class="govuk-checkboxes__item govuk-checkboxes--small moj-multi-select__checkbox">
+                <input type="checkbox" class="govuk-checkboxes__input" id="row-1">
+                <label class="govuk-label govuk-checkboxes__label" for="row-1">
+                  <span class="govuk-visually-hidden">Select row 1</span>
+                </label>
+              </div>
+            </td>
+            <td class="govuk-table__cell"><a href="#">John Doe</a></td>
+            <td class="govuk-table__cell">RN 00 01 23 A</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">1 Feb 2021</td>
+            <td class="govuk-table__cell">Yes</td>
+            <td class="govuk-table__cell">Tresco House</td>
+          </tr>
+         <tr class="govuk-table__row">
+            <td class="govuk-table__cell">
+              <div class="govuk-checkboxes__item govuk-checkboxes--small moj-multi-select__checkbox">
+                <input type="checkbox" class="govuk-checkboxes__input" id="row-2">
+                <label class="govuk-label govuk-checkboxes__label" for="row-2">
+                  <span class="govuk-visually-hidden">Select row 2</span>
+                </label>
+              </div>
+            </td>
+            </td>
+            <td class="govuk-table__cell"><a href="#">Janette Rafe</a></td>
+            <td class="govuk-table__cell">RN 00 11 23 A</td>
+            <td class="govuk-table__cell">ESA</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell">Yes</td>
+            <td class="govuk-table__cell">Tresco House</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">
+              <div class="govuk-checkboxes__item govuk-checkboxes--small moj-multi-select__checkbox">
+                <input type="checkbox" class="govuk-checkboxes__input" id="row-3">
+                <label class="govuk-label govuk-checkboxes__label" for="row-3">
+                  <span class="govuk-visually-hidden">Select row 3</span>
+                </label>
+              </div>
+            </td>
+            <td class="govuk-table__cell"><a href="#" >Noelle Carmel</a></td>
+            <td class="govuk-table__cell">RN 00 04 26 D</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Tresco House</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">
+              <div class="govuk-checkboxes__item govuk-checkboxes--small moj-multi-select__checkbox">
+                <input type="checkbox" class="govuk-checkboxes__input" id="row-4">
+                <label class="govuk-label govuk-checkboxes__label" for="row-4">
+                  <span class="govuk-visually-hidden">Select row 4</span>
+                </label>
+              </div>
+            </td>
+            <td class="govuk-table__cell"><a href="#" >Sylevette Colwyn</a></td>
+            <td class="govuk-table__cell">RN 00 01 11 N</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Tresco House</td>
+          </tr>
+         <tr class="govuk-table__row">
+            <td class="govuk-table__cell">
+              <div class="govuk-checkboxes__item govuk-checkboxes--small moj-multi-select__checkbox">
+                <input type="checkbox" class="govuk-checkboxes__input" id="row-5">
+                <label class="govuk-label govuk-checkboxes__label" for="row-5">
+                  <span class="govuk-visually-hidden">Select row 5</span>
+                </label>
+              </div>
+            </td>
+            <td class="govuk-table__cell"><a href="#" >Susanna Shaye</a></td>
+            <td class="govuk-table__cell">RN 00 11 23 B</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">21 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Tresco House</td>
+          </tr>
+           <tr class="govuk-table__row">
+            <td class="govuk-table__cell">
+              <div class="govuk-checkboxes__item govuk-checkboxes--small moj-multi-select__checkbox">
+                <input type="checkbox" class="govuk-checkboxes__input" id="row-6">
+                <label class="govuk-label govuk-checkboxes__label" for="row-6">
+                  <span class="govuk-visually-hidden">Select row 6</span>
+                </label>
+              </div>
+            </td>
+            <td class="govuk-table__cell"><a href="#" >Heather Sand</a></td>
+            <td class="govuk-table__cell">RN 00 01 11 A</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">1 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Handsworth</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">
+              <div class="govuk-checkboxes__item govuk-checkboxes--small moj-multi-select__checkbox">
+                <input type="checkbox" class="govuk-checkboxes__input" id="row-7">
+                <label class="govuk-label govuk-checkboxes__label" for="row-7">
+                  <span class="govuk-visually-hidden">Select row 7</span>
+                </label>
+              </div>
+            </td>
+            <td class="govuk-table__cell"><a href="#" > Fran Simone</a></td>
+            <td class="govuk-table__cell">RN 00 10 00 E</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">6 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Handsworth</td>
+          </tr>
+     
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">
+              <div class="govuk-checkboxes__item govuk-checkboxes--small moj-multi-select__checkbox">
+                <input type="checkbox" class="govuk-checkboxes__input" id="row-8">
+                <label class="govuk-label govuk-checkboxes__label" for="row-8">
+                  <span class="govuk-visually-hidden">Select row 8</span>
+                </label>
+              </div>
+            </td>
+            <td class="govuk-table__cell"><a href="#">Danya Cecylia</a></td>
+            <td class="govuk-table__cell">RN 00 01 33 A</td>
+            <td class="govuk-table__cell">ESA</td>
+            <td class="govuk-table__cell">16 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Handsworth</td>
+          </tr>
+         <tr class="govuk-table__row">
+            <td class="govuk-table__cell">
+              <div class="govuk-checkboxes__item govuk-checkboxes--small moj-multi-select__checkbox">
+                <input type="checkbox" class="govuk-checkboxes__input" id="row-9">
+                <label class="govuk-label govuk-checkboxes__label" for="row-9">
+                  <span class="govuk-visually-hidden">Select row 9</span>
+                </label>
+              </div>
+            </td>
+            <td class="govuk-table__cell"><a href="#">Xia Jeana</a></td>
+            <td class="govuk-table__cell">RN 00 02 22 A</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">16 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Handsworth</td>
+          </tr>
+     
+
+
+
+        </tbody>
+      </table>
+      <a href="unassigned-list">
+        <button class="govuk-button" data-module="govuk-button">
+          Assign referrals to caseload
+        </button>
+      </a>
+
+    
+        <!--Pattern 1 link
+      <p>or <a href="new-referrals-page-2">view the previous page</a></p> -->
+
+        <!--Pattern 2 GDS pattern
+
+      <nav class="govuk-pagination govuk-pagination--block" role="navigation" aria-label="results">
+        <div class="govuk-pagination__prev">
+          <a class="govuk-link govuk-pagination__link" href="new-referrals-page-2" rel="prev">
+            <svg class="govuk-pagination__icon govuk-pagination__icon--prev" xmlns="http://www.w3.org/2000/svg" height="13" width="15" aria-hidden="true" focusable="false" viewBox="0 0 15 13">
+              <path d="m6.5938-0.0078125-6.7266 6.7266 6.7441 6.4062 1.377-1.449-4.1856-3.9768h12.896v-2h-12.984l4.2931-4.293-1.414-1.414z"></path>
+            </svg>
+            <span class="govuk-pagination__link-title">Previous</span><span class="govuk-visually-hidden">:</span>
+            <span class="govuk-pagination__link-label">2 of 3</span></a>
+        </div>
+     
+      </nav> -->
+
+        <!--Pattern 3 MOJ pattern-->
+
+        <p>or</p>
+      <nav class="moj-pagination" aria-label="Pagination navigation">
+
+        <ul class="moj-pagination__list">
+         
+          <li class="moj-pagination__item  moj-pagination__item--prev">
+            <a class="moj-pagination__link" href="new-referrals-page-2">Previous<span class="govuk-visually-hidden"> page</span></a>
+          </li>
+       
+        </ul>
+        <p class="moj-pagination__results">Showing <b>201</b> to <b>300</b> of <b>300</b> referrals</p>
+      </nav>
+      
+
+    </div>
+  </div>
+
+{% endblock %}

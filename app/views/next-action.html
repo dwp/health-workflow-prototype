@@ -1,0 +1,101 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Referral State Model Prototype
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Next action due
+      </h1>
+
+      <p><a href="https://dwpdigital.atlassian.net/wiki/spaces/HPDU/pages/132702700380/Next+Action+Due+Date+Q4+2021" role="button" draggable="false" aria-describedby="miro-link">Next action due confluence page with documentation</a></p>
+
+
+      <p>These prototypes look at next action due dates provided by the business and KPI's on awaiting things to be returned</p>
+
+      <h2 class="govuk-heading-m">Version 1</h2>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>timescale displayed on caseload screen in days decscending</li>
+        <li>Referral date removed to allow space for next action due column</li>
+        <li>(All three caseloads work, next action is displayed in descending order in each status type on the case load)</li>
+        <li>('Assigned' and 'Assessment booked' are the status from status list that work)</li>
+        <li>0 days shown on assessment booked status list for discussion on Jareds caseload</li>
+        <li>Zoe caseload shows overdue markers in mixed status order</li>
+        <li>Akhtar caseload shows a number of overdue markers pinned to the top</li>
+      </ul>
+
+      <a href="next-action/v1/" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"  data-module="govuk-button">
+        Start
+        <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
+          <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path>
+        </svg>
+      </a>     
+
+      <h2 class="govuk-heading-m">Version 2</h2>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>timescale displayed on caseload screen in days acscending order for discussion</li>
+        <li>Referral date removed to allow space for next action due column</li>
+        <li>(Jared and Zoe caseloads are the only things that work in this prototype)</li>
+        <li>Overdue displayed under the total dates, for discussion purposes</li>
+        <li>Jared caseload displays assessment booked in working days until the assessment</li>
+        <li>Zoe caseload displays assessment booked in the actual date format of the assessment</li>
+      </ul>
+
+      <a href="next-action/v2/" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"  data-module="govuk-button">
+        Start
+        <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
+          <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path>
+        </svg>
+      </a>     
+
+      <h2 class="govuk-heading-m">Version 3</h2>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>timescale displayed on caseload screen in dates</li>
+        <li>Referral date removed to allow space for next action due column</li>
+        <li>(All three caseloads work, next action is displayed in date order in each status type on the case load)</li>
+        <li>('Assigned' and 'Assessment booked' are the status from status list that work)</li>
+        <li>Jareds caseload shows dates with no overdue</li>
+        <li>Zoe caseload shows overdue markers under the due dates in mixed status order</li>
+        <li>Akhtar caseload shows a number of overdue markers pinned to the top</li>
+        <li>Assigned referral list shows a number of overdue markers pinned to the top</li>
+        <li>Assessment booked referral list shows just dates</li>
+      </ul>
+
+      <a href="next-action/v3/" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"  data-module="govuk-button">
+        Start
+        <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
+          <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path>
+        </svg>
+      </a> 
+      
+      <h2 class="govuk-heading-m">Version 4</h2>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li><strong>Testing round 2 example</strong> - timescale displayed on caseload screen in days decscending</li>
+        <li>Referral date removed to allow space for next action due column</li>
+        <li>(All three caseloads work, next action is displayed in days descending order in each status type on the case load)</li>
+        <li>('Assigned', 'Questionnaire received' and 'Assessment booked' are the status from status list that work)</li>
+        <li>Jareds caseload shows days descending with no overdue</li>
+        <li>Zoe caseload shows overdue markers in mixed status order</li>
+        <li>Akhtar caseload shows a number of overdue markers pinned to the top</li>
+        <li>Assigned and Questionnare received referral lists show a number of overdue markers pinned to the top</li>
+        <li>Assessment booked referral list shows just dates</li>
+      </ul>
+
+      <a href="next-action/v4/" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"  data-module="govuk-button">
+        Start
+        <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
+          <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path>
+        </svg>
+      </a>    
+
+    </div>
+  </div>
+{% endblock %}

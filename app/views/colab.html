@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Referral State Model Prototype
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Collaboration
+      </h1>
+
+      <p>This prototype looks at how we integrate/navigate between teams within HAS in Q3</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Up to date referral page information that reflects live</li>
+        <li>Links on right within referral actions for all teams at relavent parts of the journey</li>
+        <li>You can access referral actions by either find a claimant (no name or NINO needed just hit search), the top record on any caseload or by using the 'Assigned', 'Assesment booked' or 'Report ready' status lists.</li>
+      </ul>
+
+      <a href="colab/v4/" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"  data-module="govuk-button">
+        Start
+        <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
+          <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path>
+        </svg>
+      </a>
+
+
+      <details class="govuk-details" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            Archive
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+
+          <h2 class="govuk-heading-m"><a href="colab/archive/v1a/" aria-describedby="Achived-prototype-1">Archive MVP</a></h2>
+          <ul>
+            <li>Up to date referral page information that reflects live</li>
+            <li>Link under referral details</li>
+          </ul>
+
+          <h2 class="govuk-heading-m"><a href="colab/archive/v1/" aria-describedby="Achived-prototype-1">Archive supporting docs</a></h2>
+          <ul>
+            <li>Up to date referral page information that reflects live</li>
+            <li>Link on right within referral actions</li>
+          </ul>
+
+          <h2 class="govuk-heading-m"><a href="colab/archive/v3/" aria-describedby="Achived-prototype-1">Archive initial appointments interaction</a></h2>
+          <ul>
+            <li>Up to date referral page information that reflects live</li>
+            <li>Book, view, amend appointment link on right within referral actions</li>
+            <li>Link located underneath 'View claimant documents' in every status apart from unassigned.</li>
+          </ul>
+
+          <h2 class="govuk-heading-m"><a href="colab/archive/v2/" aria-describedby="Achived-prototype-1">Archive MVP Q2 2022</a></h2>
+          <ul>
+            <li>Up to date referral page information that reflects live</li>
+            <li>Links on right within referral actions</li>
+          </ul>
+          
+        </div>
+      </details>
+
+    </div>
+  </div>
+{% endblock %}
