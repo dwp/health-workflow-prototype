@@ -1,0 +1,174 @@
+{% extends "layout-extended.html" %}
+
+{% block pageTitle %}
+Medical specialist - Health Assesssment Service
+{% endblock %}
+
+{% block beforeContent %}
+
+<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+      <h1 class="govuk-heading-l">
+        Add a  specialist or medical contact
+        </h1>
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" role="group" aria-describedby="claimant-names">
+
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="preferred-name">
+             Profession
+              </label>
+              <input class="govuk-input" id="preferred-name" name="preferred-name" type="text" spellcheck="false" autocomplete="preferred-name" value="">
+            </div>
+
+
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="preferred-name">
+                Name
+              </label>
+              <input class="govuk-input" id="preferred-name" name="preferred-name" type="text" spellcheck="false" autocomplete="preferred-name" value="">
+            </div>
+
+
+
+
+
+            </fieldset>
+
+          </div>
+
+
+      <!--  <fieldset class="govuk-fieldset" role="group" aria-describedby="dob-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading">
+              Address
+            </h2>
+          </legend>
+      </legend>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="address-line-1">
+          Address line 1
+        </label>
+        <input class="govuk-input" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line1" value="">
+      </div>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="address-line-2">
+          Address line 2 (optional)
+        </label>
+        <input class="govuk-input" id="address-line-2" name="address-line-2" type="text" autocomplete="address-line2">
+      </div>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="address-line-2">
+          Address line 3 (optional)
+        </label>
+        <input class="govuk-input" id="address-line-2" name="address-line-2" type="text" autocomplete="address-line2">
+      </div>
+
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="address-line-2">
+          Address line 4 (optional)
+        </label>
+        <input class="govuk-input" id="address-line-2" name="address-line-2" type="text" autocomplete="address-line2">
+      </div>
+
+     
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="address-postcode">
+          Postal or zip code (optional)
+        </label>
+        <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text" autocomplete="postal-code" value="">
+      </div>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="home-number">
+         Country
+        </label>
+        <input class="govuk-input govuk-input--width-20" id="home-number" name="home-number" type="text" spellcheck="false" autocomplete="home-number" value="">
+      </div> -->
+
+      <!-- <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" role="group" aria-describedby="ni/crn numbers">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+              <h2 class="govuk-fieldset__heading">
+                Ni number/Customer reference number
+              </h2>
+            </legend>
+
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="ni-number">
+                National insurance number
+              </label>
+              <input class="govuk-input govuk-!-width-one-third" id="ni-number" name="ni-number" type="text" spellcheck="false" autocomplete="ni-number">
+            </div>
+
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="crn-number">
+                Customer reference number
+              </label>
+              <input class="govuk-input govuk-!-width-one-third" id="crn-number" name="crn-number" type="text" spellcheck="false" autocomplete="crn-number">
+            </div>
+
+          </fieldset>
+        </div> -->
+
+
+
+
+
+
+
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" role="group" aria-describedby="contact-details">
+          
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="home-number">
+              Phone number
+            </label>
+            <input class="govuk-input govuk-input--width-20" id="home-number" name="home-number" type="text" spellcheck="false" autocomplete="home-number" value="">
+          </div>
+
+        </fieldset>
+      </div>
+
+
+    
+
+        <!--   <div class="govuk-form-group">
+            <label class="govuk-label" for="home-number">
+              Email address
+            </label>
+            <input class="govuk-input" id="home-number" name="home-number" type="text" spellcheck="false" autocomplete="home-number" value="test.medical@example.com">
+          </div> -->
+
+
+
+
+
+
+      <a href="medical-find-address" aria-describedby="search-referral">
+        <button class="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
+      </a>
+
+    </div>
+  </div>
+
+{% endblock %}
