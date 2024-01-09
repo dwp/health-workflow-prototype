@@ -1,16 +1,12 @@
-# ignore tracking usage data config - we want a different one for each user
-usage-data-config.json
-# ignore extension SCSS because it's dynamically generated
-lib/extensions/_extensions.scss
+
+
+# Prototype ignores - per-user
+.tmp/
 .env
-.sass-cache
-.DS_Store
-.start.pid
-.port.tmp
-public
-node_modules/*
-.tmuxp.*
-package-lock.json
-node_modules/
+migrate.log
+usage-data-config.json
+
+# General ignores
 .DS_Store
 .idea
+node_modules/
