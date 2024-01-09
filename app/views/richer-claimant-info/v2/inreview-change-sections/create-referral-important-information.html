@@ -1,0 +1,120 @@
+{% extends "layout-extended.html" %}
+
+{% block pageTitle %}
+  Referral list
+{% endblock %}
+
+{% block beforeContent %}
+
+<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+      <h1 class="govuk-heading-l">
+        Important information
+      </h1>
+
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading">
+              Is this a Special Rules for End of Life (SREL) case?
+            </h2>
+          </legend>
+          <div class="govuk-radios" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="EOL-yes" name="EOL-yes" type="radio" value="yes">
+              <label class="govuk-label govuk-radios__label" for="EOL-yes">
+                Yes
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="EOL-no" name="EOL-no" type="radio" value="no">
+              <label class="govuk-label govuk-radios__label" for="EOL-no">
+                No
+              </label>
+            </div>
+          </div>
+
+        </fieldset>
+      </div>
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading">
+              Does the claimant have a mental health condition?
+            </h2>
+          </legend>
+          <div class="govuk-radios" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="additional-support-yes" name="additional-support-yes" type="radio" value="yes">
+              <label class="govuk-label govuk-radios__label" for="additional-support-yes">
+                Yes
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="additional-support-no" name="additional-support-no" type="radio" value="no">
+              <label class="govuk-label govuk-radios__label" for="additional-support-no">
+                No
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="additional-support-unknown" name="additional-support-unknown" type="radio" value="unknown">
+              <label class="govuk-label govuk-radios__label" for="additional-support-unknown">
+                Not known
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading">
+              Does the claimant have an unacceptable behaviour marker?
+            </h2>
+          </legend>
+          <div class="govuk-radios" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="additional-support-yes" name="additional-support-yes" type="radio" value="yes">
+              <label class="govuk-label govuk-radios__label" for="additional-support-yes">
+                Yes
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="additional-support-no" name="additional-support-no" type="radio" value="no">
+              <label class="govuk-label govuk-radios__label" for="additional-support-no">
+                No
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="additional-support-unknown" name="additional-support-unknown" type="radio" value="unknown">
+              <label class="govuk-label govuk-radios__label" for="additional-support-unknown">
+                Not known
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+
+      <a href="../claimant-detail-srti-updated" aria-describedby="search-referral">
+          <button class="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
+      </a>
+
+    </div>
+  </div>
+
+{% endblock %}

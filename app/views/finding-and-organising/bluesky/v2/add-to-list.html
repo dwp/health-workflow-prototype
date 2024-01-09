@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Referral list
+{% endblock %}
+
+{% block beforeContent %}
+<a href="index" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">
+        Create a new list
+      </h1>
+
+      <div class="govuk-form-group">
+        <form action="/finding-and-organising/bluesky/v2/add-to-list" method="post" class="form">
+        <fieldset class="govuk-fieldset" aria-describedby="add-to-list-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h1 class="govuk-fieldset__heading">
+              Would you like to add <strong>'referral claimant name and NINO'</strong> to 'new list name'?
+            </h1>
+          </legend>
+          <div id="add-to-list-hint" class="govuk-hint">
+            This can be changed through the referral claimant detail page in future.
+          </div>
+          <div class="govuk-radios govuk-radios--inline">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="add-to-list-yes" name="add-to-list" type="radio" value="yes">
+              <label class="govuk-label govuk-radios__label" for="add-to-list-yes">
+                Yes
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="add-to-list-no" name="add-to-list" type="radio" value="no">
+              <label class="govuk-label govuk-radios__label" for="add-to-list-no">
+                No
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+      <button class="govuk-button" data-module="govuk-button">Save and continue</button>
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}

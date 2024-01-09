@@ -1,0 +1,283 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Referral list
+{% endblock %}
+
+{% block beforeContent %}
+<a href="start" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <h1 class="govuk-heading-l">
+        Assigned referrals
+      </h1>
+
+      <table class="govuk-table">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Claimant name</th>
+            <th scope="col" class="govuk-table__header">NI number</th>
+            <th scope="col" class="govuk-table__header">Benefit</th>
+            <th scope="col" class="govuk-table__header">Referral date</th>
+            <th scope="col" class="govuk-table__header">SRTI</th>
+            <th scope="col" class="govuk-table__header">Assessment centre</th>
+            <th scope="col" class="govuk-table__header">Next action due in</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-assigned" aria-describedby="claimant-detail-assigned">John Doe</a></td>
+            <td class="govuk-table__cell">RN 00 01 23 A</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">1 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Tresco House</td>
+            <td class="govuk-table__cell">
+              <strong class="govuk-tag govuk-tag--red" id="overdue">7 days overdue</strong>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-assigned" aria-describedby="claimant-detail-assigned">Janette Rafe</a></td>
+            <td class="govuk-table__cell">RN 00 11 23 A</td>
+            <td class="govuk-table__cell">ESA</td>
+            <td class="govuk-table__cell">16 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Tresco House</td>
+            <td class="govuk-table__cell">
+              <strong class="govuk-tag govuk-tag--red" id="overdue">4 days overdue</strong>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-assigned" aria-describedby="claimant-detail">Noelle Carmel</a></td>
+            <td class="govuk-table__cell">RN 00 04 26 D</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Handsworth</td>
+            <td class="govuk-table__cell">
+              <strong class="govuk-tag govuk-tag--red" id="overdue">3 days overdue</strong>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-assigned" aria-describedby="claimant-detail-assigned">Sylevette Colwyn</a></td>
+            <td class="govuk-table__cell">RN 00 01 11 N</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Tresco House</td>
+            <td class="govuk-table__cell">
+              <strong class="govuk-tag govuk-tag--red" id="overdue">2 days overdue</strong>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-assigned" aria-describedby="claimant-detail-assigned">Ethan Thornton</td>
+            <td class="govuk-table__cell">RN 00 01 61 D</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Tresco House</td>
+            <td class="govuk-table__cell">
+              <strong class="govuk-tag govuk-tag--red" id="overdue">2 days overdue</strong>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-assigned" aria-describedby="claimant-detail-assigned">Paige Gael</a></td>
+            <td class="govuk-table__cell">RN 00 07 71 T</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Handsworth</td>
+            <td class="govuk-table__cell">
+              <strong class="govuk-tag govuk-tag--red" id="overdue">1 day overdue</strong>
+            </td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-assigned" aria-describedby="claimant-detail-assigned">Gilbert Mills</a></td>
+            <td class="govuk-table__cell">RN 00 02 22 K</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">1 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Tresco House</td>
+            <td class="govuk-table__cell">0 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-assigned" aria-describedby="claimant-detail-assigned">Cherise Kaufman</a></td>
+            <td class="govuk-table__cell">RN 00 10 10 R</td>
+            <td class="govuk-table__cell">ESA</td>
+            <td class="govuk-table__cell">16 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Handsworth</td>
+            <td class="govuk-table__cell">0 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-assigned" aria-describedby="claimant-detail">Rory Whelan</a></td>
+            <td class="govuk-table__cell">RN 00 23 95 H</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Tresco House</td>
+            <td class="govuk-table__cell">1 day</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-assigned" aria-describedby="claimant-detail-assigned">Stephan Miles</a></td>
+            <td class="govuk-table__cell">RN 00 01 11 N</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Tresco House</td>
+            <td class="govuk-table__cell">1 day</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-assigned" aria-describedby="claimant-detail-assigned">Katrina Wolfe</td>
+            <td class="govuk-table__cell">RN 00 03 33 T</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Handsworth</td>
+            <td class="govuk-table__cell">1 day</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-assigned" aria-describedby="claimant-detail-assigned">Harry Neville</a></td>
+            <td class="govuk-table__cell">RN 00 22 22 H</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Handsworth</td>
+            <td class="govuk-table__cell">1 day</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-assigned" aria-describedby="claimant-detail">Elizabeth Almond</a></td>
+            <td class="govuk-table__cell">RN 00 01 96 Z</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Handsworth</td>
+            <td class="govuk-table__cell">1 day</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-assigned" aria-describedby="claimant-detail-assigned">Sam Smart</a></td>
+            <td class="govuk-table__cell">RN 00 09 83 A</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Handsworth</td>
+            <td class="govuk-table__cell">1 day</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-assigned" aria-describedby="claimant-detail-assigned">Luce Deryn</td>
+            <td class="govuk-table__cell">RN 00 01 46 A</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Handsworth</td>
+            <td class="govuk-table__cell">1 day</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-assigned" aria-describedby="claimant-detail-assigned">Delia Durham</a></td>
+            <td class="govuk-table__cell">RN 00 01 73 B</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Handsworth</td>
+            <td class="govuk-table__cell">1 day</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-assigned" aria-describedby="claimant-detail-assigned">Esther Rayner</td>
+            <td class="govuk-table__cell">RN 00 01 26 F</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Tresco House</td>
+            <td class="govuk-table__cell">2 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-assigned" aria-describedby="claimant-detail-assigned">Paige Gael</a></td>
+            <td class="govuk-table__cell">RN 00 07 71 T</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Tresco House</td>
+            <td class="govuk-table__cell">2 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-assigned" aria-describedby="claimant-detail-assigned">Maha Hansen</td>
+            <td class="govuk-table__cell">RN 00 08 24 J</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Tresco House</td>
+            <td class="govuk-table__cell">2 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-assigned" aria-describedby="claimant-detail-assigned">John-Paul Green</a></td>
+            <td class="govuk-table__cell">RN 00 09 29 C</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Tresco House</td>
+            <td class="govuk-table__cell">2 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-assigned" aria-describedby="claimant-detail-assigned">Connah Nava</td>
+            <td class="govuk-table__cell">RN 00 31 29 B</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Handsworth</td>
+            <td class="govuk-table__cell">2 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-assigned" aria-describedby="claimant-detail-assigned">Seb Heath</a></td>
+            <td class="govuk-table__cell">RN 00 41 73 D</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Handsworth</td>
+            <td class="govuk-table__cell">2 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-assigned" aria-describedby="claimant-detail-assigned">Mildred Mccallum</td>
+            <td class="govuk-table__cell">RN 00 78 46 G</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Handsworth</td>
+            <td class="govuk-table__cell">2 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-assigned" aria-describedby="claimant-detail-assigned">Dennis Briggs</a></td>
+            <td class="govuk-table__cell">RN 00 09 72 D</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Handsworth</td>
+            <td class="govuk-table__cell">2 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-assigned" aria-describedby="claimant-detail-assigned">Griff Reese</td>
+            <td class="govuk-table__cell">RN 00 09 11 F</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Handsworth</td>
+            <td class="govuk-table__cell">2 days</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-assigned" aria-describedby="claimant-detail-assigned">Ida Bates</a></td>
+            <td class="govuk-table__cell">RN 00 11 12 B</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Handsworth</td>
+            <td class="govuk-table__cell">2 days</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+{% endblock %}

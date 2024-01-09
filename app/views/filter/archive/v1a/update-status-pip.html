@@ -1,0 +1,136 @@
+{% extends "layout-extended.html" %}
+
+{% block pageTitle %}
+  Referral list
+{% endblock %}
+
+{% block beforeContent %}
+<a href="index" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+
+              <h1 class="govuk-fieldset__heading">
+                Select a status
+              </h1>
+              <div id="event-name-hint" class="govuk-hint">
+              </div>
+            </legend>
+
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="status-1" name="status" type="radio" value="hcp-review-pip">
+              <label class="govuk-label govuk-radios__label" for="status-1">
+                HCP review
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="status-2" name="status" type="radio" value="send-fme-pip">
+              <label class="govuk-label govuk-radios__label" for="status-2">
+                Request medical evidence
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="status-3" name="status" type="radio" value="awaiting-fme-pip">
+              <label class="govuk-label govuk-radios__label" for="status-3">
+                Awaiting medical evidence
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="status-4" name="status" type="radio" value="fme-received-pip">
+              <label class="govuk-label govuk-radios__label" for="status-4">
+                Medical evidence received
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="status-5" name="status" type="radio" value="fme-not-received-pip">
+              <label class="govuk-label govuk-radios__label" for="status-5">
+                Medical evidence not received
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="status-6" name="status" type="radio" value="book-assessment-pip">
+              <label class="govuk-label govuk-radios__label" for="status-6">
+                Book assessment
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="status-7" name="status" type="radio" value="book-pbr-pip">
+              <label class="govuk-label govuk-radios__label" for="status-7">
+                Book paper based review
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="status-8" name="status" type="radio" value="assessment-booked-pip">
+              <label class="govuk-label govuk-radios__label" for="status-8">
+                Assessment booked
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="status-9" name="status" type="radio" value="pbr-booked-pip">
+              <label class="govuk-label govuk-radios__label" for="status-9">
+                Paper based review booked
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="status-10" name="status" type="radio" value="fta-pip">
+              <label class="govuk-label govuk-radios__label" for="status-10">
+                Failed to attend
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="status-11" name="status" type="radio" value="hcp-audit-pip">
+              <label class="govuk-label govuk-radios__label" for="status-11">
+                HCP audit
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="status-12" name="status" type="radio" value="report-ready-pip">
+              <label class="govuk-label govuk-radios__label" for="status-12">
+                Report ready
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="status-13" name="status" type="radio" value="pipcs-descriptors-updated">
+              <label class="govuk-label govuk-radios__label" for="status-13">
+                PIPCS descriptor updated
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="status-14" name="status" type="radio" value="done-pip">
+              <label class="govuk-label govuk-radios__label" for="status-14">
+                Done
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="status-15" name="status" type="radio" value="withdrawn-pip">
+              <label class="govuk-label govuk-radios__label" for="status-15">
+                Withdrawn
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="status-16" name="status" type="radio" value="created-in-error-pip">
+              <label class="govuk-label govuk-radios__label" for="status-16">
+                Created in error
+              </label>
+            </div>
+
+          </fieldset>
+        </div>
+
+        <a href="confirmation" role="button" draggable="false" class="govuk-button"  data-module="govuk-button">
+          Save and continue
+        </a>
+
+    </div>
+  </div>
+
+
+{% endblock %}

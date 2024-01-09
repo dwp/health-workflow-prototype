@@ -1,0 +1,67 @@
+{% extends "layout-extended.html" %}
+
+{% block pageTitle %}
+Unacceptable behaviour - Health Assesssment Service
+{% endblock %}
+
+{% block beforeContent %}
+<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+     <!-- <span class="govuk-caption-l govuk-!-margin-bottom-2">Create referral question 9 of X</span> -->
+      
+
+
+     <h1 class="govuk-heading-l">
+      Does the claimant have a current unacceptable behaviour (UCB) marker?
+   </h1>
+
+
+
+
+   <div class="govuk-form-group">
+    <fieldset class="govuk-fieldset" role="group" aria-describedby="claimant-names">
+  
+         <div class="govuk-radios" data-module="govuk-radios">
+           <div class="govuk-radios__item">
+             <input class="govuk-radios__input" id="behaviour-yes" name="behaviour" type="radio" value="yes" checked>
+             <label class="govuk-label govuk-radios__label" for="behaviour-yes" >
+               Yes
+             </label>
+           </div>
+           <div class="govuk-radios__item">
+             <input class="govuk-radios__input" id="behaviour-no" name="behaviour" type="radio" value="no" >
+             <label class="govuk-label govuk-radios__label" for="behaviour-no">
+               No
+             </label>
+           </div>
+
+         <!---   <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="behaviour-unknown" name="behaviour" type="radio" value="unknown">
+            <label class="govuk-label govuk-radios__label" for="behaviour-unknown">
+             Not known
+            </label>
+          </div> -->
+          
+          
+
+       </fieldset>
+     </div>
+
+
+
+      
+     <a href="important-behaviour-followup">  <button class="govuk-button" data-module="govuk-button">
+      Continue
+        </button>
+      </a>
+
+    </div>
+  </div>
+
+{% endblock %}

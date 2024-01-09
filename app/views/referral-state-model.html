@@ -1,0 +1,91 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Referral State Model Prototype
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Referral state Model
+      </h1>
+
+      <p>This prototype shows the minimum viable product (MVP) using a referral state model with the aim of simplifying how a referral can be pushed end-to-end through the Health Assessment Service, with a benefit-agnostic approach.  It allows a user to do the following: </p>
+
+      <h2 class="govuk-heading-m">Prototype</h2>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>view a list of referrals that have come into the health assessment service via the referral gateway </li>
+        <li>Show benefit type so Case Manager can identify a WCA referral as these have a different clerical process in place</li>
+        <li>Show referral date so a Case Manager can identify whether a referral needs chasing</li>
+        <li>perform necessary identity checks</li>
+        <li>move the referral to the next stage by having the ability to update the status of a referral as it moves through the assessment process</li>
+        <li>start assessment if the referral is in 'paper based review' or 'assessment booked'</li>
+        <li>view report if the referral is in 'awaiting decision' or 'done'</li>
+      </ul>
+
+      <a href="state-model-mvp/v1/list" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"  data-module="govuk-button">
+        Start
+        <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
+          <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path>
+        </svg>
+      </a>
+
+      <details class="govuk-details" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            Archive
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+
+          <h2 class="govuk-heading-m"><a href="state-model-mvp/archive/v1/list" aria-describedby="Achived-prototype-1">Achived prototype 1</a></h2>
+          <p>Prototype from the outcome of catch up with proxy users (08/02/21) Removal of claimant detail page so status can be updated straight from the list with minimal information</p>
+          <p>Archived due to more information being needed to identify a person and also contact them. The claimant detail page is also needed for oher teams to hang off from a point of view of starting an assessment and viewing a report/decision.</p>
+
+          <h2 class="govuk-heading-m"><a href="state-model-mvp/archive/v2/list" aria-describedby="Achived-prototype-1">Achived prototype 2</a></h2>
+
+          <p>Prototype from the outcome of catch up with proxy users (08/02/21) Removal of claimant detail page so status can be updated straight from the list with identifying information in the list view</p>
+          <p>Archived due to more information being needed to identify a person and also contact them. The claimant detail page is also needed for oher teams to hang off from a point of view of starting an assessment and viewing a report/decision.</p>
+
+          <h2 class="govuk-heading-m"><a href="state-model-mvp/archive/v3/list" aria-describedby="Achived-prototype-1">Achived prototype 3</a></h2>
+
+          <p>Prototype from the outcome of catch up with proxy users (08/02/21) Minimal information on list page, to see if claimant can be identified before clicking through to detail.</p>
+          <p>Archived due to case managers not being able to identify two people with the same name on the list view.</p>
+
+          <h2 class="govuk-heading-m"><a href="state-model-mvp/archive/v4/list" aria-describedby="Achived-prototype-1">Achived prototype 4</a></h2>
+
+          <p>Prototype from the outcome of catch up with proxy users (08/02/21) making the case manager aware that the claimant is SRTI aware in the detail page.</p>
+          <p>Archived due to the information not actually being available to digest/display for April.</p>
+
+          <h2 class="govuk-heading-m"><a href="state-model-mvp/archive/v5/list" aria-describedby="Achived-prototype-1">Achived prototype 5</a></h2>
+
+          <p>Prototype from the outcome of catch up with proxy users (08/02/21) requiring benefit type in the list view.</p>
+          <p>Archived due to testing with case managers (17/02/21) non of which mentioned benefit type, but requested the date in which the claim came in.</p>
+
+          <h2 class="govuk-heading-m"><a href="state-model-mvp/archive/v6/list" aria-describedby="Achived-prototype-1">Achived prototype 6</a></h2>
+
+          <p>Prototype with the initial status set that went for test on 22/02/21</p>
+          <p>Archived due to testing with S.O.D team (22/02/21) some status needed rewording.</p>
+
+          <h2 class="govuk-heading-m"><a href="state-model-mvp/archive/v7/list" aria-describedby="Achived-prototype-1">Achived prototype 7</a></h2>
+
+          <p>Prototype with the initial status set that went for test on 22/02/21</p>
+          <p>Archived due to testing with S.O.D team (26/02/21) benefit type is needed in the list viw as well as date.</p>
+
+          <h2 class="govuk-heading-m"><a href="state-model-mvp/archive/v8/list" aria-describedby="Achived-prototype-1">Achived prototype 8</a></h2>
+
+          <p>Prototype with a numerical date range</p>
+          <p>Archived due to date range not being inline with GDS pattern.</p>
+
+        </div>
+      </details>
+
+
+      
+
+    </div>
+  </div>
+{% endblock %}

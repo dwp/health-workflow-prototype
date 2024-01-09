@@ -1,0 +1,59 @@
+{% extends "layout-extended.html" %}
+
+{% block pageTitle %}
+Remove interpreter information - Health Assesssment Service
+{% endblock %}
+
+{% block beforeContent %}
+<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+     <!-- <span class="govuk-caption-l govuk-!-margin-bottom-2">Create referral question 9 of X</span> -->
+
+
+
+
+
+     <div class="govuk-form-group">
+ <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+   <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+     <h1 class="govuk-fieldset__heading">
+       Are you sure you want to remove this interpreter information?
+     </h1>
+   </legend>
+   <div class="govuk-inset-text">
+     Urdu
+   </div>
+   <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+     <div class="govuk-radios__item">
+       <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+       <label class="govuk-label govuk-radios__label" for="changed-name">
+         Yes
+       </label>
+     </div>
+     <div class="govuk-radios__item">
+       <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+       <label class="govuk-label govuk-radios__label" for="changed-name-2">
+         No
+       </label>
+     </div>
+   </div>
+ </fieldset>
+</div>
+
+
+
+      <a href="../pip-case-details-updated">  <button class="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
+      </a>
+
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,283 @@
+{% extends "layout-extended.html" %}
+
+{% block pageTitle %}
+Representation and support - Health Assesssment Service
+{% endblock %}
+
+{% block beforeContent %}
+
+<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+     <h1 class="govuk-heading-l">
+      Add representation 
+      </h1>
+
+      <div class="govuk-inset-text">
+   This is only for formal representation. </div>
+
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" role="group" aria-describedby="claimant-names">
+
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+
+           <!--  <h1 class="govuk-heading-m">
+                  Representation type
+              </h1>
+
+              <div class="govuk-radios" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="Personal Acting Body" name="hcp-preference" type="radio" value="Personal Acting Body">
+                  <label class="govuk-label govuk-radios__label" for="Personal Acting Body">
+                    Personal Acting Body
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="Corporate Acting Body" name="hcp-preference" type="radio" value="Corporate Acting Body"  checked>
+                  <label class="govuk-label govuk-radios__label" for="Corporate Acting Body">
+                    Corporate Acting Body
+                  </label>
+                </div>
+
+
+              </div>-->
+
+            </fieldset>
+          </div>
+
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="address-line-1">
+           Organisation name (if applicable)
+            </label>
+            <input class="govuk-input" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line1" value="Age UK">
+          </div>
+          
+
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="contact-name">
+              Contact name
+            </label>
+            <input class="govuk-input" id="contact-name" name="contact-name" type="text" spellcheck="false" autocomplete="contact-name" value="Janette Rafe">
+          </div>
+
+
+       
+         
+         <!-- 
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend">
+                <h1 class="govuk-fieldset__heading">
+                  Relationship to claimant 
+                </h1>
+              </legend>
+              <div class="govuk-radios" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="representation" name="representation" type="radio" checked>
+                  <label class="govuk-label govuk-radios__label" for="representation">
+                    Appointee
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="representation-2" name="representation" type="radio" >
+                  <label class="govuk-label govuk-radios__label" for="representation-2">
+                    Corporate PAB
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="representation-3" name="representation" type="radio" >
+                  <label class="govuk-label govuk-radios__label" for="representation-3">
+                    Curator Bonis
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="representation-4" name="representation" type="radio">
+                  <label class="govuk-label govuk-radios__label" for="representation-4">
+                    Power of Attorney (Enduring)
+                  </label>
+                </div>
+
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="representation-5" name="representation" type="radio" >
+                  <label class="govuk-label govuk-radios__label" for="representation-5">
+                    Power of Attorney (Limited)
+                  </label>
+                </div>
+
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="representation-6" name="representation" type="radio" >
+                  <label class="govuk-label govuk-radios__label" for="representation-6">
+                    Receiver/Deputy
+                  </label>
+                </div>
+
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="representation-7" name="representation" type="radio" >
+                  <label class="govuk-label govuk-radios__label" for="representation-7">
+                    Tutor
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div> -->
+
+      
+
+          </fieldset>
+
+        </div>
+
+<!-- 
+        <fieldset class="govuk-fieldset" role="group" aria-describedby="dob-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading">
+              Address
+            </h2>
+          </legend>
+    
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="address-line-1">
+           Organisation name (if applicable)
+            </label>
+            <input class="govuk-input" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line1" value="Age UK">
+          </div>
+
+    
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="address-line-1">
+          Address line 1
+        </label>
+        <input class="govuk-input" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line1" value="10 Test Street">
+      </div>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="address-line-2">
+          Address line 2 (optional)
+        </label>
+        <input class="govuk-input" id="address-line-2" name="address-line-2" type="text" autocomplete="address-line2">
+      </div>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="address-line-2">
+          Address line 3 (optional)
+        </label>
+        <input class="govuk-input" id="address-line-2" name="address-line-2" type="text" autocomplete="address-line2" value="Test City">
+      </div>
+
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="address-line-2">
+          Address line 4 (optional)
+        </label>
+        <input class="govuk-input" id="address-line-2" name="address-line-2" type="text" autocomplete="address-line2">
+      </div>
+
+     
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="address-postcode">
+          Postal or zip code (optional)
+        </label>
+        <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text" autocomplete="postal-code" value="XX12 1XX">
+      </div>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="home-number">
+         Country
+        </label>
+        <input class="govuk-input govuk-input--width-20" id="home-number" name="home-number" type="text" spellcheck="false" autocomplete="home-number" value="UK">
+      </div>
+    -->
+
+
+      <!-- <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" role="group" aria-describedby="ni/crn numbers">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+              <h2 class="govuk-fieldset__heading">
+                Ni number/Customer reference number
+              </h2>
+            </legend>
+
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="ni-number">
+                National insurance number
+              </label>
+              <input class="govuk-input govuk-!-width-one-third" id="ni-number" name="ni-number" type="text" spellcheck="false" autocomplete="ni-number">
+            </div>
+
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="crn-number">
+                Customer reference number
+              </label>
+              <input class="govuk-input govuk-!-width-one-third" id="crn-number" name="crn-number" type="text" spellcheck="false" autocomplete="crn-number">
+            </div>
+
+          </fieldset>
+        </div> -->
+
+
+
+
+
+
+
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" role="group" aria-describedby="contact-details">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading">
+              Contact details
+            </h2>
+          </legend>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="home-number">
+              Phone number
+            </label>
+            <input class="govuk-input govuk-input--width-20" id="home-number" name="home-number" type="text" spellcheck="false" autocomplete="home-number" value="07000 000000">
+          </div>
+
+        </fieldset>
+      </div>
+
+
+      <div class="govuk-form-group">
+
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="home-number">
+              Email address
+            </label>
+            <input class="govuk-input" id="home-number" name="home-number" type="text" spellcheck="false" autocomplete="home-number" value="test.email@example.com">
+          </div>
+
+        </fieldset>
+</div>
+
+
+
+      <a href="representation-address-lookup" aria-describedby="search-referral">
+        <button class="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
+      </a>
+
+    </div>
+  </div>
+
+{% endblock %}

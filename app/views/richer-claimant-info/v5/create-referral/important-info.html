@@ -1,0 +1,318 @@
+{% extends "richer-claimant-info/v4/nav/create-referral-layout-home.html" %}
+
+{% block pageTitle %}
+  Referral list
+{% endblock %}
+
+{% block beforeContent %}
+
+<a href="../index" class="govuk-back-link">Back</a>
+
+
+{% endblock %}
+
+{% block content %}
+
+<div class="app-pane__body">
+
+
+
+  <div class="app-pane__subnav-create" >
+
+    <div class="govuk-grid-column-one-fifth" style="position: sticky; top:0;">
+      <nav class="moj-side-navigation" aria-label="Side navigation">
+
+        <input type="hidden" name="previousDocument" id="previousDocument" value="">
+
+      <!--   <ul class="moj-side-navigation__list">
+
+          <li class="moj-side-navigation__item">
+
+              <a href="assessment-type" aria-current="location">&lt; Back to Assessment type</a>
+
+          </li>
+
+          </ul> -->
+
+
+
+
+
+
+
+        <h4 class="moj-side-navigation__title">Case details</h4>
+        <ul class="moj-side-navigation__list">
+
+
+          <li class="moj-side-navigation__item ">
+
+
+            <a href="create-referral">Referral details</a>
+
+        </li>
+
+        <li class="moj-side-navigation__item moj-side-navigation__item--active">
+
+          <a href="">Important information</a>
+
+      </li>
+
+      <li class="moj-side-navigation__item ">
+
+        <a href=" " aria-current="location"> GP details</a>
+
+    </li>
+
+      <li class="moj-side-navigation__item ">
+
+
+        <a href="specialist-medical">Other specialist or medical contacts</a>
+    </li>
+
+
+
+
+         </ul>
+
+
+         <h4 class="moj-side-navigation__title">Claimant details</h4>
+         <ul class="moj-side-navigation__list">
+
+           <li class="moj-side-navigation__item">
+
+             <a href="personal-details">Personal details</a>
+
+         </li>
+
+         <li class="moj-side-navigation__item ">
+
+          <a href=" " aria-current="location"> Adjustments</a>
+
+      </li>
+
+
+      <li class="moj-side-navigation__item ">
+
+       <a href=" " aria-current="location"> Preferences</a>
+
+   </li>
+
+
+         <li class="moj-side-navigation__item ">
+
+           <a href=" " aria-current="location"> Representation and support</a>
+
+       </li>
+
+
+         </ul>
+
+
+
+
+
+         <a href="confirmation-page">
+          <button class="govuk-button" data-module="govuk-button">
+            Create referral
+          </button>
+        </a>
+
+      </nav>
+      </div>
+
+
+  </div>
+
+  <div class="govuk-grid-row create-view">
+    <div class="govuk-grid-column-two-thirds">
+
+
+     <h1 class="govuk-heading-l">
+      Important information
+      </h1>
+
+
+
+
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" role="group" aria-describedby="claimant-names">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend">
+            <h2 class="govuk-fieldset__heading">
+             Is this a special rules end of life (SREL) case?
+            </h2>
+          </legend>
+
+             <div class="govuk-radios" data-module="govuk-radios">
+               <div class="govuk-radios__item">
+                 <input class="govuk-radios__input" id="important-special-rules-yes" name="important-special-rules" type="radio" value="yes" >
+                 <label class="govuk-label govuk-radios__label" for="important-special-rules-yes">
+                   Yes
+                 </label>
+               </div>
+               <div class="govuk-radios__item">
+                 <input class="govuk-radios__input" id="important-special-rules-no" name="important-special-rules" type="radio" value="no">
+                 <label class="govuk-label govuk-radios__label" for="important-special-rules-no">
+                   No
+                 </label>
+               </div>
+
+
+
+           </div></fieldset>
+         </div>
+
+
+     <!--  <div class="govuk-form-group">
+       <fieldset class="govuk-fieldset" role="group" aria-describedby="claimant-names">
+         <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+           <h2 class="govuk-fieldset__heading">
+             Special rules end of life aware
+           </h2>
+         </legend>
+
+            <div class="govuk-radios" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="important-special-rules-aware-yes" name="important-special-rules-aware" type="radio" value="yes" >
+                <label class="govuk-label govuk-radios__label" for="important-special-rules-aware-yes" >
+                  Yes
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="important-special-rules-aware-no" name="important-special-rules-aware" type="radio" value="no"checked>
+                <label class="govuk-label govuk-radios__label" for="important-special-rules-aware-no">
+                  No
+                </label>
+              </div>
+
+
+          </fieldset>
+        </div> -->
+
+
+
+      <div class="govuk-form-group">
+       <fieldset class="govuk-fieldset" role="group" aria-describedby="claimant-names">
+         <legend class="govuk-fieldset__legend govuk-fieldset__legend">
+           <h2 class="govuk-fieldset__heading">
+             Does the claimant have a history of unacceptable behaviour (UCB)?
+           </h2>
+         </legend>
+
+            <div class="govuk-radios" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="behaviour-yes" name="behaviour" type="radio" value="yes">
+                <label class="govuk-label govuk-radios__label" for="behaviour-yes">
+                  Yes
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="behaviour-no" name="behaviour" type="radio" value="no" >
+                <label class="govuk-label govuk-radios__label" for="behaviour-no">
+                  No
+                </label>
+              </div>
+           <!--   <div class="govuk-radios__item">
+               <input class="govuk-radios__input" id="behaviour-unknown" name="behaviour" type="radio" value="unknown">
+               <label class="govuk-label govuk-radios__label" for="behaviour-unknown">
+                Not known
+               </label>
+             </div> -->
+
+
+          </div></fieldset>
+        </div>
+
+
+
+      <div class="govuk-form-group">
+       <fieldset class="govuk-fieldset" role="group" aria-describedby="claimant-names">
+         <legend class="govuk-fieldset__legend govuk-fieldset__legend">
+           <h2 class="govuk-fieldset__heading">
+             Does the claimant have a mental health condition? [UC / ESA]
+           </h2>
+         </legend>
+
+            <div class="govuk-radios" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="mental-health-yes" name="mental-health" type="radio" value="yes">
+                <label class="govuk-label govuk-radios__label" for="mental-health-yes">
+                  Yes
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="mental-health-no" name="mental-health" type="radio" value="no" >
+                <label class="govuk-label govuk-radios__label" for="mental-health-no">
+                  No
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+               <input class="govuk-radios__input" id="mental-health-unknown" name="mental-health" type="radio" value="unknown">
+               <label class="govuk-label govuk-radios__label" for="mental-health-unknown">
+             Not known
+               </label>
+             </div>
+
+            </div></fieldset>
+          </div>
+
+
+
+
+
+
+             <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset" role="group" aria-describedby="claimant-names">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend">
+                  <h2 class="govuk-fieldset__heading">
+                    Does the claimant have additional needs support? [PIP]</h2>
+                </legend>
+
+                   <div class="govuk-radios" data-module="govuk-radios">
+                     <div class="govuk-radios__item">
+                       <input class="govuk-radios__input" id="important-special-rules-aware-yes" name="important-special-rules-aware" type="radio" value="yes" >
+                       <label class="govuk-label govuk-radios__label" for="important-special-rules-aware-yes">
+                         Yes
+                       </label>
+                     </div>
+                     <div class="govuk-radios__item">
+                       <input class="govuk-radios__input" id="important-special-rules-aware-no" name="important-special-rules-aware" type="radio" value="no">
+                       <label class="govuk-label govuk-radios__label" for="important-special-rules-aware-no">
+                         No
+                       </label>
+                     </div>
+
+                     <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="important-special-rules-aware-unknown" name="important-special-rules-aware" type="radio" value="unknown">
+                      <label class="govuk-label govuk-radios__label" for="important-special-rules-aware-unknown">
+                        Not known
+                      </label>
+                    </div>
+
+
+
+
+
+
+
+
+          </div></fieldset>
+        </div>
+
+
+
+
+
+
+<!--
+
+      <a href="confirmation-page" aria-describedby="search-referral">
+        <button class="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
+      </a> -->
+
+    </div>
+  </div>
+
+{% endblock %}

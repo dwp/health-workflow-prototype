@@ -1,0 +1,64 @@
+{% extends "layout-extended.html" %}
+
+{% block pageTitle %}
+Confirm claimant address - Health Assessment Service
+{% endblock %}
+
+{% block beforeContent %}
+
+<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      
+     <h1 class="govuk-heading-l">
+        Confirm alert actioned
+    </h3>
+ 
+
+   
+    <dl class="govuk-summary-list">
+            
+                
+            
+        <form action="/richer-claimant-info/v9/pip-alerts" method="post" class="form">
+
+      
+       
+
+            <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset">
+             
+              <div class="govuk-radios govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="pip-alert-yes" name="pip-alert" type="radio" value="yes">
+                  <label class="govuk-label govuk-radios__label" for="pip-alert-yes">
+                    Yes, remove the alert
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="pip-alert-no" name="pip-alert" type="radio" value="no">
+                  <label class="govuk-label govuk-radios__label" for="pip-alert-no">
+                    No, go back to alert details
+                  </label>
+                </div>
+              </div>
+              </fieldset>
+            </div>
+    
+            <button class="govuk-button" data-module="govuk-button">Continue</button>
+    
+          </form>
+
+     
+
+    </div>
+  </div>
+
+{% endblock %}

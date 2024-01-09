@@ -1,0 +1,84 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Referral list
+{% endblock %}
+
+{% block beforeContent %}
+<a href="start" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <h1 class="govuk-heading-l">
+        Paper based review referrals 
+      </h1>
+
+      <table class="govuk-table">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Claimant name</th>
+            <th scope="col" class="govuk-table__header">NINO</th>
+            <th scope="col" class="govuk-table__header">Benefit</th>
+            <th scope="col" class="govuk-table__header">Referral date</th>
+            <th scope="col" class="govuk-table__header">SRTI</th>
+            <th scope="col" class="govuk-table__header">Last updated</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-srti" aria-describedby="claimant-detail-srti">John Doe</a></td>
+            <td class="govuk-table__cell">RN000123A</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">1 Jun 2021</td>
+            <td class="govuk-table__cell">Yes</td>
+            <td class="govuk-table__cell">1 Jun 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-srti" aria-describedby="claimant-detail-srti">Janette Rafe</a></td>
+            <td class="govuk-table__cell">RN001123A</td>
+            <td class="govuk-table__cell">ESA</td>
+            <td class="govuk-table__cell">22 May 2021</td>
+            <td class="govuk-table__cell">Yes</td>
+            <td class="govuk-table__cell">29 May 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-srti" aria-describedby="claimant-detail">Noelle Carmel</a></td>
+            <td class="govuk-table__cell">RN000426D</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">20 May 2021</td>
+            <td class="govuk-table__cell">Yes</td>
+            <td class="govuk-table__cell">29 May 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-srti" aria-describedby="claimant-detail-report">Sylevette Colwyn</a></td>
+            <td class="govuk-table__cell">RN000111N</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">20 May 2021</td>
+            <td class="govuk-table__cell">Yes</td>
+            <td class="govuk-table__cell">28 May 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-srti" aria-describedby="claimant-detail-report">Ethan Thornton</a></td>
+            <td class="govuk-table__cell">RN000161D</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">1 Jun 2021</td>
+            <td class="govuk-table__cell">Yes</td>
+            <td class="govuk-table__cell">1 Jun 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-srti" aria-describedby="claimant-detail-report">Paige Gael</a></td>
+            <td class="govuk-table__cell">RN000771T</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">1 Jun 2021</td>
+            <td class="govuk-table__cell">Yes</td>
+            <td class="govuk-table__cell">2 Jun 2021</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+{% endblock %}

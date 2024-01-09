@@ -1,0 +1,52 @@
+{% extends "layout-extended.html" %}
+
+{% block pageTitle %}
+  Referral list
+{% endblock %}
+
+{% block beforeContent %}
+
+<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+     <h1 class="govuk-heading-l">
+      Representation contact name
+      </h1>
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" role="group" aria-describedby="claimant-names">
+
+
+         
+
+
+          <div class="govuk-form-group">
+           
+            <input class="govuk-input" id="contact-name" name="contact-name" type="text" spellcheck="false" autocomplete="contact-name" value="Janette Rafe">
+          </div>
+
+          </fieldset>
+
+        </div>
+
+
+
+
+
+        <a href="../claimant-detail-assigned2-updated" aria-describedby="search-referral">   <button class="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
+      </a>
+
+    </div>
+  </div>
+
+{% endblock %}

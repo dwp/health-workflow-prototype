@@ -1,0 +1,64 @@
+{% extends "layout-key-details-review.html" %}
+
+{% block pageTitle %}
+  Referral list
+{% endblock %}
+
+{% block beforeContent %}
+<a href="claimant-detail-review" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <form action="/colab/v2/assign-list-review" method="post" class="form">
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              Which caseload do you want to assign this referral to?
+            </h1>
+          </legend>
+          <div id="waste-hint" class="govuk-hint">
+
+          </div>
+          <div class="govuk-radios--small">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="list" name="list" type="radio" value="list1">
+              <label class="govuk-label govuk-radios__label" for="list">
+                Jared Mosely-Redman (74)
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="list-2" name="list" type="radio" value="list2">
+              <label class="govuk-label govuk-radios__label" for="list-2">
+                Zoe Hall (86)
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="list-3" name="list" type="radio" value="list3">
+              <label class="govuk-label govuk-radios__label" for="list-3">
+                Akhtar Ahmed (70)
+              </label>
+            </div>
+            <div class="govuk-radios__divider">or</div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="new-list" name="list" type="radio" value="new-list">
+              <label class="govuk-label govuk-radios__label" for="new-list">
+                Create a new caseload
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+      <button class="govuk-button" data-module="govuk-button">Save and continue</button>
+    </form>
+
+    </div>
+  </div>
+
+
+{% endblock %}

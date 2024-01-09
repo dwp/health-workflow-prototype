@@ -1,0 +1,87 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Referral list
+{% endblock %}
+
+{% block beforeContent %}
+<a href="index" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <form action="/finding-and-organising/v1/status-filter" method="post" class="form">
+
+
+
+      <div class="govuk-form-group govuk-form-group--error">
+        <fieldset class="govuk-fieldset" aria-describedby="referral-progress">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <span class="govuk-caption-l govuk-!-margin-bottom-2">Referrals in progress</span>
+            <h1 class="govuk-fieldset__heading">
+              Filter referrals
+            </h1>
+          </legend>
+          <div id="changed-name-hint" class="govuk-hint">
+            View referrals grouped by status.
+          </div>
+          <span id="passport-issued-error" class="govuk-error-message">
+            <span class="govuk-visually-hidden">Error:</span> Select an option to filter referrals by status
+          </span>
+          <div class="govuk-radios--small">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="status" name="status" type="radio" value="unassigned">
+              <label class="govuk-label govuk-radios__label" for="status">
+                Unassigned (12)
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="status-2" name="status" type="radio" value="in-review">
+              <label class="govuk-label govuk-radios__label" for="status-2">
+                In review (32)
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="status-3" name="status" type="radio" value="gathering-information">
+              <label class="govuk-label govuk-radios__label" for="status-3">
+                Gathering information (8)
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="status-4" name="status" type="radio" value="awaiting-evidence">
+              <label class="govuk-label govuk-radios__label" for="status-4">
+                Awaiting evidence (15)
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="status-5" name="status" type="radio" value="paper-based-review">
+              <label class="govuk-label govuk-radios__label" for="status-5">
+                Paper based review (6)
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="status-6" name="status" type="radio" value="assessment-booked">
+              <label class="govuk-label govuk-radios__label" for="status-6">
+                Assessment booked (11)
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="status-7" name="status" type="radio" value="awaiting-decision">
+              <label class="govuk-label govuk-radios__label" for="status-7">
+                Awaiting decision (3)
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+      <button class="govuk-button" data-module="govuk-button">Filter</button>
+    </form>
+
+    </div>
+  </div>
+
+
+{% endblock %}

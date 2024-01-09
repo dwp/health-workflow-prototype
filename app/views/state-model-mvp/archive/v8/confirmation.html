@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Confirmation page example
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <div class="govuk-panel govuk-panel--confirmation">
+        <h1 class="govuk-panel__title">Referral status updated</h1>
+        <div class="govuk-panel__body">
+          Claimant reference:<strong> RN000123A</strong>
+        </div>
+      </div>
+
+      <p>
+        <a href="list" aria-describedby="update-status">Return to referral list</a>
+      </p>
+
+
+    </div>
+  </div>
+
+{% endblock %}

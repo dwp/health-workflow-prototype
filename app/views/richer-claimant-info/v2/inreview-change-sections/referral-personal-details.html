@@ -1,0 +1,315 @@
+{% extends "layout-extended.html" %}
+
+{% block pageTitle %}
+  Referral list
+{% endblock %}
+
+{% block beforeContent %}
+
+<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+     <h1 class="govuk-heading-l">
+         Personal details
+      </h1>
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" role="group" aria-describedby="claimant-names">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading">
+              Claimant name
+            </h2>
+          </legend>
+         <!--  <div class="govuk-form-group">
+            <label class="govuk-label" for="first-name">
+              First Name
+            </label>
+            <input class="govuk-input" id="first-name" name="first-name" type="text" spellcheck="false" autocomplete="first-name">
+          </div>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="surname">
+              Surname
+            </label>
+            <input class="govuk-input" id="surname" name="surname" type="text" spellcheck="false" autocomplete="surname">
+          </div> -->
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="preferred-name">
+              Preferred name
+            </label>
+            <input class="govuk-input" id="preferred-name" name="preferred-name" type="text" spellcheck="false" autocomplete="preferred-name">
+          </div>
+          </fieldset>
+        </div>
+
+      <!-- <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" role="group" aria-describedby="ni/crn numbers">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+              <h2 class="govuk-fieldset__heading">
+                Ni number/Customer reference number
+              </h2>
+            </legend>
+
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="ni-number">
+                National insurance number
+              </label>
+              <input class="govuk-input govuk-!-width-one-third" id="ni-number" name="ni-number" type="text" spellcheck="false" autocomplete="ni-number">
+            </div>
+
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="crn-number">
+                Customer reference number
+              </label>
+              <input class="govuk-input govuk-!-width-one-third" id="crn-number" name="crn-number" type="text" spellcheck="false" autocomplete="crn-number">
+            </div>
+
+          </fieldset>
+        </div> -->
+
+
+<!--
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" role="group" aria-describedby="dob-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading">
+              Enter the claimants date of birth
+            </h2>
+          </legend>
+          <div id="dob-hint" class="govuk-hint">
+            For example, 27 3 2007
+          </div>
+          <div class="govuk-date-input" id="dob">
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="dob-day" >
+                  Day
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-day" name="dob-day" type="text" inputmode="numeric" value="31">
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="dob-month">
+                  Month
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-month" name="dob-month" type="text" inputmode="numeric" value="12">
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="dob-year">
+                  Year
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="dob-year" name="dob-year" type="text" inputmode="numeric" value="1969">
+              </div>
+            </div>
+          </div>
+
+        </fieldset>
+      </div> -->
+
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" role="group" aria-describedby="dob-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading">
+              Enter the claimants date of death
+            </h2>
+          </legend>
+          <div id="dob-hint" class="govuk-hint">
+            For example, 27 3 2007
+          </div>
+          <div class="govuk-date-input" id="dob">
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="dod-day">
+                  Day
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dod-day" name="dob-day" type="text" inputmode="numeric" value="22">
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="dod-month">
+                  Month
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dod-month" name="dob-month" type="text" inputmode="numeric" value="2">
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="dod-year">
+                  Year
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="dod-year" name="dod-year" type="text" inputmode="numeric" value="2022">
+              </div>
+            </div>
+          </div>
+
+        </fieldset>
+      </div>
+
+
+
+
+      <fieldset class="govuk-fieldset" role="group" aria-describedby="dob-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+          <h2 class="govuk-fieldset__heading">
+           Residential address
+          </h2>
+        </legend>
+    </legend>
+
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="address-line-1">
+        Address line 1
+      </label>
+      <input class="govuk-input" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line1" value="1 Test Street">
+    </div>
+
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="address-line-2">
+        Address line 2 (optional)
+      </label>
+      <input class="govuk-input" id="address-line-2" name="address-line-2" type="text" autocomplete="address-line2" >
+    </div>
+
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="address-town">
+        Town or city
+      </label>
+      <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text" autocomplete="address-level2" value="Test city">
+    </div>
+
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="address-county">
+        County (optional)
+      </label>
+      <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text">
+    </div>
+
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="address-postcode">
+        Postcode
+      </label>
+      <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text" autocomplete="postal-code" value="XX11 1XX">
+    </div>
+
+
+    <fieldset class="govuk-fieldset" role="group" aria-describedby="dob-hint">
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+        <h2 class="govuk-fieldset__heading">
+          Correspondence address
+        </h2>
+      </legend>
+  </legend>
+
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="address-line-1">
+      Address line 1
+    </label>
+    <input class="govuk-input" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line1" >
+  </div>
+
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="address-line-2">
+      Address line 2 (optional)
+    </label>
+    <input class="govuk-input" id="address-line-2" name="address-line-2" type="text" autocomplete="address-line2" >
+  </div>
+
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="address-town">
+      Town or city
+    </label>
+    <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text" autocomplete="address-level2" >
+  </div>
+
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="address-county">
+      County (optional)
+    </label>
+    <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text">
+  </div>
+
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="address-postcode">
+      Postcode
+    </label>
+    <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text" autocomplete="postal-code" >
+  </div>
+
+
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" role="group" aria-describedby="contact-details">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading">
+              Contact details
+            </h2>
+          </legend>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="home-number">
+              Home phone number
+            </label>
+            <input class="govuk-input govuk-input--width-20" id="home-number" name="home-number" type="text" spellcheck="false" autocomplete="home-number" value="07000 000000">
+          </div>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="mobile-number">
+              Mobile phone number
+            </label>
+            <input class="govuk-input govuk-input--width-20"id="mobile-number" name="mobile-number" type="text" spellcheck="false" autocomplete="mobile-number" value="07000 000000">
+          </div>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="text-number">
+              Text phone number
+            </label>
+            <input class="govuk-input govuk-input--width-20" id="text-number" name="text-number" type="text" spellcheck="false" autocomplete="text-number" value="07000 000000">
+          </div>
+
+        </fieldset>
+      </div>
+
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" role="group" aria-describedby="contact-details">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading">
+              Email address
+            </h2>
+          </legend>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="email">
+              Email address
+            </label>
+            <input class="govuk-input" id="email" name="email" type="text" spellcheck="false" autocomplete="home-number" value="test.email@example.com">
+          </div>
+
+        </fieldset>
+      </div>
+
+
+
+      <a href="../claimant-detail-assigned-updated" aria-describedby="search-referral">   <button class="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
+      </a>
+
+    </div>
+  </div>
+
+{% endblock %}

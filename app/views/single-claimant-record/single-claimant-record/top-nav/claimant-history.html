@@ -1,0 +1,107 @@
+{% extends "layout-key-details-single-claimant-record.html" %}
+
+{% block pageTitle %}
+  Claimant details
+{% endblock %}
+
+
+{% block beforeContent %}
+<style type="text/css">
+  .navigation-header { 
+    width:100%;
+    border-bottom: 1px solid #bfc1c3;
+    float:left;
+    padding-top:10px;
+    margin-bottom:30px;
+  }
+
+  .navigation-header li {
+    float:left;
+    margin-right:20px;
+    margin-bottom:0 !important;
+    padding-bottom:6px; 
+  }
+  .navigation-header li a, .navigation-header li a:hover, .navigation-header li a:visited { 
+    text-decoration: none;
+  }
+  .navigation-header .active { 
+    border-bottom:4px #005ea5 solid;
+  }
+
+
+  .govuk-main-wrapper {
+    padding-top: 20px;
+  }
+</style>
+
+<div class="navigation-header">
+  <ul class="govuk-list">
+    <li class="govuk-!-margin-bottom-2"><a href="claimant-overview" class="govuk-link--no-visited-state govuk-link--no-underline">Claimant overview</a></li>
+    <li class="govuk-!-margin-bottom-2"><a href="claimant-detail" class="govuk-link--no-visited-state govuk-link--no-underline">Claimant detail</a></li>
+    <li class="govuk-!-margin-bottom-2"><a href="claimant-log" class="govuk-link--no-visited-state govuk-link--no-underline">Interaction log</a></li>
+    <li class="govuk-!-margin-bottom-2"><a href="claimant-history" class="govuk-!-padding-bottom-1 active">Claimant history</a></li>
+  </ul>
+</div>
+<a href="claimant-overview" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+      <h1 class="govuk-heading-l">Referral history</h1>
+
+      <table class="govuk-table">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Benefit type</th>
+            <th scope="col" class="govuk-table__header">Referral date</th>
+            <th scope="col" class="govuk-table__header">SRTI</th>
+            <th scope="col" class="govuk-table__header">Status</th>
+            <th scope="col" class="govuk-table__header">Referral completion date</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="referral-detail" aria-describedby="claim-detail">Employment Support Allowance</a></td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag" id="Status 4">Assessment booked</strong></td>
+            <td class="govuk-table__cell">-</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail">Universal Credit</a></td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag" id="Status 6">Questionnaire issued</strong></td>
+            <td class="govuk-table__cell">-</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail">Universal Credit</a></td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" id="Status 6">Archived</strong></td>
+            <td class="govuk-table__cell">19 Sep 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="#">Personal Independence Payment</a></td>
+            <td class="govuk-table__cell">10 Feb 2019</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" id="Status 6">Archived</strong></td>
+            <td class="govuk-table__cell">27 Aug 2019</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="#">Universal Credit</a></td>
+            <td class="govuk-table__cell">10 Feb 2017</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" id="Status 6">Archived</strong></td>
+            <td class="govuk-table__cell">19 Aug 2017</td>
+          </tr>
+        </tbody>
+      </table>
+
+  </div>
+
+</div>
+{% endblock %}

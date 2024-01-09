@@ -1,0 +1,211 @@
+{% extends "layout-primary-nav.html" %}
+
+{% block pageTitle %}
+  Claimant conditions
+{% endblock %}
+
+
+{% block beforeContent %}
+<a href="index" class="govuk-back-link">Back</a>
+{% endblock %}
+
+
+
+{% block content %}
+
+
+<div class="app-pane__body">
+
+<div class="app-pane__subnav">
+  <nav class="app-subnav" aria-labelledby="app-subnav-heading">
+    <h2 class="govuk-visually-hidden" id="app-subnav-heading">Pages in this section</h2>
+    <ul class="app-subnav__section">
+      <li class="app-subnav__section-item">
+        <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="claimant-overview">Overview</a>
+      </li>
+      <li class="app-subnav__section-item">
+        <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="claimant-details">Claimant details</a>
+      </li>
+      <li class="app-subnav__section-item app-subnav__section-item--current">
+        <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#">Conditions</a>
+      </li>
+      <li class="app-subnav__section-item">
+        <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="claimant-medications">Medications</a>
+      </li>
+      <li class="app-subnav__section-item">
+        <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="claimant-timeline">Timeline</a>
+      </li>
+      <li class="app-subnav__section-item">
+        <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="claimant-appointments">Appointments</a>
+      </li>
+      <li class="app-subnav__section-item">
+        <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="claimant-evidence">Evidence</a>
+      </li>
+      <li class="app-subnav__section-item">
+        <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="claimant-cases">Cases</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<div class="govuk-grid-row overview">
+    <div class="govuk-grid-column-full">
+
+      <h1 class="govuk-visually-hidden">Overview of claimant conditions</h1>
+
+      <section class="new-key-details-bar" role="identifier" aria-label="Claimant name and identifier">
+        <dl class="new-key-details-bar__key-details">
+          <div class="new-key-details-bar__top-block">
+            <dt class="govuk-visually-hidden">Name:</dt>
+            <dd class="new-key-details-bar__name">Jane Doe</dd>
+      
+            <dt class="govuk-visually-hidden">National Insurance number:</dt>
+            <dd class="new-key-details-bar__nino">RN 00 04 26 D</dd>
+      
+          </div>
+      
+          <div class="new-key-details-bar__bottom-block">
+            <dt class="govuk-visually-hidden">Claimant markers:</dt>
+            <dd>
+              <strong class="govuk-tag govuk-tag--purple">Terminally ill</strong>
+              <!-- <strong class="govuk-tag govuk-tag--yellow">Additional support</strong> -->
+              <strong class="govuk-tag govuk-tag--green">Appointee</strong>
+              <strong class="govuk-tag govuk-tag--blue">Dual claim</strong>
+              <!-- <strong class="govuk-tag govuk-tag--pink">Unacceptable behaviour</strong> -->
+              <!-- <strong class="govuk-tag govuk-tag--red">Deceased</strong> -->
+            </dd>
+          </div>
+        </dl>
+      </section>
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-left-0">
+
+        <h1 class="govuk-heading-l govuk-!-margin-top-6">Conditions</h1>
+
+        <div class="card govuk-!-margin-top-4">
+            <h2 class="govuk-heading-m card__header">
+                Broken leg
+            </h2>
+            <div class="card__body">
+              <div class="card__content border-bottom govuk-!-margin-bottom-4">
+                <p class="govuk-hint">Condition first known: 22 October 2022</p>
+                <div class="status govuk-!-margin-bottom-4"><strong class="govuk-tag">Short term</strong></div>
+                <p>Fell off kerb while crossing the road, broken tibia with an expected overall recovery time of six months..</p>
+                <h3 class="govuk-heading-s govuk-!-margin-top-2">Supporting evidence</h3>
+                <ul class="govuk-list">
+                    <li>
+                      <a class="govuk-link" href="#">Fitnote from GP</a>
+                    </li>
+                    <li>
+                        <a class="govuk-link" href="#">PIP form (October 2022)</a>
+                      </li>
+                  </ul>
+            </div>
+            <div class="card__content govuk-!-margin-bottom-4">
+                <h3 class="govuk-heading-s govuk-!-margin-top-2">Actions</h3>
+                <ul class="govuk-list">
+                    <li>
+                      <a class="govuk-link" href="#">Edit condition</a>
+                    </li>
+                      <li>
+                        <a class="govuk-link" href="#">Add evidence</a>
+                      </li>
+                  </ul>
+            </div>
+            </div>
+          </div>
+
+        <div class="card govuk-!-margin-top-6">
+            <h2 class="govuk-heading-m card__header">
+                Fibromyalgia
+            </h2>
+            <div class="card__body">
+              <div class="card__content border-bottom govuk-!-margin-bottom-4">
+                <p class="govuk-hint">Condition diagnosed: 20 August 2018</p>
+                <div class="status govuk-!-margin-bottom-4"><strong class="govuk-tag">Long term</strong></div>
+                <p>Jane has serious Fibromyalgia that has a big effect on her mobility. She has muscle stiffness, particularly in her legs, and struggles to be able to sleep due to fatigue. Has reported variable instances of fibro-fog and IBS that may be linked in with other conditions.</p>
+                <h3 class="govuk-heading-s govuk-!-margin-top-2">Supporting evidence</h3>
+                <ul class="govuk-list">
+                    <li>
+                      <a class="govuk-link" href="#">Letter from specialist</a>
+                    </li>
+                    <li>
+                        <a class="govuk-link" href="#">UC50 form (February 2022)</a>
+                      </li>
+                    <li>
+                      <a class="govuk-link" href="#">WCA assessment report (May 2019)</a>
+                    </li>
+                  </ul>
+            </div>
+            <div class="card__content govuk-!-margin-bottom-4">
+                <h3 class="govuk-heading-s govuk-!-margin-top-2">Actions</h3>
+                <ul class="govuk-list">
+                    <li>
+                      <a class="govuk-link" href="#">Edit condition</a>
+                    </li>
+                      <li>
+                        <a class="govuk-link" href="#">Add evidence</a>
+                      </li>
+                  </ul>
+            </div>
+            </div>
+          </div>
+
+          <div class="card govuk-!-margin-top-4">
+            <h2 class="govuk-heading-m card__header">
+                Chrons' disease
+            </h2>
+            <div class="card__body">
+              <div class="card__content border-bottom govuk-!-margin-bottom-4">
+                <p class="govuk-hint">Condition diagnosed: 12 February 2011</p>
+                <div class="status govuk-!-margin-bottom-4"><strong class="govuk-tag">Long term</strong></div>
+                <p>Most recent update from specialist says that symptoms are mils, controlled mainly by dietary restrictions. Was resections in 2017 following a large flare up of symptoms.</p>
+                <h3 class="govuk-heading-s govuk-!-margin-top-2">Supporting evidence</h3>
+                <ul class="govuk-list">
+                    <li>
+                      <a class="govuk-link" href="#">Letter from specialist</a>
+                    </li>
+                    <li>
+                        <a class="govuk-link" href="#">UC50 form (February 2022)</a>
+                      </li>
+                    <li>
+                      <a class="govuk-link" href="#">WCA assessment report (May 2019)</a>
+                    </li>
+                  </ul>
+            </div>
+            <div class="card__content govuk-!-margin-bottom-4">
+                <h3 class="govuk-heading-s govuk-!-margin-top-2">Actions</h3>
+                <ul class="govuk-list">
+                    <li>
+                      <a class="govuk-link" href="#">Edit condition</a>
+                    </li>
+                      <li>
+                        <a class="govuk-link" href="#">Add evidence</a>
+                      </li>
+                  </ul>
+            </div>
+            </div>
+          </div>
+
+        
+        
+
+      </div>
+
+      <div class="govuk-grid-column-one-third">
+          
+        <h3 class="govuk-heading-m govuk-!-margin-top-6">What you can do next</h3>
+        <ul class="govuk-list">
+          <li class="govuk-!-margin-bottom-2"><a href="referral">Add new condition</a></li>
+          <li class="govuk-!-margin-bottom-2"><a href="referral">View past conditions</a></li>
+        </ul>
+      </div>
+
+      
+
+      
+
+    </div>
+  </div>
+</div>
+{% endblock %}

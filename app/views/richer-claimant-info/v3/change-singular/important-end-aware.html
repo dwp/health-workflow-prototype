@@ -1,0 +1,60 @@
+{% extends "layout-extended.html" %}
+
+{% block pageTitle %}
+  Referral list
+{% endblock %}
+
+{% block beforeContent %}
+<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+     <!-- <span class="govuk-caption-l govuk-!-margin-bottom-2">Create referral question 9 of X</span> -->
+      
+
+
+     <h1 class="govuk-heading-l">
+      Special rules end of life aware
+   </h1>
+
+ 
+
+   <div class="govuk-form-group">
+    <fieldset class="govuk-fieldset" role="group" aria-describedby="claimant-names">
+   
+
+         <div class="govuk-radios" data-module="govuk-radios">
+           <div class="govuk-radios__item">
+             <input class="govuk-radios__input" id="important-special-rules-aware-yes" name="important-special-rules-aware" type="radio" value="yes" >
+             <label class="govuk-label govuk-radios__label" for="important-special-rules-aware-yes" >
+               Yes
+             </label>
+           </div>
+           <div class="govuk-radios__item">
+             <input class="govuk-radios__input" id="important-special-rules-aware-no" name="important-special-rules-aware" type="radio" value="no"checked>
+             <label class="govuk-label govuk-radios__label" for="important-special-rules-aware-no">
+               No
+             </label>
+           </div>
+          
+
+       </fieldset>
+     </div>
+
+
+
+      
+
+      <a href="../claimant-detail-assigned2-updated" aria-describedby="search-referral">  <button class="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
+      </a>
+
+    </div>
+  </div>
+
+{% endblock %}

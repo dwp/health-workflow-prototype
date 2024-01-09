@@ -1,0 +1,81 @@
+{% extends "layout-extended.html" %}
+
+{% block pageTitle %}
+Confirm claimant address - Health Assessment Service
+{% endblock %}
+
+{% block beforeContent %}
+
+<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      
+     <h1 class="govuk-heading-l">
+      Personal details updated
+    </h3>
+    <p class="govuk-body">Residential address updated.  </p>
+
+   
+
+    <div class="govuk-warning-text">
+      <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+      <strong class="govuk-warning-text__text">
+        <span class="govuk-visually-hidden">Warning</span>
+        This address is not in a Health Assessment Service postcode area.
+      </strong>
+    </div>
+    
+
+    <p>Has the questionnaire has been sent to the correct address?</p>
+  
+  
+     
+   <!--  <div class="govuk-inset-text">
+     1 Spooner Street<br>Sheffield<br>WR1 1NL</div>
+
+-->
+<br> 
+      <form action="pip-claimant-detail-updated" method="post" class="form">
+
+        <div class="hidden-radio-post">
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+   
+
+                <input class="govuk-radios__input" id="address-change-1" name="address-change" type="radio" value="yes" aria-controls="conditional-address-change-1" aria-expanded="false" {{ checked("address-change", "yes") }} checked>
+                <label class="govuk-label govuk-radios__label" for="address-change-1">
+         
+
+             Hidden radio = address updated
+              </label>
+            </div>
+          </div>
+    </div>
+      
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+
+
+<!-- 
+
+    
+   <a href="personal-change-address" aria-describedby="search-referral">
+       
+         Enter address manually
+        
+      </a></p>-->
+
+    </div>
+  </div>
+
+{% endblock %}

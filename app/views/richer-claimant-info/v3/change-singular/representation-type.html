@@ -1,0 +1,63 @@
+{% extends "layout-extended.html" %}
+
+{% block pageTitle %}
+  Referral list
+{% endblock %}
+
+{% block beforeContent %}
+
+<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+    
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+
+            <h1 class="govuk-heading-l">
+                  Representation
+              </h1>
+
+              <div class="govuk-radios" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="Personal Acting Body" name="hcp-preference" type="radio" value="Personal Acting Body">
+                  <label class="govuk-label govuk-radios__label" for="Personal Acting Body">
+                    Personal Acting Body
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="Corporate Acting Body" name="hcp-preference" type="radio" value="Corporate Acting Body"  checked>
+                  <label class="govuk-label govuk-radios__label" for="Corporate Acting Body">
+                    Corporate Acting Body
+                  </label>
+                </div>
+
+
+              </div>
+
+            </fieldset>
+          </div>
+
+
+
+
+
+
+
+        <a href="../claimant-detail-assigned2-updated" aria-describedby="search-referral">   <button class="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
+      </a>
+
+    </div>
+  </div>
+
+{% endblock %}

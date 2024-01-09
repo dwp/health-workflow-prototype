@@ -1,0 +1,46 @@
+{% extends "layout-extended.html" %}
+
+{% block pageTitle %}
+  Referral list
+{% endblock %}
+
+{% block beforeContent %}
+
+<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      
+     <h1 class="govuk-heading-l">
+      GP email address
+      </h1>
+
+    
+
+
+
+          <div class="govuk-form-group">
+         
+            <input class="govuk-input" id="home-number" name="home-number" type="text" spellcheck="false" autocomplete="home-number" value="test.surgery@example.com">
+          </div>
+
+        </fieldset>
+     
+
+
+
+        <a href="../claimant-detail-assigned2-updated" aria-describedby="search-referral">  <button class="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
+      </a>
+
+    </div>
+  </div>
+
+{% endblock %}

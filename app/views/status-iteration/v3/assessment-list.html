@@ -1,0 +1,116 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Referral list
+{% endblock %}
+
+{% block beforeContent %}
+<a href="start" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <h1 class="govuk-heading-l">
+        Ready for assessment referrals
+      </h1>
+
+      <table class="govuk-table">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Claimant name</th>
+            <th scope="col" class="govuk-table__header">NINO</th>
+            <th scope="col" class="govuk-table__header">Benefit</th>
+            <th scope="col" class="govuk-table__header">SRTI</th>
+            <th scope="col" class="govuk-table__header">Last updated</th>
+            <th scope="col" class="govuk-table__header">Assessment type</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-start-assessment" aria-describedby="claimant-detail-report">Ethan Thornton</td>
+            <td class="govuk-table__cell">RN 00 01 61 D</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">23 days ago</td>
+            <td class="govuk-table__cell">Paper based</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-start-assessment" aria-describedby="claimant-detail">Fran Simone</a></td>
+            <td class="govuk-table__cell">RN 00 10 00 E</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">29 days ago</td>
+            <td class="govuk-table__cell">Paper based</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-start-assessment" aria-describedby="claimant-detail-srti">Janette Rafe</a></td>
+            <td class="govuk-table__cell">RN 00 11 23 A</td>
+            <td class="govuk-table__cell">ESA</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">10 days ago</td>
+            <td class="govuk-table__cell">Paper based</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-start-assessment" aria-describedby="claimant-detail">Heather Sand</a></td>
+            <td class="govuk-table__cell">RN 00 01 11 A</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">23 days ago</td>
+            <td class="govuk-table__cell">Paper based</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-start-assessment" aria-describedby="claimant-detail">Heather Sand</a></td>
+            <td class="govuk-table__cell">RN 00 11 22 C</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">24 days ago</td>
+            <td class="govuk-table__cell">Telephone</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-start-assessment" aria-describedby="claimant-detail-srti">Jane Doe</a></td>
+            <td class="govuk-table__cell">RN 00 01 23 A</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">10 days ago</td>
+            <td class="govuk-table__cell">Face to face</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-start-assessment" aria-describedby="claimant-detail">Noelle Carmel</a></td>
+            <td class="govuk-table__cell">RN 00 04 26 D</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">10 days ago</td>
+            <td class="govuk-table__cell">Face to face</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-start-assessment" aria-describedby="claimant-detail-report">Paige Gael</a></td>
+            <td class="govuk-table__cell">RN 00 07 71 T</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">23 days ago</td>
+            <td class="govuk-table__cell">Telephone</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-start-assessment" aria-describedby="claimant-detail">Susanna Shaye</a></td>
+            <td class="govuk-table__cell">RN 00 11 23 B</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">23 days ago</td>
+            <td class="govuk-table__cell">Face to face</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-start-assessment" aria-describedby="claimant-detail-report">Sylevette Colwyn</a></td>
+            <td class="govuk-table__cell">RN 00 01 11 N</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">19 days ago</td>
+            <td class="govuk-table__cell">Face to face</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,115 @@
+{% extends "layout-extended.html" %}
+
+{% block pageTitle %}
+Unacceptable behaviour - Health Assesssment Service
+{% endblock %}
+
+{% block beforeContent %}
+<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+     <!-- <span class="govuk-caption-l govuk-!-margin-bottom-2">Create referral question 9 of X</span> -->
+      
+
+
+     <h1 class="govuk-heading-l">
+      What is the UCB marker?
+   </h1>
+
+
+
+ <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+            <!--   <legend class="govuk-fieldset__legend govuk-fieldset__legend">
+                <h1 class="govuk-fieldset__heading">
+              What is the UCB marker?
+                </h1>
+              </legend> -->
+              <div class="govuk-radios" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="ucb-marker" name="ucb-marker" type="radio" checked>
+                  <label class="govuk-label govuk-radios__label" for="ucb-marker">
+                    1: Claimant
+                  
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="ucb-marker-2" name="ucb-marker" type="radio" >
+                  <label class="govuk-label govuk-radios__label" for="ucb-marker-2">
+                    2: Partner
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="ucb-marker-3" name="ucb-marker" type="radio" >
+                  <label class="govuk-label govuk-radios__label" for="ucb-marker-3">
+                    3:  Other member of household
+                    
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="ucb-marker-4" name="ucb-marker" type="radio">
+                  <label class="govuk-label govuk-radios__label" for="ucb-marker-4">
+                    4:  Claimant and partner
+                  </label>
+                </div>
+
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="ucb-marker-5" name="ucb-marker" type="radio" >
+                  <label class="govuk-label govuk-radios__label" for="ucb-marker-5">
+                    5: Claimant and other member of household
+                  </label>
+                </div>
+
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="ucb-marker-6" name="ucb-marker" type="radio" >
+                  <label class="govuk-label govuk-radios__label" for="ucb-marker-6">
+                    6:  Partner and other member of household
+                   
+                  </label>
+                </div>
+
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="ucb-marker-7" name="ucb-marker" type="radio" >
+                  <label class="govuk-label govuk-radios__label" for="ucb-marker-7">
+                    7: Claimant, partner and other member of household
+                  
+                  </label>
+                </div>
+
+
+              <!--   <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="ucb-marker-8" name="ucb-marker" type="radio" >
+                  <label class="govuk-label govuk-radios__label" for="ucb-marker-8">
+                   
+                    8: CHDA identified potential UCB
+                  </label>
+                </div> -->
+              </div>
+            </fieldset>
+          </div>
+
+
+        <!--   <div class="govuk-form-group">
+            <label class="govuk-label" for="address">
+             Control measures
+            </label>
+            <textarea class="govuk-textarea" id="address" name="address" rows="3"> No home visits, partner violent towards staff</textarea>
+          </div> -->
+
+
+
+      
+     <a href="important-behaviour-control">  <button class="govuk-button" data-module="govuk-button">
+      Continue
+        </button>
+      </a>
+
+    </div>
+  </div>
+
+{% endblock %}

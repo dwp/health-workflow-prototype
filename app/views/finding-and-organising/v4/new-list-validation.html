@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Referral list
+{% endblock %}
+
+{% block beforeContent %}
+<a href="assign-list" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <div class="govuk-form-group govuk-form-group--error">
+
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+        <h1 class="govuk-fieldset__heading">
+          What do you want to name this caseload?
+        </h1>
+      </legend>
+
+      <span id="not-selected-error" class="govuk-error-message">
+        <span class="govuk-visually-hidden">Error:</span> Enter a name for the new caseload
+      </span>
+
+      <div class="govuk-form-group">
+        <input class="govuk-input" id="search-name" name="search-name" type="text">
+      </div>
+    </div>
+    
+      <a href="confirmation-list-assigned" aria-describedby="add-to-list">
+        <button class="govuk-button" data-module="govuk-button">
+          Create caseload
+        </button>
+      </a>
+    
+    </div>
+  </div>
+
+{% endblock %}

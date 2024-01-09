@@ -1,0 +1,284 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Referral list
+{% endblock %}
+
+{% block beforeContent %}
+<a href="start" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <h1 class="govuk-heading-l">
+        In review referrals 
+      </h1>
+
+      <table class="govuk-table">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Claimant name</th>
+            <th scope="col" class="govuk-table__header">NINO</th>
+            <th scope="col" class="govuk-table__header">Benefit</th>
+            <th scope="col" class="govuk-table__header">Referral date</th>
+            <th scope="col" class="govuk-table__header">SRTI</th>
+            <th scope="col" class="govuk-table__header">Last updated</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="#">John Doe</a></td>
+            <td class="govuk-table__cell">RN 00 01 23 A</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">28 May 2021</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--red" id="srti-yes">Yes</strong></td>
+            <td class="govuk-table__cell">2 Jun 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="#">Janette Rafe</a></td>
+            <td class="govuk-table__cell">RN 00 11 23 A</td>
+            <td class="govuk-table__cell">ESA</td>
+            <td class="govuk-table__cell">28 May 2021</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--red" id="srti-yes">Yes</strong></td>
+            <td class="govuk-table__cell">2 Jun 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail">Noelle Carmel</a></td>
+            <td class="govuk-table__cell">RN 00 04 26 D</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">1 Jun 2021</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" id="srti-yes">No</strong></td>
+            <td class="govuk-table__cell">8 Jun 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail">Sylevette Colwyn</a></td>
+            <td class="govuk-table__cell">RN 00 01 11 N</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">26 May 2021</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" id="srti-no">No</strong></td>
+            <td class="govuk-table__cell">2 Jun 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail">Ethan Thorn to n< /a ></td>
+            <td class="govuk-table__cell">RN 00 01 61 D</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">29 May 2021</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" id="srti-no">No</strong></td>
+            <td class="govuk-table__cell">1 Jun 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail">Paige Gael</a></td>
+            <td class="govuk-table__cell">RN 00 07 71 T</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">20 May 2021</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" id="srti-no">No</strong></td>
+            <td class="govuk-table__cell">1 Jun 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="#">Susanna Shaye</a></td>
+            <td class="govuk-table__cell">RN 00 11 23 B</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">16 Feb 2021</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" id="srti-yes">No</strong></td>
+            <td class="govuk-table__cell">28 May 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="#">Heather Sand</a></td>
+            <td class="govuk-table__cell">RN 00 01 11 A</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">16 Feb 2021</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" id="srti-yes">No</strong></td>
+            <td class="govuk-table__cell">6 May 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="#">Heather Sand</a></td>
+            <td class="govuk-table__cell">RN 00 11 22 C</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" id="srti-yes">No</strong></td>
+            <td class="govuk-table__cell">2 May 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="#">Fran Simone</a></td>
+            <td class="govuk-table__cell">RN 00 10 00 E</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" id="srti-yes">No</strong></td>
+            <td class="govuk-table__cell">20 May 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="#">Danya Cecylia</a></td>
+            <td class="govuk-table__cell">RN 00 01 33 A</td>
+            <td class="govuk-table__cell">ESA</td>
+            <td class="govuk-table__cell">1 Feb 2021</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" id="srti-yes">No</strong></td>
+            <td class="govuk-table__cell">28 May 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="#">Xia Jeana</a></td>
+            <td class="govuk-table__cell">RN 00 02 22 A</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" id="srti-yes">No</strong></td>
+            <td class="govuk-table__cell">13 May 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="#">John Brady</a></td>
+            <td class="govuk-table__cell">RN 00 01 96 Z</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">16 Feb 2021</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" id="srti-yes">No</strong></td>
+            <td class="govuk-table__cell">23 May 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="#">Sam Smart</a></td>
+            <td class="govuk-table__cell">RN 00 09 83 A</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">16 Feb 2021</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" id="srti-yes">No</strong></td>
+            <td class="govuk-table__cell">18 Mar 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="#">Luce Deryn</a></td>
+            <td class="govuk-table__cell">RN 00 01 46 A</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" id="srti-yes">No</strong></td>
+            <td class="govuk-table__cell">2 Jun 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="#">John Doe</a></td>
+            <td class="govuk-table__cell">RN 00 01 73 B</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" id="srti-yes">No</strong></td>
+            <td class="govuk-table__cell">4 May 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="#">John Doe</a></td>
+            <td class="govuk-table__cell">RN 00 01 26 F</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" id="srti-yes">No</strong></td>
+            <td class="govuk-table__cell">22 May 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="#">Jing Denholme</a></td>
+            <td class="govuk-table__cell">RN 00 01 23 A</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" id="srti-yes">No</strong></td>
+            <td class="govuk-table__cell">20 May 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="#">Elicia Ceara</a></td>
+            <td class="govuk-table__cell">RN 00 09 99 A</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">16 Feb 2021</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" id="srti-yes">No</strong></td>
+            <td class="govuk-table__cell">22 May 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="#">Seth Sheena</a></td>
+            <td class="govuk-table__cell">RN 00 01 22 C</td>
+            <td class="govuk-table__cell">ESA</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" id="srti-yes">No</strong></td>
+            <td class="govuk-table__cell">28 May 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="#">Sammy Cullen</a></td>
+            <td class="govuk-table__cell">RN 00 01 67 A</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">1 Feb 2021</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" id="srti-yes">No</strong></td>
+            <td class="govuk-table__cell">20 May 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="#">Kerri Pedr</a></td>
+            <td class="govuk-table__cell">RN 00 01 88 C</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" id="srti-yes">No</strong></td>
+            <td class="govuk-table__cell">18 May 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="#">Kristie Hoyt</a></td>
+            <td class="govuk-table__cell">RN 00 01 99 A</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" id="srti-yes">No</strong></td>
+            <td class="govuk-table__cell">28 May 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="#">Cassarah Justy</a></td>
+            <td class="govuk-table__cell">RN 00 01 27 C</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">1 Feb 2021</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" id="srti-yes">No</strong></td>
+            <td class="govuk-table__cell">8 May 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="#">Lyndon Mererid</a></td>
+            <td class="govuk-table__cell">RN 00 01 44 B</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">1 Feb 2021</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" id="srti-yes">No</strong></td>
+            <td class="govuk-table__cell">28 May 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="#">Seth Sheena</a></td>
+            <td class="govuk-table__cell">RN 00 01 22 C</td>
+            <td class="govuk-table__cell">ESA</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" id="srti-yes">No</strong></td>
+            <td class="govuk-table__cell">11 May 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="#">Sammy Cullen</a></td>
+            <td class="govuk-table__cell">RN 00 01 67 A</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">1 Feb 2021</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" id="srti-yes">No</strong></td>
+            <td class="govuk-table__cell">13 May 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="#">Kerri Pedr</a></td>
+            <td class="govuk-table__cell">RN 00 01 88 C</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" id="srti-yes">No</strong></td>
+            <td class="govuk-table__cell">02 May 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="#">Kristie Hoyt</a></td>
+            <td class="govuk-table__cell">RN 00 01 99 A</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" id="srti-yes">No</strong></td>
+            <td class="govuk-table__cell">28 May 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="#">Cassarah Justy</a></td>
+            <td class="govuk-table__cell">RN 00 01 27 C</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">1 Feb 2021</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" id="srti-yes">No</strong></td>
+            <td class="govuk-table__cell">28 May 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="#">Lyndon Mererid</a></td>
+            <td class="govuk-table__cell">RN 00 01 44 B</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">1 Feb 2021</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey" id="srti-yes">No</strong></td>
+            <td class="govuk-table__cell">28 May 2021</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+{% endblock %}

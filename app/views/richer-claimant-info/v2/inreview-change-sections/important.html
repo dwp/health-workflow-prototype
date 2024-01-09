@@ -1,0 +1,150 @@
+{% extends "layout-extended.html" %}
+
+{% block pageTitle %}
+  Referral list
+{% endblock %}
+
+{% block beforeContent %}
+<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+     <!-- <span class="govuk-caption-l govuk-!-margin-bottom-2">Create referral question 9 of X</span> -->
+      
+
+
+     <h1 class="govuk-heading-l">
+    Important information
+   </h1>
+
+   <div class="govuk-form-group">
+     <fieldset class="govuk-fieldset" role="group" aria-describedby="claimant-names">
+       <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+         <h2 class="govuk-fieldset__heading">
+          Special rules end of life
+         </h2>
+       </legend>
+ 
+          <div class="govuk-radios" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="important-special-rules-yes" name="important-special-rules" type="radio" value="yes" checked>
+              <label class="govuk-label govuk-radios__label" for="important-special-rules-yes" >
+                Yes
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="important-special-rules-no" name="important-special-rules" type="radio" value="no">
+              <label class="govuk-label govuk-radios__label" for="important-special-rules-no">
+                No
+              </label>
+            </div>
+
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="important-special-rules-unknown" name="important-special-rules" type="radio" value="unknown">
+              <label class="govuk-label govuk-radios__label" for="important-special-rules-unknown">
+                Not known
+              </label>
+            </div>
+           
+
+        </fieldset>
+      </div>
+
+
+  <!--  <div class="govuk-form-group">
+    <fieldset class="govuk-fieldset" role="group" aria-describedby="claimant-names">
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+        <h2 class="govuk-fieldset__heading">
+          Special rules end of life aware
+        </h2>
+      </legend>
+
+         <div class="govuk-radios" data-module="govuk-radios">
+           <div class="govuk-radios__item">
+             <input class="govuk-radios__input" id="important-special-rules-aware-yes" name="important-special-rules-aware" type="radio" value="yes" >
+             <label class="govuk-label govuk-radios__label" for="important-special-rules-aware-yes" >
+               Yes
+             </label>
+           </div>
+           <div class="govuk-radios__item">
+             <input class="govuk-radios__input" id="important-special-rules-aware-no" name="important-special-rules-aware" type="radio" value="no"checked>
+             <label class="govuk-label govuk-radios__label" for="important-special-rules-aware-no">
+               No
+             </label>
+           </div>
+          
+
+       </fieldset>
+     </div> -->
+
+
+
+   <div class="govuk-form-group">
+    <fieldset class="govuk-fieldset" role="group" aria-describedby="claimant-names">
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+        <h2 class="govuk-fieldset__heading">
+          Unacceptable behaviour
+        </h2>
+      </legend>
+
+         <div class="govuk-radios" data-module="govuk-radios">
+           <div class="govuk-radios__item">
+             <input class="govuk-radios__input" id="behaviour-yes" name="behaviour" type="radio" value="yes" >
+             <label class="govuk-label govuk-radios__label" for="behaviour-yes" >
+               Yes
+             </label>
+           </div>
+           <div class="govuk-radios__item">
+             <input class="govuk-radios__input" id="behaviour-no" name="behaviour" type="radio" value="no" checked>
+             <label class="govuk-label govuk-radios__label" for="behaviour-no">
+               No
+             </label>
+           </div>
+          
+
+       </fieldset>
+     </div>
+
+
+
+   <div class="govuk-form-group">
+    <fieldset class="govuk-fieldset" role="group" aria-describedby="claimant-names">
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+        <h2 class="govuk-fieldset__heading">
+          Mental health condition
+        </h2>
+      </legend>
+
+         <div class="govuk-radios" data-module="govuk-radios">
+           <div class="govuk-radios__item">
+             <input class="govuk-radios__input" id="mental-health-yes" name="mental-health" type="radio" value="yes" >
+             <label class="govuk-label govuk-radios__label" for="mental-health-yes" >
+               Yes
+             </label>
+           </div>
+           <div class="govuk-radios__item">
+             <input class="govuk-radios__input" id="mental-health-no" name="mental-health" type="radio" value="no" checked>
+             <label class="govuk-label govuk-radios__label" for="mental-health-no">
+               No
+             </label>
+           </div>
+          
+
+       </fieldset>
+     </div>
+
+      
+
+      <a href="../claimant-detail-srti-updated" aria-describedby="search-referral">  <button class="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
+      </a>
+
+    </div>
+  </div>
+
+{% endblock %}

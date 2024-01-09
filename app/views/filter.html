@@ -1,0 +1,151 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Referral State Model Prototype
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Filtering
+      </h1>
+
+      <p><a href="https://dwpdigital.atlassian.net/wiki/spaces/HPDU/pages/132863525417/Filter+sort+and+page+display+Q1+Q2+2022+2023" role="button" draggable="false" aria-describedby="miro-link">Filter confluence design documentation</a></p>
+
+      <p>These prototypes look at filtering a list of referrals as the health assessment service grows.</p>
+
+      <h2 class="govuk-heading-m">Version 1</h2>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>View by status lists</li>
+        <li><strong>Caseload functionality removed (does not replicate live)</strong></li>
+        <li>Filter by assessment centre and benefit type in status lists</li>
+        <li>Example pagination in status lists</li>
+        <li>Use statuses New, Assessment booked and Report ready to see filters (the other statuses won't work).</li>
+      </ul>
+
+      <a href="filter/v1c/" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"  data-module="govuk-button">
+        Start
+        <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
+          <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path>
+        </svg>
+      </a>
+      
+      <h2 class="govuk-heading-m">Version 2</h2>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>View by status lists</li>
+        <li><strong>Caseload functionality removed (does not replicate live)</strong></li>
+        <li>Filter by end of life, assessment centre and benefit type in status lists</li>
+        <li>Enhancement of filter playback to user (scrapped for now - it's commented out in the code, still accessible if need to go back).</li>
+        <li>Example GDS pagination pattern in status lists</li>
+        <li>Sortable columns for referral date and next action due date from MOJ design system.</li>
+        <li>Use statuses 'New', 'Assessment booked' and 'Report ready' to see filters (the other statuses won't work).</li>
+      </ul>
+
+      <a href="filter/v2/" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"  data-module="govuk-button">
+        Start
+        <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
+          <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path>
+        </svg>
+      </a>   
+
+      <h2 class="govuk-heading-m">Version 3</h2>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>To be used for guidence and training</li>
+        <li>Prototype with filter and pagination - <strong>NO SORT FUNCTIONALITY</strong> (that's in v4 below - split out for delivery of development iteration)</li>
+        <li>Replicates live (inc caseload) with initial filtering features and pagination from v1</li>
+        <li>Use statuses 'Assigned, 'Assessment booked' and 'Assesment booked' to see filters (the other statuses won't work).</li>
+      </ul>
+
+      <a href="filter/v3/" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"  data-module="govuk-button">
+        Start
+        <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
+          <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path>
+        </svg>
+      </a>   
+
+      <h2 class="govuk-heading-m">Version 4</h2>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>To be used for guidence and training</li>
+        <li>Replicates live (inc caseload) with initial filtering features and pagination from v1, and the addition of sortable table columns from the MOJ design system</li>
+        <li>Use statuses 'Assigned, 'Assessment booked' and 'Report ready' to see filters (the other statuses won't work).</li>
+     <li>'New referrals to assign' moj pagination idea - dev problem when over 200 referrals selected to assign</li> 
+     <li>Updated <a href="filter/v4/confirmation"> status confirmation page with onward journey options </a> - status agnostic</li> </ul>
+
+     <p><a href="filter/v4/list-no-results">Filter showing no results</a></p>
+
+      <a href="filter/v4/" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"  data-module="govuk-button">
+        Start
+        <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
+          <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path>
+        </svg>
+      </a>  
+      
+     
+
+
+      <h2 class="govuk-heading-m">Version 5</h2>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Screen before viewing 'New referrals to assign' to filter down based on benefit type / assessment centre</li>  </ul>
+
+      <a href="filter/v5/" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"  data-module="govuk-button">
+        Start
+        <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
+          <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path>
+        </svg>
+      </a>   
+
+
+      <h2 class="govuk-heading-m">E2E HAS to highlight screen width crossover</h2>
+      
+      <p>For Emmas use to explain to product where the screen width differs as we progress through the service across teams.</p>
+
+      <a href="filter/screen-width/" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"  data-module="govuk-button">
+        Start
+        <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
+          <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path>
+        </svg>
+      </a>
+      
+      <details class="govuk-details" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            Archive
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+
+          <h2 class="govuk-heading-m"><a href="filter/archive/sort/" aria-describedby="Achived-prototype-1">Archive sort prototype</a></h2>
+          <ul>
+            <li>Built in case sortable column headers was to be delivered before filter</li>
+            <li>Never finished as deprioritised</li>
+          </ul>
+
+          <h2 class="govuk-heading-m"><a href="filter/archive/v1a/" aria-describedby="Achived-prototype-1">Archive initial left hand prototype</a></h2>
+          <ul>
+            <li>Left hand filters</li>
+            <li>Old content</li>
+            <li>Smoke and mirrors, no working JS for the filtering</li>
+            <li>Statuses 'New', Assessment booked' and 'Report ready' are the only journeys that work.</li>
+          </ul>
+
+          <h2 class="govuk-heading-m"><a href="filter/archive/v1b/" aria-describedby="Achived-prototype-1">Archive top level filters</a></h2>
+          <ul>
+            <li>Top level filters</li>
+            <li>Old content</li>
+            <li>Smoke and mirrors, no working JS for the filtering</li>
+            <li>Statuses 'New', Assessment booked' and 'Report ready' are the only journeys that work.</li>
+          </ul>
+          
+        </div>
+      </details>
+
+    </div>
+  </div>
+{% endblock %}

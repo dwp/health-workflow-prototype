@@ -1,0 +1,116 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Referral list
+{% endblock %}
+
+{% block beforeContent %}
+<a href="start" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <h1 class="govuk-heading-l">
+        Zoe Hall's caseload 
+      </h1>
+
+      <table class="govuk-table">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Claimant name</th>
+            <th scope="col" class="govuk-table__header">NINO</th>
+            <th scope="col" class="govuk-table__header">Benefit</th>
+            <th scope="col" class="govuk-table__header">SRTI</th>
+            <th scope="col" class="govuk-table__header">Last updated</th>
+            <th scope="col" class="govuk-table__header">Status</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-assigned" aria-describedby="claimant-detail-assined">Joy Carmel</a></td>
+            <td class="govuk-table__cell">RN 03 44 26 C</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Today</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--blue" id="Status 4">Assigned</strong></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-assigned" aria-describedby="claimant-detail-assigned">Fran Cliffe</a></td>
+            <td class="govuk-table__cell">RN 22 10 00 E</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Today</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--blue" id="Status 6">Assigned</strong></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-review" aria-describedby="claimant-detail-review">Xia Jeana</a></td>
+            <td class="govuk-table__cell">RN 00 02 22 A</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">33 days ago</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--orange" id="Status 4">Gathering information</strong></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-review" aria-describedby="claimant-detail-review">Noelle Carmel</a></td>
+            <td class="govuk-table__cell">RN 00 04 26 D</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">3 days ago</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green" id="Status 4">In review</strong></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-review" aria-describedby="claimant-detail-review">Fran Simone</a></td>
+            <td class="govuk-table__cell">RN 00 10 00 E</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">2 days ago</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green" id="Status 6">In Review</strong></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-review" aria-describedby="claimant-detail-review">Danya Cecylia</a></td>
+            <td class="govuk-table__cell">RN 00 01 33 A</td>
+            <td class="govuk-table__cell">ESA</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">12 days ago</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green" id="Status 5">In Review</strong></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-review" aria-describedby="claimant-detail-review">John Brady</a></td>
+            <td class="govuk-table__cell">RN 00 01 96 Z</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">15 days ago</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--red" id="Status 2">Awaiting evidence</strong></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-review" aria-describedby="claimant-detail-review">Sam Smart</a></td>
+            <td class="govuk-table__cell">RN 00 09 83 A</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">1 day ago</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--red" id="Status 2">Awaiting evidence</strong></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-start-assessment" aria-describedby="claimant-detail-start-assessment">Luce Deryn</a></td>
+            <td class="govuk-table__cell">RN 00 01 46 A</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">Today</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--yellow" id="Status 3">Paper based review</strong></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-detail-start-assessment" aria-describedby="claimant-detail-start-assessment">John Doe</a></td>
+            <td class="govuk-table__cell">RN 00 01 73 B</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell">2 days ago</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--yellow" id="Status 3">Assessment booked</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Referral list
+{% endblock %}
+
+{% block beforeContent %}
+<a href="alternative-find-name" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <span class="govuk-caption-l govuk-!-margin-bottom-2">Find a claimant</span>
+      <h1 class="govuk-heading-l">
+      'Jane Doe' not found
+      </h1>
+
+      <!-- <table class="govuk-table">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Claimant name</th>
+            <th scope="col" class="govuk-table__header">NINO</th>
+            <th scope="col" class="govuk-table__header">Benefit</th>
+            <th scope="col" class="govuk-table__header">Referral date</th>
+            <th scope="col" class="govuk-table__header">SRTI</th>
+            <th scope="col" class="govuk-table__header">Status</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+
+        </tbody>
+      </table> -->
+
+
+      <p class="govuk-body">If you are entering:</p>
+  <ul class="govuk-list govuk-list--bullet">
+    <li>a National Insurance number, check it is the correct format. For example, ‘QQ 12 34 56 C’</li>
+    <li>a name, check it is the claimant's full name</li>
+  </ul>
+
+
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,170 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Referral list
+{% endblock %}
+
+{% block beforeContent %}
+<a href="index" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+
+              <h1 class="govuk-fieldset__heading">
+                Which status do you want to update the referral to?
+              </h1>
+            </legend>
+
+            <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="gathering-info" name="status" type="radio" value="gathering-info" data-aria-controls="conditional-gathering-info">
+                <label class="govuk-label govuk-radios__label" for="gathering-info">
+                  Gathering information
+                </label>
+              </div>
+              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-gathering-info">
+                <div class="govuk-form-group">
+                  <div class="govuk-radios--small">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="gathering-info-2" name="status1" type="radio" value="questionnaire-issued">
+                      <label class="govuk-label govuk-radios__label" for="status">
+                        Questionnaire issued
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="gathering-info-3" name="status1" type="radio" value="questionnaire-returned">
+                      <label class="govuk-label govuk-radios__label" for="status-2">
+                        Questionnaire returned
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="gathering-info-4" name="status1" type="radio" value="awaiting-contact">
+                      <label class="govuk-label govuk-radios__label" for="status-3">
+                        Contact with claimant needed
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+          <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="case-mgr-review" name="status" type="radio" value="case-mgr-review" data-aria-controls="conditional-case-mgr-review">
+              <label class="govuk-label govuk-radios__label" for="case-mgr-review">
+                Case manager review
+              </label>
+            </div>
+            <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-case-mgr-review">
+              <div class="govuk-form-group">
+                <div class="govuk-radios--small">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="casemgrreview-2" name="status2" type="radio" value="Reviewing-questionnaire">
+                    <label class="govuk-label govuk-radios__label" for="status">
+                      Reviewing questionnaire
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="casemgrreview-3" name="status2" type="radio" value="questionnaire-returned">
+                    <label class="govuk-label govuk-radios__label" for="status-2">
+                      Needs case conference
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="casemgrreview-4" name="status2" type="radio" value="further-contact">
+                    <label class="govuk-label govuk-radios__label" for="status-3">
+                      Further contact with claimant needed
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="awaiting-evidence" name="status" type="radio" value="awaiting-evidence" data-aria-controls="conditional-awaiting-evidence">
+              <label class="govuk-label govuk-radios__label" for="case-mgr-review">
+                Awaiting evidence
+              </label>
+            </div>
+            <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-awaiting-evidence">
+              <div class="govuk-form-group">
+                <div class="govuk-radios--small">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="awaiting-evidence-2" name="status3" type="radio" value="Reviewing-questionnaire">
+                    <label class="govuk-label govuk-radios__label" for="status">
+                      GP evidence or other medical evidence needed
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="awaiting-evidence-3" name="status3" type="radio" value="questionnaire-returned">
+                    <label class="govuk-label govuk-radios__label" for="status-2">
+                      Other professional evidence needed
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="casemgrreview-4" name="status3" type="radio" value="further-contact">
+                    <label class="govuk-label govuk-radios__label" for="status-3">
+                      Requested further evidence from claimant
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="status-4" name="status" type="radio" value="paper-based-review">
+                <label class="govuk-label govuk-radios__label" for="status-4">
+                  Paper based review
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="status-4" name="status" type="radio" value="assessment-booked">
+                <label class="govuk-label govuk-radios__label" for="status-4">
+                  Assessment booked
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="status-4" name="status" type="radio" value="awaiting-decision">
+                <label class="govuk-label govuk-radios__label" for="status-4">
+                  Awaiting decision
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="status-4" name="status" type="radio" value="done">
+                <label class="govuk-label govuk-radios__label" for="status-4">
+                  Done
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="status-4" name="status" type="radio" value="withdrawn">
+                <label class="govuk-label govuk-radios__label" for="status-4">
+                  Withdrawn
+                </label>
+              </div>
+
+          </fieldset>
+        </div>
+
+        <a href="confirmation" role="button" draggable="false" class="govuk-button"  data-module="govuk-button">
+          Save and continue
+        </a>
+
+    </div>
+  </div>
+
+
+{% endblock %}

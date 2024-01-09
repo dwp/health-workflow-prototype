@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Confirmation
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <div class="govuk-panel govuk-panel--confirmation">
+        <h1 class="govuk-panel__title">Referral removed from 'list name here' and added to 'list name here'</h1>
+      </div>
+
+      <p class="govuk-body">
+    You have removed the referral from the list, and added it to another.
+      </p>
+      <p>
+        <a href="claimant-detail-review" aria-describedby="claimant-detail">Go back to referral</a>
+      </p>
+
+
+    </div>
+  </div>
+
+{% endblock %}

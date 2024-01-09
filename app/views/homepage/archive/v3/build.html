@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Health Assessment Service
+{% endblock %}
+
+{% block beforeContent %}
+<a href="index" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h1 class="govuk-heading-l">
+      Build referrals
+    </h1>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <div class="dwp-card dwp-card--clickable">
+        <div class="dwp-card__content">
+          <h2 class="dwp-card__heading dwp-heading-m">
+            <a class="dwp-card__link" href="new-referrals">New referrals to assign (9)</a>
+          </h2>
+        </div>
+      </div>
+
+      <div class="dwp-card dwp-card--clickable">
+        <div class="dwp-card__content">
+          <h2 class="dwp-card__heading dwp-heading-m">
+            <a class="dwp-card__link" href="#">Create a referral</a>
+          </h2>
+        </div>
+      </div>
+
+      <div class="dwp-card dwp-card--clickable">
+        <div class="dwp-card__content">
+          <h2 class="dwp-card__heading dwp-heading-m">
+            <a class="dwp-card__link" href="caseload">Incomplete referrals</a>
+          </h2>
+        </div>
+      </div>
+
+      <div class="dwp-card dwp-card--clickable">
+        <div class="dwp-card__content">
+          <h2 class="dwp-card__heading dwp-heading-m">
+            <a class="dwp-card__link" href="overview">Changes to PIP referrals</a>
+          </h2>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </div>
+
+{% endblock %}

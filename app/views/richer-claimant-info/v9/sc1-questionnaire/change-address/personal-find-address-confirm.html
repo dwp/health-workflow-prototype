@@ -1,0 +1,89 @@
+{% extends "layout-extended.html" %}
+
+{% block pageTitle %}
+Confirm claimant address - Health Assessment Service
+{% endblock %}
+
+{% block beforeContent %}
+
+<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      
+     <h1 class="govuk-heading-l">
+    Confirm address
+      </h1>
+
+      <p>5 addresses found for <span class="govuk-body govuk-!-font-weight-bold"> XX11 1XX</span> and <span class="govuk-body govuk-!-font-weight-bold">1</span>. <a href="personal-find-address" style="padding-left: 20px;">Search again</a></p>
+      
+      <div class="govuk-inset-text">
+        1 Spooner Street<br>
+        Sheffield<br>WR1 1NL</div>
+
+  
+  
+     
+
+      <form action="/richer-claimant-info/v9/corres" method="post" class="form">
+
+      
+       
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading">
+              Is the correspondence address the same as the residential address?
+            </h2>
+          </legend>
+          <div class="govuk-radios govuk-radios--inline">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="corres-address-yes" name="corres-address" type="radio" value="true">
+              <label class="govuk-label govuk-radios__label" for="corres-address-yes">
+                Yes
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="corres-address-no" name="corres-address" type="radio" value="false">
+              <label class="govuk-label govuk-radios__label" for="corres-address-no">
+                No
+              </label>
+            </div>
+          </div>
+          </fieldset>
+        </div>
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+
+
+
+
+    
+
+    <p> <a href="personal-find-address-select" aria-describedby="search-referral">
+       
+      Use a different address
+     
+   </a> </p> 
+   <p> 
+   
+   <a href="personal-change-address" aria-describedby="search-referral">
+       
+         Enter address manually
+        
+      </a></p>
+
+    </div>
+  </div>
+
+{% endblock %}

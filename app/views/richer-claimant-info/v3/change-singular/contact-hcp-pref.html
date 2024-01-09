@@ -1,0 +1,70 @@
+{% extends "layout-extended.html" %}
+
+{% block pageTitle %}
+  Referral list
+{% endblock %}
+
+{% block beforeContent %}
+
+<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+    
+
+
+
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h2 class="govuk-fieldset__heading">
+             HCP preference?
+            </h2>
+          </legend>
+          <div class="govuk-radios" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="male" name="hcp-preference" type="radio" value="male">
+              <label class="govuk-label govuk-radios__label" for="male">
+                Male
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="female" name="hcp-preference" type="radio" value="female">
+              <label class="govuk-label govuk-radios__label" for="female">
+               Female
+              </label>
+            </div>
+
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="other" name="hcp-preference" type="radio" value="other">
+              <label class="govuk-label govuk-radios__label" for="other">
+               No preference
+              </label>
+            </div>
+          </div>
+      
+        </fieldset>
+      </div>
+
+
+     
+
+      
+
+
+      <a href="../claimant-detail-assigned2-updated" aria-describedby="search-referral">
+        <button class="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
+      </a>
+
+    </div>
+  </div>
+
+{% endblock %}

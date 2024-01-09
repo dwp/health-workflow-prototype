@@ -1,0 +1,177 @@
+{% extends "layout-key-details.html" %}
+
+{% block pageTitle %}
+  Claimant details
+{% endblock %}
+
+
+{% block beforeContent %}
+<a href="list" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+
+      <h1 class="govuk-heading-xl">Referral information</h1>
+      
+      <h2 class="govuk-heading-m">Personal details</h2>
+
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Preferred name
+          </dt>
+          <dd class="govuk-summary-list__value">
+            N/A
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Phone number
+          </dt>
+          <dd class="govuk-summary-list__value">
+            07799 000000
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            SRTI
+          </dt>
+          <dd class="govuk-summary-list__value">
+            No
+          </dd>
+        </div>
+      </dl>
+
+      <h2 class="govuk-heading-m">Referral details</h2>
+
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Referral date
+          </dt>
+          <dd class="govuk-summary-list__value">
+            2 February 2021
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Referral type
+          </dt>
+          <dd class="govuk-summary-list__value">
+            New referral
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Benefit type
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Universal credit
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Decision
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Not available
+          </dd>
+        </div>
+      </dl>
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Referral actions
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="update-status" aria-describedby="update-status">
+                <button class="govuk-button" data-module="govuk-button">
+                  Update status
+                </button>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <main id="content" role="main">
+          <div class="grid-row">
+            <div class="column-one-third">
+
+              <h2 class="govuk-heading-m">History</h2>
+              <ol class="dwp-timeline">
+                <li class="dwp-timeline__entry">
+                  <h3 class="dwp-timeline__title">Assessment complete</h3>
+                  <p class="dwp-timeline__info">
+                    <span class="govuk-visually-hidden visually-hidden">information reviewed</span>
+                    <span class="dwp-timeline__author">by Paul Smith</span>
+                    <span class="dwp-timeline__date">15 February 2021 at 13:30</span>
+                  </p>
+                  <p class="dwp-timeline__body">
+                    Paper assessment complete, reccomendation made.
+                  </p>
+                </li>
+                <li class="dwp-timeline__entry">
+                  <h3 class="dwp-timeline__title">Information reviewed</h3>
+                  <p class="dwp-timeline__info">
+                    <span class="govuk-visually-hidden visually-hidden">information reviewed</span>
+                    <span class="dwp-timeline__author">by Paul Smith</span>
+                    <span class="dwp-timeline__date">15 February 2021 at 09:12</span>
+                  </p>
+                  <p class="dwp-timeline__body">
+                    Clinical reccomendation there is enough evidence for a paper assessment, no need to call in claimant.
+                  </p>
+                </li>
+                <li class="dwp-timeline__entry">
+                  <h3 class="dwp-timeline__title">Information gathered</h3>
+                  <p class="dwp-timeline__info">
+                    <span class="govuk-visually-hidden visually-hidden">information gathered</span>
+                    <span class="dwp-timeline__author">by Sam Smith</span>
+                    <span class="dwp-timeline__date">14 February 2021 at 14:53</span>
+                  </p>
+                  <p class="dwp-timeline__body">
+                    Questionnaire sent and recieved.
+                  </p>
+                </li>
+                <li class="dwp-timeline__entry">
+                  <h3 class="dwp-timeline__title">In progress</h3>
+                  <p class="dwp-timeline__info">
+                    <span class="govuk-visually-hidden">Referral assigned</span>
+                    <span class="dwp-timeline__author">by Sam Smith</span>
+                    <span class="dwp-timeline__date">8 February 2021 at 10:28</span>
+                  </p>
+                  <p class="dwp-timeline__body">
+                    Case manager assigned to Sam Smith
+                  </p>
+                </li>
+
+                <li class="dwp-timeline__entry">
+                  <h3 class="dwp-timeline__title">New</h3>
+                  <p class="dwp-timeline__info">
+                    <span class="govuk-visually-hidden visually-hidden">Referral created</span>
+                    <span class="dwp-timeline__author">by John Smith</span>
+                    <span class="dwp-timeline__date">2 February 2021 at 13:21</span>
+                  </p>
+                  <p class="dwp-timeline__body">
+                    Referral received from universal credit
+                  </p>
+                </li>
+              </ol>
+
+            </div>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+
+  </div>
+{% endblock %}

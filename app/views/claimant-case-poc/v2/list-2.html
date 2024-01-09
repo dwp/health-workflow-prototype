@@ -1,0 +1,145 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Referral list
+{% endblock %}
+
+{% block beforeContent %}
+<a href="start" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <h1 class="govuk-heading-l">
+        Poppy caseload
+      </h1>
+
+      <table class="govuk-table">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Claimant name</th>
+            <th scope="col" class="govuk-table__header">NINO</th>
+            <th scope="col" class="govuk-table__header">Benefit</th>
+            <th scope="col" class="govuk-table__header">Referral date</th>
+            <th scope="col" class="govuk-table__header">SRTI</th>
+            <th scope="col" class="govuk-table__header">Status</th>
+            <th scope="col" class="govuk-table__header">Last updated</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="#">Jane Doe</a></td>
+            <td class="govuk-table__cell">RN 00 04 26 B</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">10 May 2021</td>
+            <td class="govuk-table__cell">Yes</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--pink" id="Status 4">Awaiting Decision</strong></td>
+            <td class="govuk-table__cell">28 May 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="#">Xia Jeana</a></td>
+            <td class="govuk-table__cell">RN 00 02 22 A</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--orange" id="Status 4">Gathering information</strong></td>
+            <td class="govuk-table__cell">23 May 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="#">Fran Simone</a></td>
+            <td class="govuk-table__cell">RN 00 10 00 E</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green" id="Status 6">In Review</strong></td>
+            <td class="govuk-table__cell">28 May 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="#">Danya Cecylia</a></td>
+            <td class="govuk-table__cell">RN 00 01 33 A</td>
+            <td class="govuk-table__cell">ESA</td>
+            <td class="govuk-table__cell">1 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green" id="Status 5">In Review</strong></td>
+            <td class="govuk-table__cell">18 May 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="claimant-case-detail" aria-describedby="#">Noelle Carmel</a></td>
+            <td class="govuk-table__cell">RN 00 04 26 D</td>
+            <td class="govuk-table__cell">ESA, PIP</td>
+            <td class="govuk-table__cell">1 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green" id="Status 5">In Review</strong></td>
+            <td class="govuk-table__cell">18 May 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="#">John Brady</a></td>
+            <td class="govuk-table__cell">RN 00 01 96 Z</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">16 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--red" id="Status 2">Awaiting evidence</strong></td>
+            <td class="govuk-table__cell">2 May 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="#">Sam Smart</a></td>
+            <td class="govuk-table__cell">RN 00 09 83 A</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">16 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--red" id="Status 2">Awaiting evidence</strong></td>
+            <td class="govuk-table__cell">7 May 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="#">Luce Deryn</a></td>
+            <td class="govuk-table__cell">RN 00 01 46 A</td>
+            <td class="govuk-table__cell">UC</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--yellow" id="Status 3">Paper based review</strong></td>
+            <td class="govuk-table__cell">8 May 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="#">John Doe</a></td>
+            <td class="govuk-table__cell">RN 00 01 73 B</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--yellow" id="Status 3">Assessment booked</strong></td>
+            <td class="govuk-table__cell">22 May 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="#">John Doe</a></td>
+            <td class="govuk-table__cell">RN 00 01 26 F</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--pink" id="Status 4">Awaiting Decision</strong></td>
+            <td class="govuk-table__cell">20 May 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="#">Jane Doe</a></td>
+            <td class="govuk-table__cell">RN 00 01 66 F</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--pink" id="Status 4">Awaiting Decision</strong></td>
+            <td class="govuk-table__cell">29 May 2021</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell"><a href="#" aria-describedby="#">Sandra Wallace</a></td>
+            <td class="govuk-table__cell">RN 00 01 76 F</td>
+            <td class="govuk-table__cell">PIP</td>
+            <td class="govuk-table__cell">10 Feb 2021</td>
+            <td class="govuk-table__cell">No</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--pink" id="Status 4">Awaiting Decision</strong></td>
+            <td class="govuk-table__cell">1 Jun 2021</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+{% endblock %}

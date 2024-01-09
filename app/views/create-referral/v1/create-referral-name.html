@@ -1,0 +1,164 @@
+{% extends "layout-extended.html" %}
+
+{% block pageTitle %}
+  Referral list
+{% endblock %}
+
+{% block beforeContent %}
+<a href="index" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      
+      <span class="govuk-caption-l govuk-!-margin-bottom-2">Build a case question 3 of X</span>
+      <h1 class="govuk-heading-l">
+        Enter the claimants personal details
+      </h1>
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" role="group" aria-describedby="claimant-names">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading">
+              Claimant names
+            </h2>
+          </legend>
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="first-name">
+              First Name
+            </label>
+            <input class="govuk-input" id="first-name" name="first-name" type="text" spellcheck="false" autocomplete="first-name">
+          </div>
+    
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="surname">
+              Surname
+            </label>
+            <input class="govuk-input" id="surname" name="surname" type="text" spellcheck="false" autocomplete="surname">
+          </div>
+    
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="preferred-name">
+              Preferred name
+            </label>
+            <input class="govuk-input" id="preferred-name" name="preferred-name" type="text" spellcheck="false" autocomplete="preferred-name">
+          </div>
+          </fieldset>
+        </div>
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" role="group" aria-describedby="ni/crn numbers">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+              <h2 class="govuk-fieldset__heading">
+                Ni number/Customer reference number
+              </h2>
+            </legend>
+
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="ni-number">
+                National insurance number
+              </label>
+              <input class="govuk-input govuk-!-width-one-third" id="ni-number" name="ni-number" type="text" spellcheck="false" autocomplete="ni-number">
+            </div>
+
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="crn-number">
+                Customer reference number
+              </label>
+              <input class="govuk-input govuk-!-width-one-third" id="crn-number" name="crn-number" type="text" spellcheck="false" autocomplete="crn-number">
+            </div>
+
+          </fieldset>
+        </div>
+
+      
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" role="group" aria-describedby="dob-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading">
+              Enter the claimants date of birth
+            </h2>
+          </legend>
+          <div id="dob-hint" class="govuk-hint">
+            For example, 27 3 2007
+          </div>
+          <div class="govuk-date-input" id="dob">
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="dob-day">
+                  Day
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-day" name="dob-day" type="text" inputmode="numeric">
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="dob-month">
+                  Month
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-month" name="dob-month" type="text" inputmode="numeric">
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="dob-year">
+                  Year
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="dob-year" name="dob-year" type="text" inputmode="numeric">
+              </div>
+            </div>
+          </div>
+      
+        </fieldset>
+      </div>
+
+
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" role="group" aria-describedby="contact-details">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading">
+              Contact details
+            </h2>
+          </legend>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="home-number">
+              Home phone number
+            </label>
+            <input class="govuk-input govuk-!-width-one-third" id="home-number" name="home-number" type="text" spellcheck="false" autocomplete="home-number">
+          </div>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="mobile-number">
+              Mobile phone number
+            </label>
+            <input class="govuk-input govuk-!-width-one-third" id="mobile-number" name="mobile-number" type="text" spellcheck="false" autocomplete="mobile-number">
+          </div>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="text-number">
+              Text phone number
+            </label>
+            <input class="govuk-input govuk-!-width-one-third" id="text-number" name="text-number" type="text" spellcheck="false" autocomplete="text-number">
+          </div>
+
+        </fieldset>
+      </div>
+
+
+
+      <a href="create-referral-numbers" aria-describedby="search-referral">
+        <button class="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
+      </a>
+
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Referral list
+{% endblock %}
+
+{% block beforeContent %}
+<a href="index" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <form action="/finding-and-organising/bluesky/v3/location" method="post" class="form">
+
+      <h1 class="govuk-heading-l">
+        Which location do you want to view?
+      </h1>
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="status-hint">
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="tresco" name="location" type="radio" value="tresco">
+              <label class="govuk-label govuk-radios__label" for="tresco">
+                Tresco House
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="summerhill" name="location" type="radio" value="summerhill">
+              <label class="govuk-label govuk-radios__label" for="summerhill">
+                Summerhill
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <button class="govuk-button" data-module="govuk-button">Start</button>
+    </form>
+
+    </div>
+  </div>
+
+
+{% endblock %}

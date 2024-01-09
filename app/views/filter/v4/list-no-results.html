@@ -1,0 +1,151 @@
+{% extends "layout-extended.html" %}
+
+{% block pageTitle %}
+Referral list
+{% endblock %}
+
+{% block beforeContent %}
+<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<!-- <div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h1 class="govuk-heading-l">
+      New referrals
+    </h1>
+  </div>
+</div> -->
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-quarter">
+    <h2 class="govuk-heading-m govuk-!-Marchgin-bottom-5">
+      Filters
+    </h2>
+    <div id="filter-hint" class="govuk-hint govuk-!-Marchgin-bottom-4">
+      Select one or more filters to apply to the list.
+    </div>
+    <div class="table-filter">
+
+        <!--Filters-->
+
+        {{ govukCheckboxes({
+        idPrefix: "caseType",
+        name: "caseType",
+        classes: "govuk-checkboxes--small",
+        fieldset: {
+        legend: {
+        text: "Case type",
+        isPageHeading: false,
+        classes: "govuk-fieldset__legend--s"
+        }
+        },
+        items: [
+        {
+        id: "srel",
+        value: "srel",
+        html: "Special rules for end of life (<span id='srelCount'>2</span>)",
+        checked: true
+        }
+        ]
+        }) }}
+
+        {{ govukCheckboxes({
+        idPrefix: "benefitType",
+        name: "benefit-type",
+        classes: "govuk-checkboxes--small",
+        fieldset: {
+        legend: {
+        text: "Benefit type",
+        isPageHeading: false,
+        classes: "govuk-fieldset__legend--s"
+        }
+        },
+        items: [
+        {
+        id: "esa",
+        value: "esa",
+        text: "Employment Support Allowance (13)",
+        checked: true
+        },
+        {
+        id: "pip",
+        value: "pip",
+        text: "Personal Independence Payment (25)"
+        },
+        {
+        id: "uc",
+        value: "uc",
+        text: "Universal Credit (22)"
+        }
+        ]
+        }) }}
+
+        {{ govukCheckboxes({
+        idPrefix: "assessmentCentre",
+        name: "assessment-centre",
+        classes: "govuk-checkboxes--small",
+        fieldset: {
+        legend: {
+        text: "Assessment centre",
+        isPageHeading: false,
+        classes: "govuk-fieldset__legend--s"
+        }
+        },
+        items: [
+        {
+        id: "handsworth",
+        value: "handsworth",
+        text: "Birmingham Handsworth (22)"
+        },
+        {
+        id: "doncaster",
+        value: "doncaster",
+        text: "Doncaster site name (8)",
+        checked: true
+        },
+        {
+        id: "leeds",
+        value: "leeds",
+        text: "Leeds site name (10)"
+        },
+        {
+        id: "tresco",
+        value: "tresco",
+        text: "London Tresco House (20)"
+        }
+        ]
+        }) }}
+<a href="list-4">
+        <button class="govuk-button govuk-button--secondary govuk-!-Marchgin-bottom-8">Apply filters</button>
+      </a>
+
+
+
+    </div>
+  </div>
+  <div class="govuk-grid-column-three-quarters">
+
+    <h1 class="govuk-heading-l">
+      Assigned referrals
+    </h1>
+
+    <h2 class="govuk-heading-m">
+      No referrals found
+    </h2>
+
+    <p class="govuk-body-m">The selected filters have limited how many referrals can be displayed.
+
+
+    <br>
+    <br> Apply less filters to view more referrals.</p>
+
+
+
+  </div>
+</div>
+
+
+
+{% endblock %}
