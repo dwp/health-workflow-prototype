@@ -24,39 +24,6 @@
 
 
 
-
- <!-- remove for old blue key details <section class="new-key-details-bar" role="identifier" aria-label="Claimant name and identifier">
-      <dl class="new-key-details-bar__key-details">
-        <div class="new-key-details-bar__top-block">
-          <dt class="govuk-visually-hidden">Name:</dt>
-          <dd class="new-key-details-bar__name">Jane Doe</dd>
-
-          <dt class="govuk-visually-hidden">National Insurance number:</dt>
-          <dd class="new-key-details-bar__nino">RN 00 04 26 D</dd>
-
-        </div>
-
-        <div class="new-key-details-bar__bottom-block">
-          <dt class="govuk-visually-hidden">Claimant markers:</dt>
-          <dd>
-            <strong class="govuk-tag govuk-tag--purple">End of life</strong> -->
-            <!-- <strong class="govuk-tag govuk-tag--yellow">Additional support</strong> -->
-          <!--  <strong class="govuk-tag govuk-tag--green">Appointee</strong> -->
-            <!-- <strong class="govuk-tag govuk-tag--blue">Mental health condition</strong>
-            <strong class="govuk-tag govuk-tag--pink">Unacceptable behaviour</strong> -->
-        <!--   <strong class="govuk-tag govuk-tag--red">Deceased</strong>
-          </dd>
-        </div>
-      </dl>
-    </section> -->
-
-
-
-
-
-
-
-
     <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
       <div class="govuk-notification-banner__header">
         <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
@@ -170,26 +137,15 @@
       <h2 id="contact" class="govuk-heading-m">Referral details</h2>
       <dl class="govuk-summary-list govuk-!-margin-bottom-9">
 
-        <div class="govuk-summary-list__row">
-          <dt class="govuk-summary-list__key">
-            Referral date
-          </dt>
-          <dd class="govuk-summary-list__value">
-          
-          </dd>
-          <dd class="govuk-summary-list__actions">
-            <a class="govuk-link" href="change-singular/contact-method">
-             <span class="govuk-visually-hidden"> Preferred contact method</span>
-            </a>
-          </dd>
-        </div>
+
+
 
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
             Consent for medical evidence
           </dt>
           <dd class="govuk-summary-list__value">
-            {{data["medEvidence"]}}
+            Yes
           </dd>
           <dd class="govuk-summary-list__actions">
             <a class="govuk-link" href="change-singular/med-evidence">
@@ -203,11 +159,25 @@
             End of life
           </dt>
           <dd class="govuk-summary-list__value">
-          
+            No
           </dd>
           <dd class="govuk-summary-list__actions">
             <a class="govuk-link" href="change-singular/contact-method">
               <span class="govuk-visually-hidden"> Preferred contact method</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Safety measures
+          </dt>
+          <dd class="govuk-summary-list__value">
+            {{data["behaviour"]}}
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="change-singular/behaviour">
+              Change<span class="govuk-visually-hidden"> Safety measures</span>
             </a>
           </dd>
         </div>
@@ -218,11 +188,25 @@
             Additional support needs
           </dt>
           <dd class="govuk-summary-list__value">
-            {{data["addSupport"]}}
+            No
           </dd>
           <dd class="govuk-summary-list__actions">
             <a class="govuk-link" href="change-singular/additional-needs">
-              Change<span class="govuk-visually-hidden"> Preferred contact method</span>
+              Change<span class="govuk-visually-hidden"> Additional needs</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Referral date
+          </dt>
+          <dd class="govuk-summary-list__value">
+            12 March 2023
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="change-singular/contact-method">
+             <span class="govuk-visually-hidden"> Preferred contact method</span>
             </a>
           </dd>
         </div>
@@ -232,7 +216,7 @@
             Benefit type
           </dt>
           <dd class="govuk-summary-list__value">
-          
+            PIP
           </dd>
           <dd class="govuk-summary-list__actions">
             <a class="govuk-link" href="change-singular/contact-method">
@@ -246,7 +230,7 @@
             Referral type
           </dt>
           <dd class="govuk-summary-list__value">
-          
+            New referral
           </dd>
           <dd class="govuk-summary-list__actions">
             <a class="govuk-link" href="change-singular/contact-method">
@@ -260,7 +244,7 @@
             Assessment centre
           </dt>
           <dd class="govuk-summary-list__value">
-          
+            Handsworth
           </dd>
           <dd class="govuk-summary-list__actions">
             <a class="govuk-link" href="change-singular/contact-method">
@@ -274,7 +258,7 @@
             Caseload
           </dt>
           <dd class="govuk-summary-list__value">
-          
+            Joe
           </dd>
           <dd class="govuk-summary-list__actions">
             <a class="govuk-link" href="change-singular/contact-method">
@@ -288,7 +272,7 @@
             Next action due in
           </dt>
           <dd class="govuk-summary-list__value">
-          
+            30 DAYS OVERDUE
           </dd>
           <dd class="govuk-summary-list__actions">
             <a class="govuk-link" href="change-singular/contact-method">
@@ -296,7 +280,9 @@
             </a>
           </dd>
         </div>
+       
         </dl>
+
 
 
 
