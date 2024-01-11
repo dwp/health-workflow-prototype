@@ -2002,6 +2002,30 @@ router.post('/richer-claimant-info/v10/change-singular/additional-needs', functi
 module.exports = router
 
 
+//v11 routes
+router.post('/richer-claimant-info/v11/change-singular/additional-needs', function(req, res) {
+    
+  res.redirect('/richer-claimant-info/v11/pip-claimant-detail-updated-as')
+ })
+
+ router.post('/richer-claimant-info/v11/change-singular/med-evidence', function(req, res) {
+    
+  res.redirect('/richer-claimant-info/v11/pip-claimant-detail-updated-medev')
+ })
+
+ router.post('/richer-claimant-info/v11/change-singular/behaviour', function(req, res) {
+    
+  res.redirect('/richer-claimant-info/v11/pip-claimant-detail-updated-behaviour')
+ })
+
+ router.post('/richer-claimant-info/v11/change-singular/mental-health', function(req, res) {
+    
+  res.redirect('/richer-claimant-info/v11/pip-claimant-detail-updated-mh')
+ })
+
+module.exports = router
+
+
 
 //
 
