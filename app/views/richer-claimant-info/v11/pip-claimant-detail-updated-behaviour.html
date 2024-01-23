@@ -120,7 +120,7 @@
           Home phone number
         </dt>
         <dd class="govuk-summary-list__value govuk-!-margin--5">
-          0121 423478
+          {{ data["home-number"] }}
         </dd>
         <dd class="govuk-summary-list__actions">
           <ul class="govuk-summary-list__actions-list">
@@ -136,14 +136,29 @@
         </dd>
       </div>
 
+      <!-- <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key" style="border: none;"></dt>
+        <dd class="govuk-summary-list__value" style="text-align: right; border: none;">
 
+          <li class="govuk-summary-list__actions-list-item">
+            <a class="govuk-link" href="change-singular/gp-details">
+              Change</a>
+          </li>
+
+          <li class="govuk-summary-list__actions-list-item">
+            <a class="govuk-link" href="change-singular/gp-details-remove">
+              Remove
+            </a>
+          </li>
+        </dd>
+      </div> -->
 
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
           Mobile phone number
         </dt>
         <dd class="govuk-summary-list__value">
-          07000 000000
+          {{ data["mobile-number"] }}
         </dd>
         <dd class="govuk-summary-list__actions">
           <ul class="govuk-summary-list__actions-list">
@@ -161,7 +176,6 @@
           </a>
         </dd> -->
       </div>
-
 
 
       <div class="govuk-summary-list__row">
@@ -193,8 +207,11 @@
           <dd class="govuk-summary-list__actions">
             <ul class="govuk-summary-list__actions-list">
               <li class="govuk-summary-list__actions-list-item"><a class="govuk-link" href="change-singular/interpreter">
-                  Add<span class="govuk-visually-hidden"> HCP preference</span>
-                </a></li>
+                Change<span class="govuk-visually-hidden"> interpreter</span>
+              </a></li>
+            <li class="govuk-summary-list__actions-list-item"><a class="govuk-link" href="change-singular/interpreter-remove">
+                Remove<span class="govuk-visually-hidden"> interpreter</span>
+              </a></li>
               
             </ul>
           </dd>

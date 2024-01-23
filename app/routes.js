@@ -2023,6 +2023,22 @@ router.post('/richer-claimant-info/v11/change-singular/additional-needs', functi
   res.redirect('/richer-claimant-info/v11/pip-claimant-detail-updated-mh')
  })
 
+ router.post('/richer-claimant-info/v11/change-singular/consent-gp', function(req, res) {
+    
+  res.redirect('/richer-claimant-info/v11/pip-case-details-updated-consent')
+ })
+
+ router.post('/richer-claimant-info/v11/change-singular/important-end-of-life', function(req, res) {
+    
+  res.redirect('/richer-claimant-info/v11/pip-case-details-updated-endoflife')
+ })
+
+ router.post('/richer-claimant-info/v11/change-singular/important-support', function(req, res) {
+    
+  res.redirect('/richer-claimant-info/v11/pip-case-details-updated-as')
+ })
+
+
 module.exports = router
 
 

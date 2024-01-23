@@ -58,30 +58,6 @@
 
     <h1 class="govuk-visually-hidden">Full list of claimant information</h1>
 
-   <!-- remove for old blue key details <section class="new-key-details-bar" role="identifier" aria-label="Claimant name and identifier">
-      <dl class="new-key-details-bar__key-details">
-        <div class="new-key-details-bar__top-block">
-          <dt class="govuk-visually-hidden">Name:</dt>
-          <dd class="new-key-details-bar__name">Jane Doe</dd>
-
-          <dt class="govuk-visually-hidden">National Insurance number:</dt>
-          <dd class="new-key-details-bar__nino">RN 00 04 26 D</dd>
-
-        </div>
-
-        <div class="new-key-details-bar__bottom-block">
-          <dt class="govuk-visually-hidden">Claimant markers:</dt>
-          <dd>
-            <strong class="govuk-tag govuk-tag--purple">End of life</strong> -->
-            <!-- <strong class="govuk-tag govuk-tag--yellow">Additional support</strong> -->
-          <!--  <strong class="govuk-tag govuk-tag--green">Appointee</strong> -->
-            <!-- <strong class="govuk-tag govuk-tag--blue">Mental health condition</strong>
-            <strong class="govuk-tag govuk-tag--pink">Unacceptable behaviour</strong> -->
-        <!--   <strong class="govuk-tag govuk-tag--red">Deceased</strong>
-          </dd>
-        </div>
-      </dl>
-    </section> -->
 
     <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
       <div class="govuk-notification-banner__header">
@@ -109,7 +85,7 @@
             Consent for medical evidence
           </dt>
           <dd class="govuk-summary-list__value">
-            Yes
+            {{data["GP-consent"]}}
           </dd>
           <dd class="govuk-summary-list__actions">
             <a class="govuk-link" href="change-singular/consent-gp">
@@ -123,7 +99,7 @@
             Special rules end of life
           </dt>
           <dd class="govuk-summary-list__value">
-            Yes
+            {{data["important-special-rules"]}}
           </dd>
           <dd class="govuk-summary-list__actions">
             <a class="govuk-link" href="change-singular/important-end-of-life">
