@@ -2038,6 +2038,39 @@ router.post('/richer-claimant-info/v11/change-singular/additional-needs', functi
   res.redirect('/richer-claimant-info/v11/pip-case-details-updated-as')
  })
 
+ //v11 routes - wca specific
+
+ router.post('/richer-claimant-info/v11/change-singular/wca/behaviour', function(req, res) {
+    
+  res.redirect('/richer-claimant-info/v11/wca-claimant-detail-updated-behaviour')
+ })
+
+ router.post('/richer-claimant-info/v11/change-singular/wca/consent-gp', function(req, res) {
+    
+  res.redirect('/richer-claimant-info/v11/wca-case-details-updated-consent')
+ })
+
+ router.post('/richer-claimant-info/v11/change-singular/wca/mental-health', function(req, res) {
+    
+  res.redirect('/richer-claimant-info/v11/wca-case-details-updated-mh')
+ })
+
+
+ router.post('/richer-claimant-info/v11/change-singular/wca/important-end-of-life', function(req, res) {
+    
+  res.redirect('/richer-claimant-info/v11/wca-case-details-updated-endoflife')
+ })
+
+ router.post('/richer-claimant-info/v11/change-singular/wca/interpreter', function(req, res) {
+    
+  res.redirect('/richer-claimant-info/v11/wca-claimant-detail-updated-interpreter')
+ })
+
+ router.post('/richer-claimant-info/v11/change-singular/wca/iinterpreter-remove', function(req, res) {
+    
+  res.redirect('/richer-claimant-info/v11/wca-claimant-detail-updated-interpreter-removed')
+ })
+
 
 module.exports = router
 
