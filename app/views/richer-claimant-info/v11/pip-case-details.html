@@ -56,7 +56,7 @@
 
 
 
-    <h1 class="govuk-visually-hidden">Full list of claimant information</h1>
+    <h1 class="govuk-heading-l">Referral details</h1>
 
    <!-- remove for old blue key details <section class="new-key-details-bar" role="identifier" aria-label="Claimant name and identifier">
       <dl class="new-key-details-bar__key-details">
@@ -85,7 +85,7 @@
 
 
 
-    <h2 class="govuk-heading-m" id="referral">Referral details</h2>
+
 
     <dl class="govuk-summary-list govuk-!-margin-bottom-9">
 
@@ -143,6 +143,20 @@
           </dd>
           <dd class="govuk-summary-list__value">
   
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Safety measures
+          </dt>
+          <dd class="govuk-summary-list__value">
+            {{data["behaviour"]}}
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="change-singular/behaviour">
+              Change<span class="govuk-visually-hidden"> safety measures</span>
+            </a>
           </dd>
         </div>
 

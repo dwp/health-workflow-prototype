@@ -2015,7 +2015,7 @@ router.post('/richer-claimant-info/v11/change-singular/additional-needs', functi
 
  router.post('/richer-claimant-info/v11/change-singular/behaviour', function(req, res) {
     
-  res.redirect('/richer-claimant-info/v11/pip-claimant-detail-updated-behaviour')
+  res.redirect('/richer-claimant-info/v11/pip-case-details-updated-behaviour')
  })
 
  router.post('/richer-claimant-info/v11/change-singular/mental-health', function(req, res) {
