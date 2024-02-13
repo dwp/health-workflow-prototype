@@ -14,50 +14,37 @@
 <div class="app-pane__body">
 
   <div class="app-pane__subnav">
-    
-      <nav class="app-subnav" aria-labelledby="app-subnav-heading">
-        <h2 class="govuk-visually-hidden" id="app-subnav-heading">Pages in this section</h2>
-        <ul class="app-subnav__section">
-  
-          <li class="app-subnav__section-item">
-            <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline"
-              href="pip-case-details">Referral details <!--<i class="chevron2"></i>--> </a>
-          </li>
-  
-          <li class="app-subnav__section-item app-subnav__section-item--current">
-            <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#">Claimant
-              details <!--<i class="chevron"></i>--> </a>
-            <ul class="app-subnav__section app-subnav__section--nested">
-              <li class="app-subnav__section-item">
-                <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#personal">
-                  Personal details
-                </a>
-              </li>
-              <li class="app-subnav__section-item">
-                <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#contact">
-                Contact information
-                </a>
-              </li>
-  
-             <!--  <li class="app-subnav__section-item">
-                <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#gpdetails">
-                  GP details
-                </a>
-              </li> -->
-            </ul>
-          </li>
-  
-          <!--- <li class="app-subnav__section-item">
-            <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline"
-              href="#">Timeline</a>
-          </li>
-          <li class="app-subnav__section-item">
-            <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline"
-              href="#">Evidence</a>
-          </li>-->
-        </ul>
-      </nav>
+    <nav class="app-subnav" aria-labelledby="app-subnav-heading">
+      <h2 class="govuk-visually-hidden" id="app-subnav-heading">Pages in this section</h2>
+      <ul class="app-subnav__section">
 
+        <li class="app-subnav__section-item">
+          <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline"
+            href="pip-case-details">Referral details <!--<i class="chevron2"></i>--> </a>
+        </li>
+
+        <li class="app-subnav__section-item app-subnav__section-item--current">
+          <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#">Claimant
+            details <!--<i class="chevron"></i>--> </a>
+          <ul class="app-subnav__section app-subnav__section--nested">
+            <li class="app-subnav__section-item">
+              <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#personal">
+                Personal details
+              </a>
+            </li>
+            <li class="app-subnav__section-item">
+              <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#contact">
+              Contact information
+              </a>
+            </li>
+
+
+          </ul>
+        </li>
+
+
+      </ul>
+    </nav>
   </div>
 
   <div class="govuk-grid-row  overview">
@@ -136,22 +123,7 @@
         </dd>
       </div>
 
-      <!-- <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key" style="border: none;"></dt>
-        <dd class="govuk-summary-list__value" style="text-align: right; border: none;">
 
-          <li class="govuk-summary-list__actions-list-item">
-            <a class="govuk-link" href="change-singular/gp-details">
-              Change</a>
-          </li>
-
-          <li class="govuk-summary-list__actions-list-item">
-            <a class="govuk-link" href="change-singular/gp-details-remove">
-              Remove
-            </a>
-          </li>
-        </dd>
-      </div> -->
 
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
@@ -170,27 +142,10 @@
               </a></li>
           </ul>
         </dd>
-        <!-- <dd class="govuk-summary-list__actions">
-          <a class="govuk-link" href="change-singular/personal-mob-no">
-            Change<span class="govuk-visually-hidden">Mobile phone number</span>
-          </a>
-        </dd> -->
+
       </div>
 
 
-      <div class="govuk-summary-list__row">
-        <dt class="govuk-summary-list__key">
-          Safety measures
-        </dt>
-        <dd class="govuk-summary-list__value">
-          {{data["behaviour"]}}
-        </dd>
-        <dd class="govuk-summary-list__actions">
-          <a class="govuk-link" href="change-singular/behaviour">
-            Change<span class="govuk-visually-hidden"> safety measures</span>
-          </a>
-        </dd>
-      </div>
   
       </dl>
 
