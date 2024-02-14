@@ -2066,9 +2066,14 @@ router.post('/richer-claimant-info/v11/change-singular/additional-needs', functi
   res.redirect('/richer-claimant-info/v11/wca-claimant-detail-updated-interpreter')
  })
 
- router.post('/richer-claimant-info/v11/change-singular/wca/iinterpreter-remove', function(req, res) {
+ router.post('/richer-claimant-info/v11/change-singular/wca/interpreter-remove', function(req, res) {
     
   res.redirect('/richer-claimant-info/v11/wca-claimant-detail-updated-interpreter-removed')
+ })
+
+ router.post('/richer-claimant-info/v11/change-singular/wca/personal-home-remove', function(req, res) {
+    
+  res.redirect('/richer-claimant-info/v11/wca-claimant-detail-updated-per')
  })
 
 
@@ -2164,5 +2169,97 @@ router.post('/richer-claimant-info/v9/corres4', function (req, res) {
     res.redirect('/richer-claimant-info/v9/sc4-assessment-booked/change-address/correspondence-find-address')
   } else {
     res.redirect('/richer-claimant-info/v9/sc4-assessment-booked/pip-claimant-detail-updated')
+  }
+})
+
+
+
+
+// v9.1 address Branching
+
+//scenario 1 
+router.post('/richer-claimant-info/v9.1/corres', function (req, res) {
+  // Get the answer from session data
+  // The name between the quotes is the same as the 'name' attribute on the input elements
+  // However in JavaScript we can't use hyphens in variable names
+
+  const corresaddress = req.session.data['corres-address']
+
+  if (corresaddress === 'false') {
+    res.redirect('/richer-claimant-info/v9.1/sc1-questionnaire/change-address/correspondence-find-address')
+  } else {
+    res.redirect('/richer-claimant-info/v9.1/sc1-questionnaire/pip-claimant-detail-updated')
+  }
+})
+
+
+
+
+//scenario 2
+router.post('/richer-claimant-info/v9.1/corres2', function (req, res) {
+  // Get the answer from session data
+  // The name between the quotes is the same as the 'name' attribute on the input elements
+  // However in JavaScript we can't use hyphens in variable names
+
+  const corresaddress = req.session.data['corres-address']
+
+  if (corresaddress === 'false') {
+    res.redirect('/richer-claimant-info/v9.1/sc2-hcp-review/change-address/correspondence-find-address')
+  } else {
+    res.redirect('/richer-claimant-info/v9.1/sc2-hcp-review/interrupt-page')
+  }
+})
+
+
+
+//scenario 3
+router.post('/richer-claimant-info/v9.1/corres3', function (req, res) {
+  // Get the answer from session data
+  // The name between the quotes is the same as the 'name' attribute on the input elements
+  // However in JavaScript we can't use hyphens in variable names
+
+  const corresaddress = req.session.data['corres-address']
+
+  if (corresaddress === 'false') {
+    res.redirect('/richer-claimant-info/v9.1/sc3-medical-evidence/change-address/correspondence-find-address')
+  } else {
+    res.redirect('/richer-claimant-info/v9.1/sc3-medical-evidence/pip-claimant-detail-updated')
+  }
+})
+
+
+
+
+
+//scenario 3
+router.post('/richer-claimant-info/v9.1/pip-alerts', function (req, res) {
+  // Get the answer from session data
+  // The name between the quotes is the same as the 'name' attribute on the input elements
+  // However in JavaScript we can't use hyphens in variable names
+
+  const pipalert = req.session.data['pip-alert']
+
+  if (pipalert === 'yes'){
+    res.redirect('/richer-claimant-info/v9.1/sc3-medical-evidence/alert-confirmation')
+  } else {
+    res.redirect('/richer-claimant-info/v9.1/sc3-medical-evidence/pip-alerts')
+  }
+})
+
+
+
+
+//scenario 4
+router.post('/richer-claimant-info/v9.1/corres4', function (req, res) {
+  // Get the answer from session data
+  // The name between the quotes is the same as the 'name' attribute on the input elements
+  // However in JavaScript we can't use hyphens in variable names
+
+  const corresaddress = req.session.data['corres-address']
+
+  if (corresaddress === 'false') {
+    res.redirect('/richer-claimant-info/v9.1/sc4-assessment-booked/change-address/correspondence-find-address')
+  } else {
+    res.redirect('/richer-claimant-info/v9.1/sc4-assessment-booked/pip-claimant-detail-updated')
   }
 })

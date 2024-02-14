@@ -1,4 +1,4 @@
-{% extends "layout-medicalevidence-extended.html" %}
+{% extends "layout-awaiting-questionnaire-extended.html" %}
 
 {% block pageTitle %}
   Claimant details
@@ -112,7 +112,24 @@
 
 
 
-  <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+
+
+
+   <!--  <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+      <div class="govuk-notification-banner__header">
+        <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+          Success
+        </h2>
+      </div>
+      <div class="govuk-notification-banner__content">
+        <h3 class="govuk-notification-banner__heading">
+          Personal details updated
+        </h3>
+        <p class="govuk-body">Residential address updated  </p>
+      </div>
+    </div> -->
+
+    <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
       <div class="govuk-notification-banner__header">
         <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
           Success
@@ -134,13 +151,12 @@
         </div>
         
     
-        <p>Check PIP alert WSHS 43 for changes to GP address or other medical professionals.</p>
+        <p>Check the questionnaire has been sent to the correct address.</p>
       
 
 
       </div>
     </div> 
-
 
 
     <h2 class="govuk-heading-m" id="personal">Personal details</h2>
@@ -465,20 +481,15 @@ Sam Doe
               <a href="#">Update status</a>
             </li>
             <li>
-              <a href=" ">View claimant documents</a>
-            </li>
-
-            <li>
-              <a href=" ">HCP review</a>
-            </li>
-            <li>
               <a href="timeline">View timeline</a>
             </li>
             <li>
               <a href=" ">Add entry to timeline</a>
             </li>
 
-           
+            <li>
+              <a href=" ">View claimant documents</a>
+            </li>
             <li>
               <a href="#">Move to another caseload</a>
             </li>

@@ -1,4 +1,4 @@
-{% extends "layout-medicalevidence-extended.html" %}
+{% extends "layout-assessmentbooked-extended.html" %}
 
 {% block pageTitle %}
   Claimant details
@@ -112,10 +112,13 @@
 
 
 
-  <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+
+
+    <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
       <div class="govuk-notification-banner__header">
         <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
-          Success
+          Success   
+
         </h2>
       </div>
       <div class="govuk-notification-banner__content">
@@ -134,12 +137,14 @@
         </div>
         
     
-        <p>Check PIP alert WSHS 43 for changes to GP address or other medical professionals.</p>
+        <p>Cancel appointment. Change status to 'withdrawn' and refer back to PIP.</p>
       
 
 
       </div>
     </div> 
+
+
 
 
 
@@ -465,11 +470,7 @@ Sam Doe
               <a href="#">Update status</a>
             </li>
             <li>
-              <a href=" ">View claimant documents</a>
-            </li>
-
-            <li>
-              <a href=" ">HCP review</a>
+              <a href="current-assessments">Book or view assessment</a>
             </li>
             <li>
               <a href="timeline">View timeline</a>
@@ -478,7 +479,13 @@ Sam Doe
               <a href=" ">Add entry to timeline</a>
             </li>
 
-           
+            <li>
+              <a href=" ">HCP review</a>
+            </li>
+            <li>
+              <a href=" ">View claimant documents</a>
+            </li>
+
             <li>
               <a href="#">Move to another caseload</a>
             </li>

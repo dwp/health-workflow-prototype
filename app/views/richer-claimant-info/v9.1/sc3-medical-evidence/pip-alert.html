@@ -1,0 +1,160 @@
+{% extends "layout-extended.html" %}
+
+{% block pageTitle %}
+Confirm claimant address - Health Assessment Service
+{% endblock %}
+
+{% block beforeContent %}
+
+<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      
+     <h1 class="govuk-heading-l">
+      Task alert
+    </h3>
+ 
+
+   
+    <dl class="govuk-summary-list">
+            
+                
+            
+                
+            
+                
+            
+                
+      <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+              Task type code
+          </dt>
+          <dd class="govuk-summary-list__value">
+              WSHS_39
+          </dd>
+      </div>
+    
+
+    
+
+    
+      <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+              Nino
+          </dt>
+          <dd class="govuk-summary-list__value">
+            RN000123A
+          </dd>
+      </div>
+    
+
+    
+      <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+              Assessment case reference no
+          </dt>
+          <dd class="govuk-summary-list__value">
+              WSHS_39-SA305005A
+          </dd>
+      </div>
+    
+
+    
+      <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+              Date created
+          </dt>
+          <dd class="govuk-summary-list__value">
+              2023-12-06 09:32:05
+          </dd>
+      </div>
+    
+
+    
+
+    
+
+    
+      <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+              Task start date
+          </dt>
+          <dd class="govuk-summary-list__value">
+              2023-12-06 00:00:00
+          </dd>
+      </div>
+    
+
+    
+
+    
+
+    
+      <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+              Priority description
+          </dt>
+          <dd class="govuk-summary-list__value">
+              Standard
+          </dd>
+      </div>
+    
+
+    
+      <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+              Subject
+          </dt>
+          <dd class="govuk-summary-list__value">
+            RN000123A Action required - Change of GP Address
+          </dd>
+      </div>
+    
+
+    
+      <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+              Comments
+          </dt>
+          <dd class="govuk-summary-list__value">
+              Test
+          </dd>
+      </div>
+    
+
+    
+
+</dl>
+
+
+      <form action="confirm-alert-actioned" method="post" class="form">
+
+        
+      
+
+        <button class="govuk-button" data-module="govuk-button">Alert actioned</button>
+
+      </form>
+
+
+
+<!-- 
+
+    
+   <a href="personal-change-address" aria-describedby="search-referral">
+       
+         Enter address manually
+        
+      </a></p>-->
+
+    </div>
+  </div>
+
+{% endblock %}

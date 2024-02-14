@@ -1,4 +1,4 @@
-{% extends "layout-medicalevidence-extended.html" %}
+{% extends "layout-hcpreview-extended.html" %}
 
 {% block pageTitle %}
   Claimant details
@@ -112,7 +112,10 @@
 
 
 
-  <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+
+
+
+   <!--  <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
       <div class="govuk-notification-banner__header">
         <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
           Success
@@ -123,23 +126,8 @@
           Personal details updated
         </h3>
         <p class="govuk-body">Residential address updated  </p>
-
-
-        <div class="govuk-warning-text">
-          <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-          <strong class="govuk-warning-text__text">
-            <span class="govuk-visually-hidden">Warning</span>
-            This address is not in a Health Assessment Service postcode area.
-          </strong>
-        </div>
-        
-    
-        <p>Check PIP alert WSHS 43 for changes to GP address or other medical professionals.</p>
-      
-
-
       </div>
-    </div> 
+    </div> -->
 
 
 
@@ -194,7 +182,7 @@ Sam Doe
           Sheffield<br>WR1 1NL
         </dd>
         <dd class="govuk-summary-list__actions">
-          <a class="govuk-link" href="change-address/personal-find-address">
+          <a class="govuk-link" href="change-singular/personal-find-address">
             Change<span class="govuk-visually-hidden">address</span>
           </a>
         </dd>
@@ -210,7 +198,7 @@ Sam Doe
 
         </dd>
         <dd class="govuk-summary-list__actions">
-          <a class="govuk-link" href="change-address/correspondence-find-address">
+          <a class="govuk-link" href="change-singular/correspondence-find-address">
             Change<span class="govuk-visually-hidden">Other address</span>
           </a>
         </dd>
@@ -469,7 +457,7 @@ Sam Doe
             </li>
 
             <li>
-              <a href=" ">HCP review</a>
+              <a href="hcp-review">HCP review</a>
             </li>
             <li>
               <a href="timeline">View timeline</a>
