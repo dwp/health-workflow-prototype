@@ -2081,7 +2081,6 @@ module.exports = router
 
 
 
-//
 
 // v9 address Branching
 
@@ -2178,7 +2177,8 @@ router.post('/richer-claimant-info/v9/corres4', function (req, res) {
 // v9.1 address Branching
 
 //scenario 1 
-router.post('/richer-claimant-info/v9.1/corres', function (req, res) {
+router.post('/richer-claimant-info/v9-1/corres', function (req, res) {
+
   // Get the answer from session data
   // The name between the quotes is the same as the 'name' attribute on the input elements
   // However in JavaScript we can't use hyphens in variable names
