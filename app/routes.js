@@ -2095,7 +2095,7 @@ router.post('/richer-claimant-info/v9/corres', function (req, res) {
   if (corresaddress === 'false') {
     res.redirect('/richer-claimant-info/v9/sc1-questionnaire/change-address/correspondence-find-address')
   } else {
-    res.redirect('/richer-claimant-info/v9/sc1-questionnaire/pip-claimant-detail-updated')
+    res.redirect('/richer-claimant-info/v9/sc1-questionnaire/interrupt-page')
   }
 })
 
