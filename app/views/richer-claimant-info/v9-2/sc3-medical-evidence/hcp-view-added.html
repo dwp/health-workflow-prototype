@@ -1,0 +1,144 @@
+{% extends "layout-medicalevidence-extended.html" %}
+
+{% block pageTitle %}
+Confirm claimant address - Health Assessment Service
+{% endblock %}
+
+{% block beforeContent %}
+
+
+
+{% endblock %}
+
+{% block content %}
+
+
+
+
+  <div class="govuk-grid-row" >
+    <div class="govuk-grid-column-two-thirds">
+
+    
+
+      <h1 class="govuk-heading-l">
+        HCP review 
+      </h1>
+
+
+      <dl class="govuk-summary-list  govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">Clinical review and justification</dt>
+          <dd class="govuk-summary-list__value">  {{ data['hcp-review-text'] }} </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">Case type</dt>
+          <dd class="govuk-summary-list__value">
+            
+            <p class="govuk-body">   	Complex neurological  </p>
+            
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">Outcome</dt>
+          <dd class="govuk-summary-list__value">   {{ data['hcp-outcome'] }}   </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">Name</dt>
+          <dd class="govuk-summary-list__value">Jayne Smith</dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">Date of review</dt>
+          <dd class="govuk-summary-list__value">17 December 2023</dd>
+        </div>
+      </dl>
+
+
+
+    
+      <dl class="govuk-summary-list">
+    
+      
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Clinical review and justification
+          </dt>
+          <dd class="govuk-summary-list__value">
+        Content here on review outcome.  </dd>
+          
+        </div>
+      
+    
+      
+       <!-- <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Case type
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Complex neurological
+          </dd>
+          
+        </div> -->
+      
+    
+      
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Outcome
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Face to face assessment
+          </dd>
+          
+        </div>
+      
+    
+      
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Name
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Sandra Bullock
+          </dd>
+          
+        </div>
+      
+    
+      
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Date of review
+          </dt>
+          <dd class="govuk-summary-list__value">
+            10 December 2023
+          </dd>
+          
+        </div>
+      
+    
+  </dl>
+
+  <div class="govuk-button-group">
+ 
+   
+
+    <a href="pip-claimant-detail-updated" button class="govuk-button" data-module="govuk-button">Continue</button>
+ 
+ 
+ 
+ 
+ 
+ 
+   <a href="hcp-view-add" role="button" draggable="false" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+     Add another entry
+   </a>
+ 
+      </div>
+     
+
+    </div>
+
+  </div>
+
+{% endblock %}
