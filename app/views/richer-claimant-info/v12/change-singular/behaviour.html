@@ -1,0 +1,63 @@
+{% extends "layout-extended.html" %}
+
+{% block pageTitle %}
+Preferred contact method - Health Assessment Service
+{% endblock %}
+
+{% block beforeContent %}
+
+<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <form action="#" method="post" novalidate="">
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading">
+                  Are there safety measures against this claimant?
+                </h1>
+              </legend>
+              <div class="govuk-radios" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="unacceptableBehaviour" name="behaviour" type="radio" value="Yes">
+                  <label class="govuk-label govuk-radios__label" for="yes">
+                    Yes
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="unacceptableBehaviour-2" name="behaviour" type="radio" value="No">
+                  <label class="govuk-label govuk-radios__label" for="no">
+                    No
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="unacceptableBehaviour-3" name="behaviour" type="radio" value="Not known" checked>
+                  <label class="govuk-label govuk-radios__label" for="not known">
+                    Not known
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+      
+
+
+
+
+      <a href="#">
+        <button class="govuk-button" data-module="govuk-button">
+          Save
+        </button>
+      </a>
+    </form>
+    </div>
+  </div>
+
+{% endblock %}

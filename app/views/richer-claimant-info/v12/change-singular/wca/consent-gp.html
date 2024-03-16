@@ -1,0 +1,62 @@
+{% extends "layout-extended.html" %}
+
+{% block pageTitle %}
+Consent - Health Assesssment Service
+{% endblock %}
+
+{% block beforeContent %}
+<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+     <!-- <span class="govuk-caption-l govuk-!-margin-bottom-2">Create referral question 9 of X</span> -->
+
+     <form action="#" method="post" novalidate="">
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l"></legend>
+            <h1 class="govuk-heading-l">
+            Does the claimant give consent to get further medical evidence?
+          </h1>
+        </legend>
+
+          <div class="govuk-radios" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="GP-consent-yes" name="GP-consent" type="radio" value="Yes" checked>
+              <label class="govuk-label govuk-radios__label" for="GP-consent-yes" >
+                Yes
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="GP-consent-no" name="GP-consent" type="radio" value="No">
+              <label class="govuk-label govuk-radios__label" for="GP-consent-no">
+                No
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="GP-consent-unknown" name="GP-consent" type="radio" value="Not known">
+              <label class="govuk-label govuk-radios__label" for="GP-consent-unknown">
+                Not known
+              </label>
+            </div>
+
+        </fieldset>
+      </div>
+
+
+
+      <a href="../pip-case-details-updated-consent">  <button class="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
+      </a>
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}
