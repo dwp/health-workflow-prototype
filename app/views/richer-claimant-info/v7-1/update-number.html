@@ -1,0 +1,36 @@
+{% extends "layout-extended.html" %}
+
+{% block pageTitle %}
+  Referral list
+{% endblock %}
+
+{% block beforeContent %}
+<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <div class="govuk-form-group">
+        <label class="govuk-label govuk-label--m" for="update-number">
+          <h1 class="govuk-heading-l">
+            Enter the new mobile phone number
+          </h1>
+          <div id="email-hint" class="govuk-hint">
+            For example, ‘07799997799’.
+          </div>
+        </label>
+        <input class="govuk-input" id="update-number" name="update-number" type="text">
+      </div>
+      <a href="claimant-detail-srti2" aria-describedby="update-number">
+        <button class="govuk-button" data-module="govuk-button">
+          Save
+        </button>
+      </a>
+
+    </div>
+  </div>
+
+{% endblock %}
