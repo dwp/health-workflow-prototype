@@ -1,0 +1,70 @@
+{% extends "layout-extended.html" %}
+
+{% block pageTitle %}
+Enter claimant address - Health Assessment Service
+{% endblock %}
+
+{% block beforeContent %}
+
+<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      
+     <h1 class="govuk-heading-l">
+     Find correspondence address
+      </h1>
+
+  
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="address-town">
+        Postcode
+      </label>
+
+      <div class="govuk-hint">
+        For example, AA3 1AB
+      </div>
+      <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text" autocomplete="address-level2" value="N611 2ER" >
+    </div>
+  
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="address-county">
+        Building number or name
+      </label>
+      <div class="govuk-hint">
+        For example, 15 or Prospect Cottage.
+      </div>
+      <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text" value="23">
+    </div>
+  
+   
+    
+
+
+
+
+
+    
+
+      <a href="correspondence-find-address-select" aria-describedby="search-referral">
+        <button class="govuk-button" data-module="govuk-button">
+         Find address
+        </button>
+      </a>
+
+    <p> <a href="correspondence-change-address" aria-describedby="search-referral">
+       
+         Enter address manually
+        
+      </a></p>
+
+    </div>
+  </div>
+
+{% endblock %}
