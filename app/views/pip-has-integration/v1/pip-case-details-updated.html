@@ -193,7 +193,7 @@
           Date of death
         </dt>
         <dd class="govuk-summary-list__value">
-
+          {{ data["dod-day"] }}
         </dd>
         <dd class="govuk-summary-list__actions">
           <a class="govuk-link" href="change-singular/personal-dod">
@@ -207,7 +207,11 @@
           Safety measures
         </dt>
         <dd class="govuk-summary-list__value">
-          No  <!-- <ul class="govuk-list govuk-list--bullet">
+          <!-- No   -->
+          {{ data["behaviour"] }}
+          
+          
+          <!-- <ul class="govuk-list govuk-list--bullet">
               <li> Yes</li>
               <li>1: Claimant</li>
             </ul>
@@ -222,7 +226,7 @@
         </dd>
         <dd class="govuk-summary-list__actions">
           <a class="govuk-link" href="change-singular/important-behaviour">
-            Change<span class="govuk-visually-hidden"> Unacceptable behaviour</span>
+            Change<span class="govuk-visually-hidden"> Safety measures</span>
           </a>
         </dd>
       </div>

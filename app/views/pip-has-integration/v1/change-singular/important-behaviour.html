@@ -18,7 +18,7 @@ Unacceptable behaviour - Health Assesssment Service
 
 
      <h1 class="govuk-heading-l">
-      Does the claimant have a current unacceptable behaviour (UCB) marker?
+      Are there safety measures against this claimant?
    </h1>
 
 
@@ -26,20 +26,28 @@ Unacceptable behaviour - Health Assesssment Service
 
    <div class="govuk-form-group">
     <fieldset class="govuk-fieldset" role="group" aria-describedby="claimant-names">
+    <form class="form" action="../pip-case-details-updated" method="post">
   
          <div class="govuk-radios" data-module="govuk-radios">
            <div class="govuk-radios__item">
-             <input class="govuk-radios__input" id="behaviour-yes" name="behaviour" type="radio" value="yes" checked>
+             <input class="govuk-radios__input" id="behaviour-yes" name="behaviour" type="radio" value="Yes" >
              <label class="govuk-label govuk-radios__label" for="behaviour-yes" >
                Yes
              </label>
            </div>
            <div class="govuk-radios__item">
-             <input class="govuk-radios__input" id="behaviour-no" name="behaviour" type="radio" value="no" >
+             <input class="govuk-radios__input" id="behaviour-no" name="behaviour" type="radio" value="No" checked>
              <label class="govuk-label govuk-radios__label" for="behaviour-no">
                No
              </label>
            </div>
+
+           <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="behaviour-no" name="behaviour" type="radio" value="Not known" >
+            <label class="govuk-label govuk-radios__label" for="behaviour-not-known">
+              Not known
+            </label>
+          </div>
 
          <!---   <div class="govuk-radios__item">
             <input class="govuk-radios__input" id="behaviour-unknown" name="behaviour" type="radio" value="unknown">
@@ -56,10 +64,12 @@ Unacceptable behaviour - Health Assesssment Service
 
 
       
-     <a href="../pip-case-details-updated">  <!--  <a href="important-behaviour-followup"> -->  <button class="govuk-button" data-module="govuk-button">
-      Continue
-        </button>
-      </a>
+      <!-- <a href="../pip-case-details-updated">  -->
+        <button class="govuk-button" data-module="govuk-button">
+          Save
+          </button>
+          </form>
+        <!-- </a> -->
 
     </div>
   </div>
