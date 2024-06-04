@@ -1,0 +1,83 @@
+{% extends "layout-extended.html" %}
+
+{% block pageTitle %}
+Confirm status update - Health Assessment Service
+{% endblock %}
+
+{% block beforeContent %}
+
+<!-- <a href="javascript:history.back()" class="govuk-back-link">Back</a>   --Note this goes back to wherever in the journey you came from -->
+
+<a href="update-status-pip.html" class="govuk-back-link">Back</a>
+
+
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+     
+      <span class="govuk-caption-xl">Sam Doe</span>      
+
+     <h1 class="govuk-heading-l">
+      Are you sure you want to update the status to 'done'?
+    </h3>
+   
+    <!-- <p class="govuk-body">Residential address updated.  </p> -->
+
+    <div class="govuk-warning-text">
+      <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+      <strong class="govuk-warning-text__text">
+        <span class="govuk-visually-hidden">Warning</span>
+        If you update the status you cannot change it.
+      </strong>
+    </div>
+  
+     
+<br> 
+      <!-- <form action="confirmation.html" method="post" class="form"> 
+        
+
+        <div class="hidden-radio-post">
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+   
+
+                <input class="govuk-radios__input" id="address-change-1" name="address-change" type="radio" value="yes" aria-controls="conditional-address-change-1" aria-expanded="false" {{ checked("address-change", "yes") }} checked>
+                <label class="govuk-label govuk-radios__label" for="address-change-1">
+         
+
+             Hidden radio = address updated
+              </label>
+
+            </div>
+          </div>
+         </div>
+      
+
+        <button class="govuk-button" data-module="govuk-button">Update status</button>
+
+        <br>
+
+        <a href="pip-case-details.html" class="govuk-link govuk-link--no-visited-state">Cancel and return to referral details</a>
+
+      </form> -->
+
+           <a href="confirmation.html" role="button" draggable="false" class="govuk-button"  data-module="govuk-button">
+           Update status
+           </a>
+
+          <br>
+
+          <a href="pip-case-details.html" class="govuk-link govuk-link--no-visited-state">Cancel and return to referral details</a>
+
+
+
+
+    </div>
+  </div>
+
+{% endblock %}
