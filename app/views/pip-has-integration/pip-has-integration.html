@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Referral State Model Prototype
+  PIP HAS integration prototype
 {% endblock %}
 
 {% block content %}
@@ -20,7 +20,7 @@
 
 
 
-      <h2 class="govuk-heading-m">Prototype v1 (May 2024):<br>PIP New Service thin slice for Sep 2024</h2>
+      <h2 class="govuk-heading-m">Prototype v1 (May 2024):<br>New PIP Service thin slice for Sep 2024</h2>
         
       <ul class="govuk-list govuk-list--bullet">
 
@@ -31,9 +31,25 @@
           <li>However, there will be certain data fields which PIP cannot supply and is crucial to HAS, such as 'SREL', 'Date of death', 'Safety measures',  and 'Interpreter' information. So these fields must remain editable for now.</li>
           <li>New data fields that have been added (in addition to what is present in the live environment currently) include Date of death (still TBC), GP details, Other specialist or medical contacts, Full name, and Residential address (replacing current postcode field, for PIP thin slice cases only). </li>
           <li>The 'Preferred name' field has been removed because PIP cannot supply this data for September 2024</li>
-          <li>The intention is, for Septemebr 2024 we display in HAS the most crucial and highest priority data that PIP can supply to us. But overtime we work with PIP to incrementally display more referral and claimant data in HAS. </li>
+          <li>The intention is, for Septemebr 2024 we display in HAS the most crucial and highest priority data that PIP can supply to us. But overtime we work with PIP to incrementally display more referral and claimant data in HAS. </li>     
         
         </ul>
+
+        <h4 class="govuk-heading-s">Additional features <br>
+          
+          <br> Interruption page alerting users they are moving referral to final status (June 2024) </h4>
+
+          <ul class="govuk-list govuk-list--bullet">
+
+            <li><a href="https://dwpdigital.atlassian.net/browse/HTC-2553" target="_blank">See Jira task 2553 for more details (opens in new tab)</a></li>
+            <li><a href="https://app.mural.co/t/dwpdigital7412/m/dwpdigital7412/1709571288340/183c6db5ce87a53ffccf33fe4591c9ecc108e4e2?wid=2-1716392721292" target="_blank">See Mural board for more details (opens in new tab)</a></li>
+            <li>When moving the referral to a 'Done' status (which is one of the final statuses), user will be presented with an interruption page that enables users to pause and reflect. This ensures that users are certain they are taking the correct action when moving the referral into the final status, and understand that it cannot be reversed. </li>
+          
+          </ul>
+        
+        <br>
+          
+       
 
       <a href="/pip-has-integration/v1/pip-case-details.html" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"  data-module="govuk-button">
          Start
