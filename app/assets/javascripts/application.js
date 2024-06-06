@@ -5,4 +5,13 @@
 
 window.GOVUKPrototypeKit.documentReady(() => {
   // Add JavaScript here
+
+  const env = nunjucks.configure('views', {
+    autoescape: true,
+    express: app
+  })
+  
+  env.addFilter('is_undefined', function(obj) {
+    return typeof obj === 'undefined';
+  });
 })
