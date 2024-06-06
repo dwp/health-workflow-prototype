@@ -13,8 +13,8 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-
-        <div class="govuk-form-group">
+<form class="govuk-form-group" method="post">
+     
           <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
             <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
 
@@ -26,14 +26,14 @@
             </legend>
 
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="status-1" name="status" type="radio" value="assigned-pip">
+              <input class="govuk-radios__input" id="status-1" name="status" type="radio" value="assigned-pip~/pip-has-integration/v1/confirmation">
               <label class="govuk-label govuk-radios__label" for="status-1">
                 Assigned
               </label>
             </div>
             
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="status-2" name="status" type="radio" value="hcp-review-pip">
+              <input class="govuk-radios__input" id="status-2" name="status" type="radio" value="hcp-review-pip~~/pip-has-integration/v1/confirmation">
               <label class="govuk-label govuk-radios__label" for="status-1">
                 HCP review
               </label>
@@ -126,7 +126,7 @@
             </div>
 
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="status-15" name="status" type="radio" value="done-pip">
+              <input class="govuk-radios__input" id="status-15" name="status" type="radio" value="done-pip~/pip-has-integration/v1/interrupt-page">
               <label class="govuk-label govuk-radios__label" for="status-14">
                 Done
               </label>
@@ -145,14 +145,14 @@
                 Created in error
               </label>
             </div>
-
+</div>
+</div>
           </fieldset>
-        </div>
-
-        <a href="interrupt-page.html" role="button" draggable="false" class="govuk-button"  data-module="govuk-button">
-          Continue
-        </a>
-
+     
+     <button type="submit" class="govuk-button" data-module="govuk-button">
+  Continue
+</button>
+</form>
     </div>
   </div>
 
