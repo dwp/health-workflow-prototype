@@ -7,7 +7,7 @@ filters.toMonth = function(x) {
     if (x > 0 && x <= 12) {
         return months[x - 1]; // returns the month as per x
     } else {
-        return 'Invalid month'; // Handle invalid month
+        return ''; // Handle invalid month
     }
 };
 filters.toMoney = function(x) {

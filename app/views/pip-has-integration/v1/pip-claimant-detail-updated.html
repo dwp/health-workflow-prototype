@@ -163,6 +163,21 @@ Sam Doe
           </a> -->
         </dd>
       </div>
+
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Date of death
+        </dt>
+        <dd class="govuk-summary-list__value">
+          {{ data["dod-day"]}} &nbsp; {{ data["dod-month"] | toMonth }} &nbsp; {{ data["dod-year"]}}
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="change-singular/personal-dod">
+            Change<span class="govuk-visually-hidden"> Date of death</span>
+          </a>
+        </dd>
+      </div>
        
       <!-- <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
