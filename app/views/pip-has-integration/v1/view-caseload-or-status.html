@@ -1,7 +1,7 @@
-{% extends "richer-claimant-info/v4/nav/layout-view-work.html" %}
+{% extends "layout.html" %}
 
 {% block pageTitle %}
-  Referral list
+View a caseload or status
 {% endblock %}
 
 {% block beforeContent %}
@@ -25,6 +25,8 @@
             <div id="view-hint" class="govuk-hint">
               View referrals in a caseload or by status.
             </div>
+
+
             <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
               <div class="govuk-radios__item">
                 <input class="govuk-radios__input" id="view" name="view" type="radio" value="caseload" data-aria-controls="conditional-view">
@@ -32,37 +34,41 @@
                   Caseload
                 </label>
               </div>
+              
               <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-view">
                 <div class="govuk-form-group">
                   <div class="govuk-radios--small">
                     <div class="govuk-radios__item">
                       <input class="govuk-radios__input" id="status" name="status" type="radio" value="list-1">
                       <label class="govuk-label govuk-radios__label" for="status">
-                        Jim Henderson (74)
+                        Barry Henderson (5)
                       </label>
                     </div>
                     <div class="govuk-radios__item">
                       <input class="govuk-radios__input" id="status-2" name="status" type="radio" value="list-2">
                       <label class="govuk-label govuk-radios__label" for="status-2">
-                        Zoey Ball (62)
+                        Kiran Ahmed (2)
                       </label>
                     </div>
                     <div class="govuk-radios__item">
                       <input class="govuk-radios__input" id="status-3" name="status" type="radio" value="list-3">
                       <label class="govuk-label govuk-radios__label" for="status-3">
-                        Chaz Ahmed (62)
+                        Sara Lee (10)
                       </label>
                     </div>
                   </div>
                 </div>
 
               </div>
+
+
               <div class="govuk-radios__item">
                 <input class="govuk-radios__input" id="view-2" name="view" type="radio" value="status" data-aria-controls="conditional-view-2">
                 <label class="govuk-label govuk-radios__label" for="view-2">
                   Status
                 </label>
               </div>
+
               <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-view-2">
                 <div class="govuk-form-group">
                   <div class="govuk-radios--small">
@@ -141,13 +147,7 @@
                     <div class="govuk-radios__item">
                       <input class="govuk-radios__input" id="status-13" name="status" type="radio" value="pbr">
                       <label class="govuk-label govuk-radios__label" for="status-13">
-                        Paper based review (27)
-                      </label>
-                    </div>
-                    <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="status-14" name="status" type="radio" value="pbr-booked">
-                      <label class="govuk-label govuk-radios__label" for="status-14">
-                        Paper based review booked (54)
+                        PIP paper based review (27)
                       </label>
                     </div>
                     <div class="govuk-radios__item">
@@ -169,9 +169,9 @@
                       </label>
                     </div>
                     <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="status-18" name="status" type="radio" value="pipcs-updated">
+                      <input class="govuk-radios__input" id="status-18" name="status" type="radio" value="assessment-not-completed">
                       <label class="govuk-label govuk-radios__label" for="status-18">
-                        PIPCS descriptors updated (47)
+                        Assessment not completed (4)
                       </label>
                     </div>
                   </div>
@@ -183,7 +183,7 @@
           </fieldset>
         </div>
 
-      <button class="govuk-button" data-module="govuk-button">Filter</button>
+      <button class="govuk-button" data-module="govuk-button">Continue</button>
     </form>
 
     </div>
