@@ -5,7 +5,7 @@ Referral list
 {% endblock %}
 
 {% block beforeContent %}
-<a href="start" class="govuk-back-link">Back</a>
+<a href="view-caseload-or-status.html" class="govuk-back-link">Back</a>
 {% endblock %}
 
 {% block content %}
@@ -45,7 +45,7 @@ Referral list
         {
         id: "srel",
         value: "srel",
-        html: "Special rules for end of life (<span id='srelCount'>2</span>)"
+        html: "Special rules for end of life (<span id='srelCount'>0</span>)"
         }
         ]
         }) }}
@@ -62,20 +62,12 @@ Referral list
         }
         },
         items: [
-        {
-        id: "esa",
-        value: "esa",
-        text: "Employment Support Allowance (13)"
-        },
-        {
-        id: "pip",
-        value: "pip",
-        text: "Personal Independence Payment (25)"
-        },
-        {
-        id: "uc",
-        value: "uc",
-        text: "Universal Credit (22)"
+        
+
+        { 
+        id: "pip-s",
+        value: "pip-s",
+        text: "Personal Independence Payment Service (10)"
         }
         ]
         }) }}
@@ -95,22 +87,13 @@ Referral list
         {
         id: "handsworth",
         value: "handsworth",
-        text: "Birmingham Handsworth (22)"
+        text: "Handsworth (10)"
         },
-        {
-        id: "doncaster",
-        value: "doncaster",
-        text: "Doncaster site name (8)"
-        },
-        {
-        id: "leeds",
-        value: "leeds",
-        text: "Leeds site name (10)"
-        },
+        
         {
         id: "tresco",
         value: "tresco",
-        text: "London Tresco House (20)"
+        text: "Tresco House (0)"
         }
         ]
         }) }}
@@ -128,7 +111,7 @@ Referral list
       Assigned referrals
     </h1>
     <p id="filter-playback" class="govuk-!-Marchgin-bottom-4">
-      60 assigned booked referrals
+      10 assigned booked referrals
     </p>
 
     <table data-module="moj-sortable-table" class="govuk-table">
@@ -142,18 +125,22 @@ Referral list
       </thead>
       <tbody class="govuk-table__body">
         <tr class="govuk-table__row srel esa handsworth">
-          <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-report">John
-              Doe</a></td>
+          <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-report">Sam
+              Doe (select this one)</a></td>
           <td class="govuk-table__cell">RN 00 01 23 A</td>
           <td class="govuk-table__cell" data-sort-value="220708">8 July 2022</td>
-          <td class="govuk-table__cell" data-sort-value="1">1 day</td>
+          <td class="govuk-table__cell" data-sort-value="0.8">
+            <strong class="govuk-tag govuk-tag--red" id="overdue">8 days overdue</strong>
+          </td>
         </tr>
         <tr class="govuk-table__row srel pip tresco">
           <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-report">Januarye
               Doe</a></td>
           <td class="govuk-table__cell">RN 00 02 22 C</td>
           <td class="govuk-table__cell" data-sort-value="220710">10 July 2022</td>
-          <td class="govuk-table__cell" data-sort-value="1">1 day</td>
+          <td class="govuk-table__cell" data-sort-value="0.8">
+            <strong class="govuk-tag govuk-tag--red" id="overdue">8 days overdue</strong>
+          </td>
         </tr>
         <tr class="govuk-table__row no-srel pip handsworth">
           <td class="govuk-table__cell"><a href="#"
@@ -227,149 +214,8 @@ Referral list
             <strong class="govuk-tag govuk-tag--red" id="overdue">2 day overdue</strong>
           </td>
         </tr>
-        <tr class="govuk-table__row no-srel esa tresco">
-          <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-report">Paige
-              Gael</a></td>
-          <td class="govuk-table__cell">RN 00 07 71 T</td>
-          <td class="govuk-table__cell" data-sort-value="220410">10 Apr 2022</td>
-          <td class="govuk-table__cell" data-sort-value="0.2">
-            <strong class="govuk-tag govuk-tag--red" id="overdue">2 day overdue</strong>
-          </td>
-        </tr>
-        <tr class="govuk-table__row no-srel pip handsworth">
-          <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-report">Januarye
-              Donald</a></td>
-          <td class="govuk-table__cell">RN 00 01 23 A</td>
-          <td class="govuk-table__cell" data-sort-value="220301">1 March 2022</td>
-          <td class="govuk-table__cell" data-sort-value="0.2">
-            <strong class="govuk-tag govuk-tag--red" id="overdue">2 day overdue</strong>
-          </td>
-        </tr>
-        <tr class="govuk-table__row no-srel esa handsworth">
-          <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-report">Jake
-              Rafter</a></td>
-          <td class="govuk-table__cell">RN 00 11 23 A</td>
-          <td class="govuk-table__cell" data-sort-value="220216">16 February 2022</td>
-          <td class="govuk-table__cell" data-sort-value="0.1">
-            <strong class="govuk-tag govuk-tag--red" id="overdue">1 day overdue</strong>
-          </td>
-        </tr>
-        <tr class="govuk-table__row no-srel pip handsworth">
-          <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-report">Rhys
-              Cooper</a></td>
-          <td class="govuk-table__cell">RN 00 01 11 N</td>
-          <td class="govuk-table__cell" data-sort-value="220211">10 February 2022</td>
-          <td class="govuk-table__cell" data-sort-value="0.1">
-            <strong class="govuk-tag govuk-tag--red" id="overdue">1 day overdue</strong>
-          </td>
-        </tr>
-        <tr class="govuk-table__row no-srel pip tresco">
-          <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-report">Ethel
-              Smith</td>
-          <td class="govuk-table__cell">RN 00 01 61 D</td>
-          <td class="govuk-table__cell" data-sort-value="220410">10 Apr 2022</td>
-          <td class="govuk-table__cell" data-sort-value="0.1">
-            <strong class="govuk-tag govuk-tag--red" id="overdue">1 day overdue</strong>
-          </td>
-        </tr>
-        <tr class="govuk-table__row no-srel uc tresco">
-          <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-report">Rita
-              Jones</a></td>
-          <td class="govuk-table__cell">RN 00 07 71 T</td>
-          <td class="govuk-table__cell" data-sort-value="220110">10 January 2022</td>
-          <td class="govuk-table__cell" data-sort-value="1">1 day</td>
-        </tr>
-        <tr class="govuk-table__row no-srel pip tresco">
-          <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-start-assessment">Zidane May</a>
-          </td>
-          <td class="govuk-table__cell">RN 00 01 45 K</td>
-          <td class="govuk-table__cell" data-sort-value="220428">28 Apr 2022</td>
-          <td class="govuk-table__cell" data-sort-value="1">1 day</td>
-        </tr>
-        <tr class="govuk-table__row no-srel uc tresco">
-          <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-start-assessment">Lorna
-              Marchkham</a></td>
-          <td class="govuk-table__cell">RN 00 01 21 K</td>
-          <td class="govuk-table__cell" data-sort-value="220428">28 Apr 2022</td>
-          <td class="govuk-table__cell" data-sort-value="1">1 day</td>
-        </tr>
-        <tr class="govuk-table__row no-srel uc tresco">
-          <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-start-assessment">Saffa Good</a>
-          </td>
-          <td class="govuk-table__cell">RN 00 11 26 N</td>
-          <td class="govuk-table__cell" data-sort-value="220328">28 March 2022</td>
-          <td class="govuk-table__cell" data-sort-value="1">1 day</td>
-        </tr>
-        <tr class="govuk-table__row no-srel esa tresco">
-          <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-report">Cody Battle</a></td>
-          <td class="govuk-table__cell">RN 00 03 34 M</td>
-          <td class="govuk-table__cell" data-sort-value="220228">28 February 2022</td>
-          <td class="govuk-table__cell" data-sort-value="1">1 day</td>
-        </tr>
-        <tr class="govuk-table__row no-srel pip handsworth">
-          <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-report">Melvin Dalby</a></td>
-          <td class="govuk-table__cell">RN 00 08 41 Z</td>
-          <td class="govuk-table__cell" data-sort-value="220329">29 March 2022</td>
-          <td class="govuk-table__cell" data-sort-value="1">1 day</td>
-        </tr>
-        <tr class="govuk-table__row no-srel pip tresco">
-          <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-report">Blossom Delacruz</a></td>
-          <td class="govuk-table__cell">RN 00 02 25 P</td>
-          <td class="govuk-table__cell" data-sort-value="220329">29 March 2022</td>
-          <td class="govuk-table__cell" data-sort-value="2">2 days</td>
-        </tr>
-        <tr class="govuk-table__row no-srel uc tresco">
-          <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-report">Nadia Pitt</a></td>
-          <td class="govuk-table__cell">RN 00 00 01 A</td>
-          <td class="govuk-table__cell" data-sort-value="220410">10 Apr 2022</td>
-          <td class="govuk-table__cell" data-sort-value="2">2 days</td>
-        </tr>
-        <tr class="govuk-table__row no-srel esa tresco">
-          <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail">Alya Branch</a></td>
-          <td class="govuk-table__cell">RN 00 03 78 R</td>
-          <td class="govuk-table__cell" data-sort-value="220416">16 Apr 2022</td>
-          <td class="govuk-table__cell" data-sort-value="2">2 days</td>
-        </tr>
-        <tr class="govuk-table__row no-srel pip tresco">
-          <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-report">Olaf Le</a></td>
-          <td class="govuk-table__cell">RN 00 01 31 H</td>
-          <td class="govuk-table__cell" data-sort-value="220120">20 January 2022</td>
-          <td class="govuk-table__cell" data-sort-value="2">2 days</td>
-        </tr>
-        <tr class="govuk-table__row no-srel uc tresco">
-          <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-report">Garfield Galvan</a></td>
-          <td class="govuk-table__cell">RN 00 01 21 J</td>
-          <td class="govuk-table__cell" data-sort-value="220420">20 Apr 2022</td>
-          <td class="govuk-table__cell" data-sort-value="2">2 days</td>
-        </tr>
-        <tr class="govuk-table__row no-srel esa handsworth">
-          <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-report">Susie
-              Werner</a></td>
-          <td class="govuk-table__cell">RN 00 22 27 J</td>
-          <td class="govuk-table__cell" data-sort-value="220426">26 Apr 2022</td>
-          <td class="govuk-table__cell" data-sort-value="2">2 days</td>
-        </tr>
-        <tr class="govuk-table__row no-srel pip tresco">
-          <td class="govuk-table__cell"><a href="#"
-              aria-describedby="claimant-detail-report">Krystal Black</a></td>
-          <td class="govuk-table__cell">RN 00 01 25 G</td>
-          <td class="govuk-table__cell" data-sort-value="220427">27 Apr 2022</td>
-          <td class="govuk-table__cell" data-sort-value="2">2 days</td>
-        </tr>
-        <tr class="govuk-table__row no-srel uc tresco">
-          <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-report">Pablo
-              Holden</a></td>
-          <td class="govuk-table__cell">RN 00 09 96 U</td>
-          <td class="govuk-table__cell" data-sort-value="220424">24 Apr 2022</td>
-          <td class="govuk-table__cell" data-sort-value="2">2 days</td>
-        </tr>
-        <tr class="govuk-table__row no-srel uc handsworth">
-          <td class="govuk-table__cell"><a href="claimant-detail-report"
-              aria-describedby="claimant-detail-report">Lilly-Mae Merritt</a></td>
-          <td class="govuk-table__cell">RN 00 02 22 W</td>
-          <td class="govuk-table__cell" data-sort-value="220424">24 Apr 2022</td>
-          <td class="govuk-table__cell" data-sort-value="2">2 days</td>
-        </tr>
+
+
       </tbody>
     </table>
 
@@ -378,7 +224,8 @@ Referral list
        <!--  <li class="moj-pagination__item  moj-pagination__item--prev">
           <a class="moj-pagination__link" href="">Previous<span class="govuk-visually-hidden"> page</span></a>
         </li>-->
-       <li class="moj-pagination__item moj-pagination__item--active" aria-label="Page 1 of 30" aria-current="page">1</li>
+
+       <li class="moj-pagination__item moj-pagination__item--active" aria-label="Page 1 of 30" aria-current="page">1</li> 
        <li class="moj-pagination__item"><a class="moj-pagination__link" href="#" aria-label="Page 2 of 30">2</a></li>
        
        <li class="moj-pagination__item"><a class="moj-pagination__link" href="#" aria-label="Page 3 of 30">3</a></li>
@@ -386,7 +233,7 @@ Referral list
           <a class="moj-pagination__link" href="">Next<span class="govuk-visually-hidden"> page</span></a>
         </li>
       </ul>
-      <p class="moj-pagination__results">Showing <b>10</b> to <b>40</b> of <b>120</b> referrals</p>
+      <p class ="moj-pagination__results">Showing <b>1</b> to <b>10</b> of <b>10</b> referrals</p>
     </nav>
 
 
