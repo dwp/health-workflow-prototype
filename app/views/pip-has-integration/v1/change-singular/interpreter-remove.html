@@ -1,7 +1,7 @@
 {% extends "layout-extended.html" %}
 
 {% block pageTitle %}
-Specialist or medical contacts - Health Assesssment Service
+Interpreter remove
 {% endblock %}
 
 {% block beforeContent %}
@@ -22,7 +22,8 @@ Specialist or medical contacts - Health Assesssment Service
 
    </h1>
 
-   <div class="govuk-form-group">
+   <!-- <div class="govuk-form-group"> -->
+  <form class="govuk-form-group" method="post">
      <fieldset class="govuk-fieldset" role="group" aria-describedby="claimant-names">
       
 
@@ -33,14 +34,14 @@ Specialist or medical contacts - Health Assesssment Service
  
           <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="important-special-rules-yes" name="important-special-rules" type="radio" value="yes" checked>
-              <label class="govuk-label govuk-radios__label" for="important-special-rules-yes" >
+              <input class="govuk-radios__input" id="interpreter-remove-yes" name="interpreter-remove" type="radio" value="yes" checked>
+              <label class="govuk-label govuk-radios__label" for="interpreter-remove-yes" >
                 Yes
               </label>
             </div>
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="important-special-rules-no" name="important-special-rules" type="radio" value="no">
-              <label class="govuk-label govuk-radios__label" for="important-special-rules-no">
+              <input class="govuk-radios__input" id="interpreter-remove-no" name="interpreter-remove" type="radio" value="no~/pip-has-integration/v1/confirmation">
+              <label class="govuk-label govuk-radios__label" for="interpreter-remove-no">
                 No
               </label>
             </div>
@@ -48,8 +49,7 @@ Specialist or medical contacts - Health Assesssment Service
           
 
         </fieldset>
-      </div>
-
+     
 
        </fieldset>
    
@@ -57,11 +57,16 @@ Specialist or medical contacts - Health Assesssment Service
 
       
 
-      <a href="/pip-has-integration/v1/pip-claimant-detail-updated" aria-describedby="search-referral">  <button class="govuk-button" data-module="govuk-button">
+      <!-- <a href="/pip-has-integration/v1/pip-claimant-detail-updated" aria-describedby="search-referral">  <button class="govuk-button" data-module="govuk-button"> 
           Continue
         </button>
-      </a>
+      </a> -->
 
+      <button type="submit" class="govuk-button" data-module="govuk-button">
+        Continue
+      </button>
+
+    </form>
     </div>
   </div>
 
