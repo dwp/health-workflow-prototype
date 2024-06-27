@@ -1,0 +1,75 @@
+{% extends "layout-extended.html" %}
+
+{% block pageTitle %}
+Interpreter remove
+{% endblock %}
+
+{% block beforeContent %}
+<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+     <!-- <span class="govuk-caption-l govuk-!-margin-bottom-2">Create referral question 9 of X</span> -->
+      
+
+
+     <h1 class="govuk-heading-l">
+      Are you sure you want to remove the date of death?
+
+   </h1>
+
+   <!-- <div class="govuk-form-group"> -->
+  <form class="govuk-form-group" method="post">
+     <fieldset class="govuk-fieldset" role="group" aria-describedby="claimant-names">
+      
+
+      <div class="govuk-inset-text">
+        <p>		12 May 2024 </p> </div>
+
+     
+ 
+          <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="interpreter-remove-yes" name="interpreter-remove" type="radio" value="yes~/pip-has-integration/v1/pip-claimant-detail-removed" checked>
+              <label class="govuk-label govuk-radios__label" for="interpreter-remove-yes" >
+                Yes
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="interpreter-remove-no" name="interpreter-remove" type="radio" value="no~/pip-has-integration/v1/pip-claimant-detail-updated">
+              <label class="govuk-label govuk-radios__label" for="interpreter-remove-no">
+                No
+              </label>
+            </div>
+
+          
+
+        </fieldset>
+     
+
+       </fieldset>
+   
+
+
+      
+
+      <!-- <a href="/pip-has-integration/v1/pip-claimant-detail-updated" aria-describedby="search-referral">  <button class="govuk-button" data-module="govuk-button"> 
+          Continue
+        </button>
+      </a> -->
+
+      <br>
+
+      <button type="submit" class="govuk-button" data-module="govuk-button">
+        Continue
+      </button>
+
+    </form>
+    </div>
+  </div>
+
+{% endblock %}
