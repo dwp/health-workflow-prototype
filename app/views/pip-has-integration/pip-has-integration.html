@@ -29,7 +29,7 @@
           <li>This prototype reflects the referral and claimant data that will be displayed in HAS for New PIP Service thin slice integration. </li>
           <li>Referral and claimant data will be pulled from PIP into HAS via an API. The majority of data fields will not be editable, as HAS will always retrieve the most up to date data from PIP.</li>
           <li>However, there will be certain data fields which PIP cannot supply and is crucial to HAS, such as 'SREL', 'Date of death', 'Safety measures',  and 'Interpreter' information. So these fields must remain editable for now.</li>
-          <li>New data fields that have been added (in addition to what is present in the live environment currently) include PIP Service referral ID, Date of death, GP details, Other specialist or medical contacts, Full name, and Residential address (replacing current postcode field, for PIP thin slice cases only). </li>
+          <li>New data fields that have been added (in addition to what is present in the live environment currently) Referral ID, Date of death, GP details, Other specialist or medical contacts, Full name, and Residential address (replacing current postcode field, for PIP thin slice cases only), Alternative phone number (replacing current Home phone number). </li>
           <li>The 'Preferred name' field has been removed because PIP cannot supply this data for September 2024</li>
           <li>The intention is, for Septemebr 2024 we display in HAS the most crucial and highest priority data that PIP can supply to us. But overtime we work with PIP to incrementally display more referral and claimant data in HAS. </li>     
         
@@ -43,6 +43,7 @@
 
             <li><a href="https://dwpdigital.atlassian.net/browse/HTC-2553" target="_blank">See Jira task 2553 for more details (opens in new tab)</a></li>
             <li><a href="https://app.mural.co/t/dwpdigital7412/m/dwpdigital7412/1709571288340/183c6db5ce87a53ffccf33fe4591c9ecc108e4e2?wid=2-1716392721292" target="_blank">See Mural board for more details (opens in new tab)</a></li>
+            <li>As part of the PIP / HAS integration design, a number of HAS statuses will become ‘final statuses’ which means once a referral has been put into this status, the HAS outcome event will be triggered to PIP Service for them to take action, and HAS users will be unable to move the referral out of this status. We need to ensure that users are certain they are taking the correct action when moving the referral into the final status as it cannot be reversed once changed. </li>
             <li>When moving the referral to a 'Done' status (which is one of the final statuses), user will be presented with an interruption page that enables users to pause and reflect. This ensures that users are certain they are taking the correct action when moving the referral into the final status, and understand that it cannot be reversed. </li>
           
           </ul>
@@ -51,7 +52,7 @@
           
        
 
-      <a href="/pip-has-integration/v1/pip-case-details.html" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"  data-module="govuk-button">
+      <a href="/pip-has-integration/v1/index" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"  data-module="govuk-button">
          Start
          <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
            <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path>
