@@ -143,7 +143,7 @@ Status list
         </tr>
       </thead>
       <tbody class="govuk-table__body">
-        <tr class="govuk-table__row srel esa handsworth">
+        <tr class="govuk-table__row srel pip-s handsworth">
           <td class="govuk-table__cell"><a href="pip-case-details.html" aria-describedby="claimant-detail-report">Sam
               Doe (select this one)</a></td>
           <td class="govuk-table__cell">RN 00 01 23 A</td>
@@ -152,7 +152,7 @@ Status list
             <strong class="govuk-tag govuk-tag--red" id="overdue">8 days overdue</strong>
           </td>
         </tr>
-        <tr class="govuk-table__row srel pip tresco">
+        <tr class="govuk-table__row srel pip-s tresco">
           <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail-report">Januarye
               Dolton</a></td>
           <td class="govuk-table__cell">RN 00 02 22 C</td>
@@ -170,7 +170,7 @@ Status list
             <strong class="govuk-tag govuk-tag--red" id="overdue">8 days overdue</strong>
           </td>
         </tr>
-        <tr class="govuk-table__row no-srel uc handsworth">
+        <tr class="govuk-table__row no-srel pip handsworth">
           <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail">Noelle
               Carmel</a></td>
           <td class="govuk-table__cell">RN 00 04 26 D</td>
@@ -188,7 +188,7 @@ Status list
             <strong class="govuk-tag govuk-tag--red" id="overdue">5 days overdue</strong>
           </td>
         </tr>
-        <tr class="govuk-table__row no-srel uc handsworth">
+        <tr class="govuk-table__row no-srel pip handsworth">
           <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail">Noah
               Best</a></td>
           <td class="govuk-table__cell">RN 00 09 36 H</td>
@@ -197,7 +197,7 @@ Status list
             <strong class="govuk-tag govuk-tag--red" id="overdue">4 days overdue</strong>
           </td>
         </tr>
-        <tr class="govuk-table__row no-srel pip tresco">
+        <tr class="govuk-table__row no-srel esa tresco">
           <td class="govuk-table__cell"><a href="#"
               aria-describedby="claimant-detail-report">Eileen Jones</a></td>
           <td class="govuk-table__cell">RN 00 41 16 K</td>
@@ -206,7 +206,7 @@ Status list
             <strong class="govuk-tag govuk-tag--red" id="overdue">4 day overdue</strong>
           </td>
         </tr>
-        <tr class="govuk-table__row no-srel uc handsworth">
+        <tr class="govuk-table__row no-srel esa handsworth">
           <td class="govuk-table__cell"><a href="#" aria-describedby="claimant-detail">Nigel
               Jones</a></td>
           <td class="govuk-table__cell">RN 00 09 22 B</td>
@@ -215,7 +215,7 @@ Status list
             <strong class="govuk-tag govuk-tag--red" id="overdue">3 day overdue</strong>
           </td>
         </tr>
-        <tr class="govuk-table__row no-srel pip tresco">
+        <tr class="govuk-table__row no-srel esa tresco">
           <td class="govuk-table__cell"><a href="#"
               aria-describedby="claimant-detail-report">Sylevette Colwyn</a></td>
           <td class="govuk-table__cell">RN 00 01 11 N</td>
@@ -280,6 +280,7 @@ Status list
 
     showAllWithClass("esa");
     showAllWithClass("pip");
+    showAllWithClass("pip-s");
     showAllWithClass("uc");
     showAllWithClass("tresco");
     showAllWithClass("handsworth");
@@ -293,11 +294,17 @@ Status list
       hideAllWithClass("no-srel");
     }
 
-    if (document.getElementById('pip').checked == true || document.getElementById('esa').checked == true || document.getElementById('uc').checked == true) {
+    if (document.getElementById('pip').checked == true || document.getElementById('esa').checked == true ||  document.getElementById('pip-s').checked == true || document.getElementById('uc').checked == true) {
       if (document.getElementById('pip').checked == false) {
         hideAllWithClass("pip");
       } else {
         benefitTypes.push("Personal Independence Payment");
+      }
+
+      if (document.getElementById('pip-s').checked == false) {
+        hideAllWithClass("pip-s");
+      } else {
+        benefitTypes.push("Personal Independence Payment Service");
       }
 
       if (document.getElementById('esa').checked == false) {
