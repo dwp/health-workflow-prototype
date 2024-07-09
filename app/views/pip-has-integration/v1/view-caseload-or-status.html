@@ -15,8 +15,6 @@ View a caseload or status
 
 
 
-
-
       <!-- <form action="list-1" method="post" class="form"> -->
     <form class="govuk-form-group" method="post">  
 
@@ -34,8 +32,9 @@ View a caseload or status
 
             <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
               <div class="govuk-radios__item">
+                <!-- we have actively commented this out ? infavour of a redirect? -->
                 <!-- <input class="govuk-radios__input" id="view" name="view" type="radio" value="caseload" data-aria-controls="conditional-view"> -->
-                <input class="govuk-radios__input" id="view" name="view" type="radio" value="caseload~/pip-has-integration/v1/list-1">
+                <input class="govuk-radios__input" id="view" name="view" type="radio" value="caseload~/pip-has-integration/v1/list-1" data-aria-controls="conditional-view">
                 <label class="govuk-label govuk-radios__label" for="view">
                   Caseload
                 </label>
@@ -69,8 +68,11 @@ View a caseload or status
 
 
               <div class="govuk-radios__item">
+                <!-- not fixed this one but same as above data-aria-controls="conditional-view-2 -->
                 <!-- <input class="govuk-radios__input" id="view-2" name="view" type="radio" value="status" data-aria-controls="conditional-view-2"> -->
-                <input class="govuk-radios__input" id="view-2" name="view" type="radio" value="status~/pip-has-integration/v1/list-4">
+                <input class="govuk-radios__input" id="view-2" name="view" type="radio" value="status~/pip-has-integration/v1/list-4" data-aria-controls="conditional-view-2">
+
+
                 <label class="govuk-label govuk-radios__label" for="view-2">
                   Status
                 </label>

@@ -1,8 +1,15 @@
 <!-- Javascript -->
 <script src="/public/javascripts/jquery-1.11.3.js"></script>
 
-{% for scriptUrl in extensionConfig.scripts %}
-  <script src="{{scriptUrl}}"></script>
+<!-- lifted from govuk prototype - not sure what jquery or auto data store is doing -->
+{% for scriptConfig in pluginConfig.scripts %}
+{% if scriptConfig.src %}
+    {% if scriptConfig.type|length %}
+      <script type="{{scriptConfig.type}}" src="{{scriptConfig.src}}"></script>
+    {% else %}
+      <script src="{{scriptConfig.src}}"></script>
+    {% endif %}
+{% endif %}
 {% endfor %}
 
 <script src="/public/javascripts/application.js"></script>
