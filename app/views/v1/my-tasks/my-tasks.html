@@ -19,9 +19,12 @@
     View and manage your tasks.
   </p>
 
-  <button type="submit" class="govuk-button" data-module="govuk-button">
-  Get next task
-  </button>
+ {% from "govuk/components/button/macro.njk" import govukButton %}
+
+{{ govukButton({
+  text: "Save and continue",
+  href: "/test"
+}) }}
 
 
   <!-- // start table here -->

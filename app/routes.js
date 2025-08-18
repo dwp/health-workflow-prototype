@@ -8,13 +8,6 @@ const router = govukPrototypeKit.requests.setupRouter()
 
 // Add your routes here
 
+// v1
+require('./routes/v1.js')(router);
 
-
-
-// ROUTES REDIRECT START
-// const v1 = require('./routes/v1.js')
-
-
-
-// ROUTER LIST START
-// v1(router);
