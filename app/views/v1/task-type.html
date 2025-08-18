@@ -1,0 +1,72 @@
+{% extends "layouts/internal.html" %}
+
+{% block pageTitle %}
+  Task type
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "layouts/phase-banner.html" %}
+  {% include "layouts/back-link.html" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+      <h1 class="govuk-fieldset__heading">
+        Select a type of task
+      </h1>
+    </legend>
+    <div id="taskType-hint" class="govuk-hint">
+  What type of task do you want to work on?
+</div>
+    <div class="govuk-radios" data-module="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="taskType" name="taskType" type="radio" value="hcp-review">
+        <label class="govuk-label govuk-radios__label" for="taskType">
+          HCP review
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="taskType-2" name="taskType" type="radio" value="review-new-evidence">
+        <label class="govuk-label govuk-radios__label" for="taskType-2">
+          Review new evidence
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="taskType-3" name="taskType" type="radio" value="paper-based-assessment">
+        <label class="govuk-label govuk-radios__label" for="taskType-3">
+          Paper based assessment
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="taskType-4" name="taskType" type="radio" value="telephone-assessment">
+        <label class="govuk-label govuk-radios__label" for="taskType-4">
+          Telephone assessment
+        </label>
+      </div>
+    <div class="govuk-radios__item">
+      <input class="govuk-radios__input" id="taskType-5" name="taskType" type="radio" value="face-to-face-assessment">
+      <label class="govuk-label govuk-radios__label" for="taskType-5">
+        Face to face assessment
+      </label>
+    </div>
+    </div>
+  </fieldset>
+</div>
+
+
+
+  <button type="submit" class="govuk-button" data-module="govuk-button">
+  Select task type
+  </button>
+
+
+
+
+    </div>
+  </div>
+
+
+{% endblock %}

@@ -1,0 +1,47 @@
+{#
+For guidance on how to use layouts see:
+https://prototype-kit.service.gov.uk/docs/how-to-use-layouts
+#}
+
+{% extends "govuk-prototype-kit/layouts/govuk-branded.njk" %}
+{% from "govuk/components/service-navigation/macro.njk" import govukServiceNavigation %}
+
+{% block header %}
+
+          <header class="dwp-header">
+            <div class="dwp-header__content govuk-width-container">
+              <div class="dwp-header__service-name dwp-header__service-name--with-action">
+                <a href="/index" class="dwp-header__link">Health assessment service</a>
+              </div>
+
+              <div class="dwp-header__service-action">
+                <a href="#" class="dwp-header__link">My account</a>
+              </div>
+
+          </div>
+          </header>
+
+{% endblock %}
+
+{% block footer %}
+
+{{
+        dwpFooter({
+            meta: {
+                visuallyHiddenTitle: "footer links",
+                items: [
+                {
+                    href: "#1",
+                    text: "Accessibility statement"
+                },
+                {
+                    href: "#2",
+                    text: "Versions"
+
+                }
+                ]
+            }
+        })
+}}
+
+{% endblock %}

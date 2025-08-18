@@ -1,3 +1,8 @@
 {
-  "serviceName": "Team Chaffinch Prototypes"
+  "serviceName": "Health assessment service",
+  "plugins": {
+    "govuk-frontend": {
+      "rebrand": false
+    }
+  }
 }

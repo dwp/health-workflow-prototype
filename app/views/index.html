@@ -1,0 +1,85 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Home" %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-three-thirds">
+
+    <h1 class="govuk-heading-xl">
+      What we're working on in Team Chaffinch
+    </h1>
+
+
+    <h2 class="govuk-heading-l">Task based workflow for HCPs - August 2025 - v1</h2>
+        <strong class="govuk-tag govuk-tag--blue">In design</strong>
+        <br><br>
+
+        <h3 class="govuk-heading-s">Problem statement</h3>
+
+        <p>*Needs updating</p>
+
+  <h3 class="govuk-heading-s">Hi-level design decisions</h3>
+
+          <ul class="govuk-list govuk-list--bullet">
+            <li>1.0</li>
+            <li>2.0</li>
+            <li>3.0</li>
+            <li>4.0</li>
+            <li>5.0</li>
+          </ul>
+
+  <div class="govuk-inset-text">
+    <a href="https://dwpdigital.atlassian.net/wiki/spaces/HPDU/pages/133957189760/DWP+Task+-+Iteration" class="govuk-link" rel="noreferrer noopener" target="_blank">View the design documentation (opens in new tab)</a> for a detailed explanation about the design decisions.
+  </div>
+
+  <a href="/v1/homepage" class="govuk-button govuk-button">View prototype</a>
+
+  <hr>
+  <br>
+
+  </div>
+</div>
+
+
+
+    <h2 class="govuk-heading-l">Appointee details - April 2025 - vxx</h2>
+        <strong class="govuk-tag govuk-tag--blue">In development</strong>
+        <br><br>
+
+        <h3 class="govuk-heading-s">Problem statement</h3>
+
+        <p>If someone claiming PIP or WCA is incapable of managing their own affairs due to mental incapacity or severe physical disability, then an appointee may be assigned. The appointee will act on behalf of the claimant for benefit purposes.
+
+          <p>An appointee can be an individual, or an organisation.</p>
+
+          <p>However, there have been instances where the claimant has been contacted rather than the appointee.</p>
+
+          <p>Agents need to access various systems using manual processes in order to find out if an appointee has been assigned to a referral.</p>
+
+          <p>This is time consuming for the agent. It opens up for error and risks contact with the incorrect person.</p>
+
+          <p>This costs the department money and causes lack of trust </p>
+
+  <h3 class="govuk-heading-s">Hi-level design decisions</h3>
+
+          <ul class="govuk-list govuk-list--bullet">
+            <li>Addition of 'Appointee' section into 'Claimant details'</li>
+            <li>Addition of 'Appointee' into side nav</li>
+            <li>Use of 'Warning text' in 'Personal details' when appointee is registered</li>
+            <li>Appointee details are displayed to agent in 'Appointee' section</li>
+            <li>'No appointee' message added to 'Appointee' section when no appointee is registered</li>
+          </ul>
+
+  <div class="govuk-inset-text">
+    <a href="https://dwpdigital.atlassian.net/wiki/spaces/HPDU/pages/133896995479/Appointee+CAB+s+and+PABs+details" class="govuk-link" rel="noreferrer noopener" target="_blank">View the design documentation (opens in new tab)</a> for a detailed explanation about the design decisions.
+  </div>
+
+  <a href="https://lucid.app/lucidspark/d2f79798-e8fd-4455-a175-955b947324e6/edit?page=0_0#" class="govuk-button govuk-button">View appointee deatail's design work</a>
+
+
+  </div>
+</div>
+
+{% endblock %}

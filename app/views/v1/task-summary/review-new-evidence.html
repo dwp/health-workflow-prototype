@@ -1,0 +1,64 @@
+{% extends "layouts/internal.html" %}
+
+{% block pageTitle %}
+  Review new evidence task summary
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "layouts/phase-banner.html" %}
+  {% include "layouts/back-link.html" %}
+{% endblock %}
+
+{% block content %}
+
+  <h1 class="govuk-heading-l">
+    <!-- <span class="govuk-caption-l">Task summary</span> -->
+    Review new evidence
+  </h1>
+
+  <table class="govuk-table">
+    <!-- <caption class="govuk-table__caption govuk-table__caption--m">Dates and amounts</caption>
+    <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+        <th scope="col" class="govuk-table__header">Date</th>
+        <th scope="col" class="govuk-table__header">Amount</th>
+      </tr>
+    </thead> -->
+    <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">To do</th>
+        <td class="govuk-table__cell">Review the new document<br>Add outcome to HCP review</td>
+
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">Claimant name</th>
+        <td class="govuk-table__cell">James Bond</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">NI number</th>
+        <td class="govuk-table__cell">QQ 12 34 56 F</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">End of life</th>
+        <td class="govuk-table__cell">No</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">Referral date</th>
+        <td class="govuk-table__cell">22 October 2024</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">Benefit type</th>
+        <td class="govuk-table__cell">PIP</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button type="submit" class="govuk-button" data-module="govuk-button">
+  Start task
+  </button>
+
+  <p class="govuk-body">
+  <a href="#" class="govuk-link">I cannot do this task, return task</a>
+</p>
+
+{% endblock %}

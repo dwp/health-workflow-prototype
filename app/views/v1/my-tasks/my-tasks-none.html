@@ -1,0 +1,62 @@
+{% extends "layouts/internal.html" %}
+
+{% block pageTitle %}
+  My tasks
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "layouts/phase-banner.html" %}
+  {% include "layouts/back-link.html" %}
+{% endblock %}
+
+{% block content %}
+
+  <h1 class="govuk-heading-l">
+    My tasks
+  </h1>
+
+  <p class="govuk-body-m">
+    View and manage your tasks.
+  </p>
+
+  <button type="submit" class="govuk-button" data-module="govuk-button">
+  Get next task
+  </button>
+
+
+  <!-- // start table here -->
+
+  <div class="govuk-tabs" data-module="govuk-tabs">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <ul class="govuk-tabs__list">
+      <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+        <a class="govuk-tabs__tab" href="#open-tasks">
+          Open tasks
+        </a>
+      </li>
+      <li class="govuk-tabs__list-item">
+        <a class="govuk-tabs__tab" href="#closed-tasks">
+          Closed tasks
+        </a>
+      </li>
+    </ul>
+
+    <div class="govuk-tabs__panel" id="open-tasks">
+      <h2 class="govuk-heading-l">Open tasks</h2>
+      <p class="govuk-body-m">
+        You have no open tasks.
+      </p>
+    </div>
+
+    <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="closed-tasks">
+      <h2 class="govuk-heading-l">Closed tasks</h2>
+      <p class="govuk-body-m">
+        You have no closed tasks.
+      </p>
+    </div>
+  </div>
+
+
+{% endblock %}
