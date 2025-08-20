@@ -1,0 +1,41 @@
+{% extends "layouts/internal.html" %}
+
+{% block pageTitle %}
+  My tasks
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "layouts/phase-banner.html" %}
+  {% include "layouts/back-link.html" %}
+{% endblock %}
+
+{% block content %}
+
+  <h1 class="govuk-heading-l">
+    Research
+  </h1>
+
+  <p class="govuk-body-m">
+    These are the different journeys and scenarios we're testing with our users.
+  </p>
+
+ {% from "govuk/components/button/macro.njk" import govukButton %}
+
+{{ govukButton({
+  text: "Journey 1",
+  href: "/v1/homepage"
+}) }}
+
+{{ govukButton({
+  text: "Journey 2",
+  href: "/v1/homepage"
+}) }}
+
+{{ govukButton({
+  text: "Journey 3",
+  href: "/v1/homepage"
+}) }}
+
+
+
+{% endblock %}

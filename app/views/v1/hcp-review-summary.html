@@ -1,0 +1,48 @@
+{% extends "layouts/internal.html" %}
+
+{% block pageTitle %}
+  My tasks
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "layouts/phase-banner.html" %}
+  {% include "layouts/back-link.html" %}
+{% endblock %}
+
+{% block content %}
+
+<table class="govuk-table">
+  <caption class="govuk-table__caption govuk-table__caption--l">HCP Review summary</caption>
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header">Clinical review and justification</th>
+      <th scope="col" class="govuk-table__header"></th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Outcome</th>
+      <td class="govuk-table__cell">Request further medical evidence (FME)</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">HCP name</th>
+      <td class="govuk-table__cell">John Doe</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Date of review</th>
+      <td class="govuk-table__cell">19 August 2025</td>
+    </tr>
+  </tbody>
+</table>
+
+  <div class="govuk-button-group">
+  <button type="submit" class="govuk-button" data-module="govuk-button">
+    Update status
+  </button>
+  <button type="submit" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+    Add another entry
+  </button>
+  </div>
+
+
+{% endblock %}

@@ -1,7 +1,7 @@
 {% extends "layouts/internal.html" %}
 
 {% block pageTitle %}
-  HCP review task summary
+  Review new evidence task summary
 {% endblock %}
 
 {% block beforeContent %}
@@ -13,7 +13,7 @@
 
   <h1 class="govuk-heading-l">
     <!-- <span class="govuk-caption-l">Task summary</span> -->
-    HCP review
+    Review new evidence
   </h1>
 
   <table class="govuk-table">
@@ -27,7 +27,7 @@
     <tbody class="govuk-table__body">
       <tr class="govuk-table__row">
         <th scope="row" class="govuk-table__header">To do</th>
-        <td class="govuk-table__cell">Add this in<br>Add this in</td>
+        <td class="govuk-table__cell">Review the new document<br>Add outcome to HCP review</td>
 
       </tr>
       <tr class="govuk-table__row">
@@ -53,12 +53,17 @@
     </tbody>
   </table>
 
+  <div class="govuk-button-group">
   <button type="submit" class="govuk-button" data-module="govuk-button">
-  Start task
+    Start task
   </button>
+  <button type="submit" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+    Add to my task list
+  </button>
+  </div>
 
-  <p class="govuk-body">
-  <a href="/v1/my-tasks/my-tasks-none-returned" class="govuk-link">I cannot do this task, return task</a>
+    <p class="govuk-body">
+  <a href="#" class="govuk-link">I cannot do this task, return task</a>
 </p>
 
 {% endblock %}

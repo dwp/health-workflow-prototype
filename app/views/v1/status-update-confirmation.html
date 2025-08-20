@@ -1,0 +1,45 @@
+{% extends "layouts/internal.html" %}
+
+{% block pageTitle %}
+  My tasks
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "layouts/phase-banner.html" %}
+  {% include "layouts/back-link.html" %}
+
+  <div class="govuk-panel govuk-panel--confirmation">
+  <h1 class="govuk-panel__title">
+    Status updated
+  </h1>
+  <div class="govuk-panel__body">
+    Case is now in<br><strong>Request medical evidence</strong>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+ <h2 class="govuk-heading-m" id="subsection-title">
+          What you can do next
+        </h2>
+          <ul class="govuk-list">
+            <li>
+              <a href="#">View claimant details</a>
+            </li>
+            <li>
+              <a href="#">Add entry to timeline</a>
+            </li>
+            <li>
+              <a href="#">View referrals by caseload or status</a>
+            </li>
+            <li>
+              <a href="#">View my tasks</a>
+            </li>
+          </ul>
+
+
+
+
+{% endblock %}
