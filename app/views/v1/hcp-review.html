@@ -11,10 +11,7 @@
 
 {% block content %}
 
-
-
-
-                <h1 class="govuk-heading-l">HCP Review</h1>
+<h1 class="govuk-heading-l">HCP Review</h1>
 
                 
 
@@ -248,9 +245,12 @@
 
 </div>
 
-<button type="submit" class="govuk-button" data-module="govuk-button" data-govuk-button-init="">
-  Save and continue
-</button>
+   {% from "govuk/components/button/macro.njk" import govukButton %}
+
+{{ govukButton({
+  text: "Save and continue",
+  href: "/v1/hcp-review-summary"
+}) }}
 
       </main>
     </div>  

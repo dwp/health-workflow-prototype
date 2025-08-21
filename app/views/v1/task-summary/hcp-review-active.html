@@ -53,13 +53,19 @@
     </tbody>
   </table>
 
-  <div class="govuk-button-group">
-  <button type="submit" class="govuk-button" data-module="govuk-button">
-    Continue task
-  </button>
-  <button type="submit" class="govuk-button govuk-button--secondary" data-module="govuk-button">
-    Confirm task is complete
-  </button>
+
+{% from "govuk/components/button/macro.njk" import govukButton %}
+
+<div class="govuk-button-group">
+  {{ govukButton({
+    text: "Save and continue"
+  }) }}
+
+  {{ govukButton({
+    text: "Save as draft",
+    classes: "govuk-button--secondary"
+  }) }}
+</div>
   </div>
 
 {% endblock %}
