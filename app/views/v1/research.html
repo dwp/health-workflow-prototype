@@ -1,4 +1,6 @@
 {% extends "layouts/internal.html" %}
+ {% from "govuk/components/button/macro.njk" import govukButton %}
+
 
 {% block pageTitle %}
   My tasks
@@ -15,25 +17,45 @@
     Research
   </h1>
 
-  <p class="govuk-body-m">
-    These are the different journeys and scenarios we're testing with our users.
-  </p>
+  <div class="govuk-inset-text">
+    Caveat that this may look like the live service. However, it is a prototype for testing some of our work. There will be discrepancies and only a small number of links will work.
+</div>
 
- {% from "govuk/components/button/macro.njk" import govukButton %}
+  <h2 class="govuk-heading-s">
+    A HCP to pick up an initail HCP review task and mark it as complete.
+  </h2>
+  <p class="govuk-body-m">
+    The focus should be around allocating the task, activating the task and marking the task as complete. There are some HCP screens for context but can we ask the user not to focus on these too much and guide them through, before returning to the task screens?
+  </p>
 
 {{ govukButton({
   text: "Journey 1",
   href: "/v1/homepage-1"
 }) }}
 
+  <h2 class="govuk-heading-s">
+    A HCP to return a task to the task backlog.
+  </h2>
+
+  <p class="govuk-body-m">
+    The focus should be around allocating the task, retuning the task to the backlog.
+  </p>
+
 {{ govukButton({
   text: "Journey 2",
-  href: "/v1/homepage"
+  href: "/v1/homepage-1"
 }) }}
+
+  <h2 class="govuk-heading-s">
+    A HCP to pick up a task for a case they've already worked on.
+  </h2>
+  <p class="govuk-body-m">
+    The focus should be around understanding that there is a new task for the user to do based on a case they've already work on.
+  </p>
 
 {{ govukButton({
   text: "Journey 3",
-  href: "/v1/homepage"
+  href: "/v1/homepage-2"
 }) }}
 
 

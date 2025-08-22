@@ -1,7 +1,7 @@
 {% extends "layouts/internal.html" %}
 
 {% block pageTitle %}
-  Review new evidence task summary
+  HCP review task summary
 {% endblock %}
 
 {% block beforeContent %}
@@ -11,11 +11,9 @@
 
 {% block content %}
 
-<form id="form" method="post" action="#">
-
   <h1 class="govuk-heading-l">
     <!-- <span class="govuk-caption-l">Task summary</span> -->
-    Review new evidence
+    HCP review
   </h1>
 
   <table class="govuk-table">
@@ -29,43 +27,41 @@
     <tbody class="govuk-table__body">
       <tr class="govuk-table__row">
         <th scope="row" class="govuk-table__header">To do</th>
-        <td class="govuk-table__cell">Review the new document<br>Add outcome to HCP review</td>
+        <td class="govuk-table__cell"></td>
 
       </tr>
       <tr class="govuk-table__row">
         <th scope="row" class="govuk-table__header">Claimant name</th>
-        <td class="govuk-table__cell">James Bond</td>
+        <td class="govuk-table__cell"></td>
       </tr>
       <tr class="govuk-table__row">
         <th scope="row" class="govuk-table__header">National insurance number</th>
-        <td class="govuk-table__cell">QQ 12 34 56 F</td>
+        <td class="govuk-table__cell"></td>
       </tr>
       <tr class="govuk-table__row">
         <th scope="row" class="govuk-table__header">End of life</th>
-        <td class="govuk-table__cell">No</td>
+        <td class="govuk-table__cell"></td>
       </tr>
       <tr class="govuk-table__row">
         <th scope="row" class="govuk-table__header">Referral date</th>
-        <td class="govuk-table__cell">22 October 2024</td>
+        <td class="govuk-table__cell"></td>
       </tr>
       <tr class="govuk-table__row">
         <th scope="row" class="govuk-table__header">Benefit type</th>
-        <td class="govuk-table__cell">PIP</td>
+        <td class="govuk-table__cell"></td>
       </tr>
     </tbody>
   </table>
 
-  <div class="govuk-button-group">
-  <button type="submit" class="govuk-button" data-module="govuk-button">
-    Start task
-  </button>
-  <button type="submit" class="govuk-button govuk-button--secondary" data-module="govuk-button">
-    Add to my open tasks
-  </button>
-  </div>
+   {% from "govuk/components/button/macro.njk" import govukButton %}
 
-    <p class="govuk-body">
-  <a href="#" class="govuk-link">I cannot do this task, return task</a>
+{{ govukButton({
+  text: "Start task",
+  href: "/v1/claimant-details-test"
+}) }}
+
+  <p class="govuk-body">
+  <a href="/v1/my-tasks/my-tasks-none-returned" class="govuk-link">I cannot do this task, return task</a>
 </p>
 
 {% endblock %}

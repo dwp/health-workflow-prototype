@@ -11,21 +11,6 @@
 
 {% block content %}
 
-<div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
-  <div class="govuk-notification-banner__header">
-    <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
-      Important
-    </h2>
-  </div>
-  <div class="govuk-notification-banner__content">
-    <p class="govuk-notification-banner__heading">
-      There is a new task for a case you're working on.
-      <a class="govuk-notification-banner__link" href="/v1/task-summary/review-new-evidence-related">Get next task</a>.
-    </p>
-  </div>
-</div>
-
-
   <h1 class="govuk-heading-l">
     My tasks
   </h1>
@@ -34,13 +19,12 @@
     View and manage your tasks.
   </p>
 
-  {% from "govuk/components/button/macro.njk" import govukButton %}
+ {% from "govuk/components/button/macro.njk" import govukButton %}
 
 {{ govukButton({
   text: "Get next task",
-  href: "/v1/task-summary/review-new-evidence-related"
+  href: "#"
 }) }}
-
 
   <!-- // start table here -->
 
@@ -74,13 +58,6 @@
           </tr>
         </thead>
         <tbody class="govuk-table__body">
-          <tr class="govuk-table__row">
-            <td class="govuk-table__cell"><div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes"><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" id="hcp-review" name="hcp-review" type="checkbox" value="hcp-review"><label class="govuk-label govuk-checkboxes__label" for="hcp-review">HCP review</label></div></td>
-            <td class="govuk-table__cell"><a href="#" class="govuk-link">James Bond</a></td>
-            <td class="govuk-table__cell">QQ 12 34 56 F</td>
-            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--red">3 days overdue</strong></td>
-            <td class="govuk-table__cell"><a href="#" class="govuk-link">View task</a></td>
-          </tr>
           <tr class="govuk-table__row">
             <td class="govuk-table__cell"><div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes"><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" id="hcp-review" name="hcp-review" type="checkbox" value="hcp-review"><label class="govuk-label govuk-checkboxes__label" for="hcp-review">Paper based assessment</label></div></td>
             <td class="govuk-table__cell"><a href="#" class="govuk-link">Jayne Eyre</a></td>
@@ -139,7 +116,7 @@
           </tr>
           <tr class="govuk-table__row">
             <td class="govuk-table__cell"><div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes"><div class="govuk-checkboxes__item"><input class="govuk-checkboxes__input" id="hcp-review" name="hcp-review" type="checkbox" value="hcp-review"><label class="govuk-label govuk-checkboxes__label" for="hcp-review">Review new medical evidence</label></div></td>
-            <td class="govuk-table__cell"><a href="#" class="govuk-link">Peter Piper</a></td>
+            <td class="govuk-table__cell"><a href="#" class="govuk-link">James Bond</a></td>
             <td class="govuk-table__cell">QQ 12 34 56 F</td>
             <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green">4 days</strong></td>
             <td class="govuk-table__cell"><a href="#" class="govuk-link">View task</a></td>

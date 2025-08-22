@@ -25,5 +25,18 @@ router.post('/v1/task-type', function (req, res) {
 
 })
 
+router.post('/v1/task-completion-confirmation', (req, res, next) => {
+        res.redirect('/v1/my-tasks/task-completed-1');
+});
+
+router.post('/v1/my-tasks/my-tasks-1', (req, res, next) => {
+        res.redirect('/v1/task-completion-confirmation');
+});
+
+router.post('/v1/task-summary/review-new-evidence-related', (req, res, next) => {
+        res.redirect('/v1/my-tasks/my-tasks-2');
+});
+
+
 } // end module.exports
  

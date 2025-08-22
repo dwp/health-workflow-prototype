@@ -35,7 +35,7 @@
         <td class="govuk-table__cell">James Bond</td>
       </tr>
       <tr class="govuk-table__row">
-        <th scope="row" class="govuk-table__header">NI number</th>
+        <th scope="row" class="govuk-table__header">National insurance number</th>
         <td class="govuk-table__cell">QQ 12 34 56 F</td>
       </tr>
       <tr class="govuk-table__row">
@@ -54,18 +54,11 @@
   </table>
 
 
-{% from "govuk/components/button/macro.njk" import govukButton %}
-
 <div class="govuk-button-group">
-  {{ govukButton({
-    text: "Save and continue"
-  }) }}
-
-  {{ govukButton({
-    text: "Save as draft",
-    classes: "govuk-button--secondary"
-  }) }}
+  <button type="submit" class="govuk-button" data-module="govuk-button">
+    Continue task
+  </button>
+  <a class="govuk-link" href="/v1/task-completion-confirmation">Confirm task is complete</a>
 </div>
-  </div>
 
 {% endblock %}
