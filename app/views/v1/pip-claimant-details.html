@@ -1,0 +1,321 @@
+{% extends "layout-key-details-assigned-extended.html" %}
+{% from "internal-service-footer/macro.njk" import dwpFooter %}
+
+{% block pageTitle %}
+  Claimant details
+{% endblock %}
+
+
+{% block beforeContent %}
+  {% include "layouts/phase-banner.html" %}
+  {% include "layouts/back-link.html" %}
+{% endblock %}
+
+{% block content %}
+
+{# SIDE NAV #}
+
+<div class="app-pane__body">
+
+  <div class="app-pane__subnav">
+    <nav class="app-subnav" aria-labelledby="app-subnav-heading">
+      <h2 class="govuk-visually-hidden" id="app-subnav-heading">Pages in this section</h2>
+      <ul class="app-subnav__section">
+
+        <li class="app-subnav__section-item">
+          <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline"
+            href="#">Case details<i class="chevron2"></i> </a>
+        </li>
+
+        <li class="app-subnav__section-item app-subnav__section-item--current">
+          <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#">Claimant
+            details<i class="chevron"></i> </a>
+          <ul class="app-subnav__section app-subnav__section--nested">
+            <li class="app-subnav__section-item">
+              <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#personal">
+                Personal details
+              </a>
+            </li>
+            <li class="app-subnav__section-item">
+              <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#contact">
+              Contact details
+              </a>
+            </li>
+
+            <li class="app-subnav__section-item">
+              <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#adjustments">
+              Support and communication
+              </a>
+            </li>
+            <li class="app-subnav__section-item">
+              <a class="app-subnav__link govuk-link govuk-link--no-visited-state govuk-link--no-underline" href="#support">
+                Appointee details
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  {# SOMETHING TO DO WITH RIGHT NAV #}
+
+  <div class="govuk-grid-row  overview">
+
+  <div class="govuk-grid-column-two-thirds-from-desktop">
+
+   
+    {# PERSONAL DETAILS #}
+
+    <h2 class="govuk-heading-m" id="personal">Personal details</h2>
+    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+      
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+         Full name
+        </dt>
+        <dd class="govuk-summary-list__value">
+            James Bond
+        </dd>
+      </div>
+      
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Preferred name
+        </dt>
+        <dd class="govuk-summary-list__value">
+            Jamesy
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Date of birth
+        </dt>
+        <dd class="govuk-summary-list__value">
+          31 December 1969
+        </dd>
+      </div>
+    </dl>
+
+      <h2 id="contact" class="govuk-heading-m">Contact details</h2>
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+         Home address
+        </dt>
+        <dd class="govuk-summary-list__value">
+          1 Test Street<br/>Test City<br/>Test Town<br/>Test Postcode
+        </dd>
+      </div>
+
+            <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Can we write to you at this address?
+        </dt>
+        <dd class="govuk-summary-list__value">
+          No
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Correspondence address
+        </dt>
+        <dd class="govuk-summary-list__value">
+          1 Test Street<br/>Test City<br/>Test Town<br/>Test Postcode
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Mobile phone number
+        </dt>
+        <dd class="govuk-summary-list__value">
+          07000 000000
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Alternative phone number
+        </dt>
+        <dd class="govuk-summary-list__value">
+          07100 000000
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Textphone
+        </dt>
+        <dd class="govuk-summary-list__value">
+          07120 000000
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Email address
+        </dt>
+        <dd class="govuk-summary-list__value">
+          test.email@example.com
+        </dd>
+      </div>
+    </dl>
+
+      <h2 id="adjustments" class="govuk-heading-m">Support and communication</h2>
+
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Adanced customer support concerns
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Yes
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Interpreter
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Yes
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Alternative formats
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Yes
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Reasonable adjustments
+          </dt>
+          <dd class="govuk-summary-list__value">
+            <ul class="govuk-list govuk-list--bullet">
+              <li> Hearing or induction loop systems</li>
+              <li>Quiet space before or during assessment</li>
+              </ul>
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Channel preference
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Post
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Written communication
+          </dt>
+          <dd class="govuk-summary-list__value">
+            English
+          </dd>
+        </div>
+       </dl>
+
+
+  <h2 class="govuk-heading-m" id="support">Appointee details</h2>
+
+    <dl class="govuk-summary-list">
+     
+    <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+        Organisation
+      </dt>
+      <dd class="govuk-summary-list__value">
+        Age UK
+      </dd>
+    </div>
+
+    <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+        Contact name
+      </dt>
+      <dd class="govuk-summary-list__value">
+        Janette Rafe
+      </dd>
+    </div>
+     
+    <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+        Phone number
+      </dt>
+      <dd class="govuk-summary-list__value">
+        07000 000000
+      </dd>
+    </div>
+
+    <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+        Email address
+      </dt>
+      <dd class="govuk-summary-list__value">
+        test.email@example.com
+      </dd>
+    </div>
+
+    <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+        Address
+      </dt>
+      <dd class="govuk-summary-list__value">
+        10 Test Street<br>Test City<br>Test Town<br>Test Postcode
+      </dd>
+    </div>
+  </dl>
+
+{# RIGHT SIDE NAV #}
+
+    </div>
+
+        <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          What you can do next
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list">
+            <li>
+              <a href="#">Update status</a>
+            </li>
+            <li>
+              <a href="#">View claimant documents</a>
+            </li>
+            <li>
+              <a href="/v1/hcp-review">HCP review</a>
+            </li>
+            <li>
+              <a href="#">View timeline</a>
+            </li>
+            <li>
+              <a href="#">Add entry to timeline</a>
+            </li>
+            <li>
+              <a href="#">Move to another caseload</a>
+            </li>
+            <li>
+              <a href="/v1/my-tasks/my-tasks-1">View my tasks</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+
+{% endblock %}
+

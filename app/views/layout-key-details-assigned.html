@@ -40,7 +40,7 @@
 {% block header %}
 
 <header class="govuk-header " role="banner" data-module="govuk-header">
-  <div class="govuk-header__container govuk-width-container  govuk-width-container--extended">
+  <div class="govuk-header__container govuk-width-container">
     <div class="govuk-header__logo">
       <a href="/index" class="govuk-header__link govuk-header__link--homepage">
           <span class="govuk-header__logotype-text">
@@ -62,8 +62,8 @@
 <style type="text/css">
 
   .govuk-header {
-    border-bottom: 0px solid #000000;
-  } 
+    border-bottom: 10px solid #000000;
+  }
 
   .govuk-header__container {
     border-bottom: 0px;
@@ -76,7 +76,7 @@
 
 .key-details-bar .key-details-bar__key-details {
   margin: 0 auto;
-  max-width: 1130px;
+  max-width: 990px;
   padding: 20px 30px 20px 60px;
   position: relative;
   font-family: "Arial";
@@ -198,38 +198,33 @@
 max-width:1160px !important;}
 </style>
 
+<section class="key-details-bar" role="contentinfo" aria-label="Key details">
+  <dl class="key-details-bar__key-details">
+    <div class="key-details-bar__top-block">
+      <dt class="govuk-visually-hidden">Name:</dt>
+      <dt class="key-details-bar__name">Jane Doe</dt>
+
+      <dt class="govuk-visually-hidden">National Insurance number:</dt>
+      <dt class="key-details-bar__nino">RN 00 01 23 A</dt>
+
+      <dt class="govuk-visually-hidden">Claim status:</dt>
+      <dd class="key-details-bar__status">Assigned</dd>
+    </div>
+
+    <div class="key-details-bar__bottom-block">
+      <dt>Date of birth:</dt>
+      <dd>31 December 1999</dd>
+
+      <dt>Postcode:</dt>
+      <dd>N2 1XX</dd>
+
+      <dt>SRTI:</dt>
+      <dd>No</dd>
 
 
-<div class="govuk-width-container-wide"><br>
-
-  <!-- <a href="javascript:history.back()" class="govuk-back-link">Back</a> -->
-  
-  <section class="new-key-details-bar" role="identifier" aria-label="Claimant name and identifier">
-    <dl class="new-key-details-bar__key-details">
-      <div class="new-key-details-bar__top-block">
-        <dt class="govuk-visually-hidden">Name:</dt>
-        <dd class="new-key-details-bar__name">Jane Doe</dd>
-
-        <dt class="govuk-visually-hidden">National Insurance number:</dt>
-        <dd class="new-key-details-bar__nino">RN 00 04 26 D</dd>
-
-      </div>
-
-      <div class="new-key-details-bar__bottom-block">
-        <dt class="govuk-visually-hidden">Claimant markers:</dt>
-        <dd>
-          <strong class="govuk-tag govuk-tag--purple">End of life</strong>
-          <!-- <strong class="govuk-tag govuk-tag--yellow">Additional support</strong> -->
-          <strong class="govuk-tag govuk-tag--green">Appointee</strong>
-          <!-- <strong class="govuk-tag govuk-tag--blue">Mental health condition</strong>
-          <strong class="govuk-tag govuk-tag--pink">Unacceptable behaviour</strong> -->
-          <strong class="govuk-tag govuk-tag--red">Deceased</strong>
-        </dd>
-      </div>
-    </dl>
-  </section>
-</div>
-
+    </div>
+  </dl>
+</section>
 
 {% endblock %}
 
@@ -238,9 +233,21 @@ max-width:1160px !important;}
 
 
 
-{% set containerClasses = 'govuk-width-container--extended' %}
 
-{% set mainClasses = mainClasses | default("govuk-main-wrapper--auto-spacing govuk-width-container--extended") %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% set mainClasses = mainClasses | default("govuk-main-wrapper--auto-spacing") %}
 
 
 
