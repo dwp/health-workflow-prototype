@@ -1,0 +1,36 @@
+{% extends "layouts/internal.html" %}
+
+{% block pageTitle %}
+  My tasks
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "layouts/phase-banner.html" %}
+  {% include "layouts/back-link.html" %}
+{% endblock %}
+
+{% block content %}
+
+  <h1 class="govuk-heading-l">
+    HCP review process
+  </h1>
+
+  <p class="govuk-body-m">
+    At this point we'd like you to imagine you've gone through you're process of undertaking the initail HCP review.
+  </p>
+
+   <p class="govuk-body-m">
+    You've also updated the events in the timeline and updated the status.
+  </p>
+
+ {% from "govuk/components/button/macro.njk" import govukButton %}
+
+{{ govukButton({
+  text: "Continue",
+  href: "/v1/status-update-confirmation"
+}) }}
+
+
+
+
+{% endblock %}
