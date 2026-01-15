@@ -1,0 +1,103 @@
+{% extends "layouts/internal.html" %}
+ {% from "govuk/components/button/macro.njk" import govukButton %}
+
+
+{% block pageTitle %}
+  My tasks
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "layouts/phase-banner.html" %}
+  {% include "layouts/back-link.html" %}
+{% endblock %}
+
+{% block content %}
+
+  <h1 class="govuk-heading-l">
+    Research
+  </h1>
+
+  <div class="govuk-inset-text">
+    Caveat that this may look like the live service. However, it is a prototype for testing some of our work. There will be discrepancies and only a small number of links will work.
+</div>
+
+  <h2 class="govuk-heading-s">
+    Scenario 1
+  </h2>
+  <p class="govuk-body-m">
+    Description of scenario 1
+  </p>
+
+{{ govukButton({
+  text: "Journey 1",
+  href: "/v1/homepage-1"
+}) }}
+
+  <hr>
+  <br>
+
+  <h2 class="govuk-heading-s">
+    Scenario 2
+  </h2>
+
+  <p class="govuk-body-m">
+    Description of scenario 2
+  </p>
+
+{{ govukButton({
+  text: "Journey 2",
+  href: "/v1/homepage-1"
+}) }}
+
+  <hr>
+  <br>
+
+  <h2 class="govuk-heading-s">
+    Scenario 3
+  </h2>
+  <p class="govuk-body-m">
+    Description of scenario 3
+  </p>
+
+{{ govukButton({
+  text: "Journey 3",
+  href: "/v1/homepage-2"
+}) }}
+
+  <hr>
+  <br>
+
+  <h2 class="govuk-heading-s">
+    General feedabck
+  </h2>
+    <p class="govuk-body-m">
+    We're looking for genral feedback on UIs. For example, is there enough information? Is there too much information? What would a user need to know in order to progress with their task?
+  </p>
+
+  <p class="govuk-body">
+  <a href="/v1/my-tasks/my-tasks" class="govuk-link">Screen 1</a>
+  </p>
+
+  <p class="govuk-body">
+  <a href="/v1/task-summary/hcp-review" class="govuk-link">Screen 2</a>
+  </p>
+
+  <p class="govuk-body">
+  <a href="/v1/task-summary/review-new-evidence" class="govuk-link">Screen 2</a>
+  </p>
+
+  <p class="govuk-body">
+  <a href="/v1/task-summary/paper-based-assessment" class="govuk-link">Screen 4</a>
+  </p>
+
+  <p class="govuk-body">
+  <a href="/v1/task-summary/telephone-assessment" class="govuk-link">Screen 5</a>
+  </p>
+
+  <p class="govuk-body">
+  <a href="/v1/task-summary/face-to-face-assessment" class="govuk-link">Screen 6</a>
+  </p>
+
+
+
+{% endblock %}
