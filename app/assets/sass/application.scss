@@ -5,6 +5,8 @@
 
 // Add extra styles here
 
+@import "node_modules/@ministryofjustice/frontend/moj/all";
+
 footer.govuk-footer {
     border-top: 1px solid $govuk-border-colour;
 }

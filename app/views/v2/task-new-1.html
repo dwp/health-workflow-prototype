@@ -11,7 +11,7 @@
 
 {% block content %}
 
-<div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+{# <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
   <div class="govuk-notification-banner__header">
     <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
       Important
@@ -20,10 +20,10 @@
   <div class="govuk-notification-banner__content">
     <p class="govuk-notification-banner__heading">
       You have been assigned a new 'Edit report' task for Jack Sparrow's case.
-      {# <a class="govuk-notification-banner__link" href="/v1/task-summary/review-new-evidence-related">Get next task</a>. #}
+      <a class="govuk-notification-banner__link" href="/v1/task-summary/review-new-evidence-related">Get next task</a>.
     </p>
   </div>
-</div>
+</div> #}
 
 
   <h1 class="govuk-heading-l">
@@ -98,7 +98,7 @@
               <span aria-hidden="true">1</span>
               <span class="govuk-visually-hidden">(5)</span>
             </span>
-            </span>Edit report</td>
+            </span><span style="padding-left:10px;">Edit report</td>
             <td class="govuk-table__cell"><a href="#" class="govuk-link">Jack Sparrow</a></td>
             <td class="govuk-table__cell">QQ 12 34 56 F</td>
             <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--light-blue">2 days</strong></td>
@@ -112,10 +112,14 @@
             <td class="govuk-table__cell"><a href="#" class="govuk-link">View task</a></td>
           </tr>
           <tr class="govuk-table__row">
-            <td class="govuk-table__cell"style="padding-left:10px;">HCP review</td>
+                      <tr class="govuk-table__row" style="background-color:#f3f2f1">
+            <td class="govuk-table__cell"><span class="moj-notification-badge">
+              <span aria-hidden="true">1</span>
+              <span class="govuk-visually-hidden">(5)</span>
+            </span><span style="padding-left:10px;">Telephone assessment</td>
             <td class="govuk-table__cell"><a href="#" class="govuk-link">Jane Doe</a></td>
             <td class="govuk-table__cell">QQ 12 34 56 F</td>
-            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--blue">2 days</strong></td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--light-blue">7 days</strong></td>
             <td class="govuk-table__cell"><a href="#" class="govuk-link">View task</a></td>
           </tr>
           {# <tr class="govuk-table__row">
