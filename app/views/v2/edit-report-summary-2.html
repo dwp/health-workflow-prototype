@@ -1,0 +1,57 @@
+{% extends "layouts/internal.html" %}
+
+{% block pageTitle %}
+  Edit report task summary
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "layouts/phase-banner.html" %}
+  {% include "layouts/back-link.html" %}
+{% endblock %}
+
+{% block content %}
+
+  <h1 class="govuk-heading-l">
+    <!-- <span class="govuk-caption-l">Task summary</span> -->
+    Edit report
+  </h1>
+
+<strong class="govuk-tag govuk-tag--green govuk-!-margin-top-0 govuk-!-margin-bottom-3">
+  HCP audit
+</strong>
+
+  <table class="govuk-table">
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">Claimant name</th>
+        <td class="govuk-table__cell">Jack Sparrow</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">National 
+           number</th>
+        <td class="govuk-table__cell">QQ 12 34 56 F</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">End of life</th>
+        <td class="govuk-table__cell">No</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">Referral date</th>
+        <td class="govuk-table__cell">10 March 2026</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">Benefit type</th>
+        <td class="govuk-table__cell">PIP</td>
+      </tr>
+    </tbody>
+  </table>
+
+  {{ govukButton({
+  text: "Start task",
+  href: "/v2/edit-report-context-2"
+}) }}
+
+  {# <p class="govuk-body">
+  <a href="#" class="govuk-link">I cannot do this task, return task</a>
+</p> #}
+
+{% endblock %}

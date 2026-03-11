@@ -11,6 +11,20 @@
 
 {% block content %}
 
+<div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+  <div class="govuk-notification-banner__header">
+    <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+      Success
+    </h2>
+  </div>
+  <div class="govuk-notification-banner__content">
+    <h3 class="govuk-notification-banner__heading">
+      Telephone assessment task for Jane Doe's case has been completed and moved to closed tasks. The status of the case has been updated and a timeline entry has been added.
+    </h3>
+  </div>
+</div>
+
+
 
   <h1 class="govuk-heading-l">
     My tasks
@@ -25,12 +39,13 @@
 </a>
   </p>
 
-    <p class="govuk-body-m">
-    You have been assigned a new task <span class="moj-notification-badge">
+          <p class="govuk-body-m">
+    You have been assigned new tasks <span class="moj-notification-badge">
               <span aria-hidden="true">1</span>
               <span class="govuk-visually-hidden">(1)</span>
             </span>
   </p>
+
 
   {% from "govuk/components/button/macro.njk" import govukButton %}
 
@@ -87,11 +102,11 @@
             <td class="govuk-table__cell"><a href="#" class="govuk-link">View task</a></td>
           </tr>
           <tr class="govuk-table__row" style="background-color:#f3f2f1">
-            <td class="govuk-table__cell" style="padding-left:10px;"></span>Edit report</td>
+            <td class="govuk-table__cell"></span><span style="padding-left:10px;">Edit report</td>
             <td class="govuk-table__cell"><a href="#" class="govuk-link">Jack Sparrow</a></td>
             <td class="govuk-table__cell">QQ 12 34 56 F</td>
             <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--light-blue">2 days</strong></td>
-            <td class="govuk-table__cell"><a href="/v2/edit-report-summary-1" class="govuk-link">View task</a></td>
+            <td class="govuk-table__cell"><a href="/v2/edit-report-summary-2" class="govuk-link">View task</a></td>
           </tr>
           <tr class="govuk-table__row">
             <td class="govuk-table__cell"style="padding-left:10px;">HCP review</td>
@@ -107,77 +122,83 @@
             <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--blue">2 days</strong></td>
             <td class="govuk-table__cell"><a href="#" class="govuk-link">View task</a></td>
           </tr>
-          </tr>
         </tbody>
       </table>
 
-</div>
+        </div>
 
 
     <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="closed-tasks">
+      {# <h2 class="govuk-heading-l">Closed tasks</h2> #}
       <table class="govuk-table">
         <thead class="govuk-table__head">
           <tr class="govuk-table__row">
             <th scope="col" class="govuk-table__header">Task type</th>
             <th scope="col" class="govuk-table__header">Claimant name</th>
             <th scope="col" class="govuk-table__header">National Insurance number</th>
-            <th scope="col" class="govuk-table__header">Task due</th>
+            <th scope="col" class="govuk-table__header">Task completed</th>
           </tr>
         </thead>
         <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Telephone assessment</td>
+            <td class="govuk-table__cell"><a href="#" class="govuk-link">Jand Doe</a></td>
+            <td class="govuk-table__cell">QQ 12 34 56 F</td>
+            <td class="govuk-table__cell">10 March 2026</td>
+          </tr>
           <tr class="govuk-table__row">
             <td class="govuk-table__cell">Paper based assessment</td>
             <td class="govuk-table__cell"><a href="#" class="govuk-link">James Bond</a></td>
             <td class="govuk-table__cell">QQ 12 34 56 F</td>
-            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--blue">Completed</strong></td>
+            <td class="govuk-table__cell">10 March 2026</td>
           </tr>
           <tr class="govuk-table__row">
             <td class="govuk-table__cell">Review new evidence</td>
             <td class="govuk-table__cell"><a href="#" class="govuk-link">Jack Sparrow</a></td>
             <td class="govuk-table__cell">QQ 12 34 56 F</td>
-            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--blue">Completed</strong></td>
+            <td class="govuk-table__cell">9 March 2026</td>
           </tr>
           <tr class="govuk-table__row">
             <td class="govuk-table__cell">Review new evidence</td>
             <td class="govuk-table__cell"><a href="#" class="govuk-link">James Bond</a></td>
             <td class="govuk-table__cell">QQ 12 34 56 F</td>
-            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--blue">Completed</strong></td>
+            <td class="govuk-table__cell">9 March 2026</td>
           </tr>
           <tr class="govuk-table__row">
             <td class="govuk-table__cell">Review new evidence</td>
             <td class="govuk-table__cell"><a href="#" class="govuk-link">Jane Eyre</a></td>
             <td class="govuk-table__cell">QQ 12 34 56 F</td>
-            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--blue">Completed</strong></td>
+            <td class="govuk-table__cell">9 March 2026</td>
           </tr>
           <tr class="govuk-table__row">
             <td class="govuk-table__cell">Review new evidence</td>
             <td class="govuk-table__cell"><a href="#" class="govuk-link">Le Creuset</a></td>
             <td class="govuk-table__cell">QQ 12 34 56 F</td>
-            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--blue">Completed</strong></td>
+            <td class="govuk-table__cell">8 March 2026</td>
           </tr>
           <tr class="govuk-table__row">
             <td class="govuk-table__cell">HCP review</td>
             <td class="govuk-table__cell"><a href="#" class="govuk-link">James Bond</a></td>
             <td class="govuk-table__cell">QQ 12 34 56 F</td>
-            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--blue">Completed</strong></td>
+            <td class="govuk-table__cell">8 March 2026</td>
           </tr>
           <tr class="govuk-table__row">
             <td class="govuk-table__cell">HCP review</td>
             <td class="govuk-table__cell"><a href="#" class="govuk-link">Le Creuset</a></td>
             <td class="govuk-table__cell">QQ 12 34 56 F</td>
-            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--blue">Completed</strong></td>
+            <td class="govuk-table__cell">8 March 2026</td>
           </tr>
           <tr class="govuk-table__row">
             <td class="govuk-table__cell">Telephone assessment</td>
             <td class="govuk-table__cell"><a href="#" class="govuk-link">Hannah Montanna</a></td>
             <td class="govuk-table__cell">QQ 12 34 56 F</td>
-            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--blue">Completed</strong></td>
+            <td class="govuk-table__cell">8 March 2026</td>
           </tr>
           <tr class="govuk-table__row">
             <td class="govuk-table__cell">HCP review</td>
             <td class="govuk-table__cell"><a href="#" class="govuk-link">Jane Eyre</a></td>
             <td class="govuk-table__cell">QQ 12 34 56 F</td>
-            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--blue">Completed</strong></td>
+            <td class="govuk-table__cell">7 March 2026</td>
           </tr>
         </tbody>
 

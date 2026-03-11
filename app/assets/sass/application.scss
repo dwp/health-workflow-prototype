@@ -5,6 +5,19 @@
 
 // Add extra styles here
 
+.no-wrap-tag {
+  white-space: nowrap;
+  display: inline-block;  /* ensures the box can grow wider */
+}
+
+
+.govuk-notification-banner__heading {
+  display: block;
+  max-width: none;
+  width: 100%;
+}
+
+
 @import "node_modules/@ministryofjustice/frontend/moj/all";
 
 footer.govuk-footer {

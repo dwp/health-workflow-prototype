@@ -11,7 +11,7 @@
 
 {% block content %}
 
-<div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+{# <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
   <div class="govuk-notification-banner__header">
     <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
       Important
@@ -20,10 +20,10 @@
   <div class="govuk-notification-banner__content">
     <p class="govuk-notification-banner__heading">
       You have been assigned a new 'Edit report' task for Jack Sparrow's case.
-      {# <a class="govuk-notification-banner__link" href="/v1/task-summary/review-new-evidence-related">Get next task</a>. #}
+      <a class="govuk-notification-banner__link" href="/v1/task-summary/review-new-evidence-related">Get next task</a>.
     </p>
   </div>
-</div>
+</div> #}
 
 
   <h1 class="govuk-heading-l">
@@ -39,11 +39,18 @@
 </a>
   </p>
 
+      <p class="govuk-body-m">
+    You have been assigned new tasks <span class="moj-notification-badge">
+              <span aria-hidden="true">2</span>
+              <span class="govuk-visually-hidden">(2)</span>
+            </span>
+  </p>
+
   {% from "govuk/components/button/macro.njk" import govukButton %}
 
 {{ govukButton({
   text: "Get next task",
-  href: "/v1/task-summary/review-new-evidence-related"
+  href: "#"
 }) }}
 
 
@@ -67,7 +74,38 @@
     </ul>
 
     <div class="govuk-tabs__panel" id="open-tasks">
-      <h2 class="govuk-heading-l">Open tasks</h2>
+      <h2 class="govuk-heading-m">New assigned tasks</h2>
+      <table class="govuk-table">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header"style="padding-left:10px;">Task type</th>
+            <th scope="col" class="govuk-table__header">Claimant name</th>
+            <th scope="col" class="govuk-table__header">National Insurance number</th>
+            <th scope="col" class="govuk-table__header">Task due</th>
+            <th scope="col" class="govuk-table__header">Action</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row" style="background-color:#f3f2f1">
+            <td class="govuk-table__cell"></span><span style="padding-left:10px;">Edit report</td>
+            <td class="govuk-table__cell"><a href="#" class="govuk-link">Jack Sparrow</a></td>
+            <td class="govuk-table__cell">QQ 12 34 56 F</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--light-blue">2 days</strong></td>
+            <td class="govuk-table__cell"><a href="/v2/edit-report-summary" class="govuk-link">View task</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+                      <tr class="govuk-table__row" style="background-color:#f3f2f1">
+            <td class="govuk-table__cell"></span><span style="padding-left:10px;">Telephone assessment</td>
+            <td class="govuk-table__cell"><a href="#" class="govuk-link">Jane Doe</a></td>
+            <td class="govuk-table__cell">QQ 12 34 56 F</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--light-blue">7 days</strong></td>
+            <td class="govuk-table__cell"><a href="/v2/telephone-assessment-summary" class="govuk-link">View task</a></td>
+          </tr>
+          </tr>
+        </tbody>
+      </table>
+
+            <h2 class="govuk-heading-m">Existing tasks</h2>
       <table class="govuk-table">
         <thead class="govuk-table__head">
           <tr class="govuk-table__row">
@@ -93,17 +131,6 @@
             <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--yellow">Today</strong></td>
             <td class="govuk-table__cell"><a href="#" class="govuk-link">View task</a></td>
           </tr>
-          <tr class="govuk-table__row" style="background-color:#f3f2f1">
-            <td class="govuk-table__cell"><span class="moj-notification-badge">
-              <span aria-hidden="true">1</span>
-              <span class="govuk-visually-hidden">(5)</span>
-            </span>
-            </span>Edit report</td>
-            <td class="govuk-table__cell"><a href="#" class="govuk-link">Jack Sparrow</a></td>
-            <td class="govuk-table__cell">QQ 12 34 56 F</td>
-            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--light-blue">2 days</strong></td>
-            <td class="govuk-table__cell"><a href="#" class="govuk-link">View task</a></td>
-          </tr>
           <tr class="govuk-table__row">
             <td class="govuk-table__cell"style="padding-left:10px;">HCP review</td>
             <td class="govuk-table__cell"><a href="#" class="govuk-link">Sherlock Holmes</a></td>
@@ -111,56 +138,15 @@
             <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--blue">2 days</strong></td>
             <td class="govuk-table__cell"><a href="#" class="govuk-link">View task</a></td>
           </tr>
-          <tr class="govuk-table__row">
-            <td class="govuk-table__cell"style="padding-left:10px;">HCP review</td>
-            <td class="govuk-table__cell"><a href="#" class="govuk-link">Jane Doe</a></td>
-            <td class="govuk-table__cell">QQ 12 34 56 F</td>
-            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--blue">2 days</strong></td>
-            <td class="govuk-table__cell"><a href="#" class="govuk-link">View task</a></td>
-          </tr>
-          {# <tr class="govuk-table__row">
-            <td class="govuk-table__cell"style="padding-left:10px;">HCP review</td>
-            <td class="govuk-table__cell"><a href="#" class="govuk-link">Hannah Montanna</a></td>
-            <td class="govuk-table__cell">QQ 12 34 56 F</td>
-            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--blue">2 days</strong></td>
-            <td class="govuk-table__cell"><a href="#" class="govuk-link">View task</a></td>
-          </tr>
-          <tr class="govuk-table__row">
-            <td class="govuk-table__cell"style="padding-left:10px;">HCP review</td>
-            <td class="govuk-table__cell"><a href="#" class="govuk-link">Harry potter</a></td>
-            <td class="govuk-table__cell">QQ 12 34 56 F</td>
-            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--blue">2 days</strong></td>
-            <td class="govuk-table__cell"><a href="#" class="govuk-link">View task</a></td>
-          </tr>
-          <tr class="govuk-table__row">
-            <td class="govuk-table__cell"style="padding-left:10px;">HCP review</td>
-            <td class="govuk-table__cell"><a href="#" class="govuk-link">The Sandman</a></td>
-            <td class="govuk-table__cell">QQ 12 34 56 F</td>
-            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--blue">2 days</strong></td>
-            <td class="govuk-table__cell"><a href="#" class="govuk-link">View task</a></td>
-          </tr>
-          <tr class="govuk-table__row">
-            <td class="govuk-table__cell"style="padding-left:10px;">HCP review</td>
-            <td class="govuk-table__cell"><a href="#" class="govuk-link">Le Creuset</a></td>
-            <td class="govuk-table__cell">QQ 12 34 56 F</td>
-            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--blue">3 days</strong></td>
-            <td class="govuk-table__cell"><a href="#" class="govuk-link">View task</a></td>
-          </tr>
-          <tr class="govuk-table__row">
-            <td class="govuk-table__cell"style="padding-left:10px;">HCP review</td>
-            <td class="govuk-table__cell"><a href="#" class="govuk-link">Peter Piper</a></td>
-            <td class="govuk-table__cell">QQ 12 34 56 F</td>
-            <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--blue">4 days</strong></td>
-            <td class="govuk-table__cell"><a href="#" class="govuk-link">View task</a></td> #}
           </tr>
         </tbody>
       </table>
 
 
+    </div>
 
 
     <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="closed-tasks">
-      <h2 class="govuk-heading-l">Closed tasks</h2>
       <table class="govuk-table">
         <thead class="govuk-table__head">
           <tr class="govuk-table__row">
