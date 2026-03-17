@@ -1,4 +1,5 @@
 {
+  "name": "health-workflow-prototype",
   "scripts": {
     "dev": "govuk-prototype-kit dev",
     "serve": "govuk-prototype-kit serve",
