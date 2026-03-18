@@ -1,4 +1,10 @@
 {
+  
+  "engines": {
+    "node": "22.x",
+    "npm": "10.x"
+  },
+  
   "name": "health-workflow-prototype",
   "scripts": {
     "dev": "govuk-prototype-kit dev",
