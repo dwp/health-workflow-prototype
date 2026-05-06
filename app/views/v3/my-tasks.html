@@ -1,0 +1,281 @@
+{% extends "layouts/internal.html" %}
+
+{% block pageTitle %}
+  My tasks
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "layouts/phase-banner.html" %}
+  {% include "layouts/back-link.html" %}
+{% endblock %}
+
+{% block content %}
+
+
+  <h1 class="govuk-heading-l">
+    My tasks
+  </h1>
+
+  <p class="govuk-body-m">
+    View and manage your tasks.
+  </p>
+
+    <p class="govuk-body-m">
+    You can view closed tasks from the last 7 days.
+</a>
+  </p>
+
+  {% from "govuk/components/button/macro.njk" import govukButton %}
+
+{{ govukButton({
+  text: "Get next task",
+  href: "#"
+}) }}
+
+
+  <!-- // start table here -->
+
+
+  <div class="govuk-tabs" data-module="govuk-tabs">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <ul class="govuk-tabs__list">
+      <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+        <a class="govuk-tabs__tab" href="#open-tasks">
+          Open tasks
+        </a>
+      </li>
+      <li class="govuk-tabs__list-item">
+        <a class="govuk-tabs__tab" href="#closed-tasks">
+          Closed tasks
+        </a>
+      </li>
+            </li>
+      <li class="govuk-tabs__list-item">
+        <a class="govuk-tabs__tab" href="#appointments">
+          Appointments
+        </a>
+      </li>
+    </ul>
+
+    <div class="govuk-tabs__panel" id="open-tasks">
+<table class="govuk-table govuk-!-width-full" >
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Task type</th>
+            <th scope="col" class="govuk-table__header">Claimant name</th>
+            <th scope="col" class="govuk-table__header">National Insurance number</th>
+            <th scope="col" class="govuk-table__header">Due date</th>
+            <th scope="col" class="govuk-table__header">Action</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">HCP review</td>
+            <td class="govuk-table__cell"><a href="#" class="govuk-link">James Bond</a></td>
+            <td class="govuk-table__cell">QQ 12 34 56 F</td>
+            <td class="govuk-table__cell">Thursday 30 April</strong></td>
+            <td class="govuk-table__cell"><a href="#" class="govuk-link">View task</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">HCP review</td>
+            <td class="govuk-table__cell"><a href="#" class="govuk-link">Jayne Eyre</a></td>
+            <td class="govuk-table__cell">QQ 12 34 56 F</td>
+            <td class="govuk-table__cell">Thursday 30 April</strong></td>
+            <td class="govuk-table__cell"><a href="#" class="govuk-link">View task</a></td>
+          </tr>
+          {# <tr class="govuk-table__row" style="background-color:#f3f2f1">
+            <td class="govuk-table__cell" ></span>Edit report</td>
+            <td class="govuk-table__cell"><a href="#" class="govuk-link">Jack Sparrow</a></td>
+            <td class="govuk-table__cell">QQ 12 34 56 F</td>
+            <td class="govuk-table__cell">Friday 1 May</strong></td>
+            <td class="govuk-table__cell"><a href="/v2/edit-report-summary-1" class="govuk-link">View task</a></td>
+          </tr> #}
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Review new evidence</td>
+            <td class="govuk-table__cell"><a href="#" class="govuk-link">Sherlock Holmes</a></td>
+            <td class="govuk-table__cell">QQ 12 34 56 F</td>
+            <td class="govuk-table__cell">Monday 4 May</strong></td>
+            <td class="govuk-table__cell"><a href="#" class="govuk-link">View task</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Review new evidence</td>
+            <td class="govuk-table__cell"><a href="#" class="govuk-link">Jane Doe</a></td>
+            <td class="govuk-table__cell">QQ 12 34 56 F</td>
+            <td class="govuk-table__cell">Monday 4 May</strong></td>
+            <td class="govuk-table__cell"><a href="#" class="govuk-link">View task</a></td>
+          </tr>
+          </tr>
+        </tbody>
+      </table>
+
+</div>
+
+
+    <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="closed-tasks">
+<table class="govuk-table govuk-!-width-full" >
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Task type</th>
+            <th scope="col" class="govuk-table__header">Claimant name</th>
+            <th scope="col" class="govuk-table__header">National Insurance number</th>
+            <th scope="col" class="govuk-table__header">Task completed</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Paper based assessment</td>
+            <td class="govuk-table__cell"><a href="#" class="govuk-link">James Bond</a></td>
+            <td class="govuk-table__cell">QQ 12 34 56 F</td>
+            <td class="govuk-table__cell">10 March 2026</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Review new evidence</td>
+            <td class="govuk-table__cell"><a href="#" class="govuk-link">Jack Sparrow</a></td>
+            <td class="govuk-table__cell">QQ 12 34 56 F</td>
+            <td class="govuk-table__cell">9 March 2026</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Review new evidence</td>
+            <td class="govuk-table__cell"><a href="#" class="govuk-link">James Bond</a></td>
+            <td class="govuk-table__cell">QQ 12 34 56 F</td>
+            <td class="govuk-table__cell">9 March 2026</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Review new evidence</td>
+            <td class="govuk-table__cell"><a href="#" class="govuk-link">Jane Eyre</a></td>
+            <td class="govuk-table__cell">QQ 12 34 56 F</td>
+            <td class="govuk-table__cell">9 March 2026</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Review new evidence</td>
+            <td class="govuk-table__cell"><a href="#" class="govuk-link">Le Creuset</a></td>
+            <td class="govuk-table__cell">QQ 12 34 56 F</td>
+            <td class="govuk-table__cell">8 March 2026</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">HCP review</td>
+            <td class="govuk-table__cell"><a href="#" class="govuk-link">James Bond</a></td>
+            <td class="govuk-table__cell">QQ 12 34 56 F</td>
+            <td class="govuk-table__cell">8 March 2026</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">HCP review</td>
+            <td class="govuk-table__cell"><a href="#" class="govuk-link">Le Creuset</a></td>
+            <td class="govuk-table__cell">QQ 12 34 56 F</td>
+            <td class="govuk-table__cell">7 March 2026</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Telephone assessment</td>
+            <td class="govuk-table__cell"><a href="#" class="govuk-link">Hannah Montanna</a></td>
+            <td class="govuk-table__cell">QQ 12 34 56 F</td>
+            <td class="govuk-table__cell">7 March 2026</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">HCP review</td>
+            <td class="govuk-table__cell"><a href="#" class="govuk-link">Jane Eyre</a></td>
+            <td class="govuk-table__cell">QQ 12 34 56 F</td>
+            <td class="govuk-table__cell">6 March 2026</td>
+          </tr>
+        </tbody>
+
+      </table>
+
+    </div>
+
+    <div class="govuk-tabs__panel" id="appointments">
+<table class="govuk-table govuk-!-width-full">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header appointment-type">Appointment type</th>
+            <th scope="col" class="govuk-table__header">Claimant name</th>
+            <th scope="col" class="govuk-table__header">National Insurance number</th>
+            <th scope="col" class="govuk-table__header">Date and time</th>
+            <th scope="col" class="govuk-table__header">Action</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell appointment-type">Telephone assessment</td>
+            <td class="govuk-table__cell"><a href="/v3/pip-claimant-details.html" class="govuk-link">James Bond</a></td>
+            <td class="govuk-table__cell">QQ 12 34 56 F</td>
+            <td class="govuk-table__cell">Monday 13 May 2026, 10:00am</strong></td>
+            <td class="govuk-table__cell"><a href="/v3/appointment-details" class="govuk-link">View appointment</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Telephone assessment</td>
+            <td class="govuk-table__cell"><a href="#" class="govuk-link">Jayne Eyre</a></td>
+            <td class="govuk-table__cell">QQ 12 34 56 F</td>
+            <td class="govuk-table__cell">Monday 13 May 2026, 1:00pm</strong></td>
+            <td class="govuk-table__cell"><a href="#" class="govuk-link">View appointment</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell" ></span>Face to face assessment</td>
+            <td class="govuk-table__cell"><a href="#" class="govuk-link">Jack Sparrow</a></td>
+            <td class="govuk-table__cell">QQ 12 34 56 F</td>
+            <td class="govuk-table__cell">Tuesday 14 May 2026, 10:00am</strong></td>
+            <td class="govuk-table__cell"><a href="/v2/edit-report-summary-1" class="govuk-link">View appointment</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Face to face assessment</td>
+            <td class="govuk-table__cell"><a href="#" class="govuk-link">Sherlock Holmes</a></td>
+            <td class="govuk-table__cell">QQ 12 34 56 F</td>
+            <td class="govuk-table__cell">Tuesday 14 May 2026, 2:00pm</strong></td>
+            <td class="govuk-table__cell"><a href="#" class="govuk-link">View appointment</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Telephone assessment</td>
+            <td class="govuk-table__cell"><a href="#" class="govuk-link">Jane Doe</a></td>
+            <td class="govuk-table__cell">QQ 12 34 56 F</td>
+            <td class="govuk-table__cell">Wednesday 15 May 2026, 10:00am</strong></td>
+            <td class="govuk-table__cell"><a href="#" class="govuk-link">View appointment</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Telephone assessment</td>
+            <td class="govuk-table__cell"><a href="#" class="govuk-link">Harry Potter</a></td>
+            <td class="govuk-table__cell">QQ 12 34 56 F</td>
+            <td class="govuk-table__cell">Wednesday 15 May 2026, 2:00pm</strong></td>
+            <td class="govuk-table__cell"><a href="#" class="govuk-link">View appointment</a></td>
+          </tr>
+            <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Telephone assessment</td>
+            <td class="govuk-table__cell"><a href="#" class="govuk-link">Christian Ronaldo</a></td>
+            <td class="govuk-table__cell">QQ 12 34 56 F</td>
+            <td class="govuk-table__cell">Thursday 16 May 2026, 10:00am</strong></td>
+            <td class="govuk-table__cell"><a href="#" class="govuk-link">View appointment</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Telephone assessment</td>
+            <td class="govuk-table__cell"><a href="#" class="govuk-link">Janet Jackson</a></td>
+            <td class="govuk-table__cell">QQ 12 34 56 F</td>
+            <td class="govuk-table__cell">Thursday 16 May 2026, 2:00pm</strong></td>
+            <td class="govuk-table__cell"><a href="#" class="govuk-link">View appointment</a></td>
+          </tr>
+          </tr>
+            <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Telephone assessment</td>
+            <td class="govuk-table__cell"><a href="#" class="govuk-link">Face Book</a></td>
+            <td class="govuk-table__cell">QQ 12 34 56 F</td>
+            <td class="govuk-table__cell">Friday 17 May 2026, 10:00am</strong></td>
+            <td class="govuk-table__cell"><a href="#" class="govuk-link">View appointment</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">Telephone assessment</td>
+            <td class="govuk-table__cell"><a href="#" class="govuk-link">Insta Gram</a></td>
+            <td class="govuk-table__cell">QQ 12 34 56 F</td>
+            <td class="govuk-table__cell">Friday 17 May 2026, 2:00pm</strong></td>
+            <td class="govuk-table__cell"><a href="#" class="govuk-link">View appointment</a></td>
+          </tr>
+
+          </tr>
+        </tbody>
+      </table>
+
+</div>
+
+
+  </div>
+
+
+{% endblock %}
