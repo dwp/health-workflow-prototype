@@ -1,0 +1,84 @@
+{% extends "layouts/internal.html" %}
+ {% from "govuk/components/button/macro.njk" import govukButton %}
+
+
+{% block pageTitle %}
+  Research
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "layouts/phase-banner.html" %}
+  {% include "layouts/back-link.html" %}
+{% endblock %}
+
+{% block content %}
+
+  <h1 class="govuk-heading-l">
+    Research
+  </h1>
+
+  <div class="govuk-inset-text">
+    Caveat that this may look like the live service. However, it is a prototype for testing some of our work. There will be discrepancies and only a small number of links will work.
+</div>
+
+  <h2 class="govuk-heading-s">
+    Book appointmnet task
+  </h2>
+  <p class="govuk-body-m">
+    NCAT user group journey to book an appointmnet using 'My tasks'. 
+  </p>
+
+{{ govukButton({
+  text: "View prototype",
+  href: "/v4/homepage"
+}) }}
+
+  {# <hr>
+  <br> 
+
+  <h2 class="govuk-heading-s">
+    Newly allocated telephone assessment
+  </h2>
+
+  <p class="govuk-body-m">
+    HCP navigates to task landing UI and has been allocated a telephone assessment task.
+  </p>
+
+{{ govukButton({
+  text: "View prototype",
+  href: "/v3/my-tasks-auto-allocation-new"
+}) }}
+
+  <hr>
+  <br>
+
+  <h2 class="govuk-heading-s">
+    Newly allocated telephone assessment and face to face assessment
+  </h2>
+  <p class="govuk-body-m">
+    HCP navigates to task landing UI and has been allocated a telephone assessment task and a face to face assessment task.
+  </p>
+
+{{ govukButton({
+  text: "View prototype",
+  href: "/v3/my-tasks-auto-allocation-new-multiple"
+}) }} #}
+
+  {# <hr>
+  <br>
+
+  <h2 class="govuk-heading-s">
+    New allocated tasks with UI updates
+  </h2>
+    <p class="govuk-body-m">
+    HCP navigates to task landing UI and has been allocated multiple tasks including a new edit report task and a telephone assessment task. Use of inset text and MOJ notification bade. Green CTA moved underneath table.
+  </p>
+
+ {{ govukButton({
+  text: "Option 4",
+  href: "/v2/homepage-4"
+}) }}  #}
+
+
+
+{% endblock %}

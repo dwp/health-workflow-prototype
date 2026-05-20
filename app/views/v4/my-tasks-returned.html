@@ -1,0 +1,78 @@
+{% extends "layouts/internal.html" %}
+
+{% block pageTitle %}
+  My tasks
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "layouts/phase-banner.html" %}
+  {% include "layouts/back-link.html" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+  <div class="govuk-notification-banner__header">
+    <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+      Success
+    </h2>
+  </div>
+  <div class="govuk-notification-banner__content">
+    <h3 class="govuk-notification-banner__heading">
+     Book appointment task returned to queue to be worked on by someone else.
+    </h3>
+    <!-- <p class="govuk-body">Contact <a class="govuk-notification-banner__link" href="#">example@department.gov.uk</a> if you think there’s a problem.</p> -->
+  </div>
+</div>
+
+
+  <h1 class="govuk-heading-l">
+    My tasks
+  </h1>
+
+  <p class="govuk-body-m">
+    View and manage your tasks. You can view closed tasks from the last 7 days.
+  </p>
+
+  {% from "govuk/components/button/macro.njk" import govukButton %}
+
+{{ govukButton({
+  text: "Get next task",
+  href: "/v4/book-appointment-summary"
+}) }}
+
+
+  <!-- // start table here -->
+
+  <div class="govuk-tabs" data-module="govuk-tabs">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <ul class="govuk-tabs__list">
+      <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+        <a class="govuk-tabs__tab" href="#open-tasks">
+          Open tasks
+        </a>
+      </li>
+      <li class="govuk-tabs__list-item">
+        <a class="govuk-tabs__tab" href="#closed-tasks">
+          Closed tasks
+        </a>
+      </li>
+    </ul>
+
+    <div class="govuk-tabs__panel" id="open-tasks">
+      <p class="govuk-body-m">
+        You have no open tasks.
+      </p>
+    </div>
+
+    <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="closed-tasks">
+      <p class="govuk-body-m">
+        You have no closed tasks.
+      </p>
+    </div>
+  </div>
+
+
+{% endblock %}

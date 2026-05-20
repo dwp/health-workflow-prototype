@@ -1,0 +1,81 @@
+{% extends "layout-key-details-assigned-extended.html" %}
+{% from "internal-service-footer/macro.njk" import dwpFooter %}
+
+{% block pageTitle %}
+  Claimant details
+{% endblock %}
+
+
+{% block beforeContent %}
+  {% include "layouts/phase-banner.html" %}
+  {% include "layouts/back-link.html" %}
+{% endblock %}
+
+{% block content %}
+
+  <h1 class="govuk-heading-l">
+    Check appointment details
+  </h1>
+
+  <table class="govuk-table">
+    
+    <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        {# <th scope="row" class="govuk-table__header">To do</th>
+        <td class="govuk-table__cell">Add this in<br>Add this in</td> #}
+
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">Location</th>
+        <td class="govuk-table__cell">London, Tresco House</td>
+        <td class="govuk-table__cell"><a href="#" class="govuk-link"></a></td>
+      </tr>
+
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">Benefit</th>
+        <td class="govuk-table__cell">PIP</td>
+        <td class="govuk-table__cell"><a href="#" class="govuk-link"></a></td>
+      </tr>
+
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">Appointment type</th>
+        <td class="govuk-table__cell">Telephone</td>
+       <td class="govuk-table__cell"><a href="#" class="govuk-link">Change</a></td>
+      </tr>
+
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">Date and time</th>
+        <td class="govuk-table__cell">Monday 31 May, 3:00pm</td>
+        <td class="govuk-table__cell"><a href="#" class="govuk-link">Change</a></td>
+      </tr>
+
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">HCP</th>
+        <td class="govuk-table__cell">Micheal Jordan</td>
+        <td class="govuk-table__cell"><a href="#" class="govuk-link">Change</a></td>
+      </tr>
+
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">Additional information</th>
+        <td class="govuk-table__cell">No additional information</td>
+        <td class="govuk-table__cell"><a href="#" class="govuk-link">Change</a></td>
+      </tr>
+
+
+    </tbody>
+  </table>
+
+  {{ govukButton({
+  text: "Book appointmnet",
+  href: "/v4/my-tasks-completed#closed-tasks"
+}) }}
+
+  <p class="govuk-body">
+  <a href="#" class="govuk-link">Cancel</a>
+</p>
+
+
+
+
+{% endblock %}
+
