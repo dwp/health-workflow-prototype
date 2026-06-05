@@ -11,3 +11,11 @@ const router = govukPrototypeKit.requests.setupRouter()
 // v1
 require('./routes/v1.js')(router);
 
+// v2
+require('./routes/v2.js')(router);
+
+// v3
+require('./routes/v3.js')(router);
+
+// v4
+require('./routes/v4.js')(router);

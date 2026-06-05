@@ -1,0 +1,40 @@
+{% extends "layouts/internal.html" %}
+
+{% block pageTitle %}
+  Pre-checks context
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "layouts/phase-banner.html" %}
+  {% include "layouts/back-link.html" %}
+{% endblock %}
+
+{% block content %}
+
+  <h1 class="govuk-heading-l">
+    Pre-checks process
+  </h1>
+
+  <p class="govuk-body-m">
+    At this point we'd like you to imagine you've gone through your process of case pre-checks.
+  </p>
+
+  <ul class="govuk-list govuk-list--bullet">
+  <li>What is your process?</li>
+  <li>Can talk us through what you do?</li>
+  <li>What do you do in the HAS system to complete this task before moving onto the next?</li>
+  </ul>
+
+
+ {% from "govuk/components/button/macro.njk" import govukButton %}
+
+{{ govukButton({
+  text: "Continue",
+  href: "/v4/check-appointment-details
+  "
+}) }}
+
+
+
+
+{% endblock %}
