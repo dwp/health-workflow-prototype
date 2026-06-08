@@ -12,11 +12,11 @@ module.exports = function (router) {
     var taskType = req.session.data['taskType']
 
     if (taskType == "case-pre-checks"){
-      res.redirect('/v4/pre-checks-context')
+      res.redirect('/v4/pre-checks-summary')
     } else if (taskType == "request-medical-evidence"){
-      res.redirect('/v4/request-medical-evidence-context')
+      res.redirect('/v4/request-medical-evidence-summary')
     } else if (taskType == "book-appointment"){
-      res.redirect('/v4/claimant-details')
+      res.redirect('/v4/book-appointment-summary')
     }
   })
 

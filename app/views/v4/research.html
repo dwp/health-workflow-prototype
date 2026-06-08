@@ -7,7 +7,7 @@
 {% endblock %}
 
 {% block beforeContent %}
-  {% include "layouts/phase-banner.html" %}
+  {# {% include "layouts/phase-banner.html" %} #}
   {% include "layouts/back-link.html" %}
 {% endblock %}
 
@@ -22,10 +22,10 @@
 </div>
 
   <h2 class="govuk-heading-s">
-    Book appointment task only
+    Admin task journey
   </h2>
   <p class="govuk-body-m">
-    Admin user group journey to book an appointment using 'My tasks'. 
+    Admin user group journey to book an appointmnet and request medical evidence using 'My tasks'. 
   </p>
 
 {{ govukButton({
@@ -35,50 +35,5 @@
 
   <hr>
   <br> 
-
-  <h2 class="govuk-heading-s">
-    Request medical evidence and other admin task types
-  </h2>
-
-  <p class="govuk-body-m">
-    Admin user group journey to review a case (pre-checks), request medical evidence and book an appointment using 'My tasks'.
-  </p>
-
-{{ govukButton({
-  text: "View prototype",
-  href: "/v4/homepage-1"
-}) }}
-
-  {# <hr>
-  <br>
-
-  <h2 class="govuk-heading-s">
-    Newly allocated telephone assessment and face to face assessment
-  </h2>
-  <p class="govuk-body-m">
-    HCP navigates to task landing UI and has been allocated a telephone assessment task and a face to face assessment task.
-  </p>
-
-{{ govukButton({
-  text: "View prototype",
-  href: "/v3/my-tasks-auto-allocation-new-multiple"
-}) }}
-
-  <hr>
-  <br>
-
-  <h2 class="govuk-heading-s">
-    New allocated tasks with UI updates
-  </h2>
-    <p class="govuk-body-m">
-    HCP navigates to task landing UI and has been allocated multiple tasks including a new edit report task and a telephone assessment task. Use of inset text and MOJ notification bade. Green CTA moved underneath table.
-  </p>
-
- {{ govukButton({
-  text: "Option 4",
-  href: "/v2/homepage-4"
-}) }} #}
-
-
 
 {% endblock %}

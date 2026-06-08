@@ -1,11 +1,7 @@
 {% extends "layouts/internal.html" %}
 
 {% block pageTitle %}
-<<<<<<< Updated upstream
-  Book appointment task summary
-=======
   Request medical evidence task summary
->>>>>>> Stashed changes
 {% endblock %}
 
 {% block beforeContent %}
@@ -17,19 +13,11 @@
 
   <h1 class="govuk-heading-l">
     <!-- <span class="govuk-caption-l">Task summary</span> -->
-<<<<<<< Updated upstream
-    Book appointment
-  </h1>
-
-<strong class="govuk-tag govuk-tag--green govuk-!-margin-top-0 govuk-!-margin-bottom-3 no-wrap-tag">
-  Book appointment
-=======
     Request medical evidence
   </h1>
 
 <strong class="govuk-tag govuk-tag--green govuk-!-margin-top-0 govuk-!-margin-bottom-3 no-wrap-tag">
   Request medical evidence
->>>>>>> Stashed changes
 </strong>
 
 
@@ -72,19 +60,11 @@
 
   {{ govukButton({
   text: "Start task",
-<<<<<<< Updated upstream
-  href: "/v4/claimant-details"
-}) }}
-
-  <p class="govuk-body">
-  <a href="/v4/my-tasks-returned" class="govuk-link">I cannot do this task, return task</a>
-=======
   href: "/v4/request-medical-evidence-context"
 }) }}
 
   <p class="govuk-body">
   <a href="/v4/my-tasks-returned-medical-evidence" class="govuk-link">I cannot do this task, return task</a>
->>>>>>> Stashed changes
 </p>
 
 {% endblock %}
