@@ -19,7 +19,9 @@
   </div>
   <div class="govuk-notification-banner__content">
     <h3 class="govuk-notification-banner__heading">
-     Case pre-checks task for James Bond's case has been completed and moved to closed tasks. The status of the case has been updated and a timeline entry has been added.
+     Case pre-checks task returned to queue to be worked on by someone else.
+    </h3>
+    <!-- <p class="govuk-body">Contact <a class="govuk-notification-banner__link" href="#">example@department.gov.uk</a> if you think there’s a problem.</p> -->
   </div>
 </div>
 
@@ -36,11 +38,7 @@
 
 {{ govukButton({
   text: "Get next task",
-<<<<<<< Updated upstream
-  href: "#"
-=======
   href: "/v4/task-type"
->>>>>>> Stashed changes
 }) }}
 
 
@@ -70,26 +68,9 @@
     </div>
 
     <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="closed-tasks">
-<table class="govuk-table govuk-!-width-full" >
-        <thead class="govuk-table__head">
-          <tr class="govuk-table__row">
-            <th scope="col" class="govuk-table__header">Task type</th>
-            <th scope="col" class="govuk-table__header">Claimant name</th>
-            <th scope="col" class="govuk-table__header">National Insurance number</th>
-            <th scope="col" class="govuk-table__header">Task completed</th>
-          </tr>
-        </thead>
-        <tbody class="govuk-table__body">
-          <tr class="govuk-table__row">
-            <td class="govuk-table__cell">Case pre-checks</td>
-            <td class="govuk-table__cell"><a href="/v4/claimant-details" class="govuk-link">James Bond</a></td>
-            <td class="govuk-table__cell">QQ 12 34 56 F</td>
-            <td class="govuk-table__cell">10 June 2026</td>
-          </tr>
-        </tbody>
-
-      </table>
-
+      <p class="govuk-body-m">
+        You have no closed tasks.
+      </p>
     </div>
   </div>
 
