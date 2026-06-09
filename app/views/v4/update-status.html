@@ -1,0 +1,79 @@
+{% extends "layout-key-details-assigned-extended-medical-evidence.html" %}
+{% from "internal-service-footer/macro.njk" import dwpFooter %}
+
+{% block pageTitle %}
+  Claimant details
+{% endblock %}
+
+
+{% block beforeContent %}
+  {% include "layouts/phase-banner.html" %}
+  {% include "layouts/back-link.html" %}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+      <form class="form" action="/v4/my-tasks-completed-request-medical-evidence#closed-tasks" method="post">
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+              <h1 class="govuk-fieldset__heading">
+                Select a status
+              </h1>
+            </legend>
+            <div class="govuk-radios" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="taskType" name="taskType" type="radio" value="case-pre-checks">
+                <label class="govuk-label govuk-radios__label" for="taskType">
+                  Awaiting medical evidence
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="taskType-2" name="taskType" type="radio" value="request-medical-evidence">
+                <label class="govuk-label govuk-radios__label" for="taskType-2">
+                  Medical evidence received
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="taskType-3" name="taskType" type="radio" value="book-appointment">
+                <label class="govuk-label govuk-radios__label" for="taskType-3">
+                  HCP audit
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="taskType-3" name="taskType" type="radio" value="book-appointment">
+                <label class="govuk-label govuk-radios__label" for="taskType-3">
+                  Dead
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="taskType-3" name="taskType" type="radio" value="book-appointment">
+                <label class="govuk-label govuk-radios__label" for="taskType-3">
+                  Withdrawn
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="taskType-3" name="taskType" type="radio" value="book-appointment">
+                <label class="govuk-label govuk-radios__label" for="taskType-3">
+                  Created in error
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        
+        {{ govukButton({
+          text: "Continue"
+        }) }}
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}

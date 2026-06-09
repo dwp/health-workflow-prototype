@@ -25,6 +25,11 @@ module.exports = function (router) {
     res.redirect('/v4/task-type')
   })
 
+    router.post('/v4/update-status', function (req, res) {
+    res.redirect('/v4/my-tasks-completed-request-medical-evidence')
+  })
+
+
 }
 
 
