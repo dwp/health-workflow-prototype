@@ -1,0 +1,29 @@
+{% extends "layouts/internal.html" %}
+
+{% block pageTitle %}
+  Book appointment task summary
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "layouts/phase-banner.html" %}
+  {% include "layouts/back-link.html" %}
+{% endblock %}
+
+{% block content %}
+
+  <h1 class="govuk-heading-l">
+    <!-- <span class="govuk-caption-l">Task summary</span> -->
+    Book appointment
+  </h1>
+
+  <p class="govuk-body">
+  There are no book appointment tasks available for you to work on.
+</p>
+
+  {{ govukButton({
+  text: "Go back to my tasks",
+  href: "/v4/claimant-details"
+}) }}
+
+
+{% endblock %}
