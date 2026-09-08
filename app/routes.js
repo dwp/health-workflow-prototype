@@ -19,3 +19,6 @@ require('./routes/v3.js')(router);
 
 // v4
 require('./routes/v4.js')(router);
+
+// v5
+require('./routes/v5.js')(router);

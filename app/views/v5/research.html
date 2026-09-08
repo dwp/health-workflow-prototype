@@ -1,0 +1,32 @@
+{% extends "layouts/internal.html" %}
+ {% from "govuk/components/button/macro.njk" import govukButton %}
+
+
+{% block pageTitle %}
+  Research
+{% endblock %}
+
+{% block beforeContent %}
+  {# {% include "layouts/phase-banner.html" %} #}
+  {% include "layouts/back-link.html" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+<div class="govuk-grid-column-two-thirds">
+
+
+<h1 class="govuk-heading-l">Templates</h1>
+
+<p class="govuk-body-m">This pattern helps HAS teams introduce Task into an existing service journey.</p>
+
+<p class="govuk-body-m">It provides a consistent approach for presenting work to users while allowing each micro service to design, test and iterate the end to end journey that sits behind the task.</p>
+
+<p class="govuk-body"><a href="/v5/my-tasks" class="govuk-link">My tasks</a></p>
+
+<p class="govuk-body"><a href="/v5/task-type" class="govuk-link">Task type</a></p>
+
+<p class="govuk-body"><a href="/v5/task-summary" class="govuk-link">Task summary</a></p>
+
+{% endblock %}

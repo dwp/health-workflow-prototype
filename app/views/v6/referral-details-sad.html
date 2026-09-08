@@ -1,0 +1,235 @@
+{% extends "layouts/internal.html" %}
+
+{% block pageTitle %}
+  Referral deatils – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+{# Quick reference component starts here #}
+
+<section class="dwp-quick-reference" aria-label="Case information">
+  <dl class="dwp-quick-reference__block">
+    <dt class="dwp-quick-reference__label govuk-visually-hidden">Name:</dt>
+    <dd class="dwp-quick-reference__primary">Jane Doe</dd>
+    <dt class="dwp-quick-reference__label dwp-quick-reference__label--primary">National Insurance number:</dt>
+    <dd class="dwp-quick-reference__secondary">QQ 12 34 56 X</dd>
+    <dt class="dwp-quick-reference__label dwp-quick-reference__label--primary">Date of birth:</dt>
+    <dd class="dwp-quick-reference__secondary">1 December 2001</dd>
+    <dt class="dwp-quick-reference__label dwp-quick-reference__label--primary">Age:</dt>
+    <dd class="dwp-quick-reference__secondary">25 years old</dd>
+    {# <dt class="dwp-quick-reference__label">Case status:</dt> #}
+    <dd class="dwp-quick-reference__status">
+      <strong class="govuk-tag govuk-tag--green">
+        HCP review
+      </strong>
+    </dd>
+  </dl>
+</section>
+
+
+{# Horizontal navigation component starts here #}
+
+<nav class="dwp-horizontal-navigation" aria-label="Horizontal">
+  <ul class="dwp-horizontal-navigation__list">
+    <li class="dwp-horizontal-navigation__item">
+      <a id="referral-details" href="/v6/claimant-details-sad" class="dwp-horizontal-navigation__link">Claimant details</a>    </li>
+    <li class="dwp-horizontal-navigation__item dwp-horizontal-navigation__item--selected">
+      <a id="referral-details" href="/v6/referral-details-sad" class="dwp-horizontal-navigation__link">Referral details</a>
+    </li>
+    {# <li class="dwp-horizontal-navigation__item">
+      <a id="s-item-3" href="#s-item-3" class="dwp-horizontal-navigation__link">Item 3</a>
+    </li> #}
+  </ul>
+</nav>
+
+
+{# Referral details section starts here #}
+
+<section id="referral-details">
+
+<div class="govuk-!-padding-bottom-5"></div>
+
+<h1 class="govuk-heading-m">Referral details</h1>
+
+
+{# Warning text component starts here #}
+
+<div class="govuk-warning-text">
+  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+  <strong class="govuk-warning-text__text">
+    <span class="govuk-visually-hidden">Warning</span>
+    Some claimant details are unavailable due to a technical problem. Fields marked 'Not available' are affected.
+  </strong>
+</div>
+
+
+{# Personal details card starts here #}
+
+<div class="govuk-summary-card">
+  <div class="govuk-summary-card__title-wrapper">
+    <h2 class="govuk-summary-card__title">
+      Referral details
+    </h2>
+  </div>
+  <div class="govuk-summary-card__content">
+    <dl class="govuk-summary-list">
+
+      <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+          <dt class="govuk-summary-list__key">
+            Special rules end of life
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Yes
+          </dd>
+        </div>      
+        
+        <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+          <dt class="govuk-summary-list__key">
+            Consent for medical evidence
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Yes
+          </dd>
+        </div>
+
+      <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+          <dt class="govuk-summary-list__key">
+            Safety measures
+          </dt>
+          <dd class="govuk-summary-list__value">
+            No
+          </dd>
+      </div>   
+
+      <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+          <dt class="govuk-summary-list__key">
+            Additional support needs
+          </dt>
+          <dd class="govuk-summary-list__value">
+            No
+          </dd>
+      </div>   
+
+      <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+          <dt class="govuk-summary-list__key">
+            Referral date
+          </dt>
+          <dd class="govuk-summary-list__value">
+            12 September 2026
+          </dd>
+      </div>   
+
+      <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+          <dt class="govuk-summary-list__key">
+            Benefit type
+          </dt>
+          <dd class="govuk-summary-list__value">
+            PIP
+          </dd>
+      </div>   
+
+      <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+          <dt class="govuk-summary-list__key">
+            Referral type
+          </dt>
+          <dd class="govuk-summary-list__value">
+            New referral
+          </dd>
+      </div>   
+
+      <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+          <dt class="govuk-summary-list__key">
+            Assessment centre
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Handsworth
+          </dd>
+      </div>   
+
+      <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+          <dt class="govuk-summary-list__key">
+            Caseload
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Sarah Jane
+          </dd>
+      </div>   
+
+      <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
+          <dt class="govuk-summary-list__key">
+            Next action due in
+          </dt>
+          <dd class="govuk-summary-list__value">
+            109 DAYS OVERDUE
+          </dd>
+      </div>   
+
+        </dl>
+  </div>
+</div>
+
+</section>
+</div>
+
+
+{# What you can do next navigationa starts here #}
+
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="govuk-prototype-kit-common-templates-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          What you can do next
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="#">
+                Update status
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                View claimant documents
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Add or view HCP review
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                View timeline
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Add entry to timeline
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Move to another caseload
+              </a>
+            </li>
+            <li>
+              <a href="#" class="govuk-!-font-weight-bold">
+                More <span class="govuk-visually-hidden">in Subsection</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+  </div>
+
+{% endblock %}

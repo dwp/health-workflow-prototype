@@ -4,76 +4,126 @@
 
 {% block content %}
 
-{# <div class="govuk-grid-row">
-  <div class="govuk-grid-column-three-thirds">
 
-    <h1 class="govuk-heading-xl">
-      What we're working on in Team Chaffinch
-    </h1>
 
-            <h2 class="govuk-heading-l">Task design for Telephone and Face to face assessments - April 2026 - v3</h2>
-        <strong class="govuk-tag govuk-tag--blue">In design</strong>
-        <br><br>
+{# <h2 class="govuk-heading-l">Task design for Telephone and Face to face assessments - April 2026 - v3</h2>
+  <strong class="govuk-tag govuk-tag--blue">In design</strong><br><br>
 
-        <h3 class="govuk-heading-s">Problem statement</h3>
+<h3 class="govuk-heading-s">Problem statement</h3>
 
-        <p>What's the problem that we're trying to solve?</p>
+<p>What's the problem that we're trying to solve?</p>
 
-   <h3 class="govuk-heading-s">Hi-level design decisions</h3>
+<h3 class="govuk-heading-s">Hi-level design decisions</h3>
 
-    <ul class="govuk-list govuk-list--bullet">
-      <li>1.0</li>
-      <li>2.0</li>
-      <li>3.0</li>
-      <li>4.0</li>
-      <li>5.0</li>
-      <li>6.0</li>
-    </ul>
+<ul class="govuk-list govuk-list--bullet">
+  <li>1.0</li>
+  <li>2.0</li>
+  <li>3.0</li>
+  <li>4.0</li>
+  <li>5.0</li>
+  <li>6.0</li></ul>
 
-  <div class="govuk-inset-text">
-    <a href="#" class="govuk-link" rel="noreferrer noopener" target="_blank">View the design documentation (opens in new tab)</a> for a detailed explanation about the design decisions.
-  </div>
+<div class="govuk-inset-text"><a href="#" class="govuk-link" rel="noreferrer noopener" target="_blank">View the design documentation (opens in new tab)</a> for a detailed explanation about the design decisions.</div>
 
-  <a href="/v3/research" class="govuk-button govuk-button">View prototype</a>
+<a href="/v3/research" class="govuk-button govuk-button">View prototype</a>
 
-  <hr>
-  <br>
-
-  </div>
-</div> #}
-
+<hr>
+<br> #}
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-three-thirds">
 
-    <h1 class="govuk-heading-xl">
-      What we're working on in Team Chaffinch
-    </h1>
-
-            <h2 class="govuk-heading-l">Task design for 'Request medical evidence' - June 2026 - v4</h2>
-        <strong class="govuk-tag govuk-tag--blue">In design</strong>
-        <br><br>
-
-        <h3 class="govuk-heading-s">Problem statement</h3>
-
-        <p>NCATs are responsible for progressing “request medical evidence” work to support accurate HCP assessments, including initiating new evidence requests and managing follow‑ups. However, the current process makes it difficult for them to work efficiently and confidently. Tasks are not automatically prioritised, meaning NCATs must manually decide which cases to pick up, making it harder to focus on the most urgent applicant needs and increasing the risk of delays.</p>
-
-        <p>In addition, request medical evidence tasks are not always presented with all the necessary information upfront. NCATs often need to navigate multiple systems to gather applicant details and context before determining whether they can proceed, adding time and cognitive effort to each task. The absence of clear task ownership further compounds this, as there is no guarantee that once a task is picked up it is being actively worked on, leading to potential duplication such as multiple evidence requests being issued for the same applicant.</p>
-
-        <p>The current process also relies on manual updates, requiring NCATs to close tasks or record completion separately once the work is done. This creates additional administrative overhead and introduces the risk of inconsistent task tracking.</p>
-
-        <p>Introducing a task-based approach where request medical evidence tasks are automatically prioritised based on urgency and claimant need, contain all required information upfront, are actively assigned to an NCAT when claimed, and update automatically on completion would provide a clearer, more reliable workflow. This would help reduce duplication, improve consistency and enable NCATs to focus their effort on the cases that matter most.</p>
+<h1 class="govuk-heading-xl">What we're working on in Team Chaffinch</h1>
 
 
-      <h3 class="govuk-heading-s">Hi-level design decisions</h3>
+<h2 class="govuk-heading-l">Claimant and referral details - September 2026 - v6</h2>
+  <strong class="govuk-tag govuk-tag--blue">In design</strong><br><br>
 
-        <ul class="govuk-list govuk-list--bullet">
-          <li>1.0</li>
-          <li>2.0</li>
-          <li>3.0</li>
-          <li>4.0</li>
-          <li>A5.0</li>
-        </ul>
+<h3 class="govuk-heading-s">Problem statement</h3>
+
+<p>The current HAS claimant and referral pages make it difficult for HCPs and admin staff to quickly understand where they are, what information they are viewing and what action to take next. Navigation, content and actions compete for attention, increasing cognitive load and reducing confidence and efficiency when progressing cases, particularly for new users and those with accessibility needs.</p>
+
+<h3 class="govuk-heading-s">Hi-level accessibility suggestions</h3>
+
+<ul class="govuk-list govuk-list--bullet">
+  <li>Explore simplifying the three-column layout</li>
+  <li>Make the user's location in the service clear</li>
+  <li>Use a logical heading hierarchy</li>
+  <li>Keep navigation and task links consistent where possible</li>
+  <li>Consider if there are clearer ways to frame next tasks</li>
+  <li>Use native link markup for links</li>
+  <li>Investigate and resolve duplicate IDs</li>
+  <li>Follow guidance for the summary list component for missing information</li>
+  <li>Check the session timeout implementation</li>
+  <li>Consider wider user journeys before finalising the design for this screen</li></ul>
+
+<div class="govuk-inset-text"><a href="https://dwpdigital.atlassian.net/wiki/spaces/HPDU/pages/134344573714/Claimant+and+referral+details+UI" class="govuk-link" rel="noreferrer noopener" target="_blank">View the design documentation (opens in new tab)</a> for a detailed explanation about the design decisions.</div>
+
+<a href="/v6/research" class="govuk-button govuk-button">View prototype</a>
+
+<hr>
+<br>
+
+
+
+  <h2 class="govuk-heading-l">Task design pattern - July 2026 - v5</h2>
+  <strong class="govuk-tag govuk-tag--green">Live</strong><br><br>
+
+  <h3 class="govuk-heading-s">Problem statement</h3>
+
+  <p>Due to scope, Chaffinch have been required to design and test task-based journeys in isolation, limiting their ability to validate end-to-end user experiences within live service workflows. As a result, usability issues, integration risks and operational pain points may not be identified until later in delivery, reducing confidence that journeys will work effectively for users in real-world scenarios.</p>
+
+  <h3 class="govuk-heading-s">Design principles</h3>
+
+  <p>This pattern should allow micro services to:</p>
+
+
+  <ul class="govuk-list govuk-list--bullet">
+      <li>test end to end journeys</li>
+      <li>identify pain points early</li>
+      <li>deliver micro service specific improvements independently</li>
+      <li>Maintain a consistent journey across all HAS task types</li>
+      <li>Support audit and traceability requirements</li>
+      <li>Follow GOV and DWP patterns with clear actions</li>
+      <li>Allow task specific content to sit within a common framework</li>
+</ul>
+
+
+<div class="govuk-inset-text"><a href="https://dwpdigital.atlassian.net/wiki/spaces/HPDU/pages/134299813260/8.+DWP+Task+-+Pattern" class="govuk-link" rel="noreferrer noopener" target="_blank">View the pattern documentation (opens in new tab)</a> for a detailed explanation about the design decisions.</div>
+  
+
+<a href="/v5/research" class="govuk-button govuk-button">Explore prototype templates</a>
+
+<hr>
+<br>
+
+</div>
+</div>
+
+
+<h2 class="govuk-heading-l">Task design for 'Request medical evidence' - June 2026 - v4</h2>
+ <strong class="govuk-tag govuk-tag--blue">In design</strong><br><br>
+
+<h3 class="govuk-heading-s">Problem statement</h3>
+
+<p>NCATs are responsible for progressing “request medical evidence” work to support accurate HCP assessments, including initiating new evidence requests and managing follow‑ups. However, the current process makes it difficult for them to work efficiently and confidently. Tasks are not automatically prioritised, meaning NCATs must manually decide which cases to pick up, making it harder to focus on the most urgent applicant needs and increasing the risk of delays.</p>
+
+<p>In addition, request medical evidence tasks are not always presented with all the necessary information upfront. NCATs often need to navigate multiple systems to gather applicant details and context before determining whether they can proceed, adding time and cognitive effort to each task. The absence of clear task ownership further compounds this, as there is no guarantee that once a task is picked up it is being actively worked on, leading to potential duplication such as multiple evidence requests being issued for the same applicant.</p>
+
+<p>The current process also relies on manual updates, requiring NCATs to close tasks or record completion separately once the work is done. This creates additional administrative overhead and introduces the risk of inconsistent task tracking.</p>
+
+<p>Introducing a task-based approach where request medical evidence tasks are automatically prioritised based on urgency and claimant need, contain all required information upfront, are actively assigned to an NCAT when claimed, and update automatically on completion would provide a clearer, more reliable workflow. This would help reduce duplication, improve consistency and enable NCATs to focus their effort on the cases that matter most.</p>
+
+
+<h3 class="govuk-heading-s">Hi-level design decisions</h3>
+
+ <ul class="govuk-list govuk-list--bullet">
+  <li>1.0</li>
+  <li>2.0</li>
+  <li>3.0</li>
+  <li>4.0</li>
+  <li>A5.0</li>
+</ul>
 
   <div class="govuk-inset-text">
     <a href="https://dwpdigital.atlassian.net/wiki/spaces/HPDU/pages/134253903930/5.+DWP+Task+-+Request+medical+evidence" class="govuk-link" rel="noreferrer noopener" target="_blank">View the design documentation (opens in new tab)</a> for a detailed explanation about the design decisions.
@@ -116,11 +166,8 @@
   <hr>
   <br>
 
-  </div>
-</div>
 
-
-            <h2 class="govuk-heading-l">Task design for Telephone and Face to face assessments - April 2026 - v3</h2>
+   <h2 class="govuk-heading-l">Task design for Telephone and Face to face assessments - April 2026 - v3</h2>
         <strong class="govuk-tag govuk-tag--red">Cancelled</strong>
         <br><br>
 
@@ -152,8 +199,6 @@
   <hr>
   <br>
 
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-three-thirds">
 
         <h2 class="govuk-heading-l">Task design for 'Edit report' - January 2026 - v2</h2>
         <strong class="govuk-tag govuk-tag--yellow">Oh hold</strong>
@@ -185,11 +230,6 @@
   <hr>
   <br>
 
-  </div>
-</div>
-
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-three-thirds">
 
     <h2 class="govuk-heading-l">Task based workflow for HCPs - August 2025 - v1</h2>
         <strong class="govuk-tag govuk-tag--blue">In development</strong>
@@ -232,11 +272,7 @@
   <hr>
   <br>
 
-  </div>
-</div>
 
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-three-thirds">
 
     <h2 class="govuk-heading-l">Appointee details - April 2025 - vxx</h2>
         <strong class="govuk-tag govuk-tag--green">Live</strong>

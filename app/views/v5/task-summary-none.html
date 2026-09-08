@@ -1,0 +1,34 @@
+{% extends "layouts/internal.html" %}
+
+{% block pageTitle %}
+  Book appointment task summary
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "layouts/phase-banner.html" %}
+  {% include "layouts/back-link.html" %}
+{% endblock %}
+
+{% block content %}
+
+  <form class="form" action="#" method="post">
+
+  <div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-l">
+      [Task type]
+    </h1>
+
+    <p class="govuk-body">
+    There are no [Task type] tasks available for you to work on.
+    </p>
+
+  <button type="submit" class="govuk-button" data-module="govuk-button">
+  Go back to my tasks
+  </button>
+
+
+  </form>
+
+{% endblock %}

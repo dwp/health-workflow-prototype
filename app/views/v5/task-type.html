@@ -18,7 +18,7 @@
     <div class="govuk-grid-column-two-thirds">
 
 
-      <form class="form" action="/task-type" method="post">
+      <form class="form" action="#" method="post">
 
         <div class="govuk-form-group">
           <fieldset class="govuk-fieldset">
@@ -34,35 +34,28 @@
               <div class="govuk-radios__item">
                 <input class="govuk-radios__input" id="taskType" name="taskType" type="radio" value="case-pre-checks">
                 <label class="govuk-label govuk-radios__label" for="taskType">
-                  Prepare referral
+                  [Task type 1]
                 </label>
               </div>
               <div class="govuk-radios__item">
                 <input class="govuk-radios__input" id="taskType-2" name="taskType" type="radio" value="request-medical-evidence">
                 <label class="govuk-label govuk-radios__label" for="taskType-2">
-                  Request medical evidence
+                  [Task type 2]
                 </label>
               </div>
               <div class="govuk-radios__item">
                 <input class="govuk-radios__input" id="taskType-3" name="taskType" type="radio" value="book-appointment">
                 <label class="govuk-label govuk-radios__label" for="taskType-3">
-                  Book telephone appointment
+                  [Task type 3]
                 </label>
               </div>
-              <div class="govuk-radios__item">
-                <input class="govuk-radios__input" id="taskType-3" name="taskType" type="radio" value="book-appointment">
-                <label class="govuk-label govuk-radios__label" for="taskType-3">
-                  Book face to face appointment
-                </label>
-              </div>
-
             </div>
           </fieldset>
         </div>
         
-        {{ govukButton({
-          text: "Continue"
-        }) }}
+        <button type="submit" class="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
 
       </form>
 

@@ -1,0 +1,127 @@
+{% extends "layouts/internal.html" %}
+
+{% block pageTitle %}
+  My tasks
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "layouts/phase-banner.html" %}
+  {% include "layouts/back-link.html" %}
+{% endblock %}
+
+{% block content %}
+
+  <form class="form" action="/task-type" method="post">
+
+  {# <!-- // start notification banner here for task completion or returning a task -->
+
+  <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+  <div class="govuk-notification-banner__header">
+    <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+      Success
+    </h2>
+  </div>
+  <div class="govuk-notification-banner__content">
+    <h3 class="govuk-notification-banner__heading">
+      [Task type] has been completed for [claimant name's] case.
+    </h3>
+    <p class="govuk-body">What's been automated? Does the user need to <a class="govuk-notification-banner__link" href="#">manually do anything?</a></p>
+  </div>
+</div> #}
+
+  <!-- // start H1 here -->
+
+  <h1 class="govuk-heading-l">
+    My tasks
+  </h1>
+
+  <p class="govuk-body-m">
+    View and manage your tasks. You can view closed tasks from the last 7 days.
+  </p>
+
+  <button type="submit" class="govuk-button" data-module="govuk-button">
+    Get next task
+  </button>
+
+
+  <!-- // start table here -->
+
+  <div class="govuk-tabs" data-module="govuk-tabs">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <ul class="govuk-tabs__list">
+      <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+        <a class="govuk-tabs__tab" href="#open-tasks">
+          Open tasks
+        </a>
+      </li>
+      <li class="govuk-tabs__list-item">
+        <a class="govuk-tabs__tab" href="#closed-tasks">
+          Closed tasks
+        </a>
+      </li>
+    </ul>
+
+  <div class="govuk-tabs__panel" id="open-tasks">
+    <table class="govuk-table govuk-!-width-full" >
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Task type</th>
+            {# <th scope="col" class="govuk-table__header">Task status</th> #}
+            <th scope="col" class="govuk-table__header">Claimant name</th>
+            <th scope="col" class="govuk-table__header">National Insurance number</th>
+            <th scope="col" class="govuk-table__header">Due date</th>
+            <th scope="col" class="govuk-table__header">Action</th>
+          </tr>
+        </thead>
+        
+        <tbody class="govuk-table__body">
+          {# <tr class="govuk-table__row">
+            <td class="govuk-table__cell">[Auto Task type]</td>
+            <td class="govuk-table__cell"><strong class="govuk-tag">New</strong></td>
+            <td class="govuk-table__cell"><a href="#" class="govuk-link">[Claimant name]</a></td>
+            <td class="govuk-table__cell">[National insurance number]</td>
+            <td class="govuk-table__cell">[Due date]</strong></td>
+            <td class="govuk-table__cell"><a href="#" class="govuk-link">View task</a></td>
+          </tr> #}
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">[Task type]</td>
+            {# <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey">In progress</strong></td> #}
+            <td class="govuk-table__cell"><a href="#" class="govuk-link">[Claimant name]</a></td>
+            <td class="govuk-table__cell">[National insurance number]</td>
+            <td class="govuk-table__cell">[Due date]</strong></td>
+            <td class="govuk-table__cell"><a href="#" class="govuk-link">View task</a></td>
+          </tr>
+
+        </tbody>
+      </table>
+  </div>
+
+
+  <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="closed-tasks">
+    <table class="govuk-table govuk-!-width-full" >
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Task type</th>
+            <th scope="col" class="govuk-table__header">Claimant name</th>
+            <th scope="col" class="govuk-table__header">National Insurance number</th>
+            <th scope="col" class="govuk-table__header">Task completed</th>
+          </tr>
+        </thead>
+
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">[Task type]</td>
+            <td class="govuk-table__cell"><a href="#" class="govuk-link">[Claimant name]</a></td>
+            <td class="govuk-table__cell">[National insurance number]</td>
+            <td class="govuk-table__cell">[Task completed date]</td>
+          </tr>
+        </tbody>
+    </table>
+  </div>
+
+  </form>
+
+
+{% endblock %}

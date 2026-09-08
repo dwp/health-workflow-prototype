@@ -1,0 +1,376 @@
+{% extends "layouts/internal-header-nav.html" %}
+
+{% block pageTitle %}
+  Claimant details – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+{# Quick reference component starts here #}
+
+<section class="dwp-quick-reference" aria-label="Case information">
+  <dl class="dwp-quick-reference__block">
+    <dt class="dwp-quick-reference__label govuk-visually-hidden">Name:</dt>
+    <dd class="dwp-quick-reference__primary">Jane Doe</dd>
+    <dt class="dwp-quick-reference__label dwp-quick-reference__label--primary">National Insurance number:</dt>
+    <dd class="dwp-quick-reference__secondary">QQ 12 34 56 X</dd>
+    <dt class="dwp-quick-reference__label dwp-quick-reference__label--primary">Date of birth:</dt>
+    <dd class="dwp-quick-reference__secondary">1 December 2001</dd>
+    <dt class="dwp-quick-reference__label dwp-quick-reference__label--primary">Age:</dt>
+    <dd class="dwp-quick-reference__secondary">25 years old</dd>
+    {# <dt class="dwp-quick-reference__label">Case status:</dt> #}
+    <dd class="dwp-quick-reference__status">
+      <strong class="govuk-tag govuk-tag--green">
+        HCP review
+      </strong>
+    </dd>
+  </dl>
+</section>
+
+
+{# Horizontal navigation component starts here #}
+
+<nav class="dwp-horizontal-navigation" aria-label="Horizontal">
+  <ul class="dwp-horizontal-navigation__list">
+    <li class="dwp-horizontal-navigation__item">
+      <a id="claimant-details" href="/v6/claimant-details-test" class="dwp-horizontal-navigation__link" aria-current="true">Claimant details</a>
+    </li>
+    <li class="dwp-horizontal-navigation__item">
+      <a id="referral-details" href="/v6/referral-details-test" class="dwp-horizontal-navigation__link">Rerferral details</a>
+    </li>
+    <li class="dwp-horizontal-navigation__item">
+      <a id="timeline" href="/v6/claimant-details-test-timeline" class="dwp-horizontal-navigation__link">Timeline</a>
+    </li>
+    <li class="dwp-horizontal-navigation__item dwp-horizontal-navigation__item--selected">
+      <a id="claimant-documents" href="claimant-details-test-documents" class="dwp-horizontal-navigation__link">Claimant documents</a>
+    </li>
+  </ul>
+</nav>
+
+
+{# Claimant documents section starts here #}
+
+<section id="claimant-details-test-documents">
+
+<div class="govuk-!-padding-bottom-5"></div>
+
+<h1 class="govuk-heading-m">Claimant documents</h1>
+
+
+{# Claimant documents starts here #}
+
+{# <div class="govuk-grid-column-three-quarters"> #}
+          
+        {# <h1 class="govuk-heading-l">Claimant documents</h1> #}
+        
+        
+        
+       <div <p class="govuk-body-s" id="last-updated">Last updated from DRS on 16 Sep 2024 at 2:08am</p>
+        
+        
+        {# <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible"> #}
+        <table class="govuk-table" data-module="moj-sortable-table" aria-describedby="last-updated">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header column-width-20">
+              
+              Name
+            </th>
+            
+              {# <th scope="col" class="govuk-table__header column-width-10" aria-sort="none"><button type="button" data-index="1">
+                Benefit type
+              </button></th> #}
+            
+            <th scope="col" class="govuk-table__header column-width-15" aria-sort="none"><button type="button" data-index="2">
+              Date of document
+            </button></th>
+            <th scope="col" class="govuk-table__header column-width-15" aria-sort="descending"><button type="button" data-index="3">         
+              Date DWP received
+            </button></th>
+            
+            
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          
+          
+          
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+              
+                  
+              
+          
+      <tr class="govuk-table__row filter-table-row" style="display: table-row;">     
+                    <td class="govuk-table__cell"><a href="https://has-supporting-docs-82bfe12ac9a5.herokuapp.com/v11x-htln-744-new-admin&hcpView/view-document/17384777-d0a5-4914-8a76-430977c3eeg7" class="govuk-link" rel="noreferrer noopener" target="_blank">Cardiology document</a></td>
+                   
+                    <!-- <td class="govuk-table__cell"><a href="view-document/17384777-d0a5-4914-8a76-430977c3eeg7">Cardiology document</a></td> -->
+                    <!-- <td class="govuk-table__cell"><a href="view-document/17384777-d0a5-4914-8a76-430977c3eeg7">Cardiology document</a></td> -->
+
+                    
+                        {# <td class="govuk-table__cell ">PIP</td> #}
+                    
+                      <td class="govuk-table__cell" data-sort-value="date">27 Jul 2021</td>
+                      <td class="govuk-table__cell" data-sort-value="14">10 Sept 2021</td>
+                        
+                  </tr><tr class="govuk-table__row filter-table-row" style="display: table-row;">     
+                    <td class="govuk-table__cell"><a href="view-document/17384777-d0a5-4914-8a76-430977c3ecb5">Award review AR1 covering letter</a></td>
+                   
+                    <!-- <td class="govuk-table__cell"><a href="view-document/17384777-d0a5-4914-8a76-430977c3ecb5">Award review AR1 covering letter</a></td> -->
+                    <!-- <td class="govuk-table__cell"><a href="view-document/17384777-d0a5-4914-8a76-430977c3ecb5">Award review AR1 covering letter</a></td> -->
+
+                    
+                        {# <td class="govuk-table__cell ">PIP</td> #}
+                    
+                      <td class="govuk-table__cell" data-sort-value="date">27 Jul 2021</td>
+                      <td class="govuk-table__cell" data-sort-value="14">10 Sept 2021</td>
+                        
+                  </tr><tr class="govuk-table__row filter-table-row" style="display: table-row;">     
+                    <td class="govuk-table__cell"><a href="view-document/d2ff1706-65aa-4915-8411-ec49eb8f1414">Further evidence</a></td>
+                   
+                    <!-- <td class="govuk-table__cell"><a href="view-document/d2ff1706-65aa-4915-8411-ec49eb8f1414">Further evidence</a></td> -->
+                    <!-- <td class="govuk-table__cell"><a href="view-document/d2ff1706-65aa-4915-8411-ec49eb8f1414">Further evidence</a></td> -->
+
+                    
+                        {# <td class="govuk-table__cell ">PIP</td> #}
+                    
+                      <td class="govuk-table__cell" data-sort-value="date">03 Sep 2021</td>
+                      <td class="govuk-table__cell" data-sort-value="14">10 Sept 2021</td>
+                        
+                  </tr><tr class="govuk-table__row filter-table-row" style="display: table-row;">     
+                    <td class="govuk-table__cell"><a href="view-document/b34b7983-c30e-4d6b-94a2-ce01e5add2aa">WHITE MAIL UNSTRUCTURED</a></td>
+                   
+                    <!-- <td class="govuk-table__cell"><a href="view-document/b34b7983-c30e-4d6b-94a2-ce01e5add2aa">WHITE MAIL UNSTRUCTURED</a></td> -->
+                    <!-- <td class="govuk-table__cell"><a href="view-document/b34b7983-c30e-4d6b-94a2-ce01e5add2aa">WHITE MAIL UNSTRUCTURED</a></td> -->
+
+                    
+                        {# <td class="govuk-table__cell ">PIP</td> #}
+                    
+                      <td class="govuk-table__cell" data-sort-value="date"></td>
+                      <td class="govuk-table__cell" data-sort-value="14">10 Sept 2021</td>
+                        
+                  </tr><tr class="govuk-table__row filter-table-row" style="display: table-row;">     
+                    <td class="govuk-table__cell"><a href="view-document/61a99ff9-9da4-4624-9aca-2b61f3a28a8b">GP letter</a></td>
+                   
+                    <!-- <td class="govuk-table__cell"><a href="view-document/61a99ff9-9da4-4624-9aca-2b61f3a28a8b">GP letter</a></td> -->
+                    <!-- <td class="govuk-table__cell"><a href="view-document/61a99ff9-9da4-4624-9aca-2b61f3a28a8b">GP letter</a></td> -->
+
+                    
+                        {# <td class="govuk-table__cell ">PIP</td> #}
+                    
+                      <td class="govuk-table__cell" data-sort-value="date">08 Feb 2019</td>
+                      <td class="govuk-table__cell" data-sort-value="14">10 Sept 2021</td>
+                        
+                  </tr><tr class="govuk-table__row filter-table-row" style="display: table-row;">     
+                    <td class="govuk-table__cell"><a href="view-document/416a78e2-3ab3-4f36-a3ba-0db935f1a520">GP letter</a></td>
+                   
+                    <!-- <td class="govuk-table__cell"><a href="view-document/416a78e2-3ab3-4f36-a3ba-0db935f1a520">GP letter</a></td> -->
+                    <!-- <td class="govuk-table__cell"><a href="view-document/416a78e2-3ab3-4f36-a3ba-0db935f1a520">GP letter</a></td> -->
+
+                    
+                        {# <td class="govuk-table__cell ">PIP</td> #}
+                    
+                      <td class="govuk-table__cell" data-sort-value="date">19 Jan 2019</td>
+                      <td class="govuk-table__cell" data-sort-value="14">10 Sept 2021</td>
+                        
+                  </tr><tr class="govuk-table__row filter-table-row" style="display: table-row;">     
+                    <td class="govuk-table__cell"><a href="view-document/f18bba5b-80cf-4e7a-811a-0c69e40fe779">Further evidence</a></td>
+                   
+                    <!-- <td class="govuk-table__cell"><a href="view-document/f18bba5b-80cf-4e7a-811a-0c69e40fe779">Further evidence</a></td> -->
+                    <!-- <td class="govuk-table__cell"><a href="view-document/f18bba5b-80cf-4e7a-811a-0c69e40fe779">Further evidence</a></td> -->
+
+                    
+                        {# <td class="govuk-table__cell ">PIP</td> #}
+                    
+                      <td class="govuk-table__cell" data-sort-value="date">10 Oct 2019</td>
+                      <td class="govuk-table__cell" data-sort-value="14">10 Sept 2021</td>
+                        
+                  </tr><tr class="govuk-table__row filter-table-row" style="display: table-row;">     
+                    <td class="govuk-table__cell"><a href="view-document/0d0ae8f6-7ca5-4782-8358-47b516b8c6a6">ESA85</a></td>
+                   
+                    <!-- <td class="govuk-table__cell"><a href="view-document/0d0ae8f6-7ca5-4782-8358-47b516b8c6a6">ESA85</a></td> -->
+                    <!-- <td class="govuk-table__cell"><a href="view-document/0d0ae8f6-7ca5-4782-8358-47b516b8c6a6">ESA85</a></td> -->
+
+                    
+                        {# <td class="govuk-table__cell ">UC</td> #}
+                    
+                      <td class="govuk-table__cell" data-sort-value="date">16 Mar 2018</td>
+                      <td class="govuk-table__cell" data-sort-value="14">10 Sept 2021</td>
+                        
+                  </tr><tr class="govuk-table__row filter-table-row" style="display: table-row;">     
+                    <td class="govuk-table__cell"><a href="view-document/b9736b86-9077-46b5-997e-d4b7f7892a0d">ESA50</a></td>
+                   
+                    <!-- <td class="govuk-table__cell"><a href="view-document/b9736b86-9077-46b5-997e-d4b7f7892a0d">ESA50</a></td> -->
+                    <!-- <td class="govuk-table__cell"><a href="view-document/b9736b86-9077-46b5-997e-d4b7f7892a0d">ESA50</a></td> -->
+
+                    
+                        {# <td class="govuk-table__cell ">UC</td> #}
+                    
+                      <td class="govuk-table__cell" data-sort-value="date">2 Mar 2019</td>
+                      <td class="govuk-table__cell" data-sort-value="14">10 Sept 2021</td>
+                        
+                  </tr><tr class="govuk-table__row filter-table-row" style="display: table-row;">     
+                    <td class="govuk-table__cell"><a href="view-document/c4d1410c-0d4f-4a69-b6f0-4acf79a1e460">PA4 report</a></td>
+                   
+                    <!-- <td class="govuk-table__cell"><a href="view-document/c4d1410c-0d4f-4a69-b6f0-4acf79a1e460">PA4 report</a></td> -->
+                    <!-- <td class="govuk-table__cell"><a href="view-document/c4d1410c-0d4f-4a69-b6f0-4acf79a1e460">PA4 report</a></td> -->
+
+                    
+                        {# <td class="govuk-table__cell ">PIP</td> #}
+                    
+                      <td class="govuk-table__cell" data-sort-value="date">18 Aug 2017</td>
+                      <td class="govuk-table__cell" data-sort-value="14">10 Sept 2021</td>
+                        
+                  </tr><tr class="govuk-table__row filter-table-row" style="display: table-row;">     
+                    <td class="govuk-table__cell"><a href="view-document/f0fe36ba-e1ab-4fe3-a52f-6ab85ed2bc7c">Award review AR1</a></td>
+                   
+                    <!-- <td class="govuk-table__cell"><a href="view-document/f0fe36ba-e1ab-4fe3-a52f-6ab85ed2bc7c">Award review AR1</a></td> -->
+                    <!-- <td class="govuk-table__cell"><a href="view-document/f0fe36ba-e1ab-4fe3-a52f-6ab85ed2bc7c">Award review AR1</a></td> -->
+
+                    
+                        {# <td class="govuk-table__cell ">PIP</td> #}
+                    
+                      <td class="govuk-table__cell" data-sort-value="date">8 May 2017</td>
+                      <td class="govuk-table__cell" data-sort-value="14">10 Sept 2021</td>
+                        
+                  </tr><tr class="govuk-table__row filter-table-row" style="display: table-row;">     
+                    <td class="govuk-table__cell"><a href="view-document/5d49cc87-8bfa-4086-936f-023071b0c56d">PA4 report</a></td>
+                   
+                    <!-- <td class="govuk-table__cell"><a href="view-document/5d49cc87-8bfa-4086-936f-023071b0c56d">PA4 report</a></td> -->
+                    <!-- <td class="govuk-table__cell"><a href="view-document/5d49cc87-8bfa-4086-936f-023071b0c56d">PA4 report</a></td> -->
+
+                    
+                        {# <td class="govuk-table__cell ">PIP</td> #}
+                    
+                      <td class="govuk-table__cell" data-sort-value="date">26 Oct 2015</td>
+                      <td class="govuk-table__cell" data-sort-value="14">10 Sept 2021</td>
+                        
+                  </tr><tr class="govuk-table__row filter-table-row" style="display: table-row;">     
+                    <td class="govuk-table__cell"><a href="view-document/436b6fed-5590-4cc6-8a4f-a0ed627cf0e7">PIP 2 questionnaire</a></td>
+                   
+                    <!-- <td class="govuk-table__cell"><a href="view-document/436b6fed-5590-4cc6-8a4f-a0ed627cf0e7">PIP 2 questionnaire</a></td> -->
+                    <!-- <td class="govuk-table__cell"><a href="view-document/436b6fed-5590-4cc6-8a4f-a0ed627cf0e7">PIP 2 questionnaire</a></td> -->
+
+                    
+                        {# <td class="govuk-table__cell ">PIP</td> #}
+                    
+                      <td class="govuk-table__cell" data-sort-value="date">20 Aug 2015</td>
+                      <td class="govuk-table__cell" data-sort-value="14">10 Sept 2021</td>
+                        
+                  </tr></tbody>
+
+
+
+
+
+
+      </table>
+    <div aria-live="polite" role="status" aria-atomic="true" class="govuk-visually-hidden"></div></div>
+</section>
+</div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="govuk-prototype-kit-common-templates-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          What you can do next
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="#">
+                Update status
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                View claimant documents
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Add or view HCP review
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                View timeline
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Add entry to timeline
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Move to another caseload
+              </a>
+            </li>
+            <li>
+              <a href="#" class="govuk-!-font-weight-bold">
+                More <span class="govuk-visually-hidden">in Subsection</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+  </div>
+
+{% endblock %}
