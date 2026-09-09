@@ -4,7 +4,7 @@ https://prototype-kit.service.gov.uk/docs/how-to-use-layouts
 #}
 
 {% extends "govuk-prototype-kit/layouts/govuk-branded.njk" %}
-{# {% from "govuk/components/service-navigation/macro.njk" import govukServiceNavigation %} #}
+{% from "govuk/components/service-navigation/macro.njk" import govukServiceNavigation %}
 
 {% block header %}
 
@@ -26,25 +26,25 @@ https://prototype-kit.service.gov.uk/docs/how-to-use-layouts
         <ul id="navigation" class="dwp-header-navigation__list">
             <li class="dwp-header-navigation__item">
             <a
-                href="#">
-                Find someone
-            </a>
-            </li>
-            <li class="dwp-header-navigation__item">
-            <a
                 href="/v6/my-tasks">
                 My tasks (1)
             </a>
             </li>
             <li class="dwp-header-navigation__item">
             <a
-                href="#">
+                href="/v6/find-someone">
+                Find someone
+            </a>
+            </li>
+            <li class="dwp-header-navigation__item">
+            <a
+                href="/v6/appointments">
                 Appointments
             </a>
             </li>
             <li class="dwp-header-navigation__item">
             <a
-                href="#">
+                href="/v6/quality-review-history">
                 Quality review history
             </a>
             </li>

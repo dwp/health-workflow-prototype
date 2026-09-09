@@ -1,0 +1,35 @@
+{% extends "layouts/internal-header-nav.html" %}
+
+{% block pageTitle %}
+  Referral details – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {% include "layouts/phase-banner.html" %}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">     
+  
+<div class="govuk-form-group">
+  <h1 class="govuk-label-wrapper">
+    <label class="govuk-label govuk-label--l" for="event-name">
+      Enter the claimant's name or National Insurance number
+    </label>
+  </h1>
+  <div id="event-name-hint" class="govuk-hint">
+    For example, 'Jane Doe' or ‘QQ 12 34 56 C’
+  </div>
+  <input class="govuk-input" id="event-name" name="eventName" type="text" aria-describedby="event-name-hint">
+</div>
+
+<button type="submit" class="govuk-button" data-module="govuk-button">
+  Saearch
+</button>
+
+</div>
+
+
+{% endblock %}

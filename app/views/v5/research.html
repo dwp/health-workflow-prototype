@@ -6,10 +6,6 @@
   Research
 {% endblock %}
 
-{% block beforeContent %}
-  {# {% include "layouts/phase-banner.html" %} #}
-  {% include "layouts/back-link.html" %}
-{% endblock %}
 
 {% block content %}
 
@@ -28,5 +24,10 @@
 <p class="govuk-body"><a href="/v5/task-type" class="govuk-link">Task type</a></p>
 
 <p class="govuk-body"><a href="/v5/task-summary" class="govuk-link">Task summary</a></p>
+
+<p class="govuk-body"><a href="/v5/task-summary-active" class="govuk-link">Task summary (active task)</a></p>
+
+<p class="govuk-body"><a href="/v5/task-summary-none" class="govuk-link">Task summary (no task)</a></p>
+
 
 {% endblock %}
